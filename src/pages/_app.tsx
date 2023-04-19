@@ -1,8 +1,8 @@
 import '@shared/theme/global.scss';
 import '@shared/theme/normalize.scss';
-import { inter, sen } from '@shared/lib/fonts';
-
 import cn from 'classnames';
+
+import { inter, sen } from '@shared/lib/fonts';
 
 import type { AppProps } from 'next/app';
 
