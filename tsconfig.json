@@ -23,6 +23,6 @@
 		},
 		"incremental": true
 	},
-	"include": ["src", "cypress.config.ts", "cypress"],
+	"include": ["src", "cypress.config.ts", "cypress", "cypress.config.ts"],
 	"exclude": ["node_modules"]
 }
