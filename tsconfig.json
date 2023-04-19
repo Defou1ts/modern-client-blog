@@ -18,11 +18,12 @@
 		"baseUrl": "./src",
 		"paths": {
 			"@/*": ["./src/*"],
+			"@pages/*": ["./pages/*"],
 			"@shared/*": ["./shared/*"],
 			"@app/*": ["./app/*"]
 		},
 		"incremental": true
 	},
-	"include": ["src", "cypress.config.ts", "cypress", "cypress.config.ts"],
-	"exclude": ["node_modules"]
+	"include": ["src", "jest.config.ts", "next-env.d.ts"],
+	"exclude": ["node_modules", "cypress"]
 }
