@@ -17,18 +17,7 @@
 		"jsx": "preserve",
 		"baseUrl": "./src",
 		"paths": {
-			"@": ["./src/*"],
-			"@assets": ["./assets"],
-			"@api": ["./api"],
-			"@types": ["./types"],
-			"@components/*": ["./components/*"],
-			"@constants": ["./constants"],
-			"@pages": ["./pages"],
-			"@store": ["./store"],
-			"@utils": ["./utils"],
-			"@hooks": ["./hooks"],
-			"@interfaces": ["./interfaces"],
-			"@theme": ["./theme"],
+			"@/*": ["./src/*"],
 			"@shared/*": ["./shared/*"]
 		},
 		"incremental": true
