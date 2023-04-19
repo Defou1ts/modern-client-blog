@@ -12,7 +12,7 @@
 		"dev": "next",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint",
+		"lint": "eslint --fix src",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build"
 	},
@@ -28,6 +28,7 @@
 		"@types/node": "^18.15.11",
 		"@types/react": "^18.0.37",
 		"@types/react-dom": "^18.0.11",
+		"@typescript-eslint/eslint-plugin": "^5.43.0",
 		"eslint": "^8.0.1",
 		"eslint-config-prettier": "^8.6.0",
 		"eslint-config-standard-with-typescript": "^34.0.1",
@@ -41,6 +42,6 @@
 		"sass": "^1.62.0",
 		"sass-loader": "^13.2.2",
 		"storybook": "7.0.6",
-		"typescript": "^5.0.4"
+		"typescript": "*"
 	}
 }

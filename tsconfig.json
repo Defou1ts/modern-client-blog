@@ -18,7 +18,8 @@
 		"baseUrl": "./src",
 		"paths": {
 			"@/*": ["./src/*"],
-			"@shared/*": ["./shared/*"]
+			"@shared/*": ["./shared/*"],
+			"@app/*": ["./app/*"]
 		},
 		"incremental": true
 	},
