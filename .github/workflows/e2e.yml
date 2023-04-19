@@ -15,7 +15,7 @@ jobs:
                   cache: 'yarn'
 
             - name: Lint checking
-            - run: yarn lint
+              run: yarn lint
 
             - name: Install dependecies
               run: yarn
