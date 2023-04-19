@@ -1,0 +1,7 @@
+{
+	"useTabs": true,
+	"tabWidth": 4,
+	"singleQuote": true,
+	"singleAttributePerLine": false,
+	"printWidth": 120
+}
