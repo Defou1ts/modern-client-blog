@@ -28,7 +28,8 @@
 			"@utils": ["./utils"],
 			"@hooks": ["./hooks"],
 			"@interfaces": ["./interfaces"],
-			"@theme": ["./theme"]
+			"@theme": ["./theme"],
+			"@shared/*": ["./shared/*"]
 		},
 		"incremental": true
 	},
