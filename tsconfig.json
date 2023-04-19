@@ -1,0 +1,71 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "jsx": "preserve",
+    "baseUrl": "./src",
+    "paths": {
+      "@": [
+        "./src/*"
+      ],
+      "@assets": [
+        "./assets"
+      ],
+      "@api": [
+        "./api"
+      ],
+      "@types": [
+        "./types"
+      ],
+      "@components": [
+        "./components"
+      ],
+      "@constants": [
+        "./constants"
+      ],
+      "@pages": [
+        "./pages"
+      ],
+      "@store": [
+        "./store"
+      ],
+      "@utils": [
+        "./utils"
+      ],
+      "@hooks": [
+        "./hooks"
+      ],
+      "@interfaces": [
+        "./interfaces"
+      ],
+      "@theme": [
+        "./theme"
+      ]
+    },
+    "incremental": true
+  },
+  "include": [
+    "src",
+    "cypress.config.ts",
+    "cypress"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
