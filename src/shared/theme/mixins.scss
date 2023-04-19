@@ -1,23 +1,23 @@
-@import './variables';
+@import url('./variables');
 
 @mixin body-large-text {
-	font-family: $font-family-inter;
 	font-weight: 400;
 	font-size: 16px;
+	font-family: $font-family-inter;
 	line-height: 28px;
 }
 
 @mixin body-medium-text {
-	font-family: $font-family-inter;
 	font-weight: 400;
 	font-size: 14px;
+	font-family: $font-family-inter;
 	line-height: 20px;
 }
 
 @mixin label-text {
-	font-family: $font-family-inter;
-	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
+	font-family: $font-family-inter;
+	font-style: normal;
 	line-height: 20px;
 }
