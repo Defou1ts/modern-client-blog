@@ -1,0 +1,22 @@
+@import '../../theme/mixins';
+@import '../../theme/variables';
+
+.p {
+	@include font-family-inter;
+	@include font-weight-normal;
+}
+
+.medium {
+	font-size: 16px;
+	line-height: 28px;
+}
+
+.small {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.label {
+	font-size: 14px;
+	line-height: 20px;
+}
