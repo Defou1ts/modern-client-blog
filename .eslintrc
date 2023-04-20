@@ -3,7 +3,13 @@
 		"browser": true,
 		"es2021": true
 	},
-	"extends": ["plugin:react/recommended", "standard-with-typescript", "prettier","plugin:jest-dom/recommended","next/core-web-vitals"],
+	"extends": [
+		"plugin:react/recommended",
+		"standard-with-typescript",
+		"prettier",
+		"plugin:jest-dom/recommended",
+		"next/core-web-vitals"
+	],
 	"overrides": [],
 	"parserOptions": {
 		"project": ["./tsconfig.json"],

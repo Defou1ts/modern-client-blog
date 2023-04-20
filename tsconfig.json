@@ -22,7 +22,8 @@
 			"@shared/*": ["./shared/*"],
 			"@app/*": ["./app/*"]
 		},
-		"incremental": true
+		"incremental": true,
+		"types": ["jest", "node", "@types/testing-library__jest-dom"]
 	},
 	"include": ["src", "jest.config.ts", "next-env.d.ts"],
 	"exclude": ["node_modules", "cypress"]

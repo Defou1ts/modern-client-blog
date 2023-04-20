@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button button primary snapshot 1`] = `
+<button
+  className="button primary"
+>
+  Hello
+</button>
+`;
+
+exports[`Button button secondary snapshot 1`] = `
+<button
+  className="button secondary"
+>
+  Hello
+</button>
+`;
