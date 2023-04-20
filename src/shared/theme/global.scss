@@ -1,4 +1,4 @@
-@import './mixins';
+@use './theme.scss' as *;
 
 * {
 	box-sizing: border-box;
@@ -14,7 +14,7 @@ body {
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
-	@include font-family-sen;
+	@include font-family($font-family-sen);
 }
 
 a {

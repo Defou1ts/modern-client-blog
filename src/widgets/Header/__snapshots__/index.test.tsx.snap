@@ -4,55 +4,65 @@ exports[`Button button header snapshot 1`] = `
 <header
   className="header"
 >
-  <h1
-    className="title"
+  <div
+    className="burger"
+    onClick={[Function]}
   >
-    Modsen Client Blog
-  </h1>
-  <nav
-    className="nav"
+    <span />
+  </div>
+  <div
+    className="headerWrapper"
   >
-    <a
-      className="navlink"
-      href="/"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      onTouchStart={[Function]}
+    <h1
+      className="title"
     >
-      Home
-    </a>
-    <a
-      className="navlink"
-      href="/blog"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      onTouchStart={[Function]}
+      Modsen Client Blog
+    </h1>
+    <nav
+      className="nav"
     >
-      Blog
-    </a>
-    <a
-      className="navlink"
-      href="/about"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      onTouchStart={[Function]}
+      <a
+        className="navlink"
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        Home
+      </a>
+      <a
+        className="navlink"
+        href="/blog"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        Blog
+      </a>
+      <a
+        className="navlink"
+        href="/about"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        About Us
+      </a>
+      <a
+        className="navlink"
+        href="/contact"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        Contact Us
+      </a>
+    </nav>
+    <button
+      className="button secondary video"
     >
-      About Us
-    </a>
-    <a
-      className="navlink"
-      href="/contact"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      onTouchStart={[Function]}
-    >
-      Contact Us
-    </a>
-  </nav>
-  <button
-    className="button secondary video"
-  >
-    Video about us
-  </button>
+      Video about us
+    </button>
+  </div>
 </header>
 `;

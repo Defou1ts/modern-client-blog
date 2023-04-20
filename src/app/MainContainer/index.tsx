@@ -1,4 +1,5 @@
 import Head from 'next/head';
+
 import { Header } from '@widgets/Header';
 
 import type { MainContainerProps } from './interfaces';

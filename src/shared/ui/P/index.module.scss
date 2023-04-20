@@ -1,9 +1,8 @@
-@import '../../theme/mixins';
-@import '../../theme/variables';
+@import '../../theme/theme.scss';
 
 .p {
-	@include font-family-inter;
-	@include font-weight-normal;
+	@include font-family($font-family-inter);
+	@include font-weight($font-weight-normal);
 }
 
 .medium {

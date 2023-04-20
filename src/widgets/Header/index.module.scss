@@ -1,6 +1,4 @@
-@import '../../shared/theme/variables';
-@import '../../shared/theme/mixins';
-@import '../../shared/theme/breakpoints';
+@import '../../shared/theme/theme.scss';
 
 .header {
 	background-color: $black;
@@ -122,7 +120,7 @@
 }
 
 .navlink {
-	@include link;
+	@include link($yellow-hover, all 0.2s ease, $white);
 }
 
 .video {

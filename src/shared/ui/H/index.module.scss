@@ -1,10 +1,9 @@
-@import '../../theme/mixins';
-@import '../../theme/variables';
+@import '../../theme/theme.scss';
 
 .h {
 	color: $black;
-	@include font-family-sen;
-	@include font-weight-bold;
+	@include font-family($font-family-sen);
+	@include font-weight($font-weight-bold);
 }
 
 .display {
