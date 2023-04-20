@@ -1,5 +1,5 @@
-import '@shared/theme/global.scss';
 import '@shared/theme/normalize.scss';
+import '@shared/theme/global.scss';
 import cn from 'classnames';
 
 import { inter, sen } from '@shared/lib/fonts';
