@@ -25,6 +25,6 @@
 		"incremental": true,
 		"types": ["jest", "node", "@types/testing-library__jest-dom"]
 	},
-	"include": ["src", "jest.config.ts", "next-env.d.ts"],
+	"include": ["src", "jest.config.ts", "next-env.d.ts", ".storybook"],
 	"exclude": ["node_modules", "cypress"]
 }
