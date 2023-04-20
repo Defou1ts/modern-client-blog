@@ -15,3 +15,15 @@
 @mixin font-weight-normal {
 	font-weight: $font-weight-normal;
 }
+
+@mixin link {
+	color: $white;
+	font-size: 16px;
+	line-height: 28px;
+
+	transition: all 0.2s ease;
+
+	&:hover {
+		color: $yellow-hover;
+	}
+}

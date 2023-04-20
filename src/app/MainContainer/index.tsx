@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { Header } from '@widgets/Header';
 
 import type { MainContainerProps } from './interfaces';
 
@@ -9,7 +10,7 @@ export const MainContainer = ({ title, description, children }: MainContainerPro
 				<meta name="description" content={description} />
 				<title>{title}</title>
 			</Head>
-			<header>Header</header>
+			<Header />
 			<main>{children}</main>
 			<footer>Footer</footer>
 		</>

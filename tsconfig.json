@@ -20,7 +20,8 @@
 			"@/*": ["./src/*"],
 			"@pages/*": ["./pages/*"],
 			"@shared/*": ["./shared/*"],
-			"@app/*": ["./app/*"]
+			"@app/*": ["./app/*"],
+			"@widgets/*": ["./widgets/*"]
 		},
 		"incremental": true,
 		"types": ["jest", "node", "@types/testing-library__jest-dom"]

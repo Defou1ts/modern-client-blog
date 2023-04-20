@@ -1,0 +1,33 @@
+@import '../../shared/theme/variables';
+@import '../../shared/theme/mixins';
+
+.header {
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	align-items: center;
+	background-color: $black;
+	padding: 12px 31px;
+	column-gap: 32px;
+}
+
+.title {
+	color: $white;
+	font-weight: $font-weight-bold;
+	font-size: 24px;
+	line-height: 48px;
+}
+
+.nav {
+	justify-self: right;
+
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	gap: 24px;
+}
+
+.navlink {
+	@include link;
+}
+
+.video {
+}

@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button button header snapshot 1`] = `
+<header
+  className="header"
+>
+  <h1
+    className="title"
+  >
+    Modsen Client Blog
+  </h1>
+  <nav
+    className="nav"
+  >
+    <a
+      className="navlink"
+      href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
+    >
+      Home
+    </a>
+    <a
+      className="navlink"
+      href="/blog"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
+    >
+      Blog
+    </a>
+    <a
+      className="navlink"
+      href="/about"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
+    >
+      About Us
+    </a>
+    <a
+      className="navlink"
+      href="/contact"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
+    >
+      Contact Us
+    </a>
+  </nav>
+  <button
+    className="button secondary video"
+  >
+    Video about us
+  </button>
+</header>
+`;
