@@ -21,7 +21,7 @@ jobs:
               run: yarn lint
 
             - name: Run tests with jest
-              run: yarn test:ci
+              run: yarn test:jest-ci
 
             - name: 'Create .env.local file'
               run: |
