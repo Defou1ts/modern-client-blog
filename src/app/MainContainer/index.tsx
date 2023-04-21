@@ -1,5 +1,7 @@
 import Head from 'next/head';
 
+import { Layout } from './ui/Layout';
+
 import type { MainContainerProps } from './interfaces';
 
 export const MainContainer = ({ title, description, children }: MainContainerProps) => {
@@ -9,9 +11,7 @@ export const MainContainer = ({ title, description, children }: MainContainerPro
 				<meta name="description" content={description} />
 				<title>{title}</title>
 			</Head>
-			<header>Header</header>
-			<main>{children}</main>
-			<footer>Footer</footer>
+			<Layout>{children}</Layout>
 		</>
 	);
 };

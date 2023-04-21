@@ -1,0 +1,62 @@
+@import '../../../../shared/theme/theme.scss';
+
+.burger {
+	display: none;
+
+	@include lg {
+		cursor: pointer;
+		position: relative;
+		z-index: 1;
+		display: block;
+		width: 26.67px;
+		height: 18.66px;
+
+		span {
+			position: absolute;
+			border-radius: 2px;
+			width: 100%;
+			top: 50%;
+			transform: translateY(-50%);
+			height: 2.67px;
+			background-color: $white;
+			transition: all 0.2s ease;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 2.67px;
+			background-color: $white;
+			border-radius: 2px;
+			transition: all 0.2s ease;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 2.67px;
+			background-color: $white;
+			border-radius: 2px;
+			transition: all 0.2s ease;
+		}
+
+		&.active span {
+			transform: scale(0);
+		}
+
+		&.active::after {
+			transform: rotate(45deg);
+			top: 8px;
+		}
+
+		&.active::before {
+			transform: rotate(-45deg);
+			bottom: 8px;
+		}
+	}
+}

@@ -1,0 +1,62 @@
+@import '../../theme/theme.scss';
+
+.h {
+	@include font-family($font-family-sen);
+	@include font-weight($font-weight-bold);
+}
+
+.display {
+	font-size: 56px;
+	line-height: 64px;
+	@include lx {
+		font-size: 48px;
+	}
+}
+
+.h1 {
+	font-size: 48px;
+	line-height: 64px;
+	@include lx {
+		font-size: 36px;
+	}
+}
+
+.h2 {
+	font-size: 36px;
+	line-height: 48px;
+	@include lx {
+		font-size: 28px;
+	}
+}
+
+.h3 {
+	font-size: 28px;
+	line-height: 40px;
+	@include lx {
+		font-size: 24px;
+	}
+}
+
+.h4 {
+	font-size: 24px;
+	line-height: 32px;
+	@include lx {
+		font-size: 20px;
+	}
+}
+
+.h5 {
+	font-size: 20px;
+	line-height: 32px;
+	@include lx {
+		font-size: 16px;
+	}
+}
+
+.h6 {
+	font-size: 16px;
+	line-height: 24px;
+	@include lx {
+		font-size: 14px;
+	}
+}

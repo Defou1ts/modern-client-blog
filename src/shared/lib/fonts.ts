@@ -2,7 +2,7 @@ import { Inter, Sen } from 'next/font/google';
 
 export const inter = Inter({
 	subsets: ['cyrillic', 'latin'],
-	weight: ['700', '400'],
+	weight: ['700', '400', '500'],
 });
 
 export const sen = Sen({

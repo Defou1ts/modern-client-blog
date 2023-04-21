@@ -1,0 +1,45 @@
+@import '../../shared/theme/theme.scss';
+
+.header {
+	background-color: $black;
+
+	display: grid;
+
+	@include lg {
+		padding: 16px;
+	}
+}
+
+.headerWrapper {
+	display: grid;
+	grid-template-columns: auto auto 1fr auto;
+	align-items: center;
+	padding: 12px 31px;
+	column-gap: 32px;
+	background-color: $black;
+
+	@include lg {
+		position: absolute;
+		left: 0;
+		top: 0;
+		grid-template-columns: auto;
+		justify-items: center;
+		gap: 16px;
+		z-index: 0;
+		width: 100vw;
+		left: -100%;
+
+		transition: 0.2s ease all;
+	}
+
+	&.active {
+		left: 0;
+	}
+}
+
+.title {
+	color: $white;
+	font-weight: $font-weight-bold;
+	font-size: 24px;
+	line-height: 48px;
+}

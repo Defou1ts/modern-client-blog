@@ -1,0 +1,19 @@
+@mixin font-family($font-name) {
+	font-family: $font-name;
+}
+
+@mixin font-weight($value) {
+	font-weight: $value;
+}
+
+@mixin link($hover-color, $transition, $color) {
+	color: $color;
+	font-size: 16px;
+	line-height: 28px;
+
+	transition: $transition;
+
+	&:hover {
+		color: $hover-color;
+	}
+}

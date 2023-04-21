@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header button header snapshot 1`] = `
+<header
+  className="header"
+  data-test-id="header"
+>
+  <div
+    className="burger"
+    data-test-id="burger"
+    onClick={[Function]}
+  >
+    <span />
+  </div>
+  <div
+    className="headerWrapper"
+    data-test-id="menu-wrapper"
+  >
+    <h1
+      className="title"
+    >
+      Modsen Client Blog
+    </h1>
+    <div
+      className="locales"
+      data-test-id="locales"
+    >
+      <a
+        className="locale active"
+        data-test-id="en"
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        EN
+      </a>
+      <a
+        className="locale"
+        data-test-id="ru"
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        RU
+      </a>
+    </div>
+    <nav
+      className="nav"
+    >
+      <a
+        className="navlink"
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        header.home
+      </a>
+      <a
+        className="navlink"
+        href="/blog"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        header.blog
+      </a>
+      <a
+        className="navlink"
+        href="/contact"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        header.about
+      </a>
+      <a
+        className="navlink"
+        href="/about"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        header.contact
+      </a>
+    </nav>
+    <button
+      className="button secondary"
+      data-test-id="header-button"
+    >
+      header.video
+    </button>
+  </div>
+</header>
+`;

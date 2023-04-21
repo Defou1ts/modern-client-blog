@@ -1,0 +1,22 @@
+@import '../../shared/theme/theme.scss';
+
+.footer {
+	background-color: $black;
+	padding: 60px 80px;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 48px;
+
+	@include lx {
+		padding: 40px 60px;
+	}
+
+	@include lg {
+		padding: 20px 30px;
+	}
+
+	@include md {
+		padding: 10px 0px;
+		gap: 24px;
+	}
+}

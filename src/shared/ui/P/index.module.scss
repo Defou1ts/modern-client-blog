@@ -1,0 +1,30 @@
+@import '../../theme/theme.scss';
+
+.p {
+	@include font-family($font-family-inter);
+	@include font-weight($font-weight-normal);
+}
+
+.medium {
+	font-size: 16px;
+	line-height: 28px;
+	@include md {
+		font-size: 14px;
+	}
+}
+
+.small {
+	font-size: 14px;
+	line-height: 20px;
+	@include md {
+		font-size: 12px;
+	}
+}
+
+.label {
+	font-size: 14px;
+	line-height: 20px;
+	@include md {
+		font-size: 12px;
+	}
+}
