@@ -3,15 +3,18 @@
 exports[`Header button header snapshot 1`] = `
 <header
   className="header"
+  data-test-id="header"
 >
   <div
     className="burger"
+    data-test-id="burger"
     onClick={[Function]}
   >
     <span />
   </div>
   <div
     className="headerWrapper"
+    data-test-id="menu-wrapper"
   >
     <h1
       className="title"
@@ -20,9 +23,11 @@ exports[`Header button header snapshot 1`] = `
     </h1>
     <div
       className="locales"
+      data-test-id="locales"
     >
       <a
         className="locale active"
+        data-test-id="en"
         href="/"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -32,6 +37,7 @@ exports[`Header button header snapshot 1`] = `
       </a>
       <a
         className="locale"
+        data-test-id="ru"
         href="/"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -82,6 +88,7 @@ exports[`Header button header snapshot 1`] = `
     </nav>
     <button
       className="button secondary"
+      data-test-id="header-button"
     >
       header.video
     </button>
