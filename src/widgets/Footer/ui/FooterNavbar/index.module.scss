@@ -1,0 +1,14 @@
+@import '../../../../shared/theme/theme.scss';
+
+.navbar {
+	background-color: $black;
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.title {
+	color: $white;
+	@include font-weight($font-weight-bold);
+	font-size: 24px;
+	line-height: 48px;
+}

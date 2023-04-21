@@ -17,4 +17,8 @@ export const routes: Route[] = [
 		translationPath: 'contact',
 		path: '/about',
 	},
+	{
+		translationPath: 'privacy',
+		path: '/privacy',
+	},
 ];

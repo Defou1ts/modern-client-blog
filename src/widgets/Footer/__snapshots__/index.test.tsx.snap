@@ -1,45 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header button header snapshot 1`] = `
-<header
-  className="header"
+exports[`Footer button header snapshot 1`] = `
+<footer
+  className="footer"
 >
   <div
-    className="burger"
-    onClick={[Function]}
-  >
-    <span />
-  </div>
-  <div
-    className="headerWrapper"
+    className="navbar"
   >
     <h1
       className="title"
     >
       Modsen Client Blog
     </h1>
-    <div
-      className="locales"
-    >
-      <a
-        className="locale active"
-        href="/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        onTouchStart={[Function]}
-      >
-        EN
-      </a>
-      <a
-        className="locale"
-        href="/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        onTouchStart={[Function]}
-      >
-        RU
-      </a>
-    </div>
     <nav
       className="nav"
     >
@@ -79,12 +51,16 @@ exports[`Header button header snapshot 1`] = `
       >
         header.contact
       </a>
+      <a
+        className="navlink"
+        href="/privacy"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        header.privacy
+      </a>
     </nav>
-    <button
-      className="button secondary"
-    >
-      header.video
-    </button>
   </div>
-</header>
+</footer>
 `;

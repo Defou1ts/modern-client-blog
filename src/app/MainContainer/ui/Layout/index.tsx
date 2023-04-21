@@ -1,6 +1,7 @@
 import styles from './index.module.scss';
 
 import { Header } from '@widgets/Header';
+import { Footer } from '@widgets/Footer';
 
 import type { LayoutProps } from './interfaces';
 
@@ -9,7 +10,7 @@ export const Layout = ({ children }: LayoutProps) => {
 		<div className={styles.layout}>
 			<Header className={styles.header} />
 			<main className={styles.main}>{children}</main>
-			<footer className={styles.footer}>Footer</footer>
+			<Footer className={styles.footer} />
 		</div>
 	);
 };

@@ -6,9 +6,10 @@ import { useTranslation } from 'next-i18next';
 import styles from './index.module.scss';
 import { Burger } from './ui/Burger';
 import { LocalesList } from './ui/LocalesList';
-import { Navbar } from './ui/Navbar';
+import { routes } from './lib/routes';
 
 import { Button } from '@shared/ui/Button';
+import { Navbar } from '@shared/ui/Navbar';
 
 import type { HeaderProps } from './interfaces';
 
@@ -31,7 +32,7 @@ export const Header = ({ className, ...props }: HeaderProps) => {
 			>
 				<h1 className={styles.title}>Modsen Client Blog</h1>
 				<LocalesList />
-				<Navbar />
+				<Navbar routes={routes} />
 				<Button type="secondary">{t('header.video')}</Button>
 			</div>
 		</header>
