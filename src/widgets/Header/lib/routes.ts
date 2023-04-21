@@ -1,23 +1,23 @@
 interface Route {
-	label: string;
+	translationPath: string;
 	path: string;
 }
 
 export const routes: Route[] = [
 	{
-		label: 'Home',
+		translationPath: 'home',
 		path: '/',
 	},
 	{
-		label: 'Blog',
+		translationPath: 'blog',
 		path: '/blog',
 	},
 	{
-		label: 'About Us',
+		translationPath: 'contact',
 		path: '/about',
 	},
 	{
-		label: 'Contact Us',
+		translationPath: 'about',
 		path: '/contact',
 	},
 ];

@@ -1,0 +1,19 @@
+@import '../../../../shared/theme/theme.scss';
+
+.nav {
+	justify-self: right;
+
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	gap: 24px;
+
+	@include lg {
+		justify-self: center;
+		grid-template-columns: auto;
+		justify-items: center;
+	}
+}
+
+.navlink {
+	@include link($yellow-hover, all 0.2s ease, $white);
+}

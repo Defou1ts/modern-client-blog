@@ -1,3 +1,7 @@
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
+import type { GetStaticProps } from 'next';
+
 import { MainContainer } from '@app/MainContainer';
 import { H } from '@shared/ui/H';
 import { P } from '@shared/ui/P';
@@ -28,3 +32,17 @@ const Index = () => (
 );
 
 export default Index;
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+	if (locale === undefined) {
+		return {
+			notFound: true,
+		};
+	}
+
+	return {
+		props: {
+			...(await serverSideTranslations(locale, ['common'])),
+		},
+	};
+};
