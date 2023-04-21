@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import { Header } from '@widgets/Header';
+import { Layout } from './ui/Layout';
 
 import type { MainContainerProps } from './interfaces';
 
@@ -11,9 +11,7 @@ export const MainContainer = ({ title, description, children }: MainContainerPro
 				<meta name="description" content={description} />
 				<title>{title}</title>
 			</Head>
-			<Header />
-			<main>{children}</main>
-			<footer>Footer</footer>
+			<Layout>{children}</Layout>
 		</>
 	);
 };

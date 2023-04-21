@@ -10,7 +10,9 @@ import { Navbar } from './ui/Navbar';
 
 import { Button } from '@shared/ui/Button';
 
-export const Header = () => {
+import type { HeaderProps } from './interfaces';
+
+export const Header = ({ className, ...props }: HeaderProps) => {
 	const [isOpenedMenu, setIsOpenedMenu] = useState<boolean>(false);
 
 	const { t } = useTranslation();
@@ -20,7 +22,7 @@ export const Header = () => {
 	};
 
 	return (
-		<header className={styles.header}>
+		<header className={cn(styles.header, className)} {...props}>
 			<Burger onClick={handleToggleOpenedMenu} isActive={isOpenedMenu} />
 			<div
 				className={cn(styles.headerWrapper, {
