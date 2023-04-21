@@ -23,9 +23,10 @@ export const Header = ({ className, ...props }: HeaderProps) => {
 	};
 
 	return (
-		<header className={cn(styles.header, className)} {...props}>
+		<header data-test-id="header" className={cn(styles.header, className)} {...props}>
 			<Burger onClick={handleToggleOpenedMenu} isActive={isOpenedMenu} />
 			<div
+				data-test-id="menu-wrapper"
 				className={cn(styles.headerWrapper, {
 					[styles.active]: isOpenedMenu,
 				})}
@@ -33,7 +34,9 @@ export const Header = ({ className, ...props }: HeaderProps) => {
 				<h1 className={styles.title}>Modsen Client Blog</h1>
 				<LocalesList />
 				<Navbar routes={routes} />
-				<Button type="secondary">{t('header.video')}</Button>
+				<Button data-test-id="header-button" appearance="secondary">
+					{t('header.video')}
+				</Button>
 			</div>
 		</header>
 	);

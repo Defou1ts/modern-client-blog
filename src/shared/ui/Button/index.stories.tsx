@@ -14,11 +14,11 @@ const Template: StoryFn<typeof Button> = (args) => <Button {...args}>Hello</Butt
 export const Primary = Template.bind({});
 
 Primary.args = {
-	type: 'primary',
+	appearance: 'primary',
 };
 
 export const Secondary = Template.bind({});
 
 Secondary.args = {
-	type: 'secondary',
+	appearance: 'secondary',
 };

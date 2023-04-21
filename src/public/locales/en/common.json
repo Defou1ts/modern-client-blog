@@ -6,5 +6,9 @@
 		"contact": "Contact Us",
 		"video": "Video about us",
 		"privacy": "Privacy Policy"
+	},
+	"subscribe": {
+		"title": "Subscribe to our news letter to get latest updates and news",
+		"button": "Subscribe"
 	}
 }

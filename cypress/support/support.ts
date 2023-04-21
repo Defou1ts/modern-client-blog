@@ -1,0 +1,41 @@
+export const checkHeader = () => {
+	it('Check header', () => {
+		cy.viewport(1920, 1080);
+		cy.visit('/');
+		cy.get('[data-test-id=header]')
+			.should('be.visible')
+			.get('[data-test-id=menu-wrapper]')
+			.should('be.visible')
+			.children()
+			.should('have.length', 4)
+			.get('[data-test-id=burger]')
+			.should('not.be.visible')
+			.get('[data-test-id=locales]')
+			.children()
+			.should('have.length', 2)
+			.should('be.visible')
+			.get('[data-test-id=header-button]')
+			.should('have.text', 'Video about us')
+			.get('[data-test-id=ru]')
+			.click()
+			.get('[data-test-id=header-button]')
+			.should('have.text', 'Видео о нас')
+			.get('[data-test-id=en]')
+			.wait(150)
+			.click({ force: true })
+			.get('[data-test-id=header-button]')
+			.should('have.text', 'Video about us')
+			.viewport(390, 800)
+			.get('[data-test-id=menu-wrapper]')
+			.should('have.css', 'left', '-1920px')
+			.get('[data-test-id=burger]')
+			.should('be.visible')
+			.get('[data-test-id=burger]')
+			.wait(150)
+			.click({ force: true })
+			.get('[data-test-id=menu-wrapper]')
+			.should('have.css', 'left', '0px')
+			.get('[data-test-id=menu-wrapper]')
+			.should('be.visible');
+	});
+};

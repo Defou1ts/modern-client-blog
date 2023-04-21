@@ -1,6 +1,6 @@
-import type { HTMLAttributes, ReactNode } from 'react';
+import type { ButtonHTMLAttributes, ReactNode } from 'react';
 
-export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
-	type: 'primary' | 'secondary';
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+	appearance: 'primary' | 'secondary';
 	children: ReactNode;
 }

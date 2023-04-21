@@ -4,7 +4,7 @@ import styles from './index.module.scss';
 
 import type { ButtonProps } from './interfaces';
 
-export const Button = ({ type, className, children, ...props }: ButtonProps) => {
+export const Button = ({ appearance: type, className, children, ...props }: ButtonProps) => {
 	return (
 		<button
 			className={cn(

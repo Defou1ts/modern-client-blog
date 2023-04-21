@@ -9,9 +9,10 @@ export const LocalesList = () => {
 	const { locale, locales } = useRouter();
 
 	return (
-		<div className={styles.locales}>
+		<div data-test-id="locales" className={styles.locales}>
 			{locales?.map((localeItem) => (
 				<Link
+					data-test-id={localeItem}
 					href="/"
 					locale={localeItem}
 					key={localeItem}

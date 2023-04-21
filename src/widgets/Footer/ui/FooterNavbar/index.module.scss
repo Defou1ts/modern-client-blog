@@ -4,6 +4,21 @@
 	background-color: $black;
 	display: grid;
 	grid-template-columns: auto auto;
+
+	@include lx {
+		grid-template-columns: auto;
+		grid-template-rows: auto auto;
+		justify-items: center;
+		gap: 16px;
+
+		& nav {
+			justify-self: center;
+		}
+	}
+
+	@include md {
+		padding: 20px;
+	}
 }
 
 .title {
