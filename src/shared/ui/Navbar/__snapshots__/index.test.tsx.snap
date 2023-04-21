@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar Navbar snapshot 1`] = `
+<nav
+  className="nav"
+>
+  <a
+    className="navlink active"
+    href="/"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    header.home
+  </a>
+  <a
+    className="navlink"
+    href="/blog"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    header.blog
+  </a>
+  <a
+    className="navlink"
+    href="/contact"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    header.about
+  </a>
+  <a
+    className="navlink"
+    href="/about"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    header.contact
+  </a>
+</nav>
+`;

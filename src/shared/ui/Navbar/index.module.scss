@@ -1,0 +1,27 @@
+@import '../../theme//theme.scss';
+
+.nav {
+	background-color: $black;
+	justify-self: right;
+
+	display: grid;
+
+	grid-auto-flow: column;
+	grid-template-rows: 1fr;
+	gap: 24px;
+
+	@include lg {
+		justify-self: center;
+		grid-template-columns: auto;
+		justify-items: center;
+	}
+}
+
+.navlink {
+	@include link($yellow-hover, all 0.2s ease, $white);
+	white-space: nowrap;
+
+	&.active {
+		color: $yellow;
+	}
+}
