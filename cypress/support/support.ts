@@ -27,7 +27,7 @@ export const checkHeader = () => {
 			.should('have.text', 'Video about us')
 			.viewport(390, 800)
 			.get('[data-test-id=menu-wrapper]')
-			.should('have.css', 'left', '-1920px')
+			.should('have.css', 'left', '-373px')
 			.get('[data-test-id=burger]')
 			.should('be.visible')
 			.get('[data-test-id=burger]')
