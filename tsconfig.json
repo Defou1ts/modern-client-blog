@@ -21,7 +21,8 @@
 			"@pages/*": ["./pages/*"],
 			"@shared/*": ["./shared/*"],
 			"@app/*": ["./app/*"],
-			"@widgets/*": ["./widgets/*"]
+			"@widgets/*": ["./widgets/*"],
+			"@entities/*": ["./entities/*"]
 		},
 		"incremental": true,
 		"types": ["jest", "node", "@types/testing-library__jest-dom"]
