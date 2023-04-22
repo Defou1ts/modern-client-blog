@@ -1,13 +1,13 @@
 import { useTranslation } from 'next-i18next';
 import { Formik, Form, Field } from 'formik';
-import type { FormikHelpers } from 'formik';
+import type { FieldProps, FormikHelpers } from 'formik';
 import * as Yup from 'yup';
-import cn from 'classnames';
 
 import styles from './index.module.scss';
 
 import { H } from '@shared/ui/H';
 import { Button } from '@shared/ui/Button';
+import { Input } from '@shared/ui/Input';
 
 import type { SubscribeFormState } from './interfaces';
 
@@ -15,16 +15,17 @@ const initialValues: SubscribeFormState = {
 	email: '',
 };
 
-const validationSchema = Yup.object({
-	email: Yup.string().email(),
-});
-
 export const SubscribeForm = () => {
 	const { t } = useTranslation();
 
 	const handleSubmit = (values: SubscribeFormState, { resetForm }: FormikHelpers<SubscribeFormState>) => {
+		console.log(values);
 		resetForm();
 	};
+
+	const validationSchema = Yup.object({
+		email: Yup.string().email(t('subscribe.error') ?? ''),
+	});
 
 	return (
 		<div className={styles.formWrapper}>
@@ -32,22 +33,16 @@ export const SubscribeForm = () => {
 				{t('subscribe.title')}
 			</H>
 			<Formik validationSchema={validationSchema} initialValues={initialValues} onSubmit={handleSubmit}>
-				{({ errors, touched }) => (
-					<Form className={styles.form}>
-						<Field
-							placeholder={t('subscribe.placeholder')}
-							name="email"
-							id="email"
-							className={cn(styles.input, {
-								[styles.error]: errors.email !== undefined && touched.email,
-							})}
-							type="email"
-						/>
-						<Button appearance="primary" type="submit">
-							{t('subscribe.button')}
-						</Button>
-					</Form>
-				)}
+				<Form className={styles.form}>
+					<Field name="email" id="email" type="email">
+						{(props: FieldProps<SubscribeFormState>) => (
+							<Input {...props} placeholder={t('subscribe.placeholder') ?? ''} />
+						)}
+					</Field>
+					<Button appearance="primary" type="submit">
+						{t('subscribe.button')}
+					</Button>
+				</Form>
 			</Formik>
 		</div>
 	);

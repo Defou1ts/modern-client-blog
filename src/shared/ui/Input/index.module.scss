@@ -1,0 +1,35 @@
+@import '../../../app/theme/theme.scss';
+
+.wrapper {
+	position: relative;
+}
+
+.input {
+	border: 1px solid $dark-gray;
+	color: $white;
+	background: transparent;
+	outline: none;
+	padding: 14px 24px;
+	font-size: 16px;
+	line-height: 28px;
+
+	&::placeholder {
+		color: $dark-gray;
+	}
+
+	&:focus {
+		border: 1px solid $yellow;
+	}
+
+	&.error:focus {
+		border: 1px solid $red;
+	}
+}
+
+.errorMessage {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	color: $red;
+	font-size: 12px;
+}

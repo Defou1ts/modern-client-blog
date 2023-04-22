@@ -10,7 +10,8 @@
 	"subscribe": {
 		"title": "Subscribe to our news letter to get latest updates and news",
 		"button": "Subscribe",
-		"placeholder": "Enter Your Email"
+		"placeholder": "Enter Your Email",
+		"error": "Invalid Email"
 	},
 	"contact": {
 		"title": "Contact us",
