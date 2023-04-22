@@ -3,7 +3,7 @@ import '@app/theme/global.scss';
 import cn from 'classnames';
 import { appWithTranslation } from 'next-i18next';
 
-import { inter, sen } from '@shared/lib/fonts';
+import { inter, sen } from '@app/lib/fonts';
 
 import type { AppProps } from 'next/app';
 

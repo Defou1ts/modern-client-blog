@@ -2,7 +2,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import type { GetStaticProps } from 'next';
 
-import { MainContainer } from '@app/MainContainer';
+import { MainContainer } from '@app/wrappers/MainContainer';
 import { H } from '@shared/ui/H';
 
 const Index = () => (

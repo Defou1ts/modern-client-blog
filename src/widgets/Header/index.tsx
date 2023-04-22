@@ -1,8 +1,5 @@
 import { useState } from 'react';
 
-import { LocalesList } from '@features/LocalesList';
-import { Navbar } from '@features/Navbar';
-
 import cn from 'classnames';
 import { useTranslation } from 'next-i18next';
 
@@ -10,6 +7,8 @@ import styles from './index.module.scss';
 import { Burger } from './ui/Burger';
 import { routes } from './constants/routes';
 
+import { Navbar } from '@features/Navbar';
+import { LocalesList } from '@features/LocalesList';
 import { Button } from '@shared/ui/Button';
 
 export const Header = () => {
