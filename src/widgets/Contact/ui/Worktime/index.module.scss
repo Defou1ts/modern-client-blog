@@ -1,0 +1,33 @@
+@import '../../../../app/theme/theme.scss';
+
+.wrapper {
+	grid-area: worktime;
+	padding: 48px 64px;
+	background-color: $purple;
+	color: $white;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 42px;
+
+	@include lg {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+}
+.item {
+}
+.itemTitle {
+	opacity: 0.6;
+}
+.line {
+	margin: 16px 0px;
+	opacity: 0.1;
+	height: 1px;
+	background-color: $white;
+	width: 100%;
+}
+.info {
+}
+.support {
+	opacity: 0.6;
+}

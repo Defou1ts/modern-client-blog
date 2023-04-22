@@ -1,5 +1,5 @@
-import '@shared/theme/normalize.scss';
-import '@shared/theme/global.scss';
+import '@app/theme/normalize.scss';
+import '@app/theme/global.scss';
 import cn from 'classnames';
 import { appWithTranslation } from 'next-i18next';
 

@@ -1,8 +1,8 @@
+import { Navbar } from '@features/Navbar';
+
 import styles from './index.module.scss';
 
-import { routes } from '../../lib/routes';
-
-import { Navbar } from '@shared/ui/Navbar';
+import { routes } from '../../constants/routes';
 
 export const FooterNavbar = () => {
 	return (

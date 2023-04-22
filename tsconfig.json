@@ -22,7 +22,8 @@
 			"@shared/*": ["./shared/*"],
 			"@app/*": ["./app/*"],
 			"@widgets/*": ["./widgets/*"],
-			"@entities/*": ["./entities/*"]
+			"@entities/*": ["./entities/*"],
+			"@features/*": ["./features/*"]
 		},
 		"incremental": true,
 		"types": ["jest", "node", "@types/testing-library__jest-dom"]

@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact Contact snapshot 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="wrapper"
+  >
+    <h6
+      className="h h6 contact"
+    >
+      contact.title
+    </h6>
+    <h1
+      className="h h1 conversation"
+    >
+      contact.subtitle
+    </h1>
+    <p
+      className="p medium description"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+    </p>
+  </div>
+  <div
+    className="wrapper"
+  >
+    <div
+      className="item"
+    >
+      <p
+        className="p small itemTitle"
+      >
+        contact.working.title-days
+      </p>
+      <div
+        className="line"
+      />
+      <h5
+        className="h h5 info"
+      >
+        contact.working.days
+         
+        <br />
+         
+        contact.working.hours
+         
+      </h5>
+      <p
+        className="p medium support"
+      >
+        contact.working.availability
+      </p>
+    </div>
+    <div
+      className="item"
+    >
+      <p
+        className="p small itemTitle"
+      >
+        contact.working.title-contact
+      </p>
+      <div
+        className="line"
+      />
+      <h5
+        className="h h5 info"
+      >
+        020 7993 2905
+      </h5>
+      <p
+        className="p medium support"
+      >
+        hello@finsweet.com
+      </p>
+    </div>
+  </div>
+</div>
+`;

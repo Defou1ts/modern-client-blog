@@ -35,7 +35,7 @@ export const SubscribeForm = () => {
 				{({ errors, touched }) => (
 					<Form className={styles.form}>
 						<Field
-							placeholder="Enter Your Email"
+							placeholder={t('subscribe.placeholder')}
 							name="email"
 							id="email"
 							className={cn(styles.input, {

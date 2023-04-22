@@ -33,7 +33,7 @@ exports[`Header button header snapshot 1`] = `
         onMouseEnter={[Function]}
         onTouchStart={[Function]}
       >
-        EN
+        en
       </a>
       <a
         className="locale"
@@ -43,7 +43,7 @@ exports[`Header button header snapshot 1`] = `
         onMouseEnter={[Function]}
         onTouchStart={[Function]}
       >
-        RU
+        ru
       </a>
     </div>
     <nav
@@ -69,7 +69,7 @@ exports[`Header button header snapshot 1`] = `
       </a>
       <a
         className="navlink"
-        href="/contact"
+        href="/about"
         onClick={[Function]}
         onMouseEnter={[Function]}
         onTouchStart={[Function]}
@@ -78,7 +78,7 @@ exports[`Header button header snapshot 1`] = `
       </a>
       <a
         className="navlink"
-        href="/about"
+        href="/contact"
         onClick={[Function]}
         onMouseEnter={[Function]}
         onTouchStart={[Function]}

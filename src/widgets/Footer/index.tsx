@@ -1,15 +1,12 @@
-import cn from 'classnames';
+import { SubscribeForm } from '@features/SubscribeForm';
 
 import styles from './index.module.scss';
 import { FooterNavbar } from './ui/FooterNavbar';
-import { SubscribeForm } from './ui/SubscribeForm';
 import { Social } from './ui/Social';
 
-import type { FooterProps } from './interfaces';
-
-export const Footer = ({ className, ...props }: FooterProps) => {
+export const Footer = () => {
 	return (
-		<footer className={cn(styles.footer, className)} {...props}>
+		<footer className={styles.footer}>
 			<FooterNavbar />
 			<SubscribeForm />
 			<Social />

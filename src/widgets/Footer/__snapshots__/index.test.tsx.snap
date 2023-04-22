@@ -35,7 +35,7 @@ exports[`Footer button header snapshot 1`] = `
       </a>
       <a
         className="navlink"
-        href="/contact"
+        href="/about"
         onClick={[Function]}
         onMouseEnter={[Function]}
         onTouchStart={[Function]}
@@ -44,7 +44,7 @@ exports[`Footer button header snapshot 1`] = `
       </a>
       <a
         className="navlink"
-        href="/about"
+        href="/contact"
         onClick={[Function]}
         onMouseEnter={[Function]}
         onTouchStart={[Function]}
@@ -82,7 +82,7 @@ exports[`Footer button header snapshot 1`] = `
         name="email"
         onBlur={[Function]}
         onChange={[Function]}
-        placeholder="Enter Your Email"
+        placeholder="subscribe.placeholder"
         type="email"
         value=""
       />

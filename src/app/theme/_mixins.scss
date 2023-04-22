@@ -17,3 +17,7 @@
 		color: $hover-color;
 	}
 }
+
+@mixin BackgroundWhiteWithOpacity($opacity) {
+	background-color: rgba(255, 255, 255, $opacity);
+}

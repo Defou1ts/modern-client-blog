@@ -1,0 +1,14 @@
+@import '../../app/theme/theme.scss';
+
+.wrapper {
+	padding: 128px 0px 70px 0px;
+	display: grid;
+	grid-template-columns: minmax(10px, 336px) auto minmax(10px, 336px);
+	grid-template-rows: auto 64px auto;
+	grid-template-areas: '. info .' '. . .' '. worktime .';
+
+	@include lg {
+		padding: 64px 0px 35px 0px;
+		grid-template-rows: auto 32px auto;
+	}
+}

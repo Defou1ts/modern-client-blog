@@ -1,19 +1,18 @@
 import { useState } from 'react';
 
+import { LocalesList } from '@features/LocalesList';
+import { Navbar } from '@features/Navbar';
+
 import cn from 'classnames';
 import { useTranslation } from 'next-i18next';
 
 import styles from './index.module.scss';
 import { Burger } from './ui/Burger';
-import { LocalesList } from './ui/LocalesList';
-import { routes } from './lib/routes';
+import { routes } from './constants/routes';
 
 import { Button } from '@shared/ui/Button';
-import { Navbar } from '@shared/ui/Navbar';
 
-import type { HeaderProps } from './interfaces';
-
-export const Header = ({ className, ...props }: HeaderProps) => {
+export const Header = () => {
 	const [isOpenedMenu, setIsOpenedMenu] = useState<boolean>(false);
 
 	const { t } = useTranslation();
@@ -23,7 +22,7 @@ export const Header = ({ className, ...props }: HeaderProps) => {
 	};
 
 	return (
-		<header data-test-id="header" className={cn(styles.header, className)} {...props}>
+		<header data-test-id="header" className={styles.header}>
 			<Burger onClick={handleToggleOpenedMenu} isActive={isOpenedMenu} />
 			<div
 				data-test-id="menu-wrapper"

@@ -20,7 +20,7 @@ export const LocalesList = () => {
 						[styles.active]: localeItem === locale,
 					})}
 				>
-					{localeItem.toUpperCase()}
+					{localeItem}
 				</Link>
 			))}
 		</div>

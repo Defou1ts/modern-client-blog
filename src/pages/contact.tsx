@@ -3,15 +3,18 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import type { GetStaticProps } from 'next';
 
 import { MainContainer } from '@app/MainContainer';
-import { Privacy } from '@widgets/Privacy';
+import { Contact } from '@widgets/Contact';
 
-const PrivacyPage = () => (
-	<MainContainer title="Privacy Policy | Modsen client blog" description="Page with company's privacy">
-		<Privacy />
+const ContactPage = () => (
+	<MainContainer
+		title="Contact Us | Modsen client blog"
+		description="Let's start the conversation with Modsen! Send message for us"
+	>
+		<Contact />
 	</MainContainer>
 );
 
-export default PrivacyPage;
+export default ContactPage;
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
 	if (locale === undefined) {
