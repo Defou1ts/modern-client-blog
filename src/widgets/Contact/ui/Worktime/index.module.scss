@@ -15,9 +15,16 @@
 	}
 }
 .item {
+	@include lg {
+		text-align: center;
+	}
 }
 .itemTitle {
 	opacity: 0.6;
+
+	@include lg {
+		text-align: center;
+	}
 }
 .line {
 	margin: 16px 0px;
@@ -27,7 +34,14 @@
 	width: 100%;
 }
 .info {
+	@include lg {
+		text-align: center;
+	}
 }
 .support {
 	opacity: 0.6;
+
+	@include lg {
+		text-align: center;
+	}
 }

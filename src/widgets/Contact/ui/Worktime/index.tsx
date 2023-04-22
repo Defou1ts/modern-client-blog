@@ -10,7 +10,7 @@ export const WorkTime = () => {
 
 	return (
 		<div className={styles.wrapper}>
-			<div className={styles.item}>
+			<div>
 				<P type="small" className={styles.itemTitle}>
 					{t('contact.working.title-days')}
 				</P>
@@ -22,7 +22,7 @@ export const WorkTime = () => {
 					{t('contact.working.availability')}
 				</P>
 			</div>
-			<div className={styles.item}>
+			<div>
 				<P type="small" className={styles.itemTitle}>
 					{t('contact.working.title-contact')}
 				</P>
