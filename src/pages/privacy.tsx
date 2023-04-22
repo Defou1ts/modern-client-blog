@@ -1,8 +1,8 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { Privacy } from '@entities/Privacy';
 
 import type { GetStaticProps } from 'next';
 
+import { Privacy } from '@entities/Privacy';
 import { MainContainer } from '@app/MainContainer';
 
 const PrivacyPage = () => (
