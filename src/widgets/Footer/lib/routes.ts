@@ -11,11 +11,11 @@ export const routes: Route[] = [
 	},
 	{
 		translationPath: 'about',
-		path: '/contact',
+		path: '/about',
 	},
 	{
 		translationPath: 'contact',
-		path: '/about',
+		path: '/contact',
 	},
 	{
 		translationPath: 'privacy',
