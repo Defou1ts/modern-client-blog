@@ -18,6 +18,7 @@ describe('Footer', () => {
 		const useRouterMock = {
 			locale: 'en',
 			locales: ['en', 'ru'],
+			pathname: '/',
 		};
 		(useRouter as jest.Mock<NextRouter>).mockReturnValue(useRouterMock as NextRouter);
 	});

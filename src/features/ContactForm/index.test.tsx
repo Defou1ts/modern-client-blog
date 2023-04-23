@@ -9,7 +9,7 @@ import { ContactForm } from './index';
 describe('ContactForm', () => {
 	it('renders a  ContactForm', () => {
 		render(<ContactForm />);
-		const text = screen.getByText('contact.form.fullname');
+		const text = screen.getByText('contact.form.related');
 		expect(text).toBeInTheDocument();
 		expect(text).toBeVisible();
 	});

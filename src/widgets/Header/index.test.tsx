@@ -18,6 +18,7 @@ describe('Header', () => {
 		const useRouterMock = {
 			locale: 'en',
 			locales: ['en', 'ru'],
+			pathname: '/',
 		};
 		(useRouter as jest.Mock<NextRouter>).mockReturnValue(useRouterMock as NextRouter);
 	});
@@ -30,7 +31,7 @@ describe('Header', () => {
 		expect(titleText).toBeVisible();
 	});
 
-	it('button header snapshot', () => {
+	it('header snapshot', () => {
 		const component = renderer.create(<Header />);
 
 		const tree = component.toJSON();

@@ -5,7 +5,7 @@ import styles from './index.module.scss';
 import { P } from '@shared/ui/P';
 import { H } from '@shared/ui/H';
 
-export const WorkTime = () => {
+export const ContactWorkTime = () => {
 	const { t } = useTranslation();
 
 	return (

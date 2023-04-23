@@ -18,6 +18,7 @@ describe('LocalesList', () => {
 		const useRouterMock = {
 			locale: 'en',
 			locales: ['en', 'ru'],
+			pathname: '/',
 		};
 		(useRouter as jest.Mock<NextRouter>).mockReturnValue(useRouterMock as NextRouter);
 	});
@@ -30,7 +31,7 @@ describe('LocalesList', () => {
 		expect(titleText).toBeVisible();
 	});
 
-	it('button header snapshot', () => {
+	it('LocalesList snapshot', () => {
 		const component = renderer.create(<LocalesList />);
 
 		const tree = component.toJSON();

@@ -53,9 +53,7 @@ export const ContactForm = () => {
 					<Field as="select" name="location" id="location" type="text">
 						{(props: FieldProps<ContactFormState>) => (
 							<Select className={styles.input} {...props}>
-								<option disabled selected>
-									{t('contact.form.related')}
-								</option>
+								<option>{t('contact.form.related')}</option>
 								{locations.map(({ value, translationPath }) => (
 									<option key={value} value={value}>
 										{t(translationPath)}

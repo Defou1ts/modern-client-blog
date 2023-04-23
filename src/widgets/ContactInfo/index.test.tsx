@@ -4,18 +4,18 @@ import { render, screen } from '@testing-library/react';
 
 import renderer from 'react-test-renderer';
 
-import { Contact } from './index';
+import { ContactInfo } from './index';
 
-describe('Contact', () => {
-	it('renders a  Contact', () => {
-		render(<Contact />);
-		const text = screen.getByText('contact.subtitle');
+describe('ContactInfo', () => {
+	it('renders a  ContactInfo', () => {
+		render(<ContactInfo />);
+		const text = screen.getByText('contact.title');
 		expect(text).toBeInTheDocument();
 		expect(text).toBeVisible();
 	});
 
-	it('Contact snapshot', () => {
-		const component = renderer.create(<Contact />);
+	it('ContactInfo snapshot', () => {
+		const component = renderer.create(<ContactInfo />);
 
 		const tree = component.toJSON();
 		expect(tree).toMatchSnapshot();

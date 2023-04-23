@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LocalesList button header snapshot 1`] = `
+exports[`LocalesList LocalesList snapshot 1`] = `
 <div
   className="locales"
   data-test-id="locales"

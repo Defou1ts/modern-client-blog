@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header button header snapshot 1`] = `
+exports[`Header header snapshot 1`] = `
 <header
   className="header"
   data-test-id="header"
@@ -50,7 +50,7 @@ exports[`Header button header snapshot 1`] = `
       className="nav"
     >
       <a
-        className="navlink"
+        className="navlink active"
         href="/"
         onClick={[Function]}
         onMouseEnter={[Function]}

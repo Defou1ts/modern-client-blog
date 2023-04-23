@@ -9,7 +9,7 @@ import { SubscribeForm } from './index';
 describe('SubscribeForm', () => {
 	it('renders a  SubscribeForm', () => {
 		render(<SubscribeForm />);
-		const text = screen.getByText('contact.subtitle');
+		const text = screen.getByText('subscribe.title');
 		expect(text).toBeInTheDocument();
 		expect(text).toBeVisible();
 	});

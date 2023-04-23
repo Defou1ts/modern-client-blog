@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactForm ContactForm snapshot 1`] = `
+<div>
+  <form
+    action="#"
+    className="form"
+    onReset={[Function]}
+    onSubmit={[Function]}
+  >
+    <div
+      className="wrapper"
+    >
+      <input
+        className="input input"
+        name="name"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="contact.form.name"
+        value=""
+      />
+    </div>
+    <div
+      className="wrapper"
+    >
+      <input
+        className="input input"
+        name="email"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="contact.form.email"
+        value=""
+      />
+    </div>
+    <div
+      className="wrapper"
+    >
+      <select
+        className="input select"
+        name="location"
+        onBlur={[Function]}
+        onChange={[Function]}
+        value=""
+      >
+        <option>
+          contact.form.related
+        </option>
+        <option
+          value="Warsaw"
+        >
+          contact.form.locations.warsaw
+        </option>
+        <option
+          value="Minsk"
+        >
+          contact.form.locations.minsk
+        </option>
+        <option
+          value="London"
+        >
+          contact.form.locations.london
+        </option>
+      </select>
+      <img
+        alt="arrow-down"
+        className="arrow"
+        data-nimg="1"
+        decoding="async"
+        height={40}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
+        }
+        width={40}
+      />
+    </div>
+    <div
+      className="wrapper"
+    >
+      <textarea
+        className="textarea textarea"
+        name="message"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="contact.form.message"
+        value=""
+      />
+    </div>
+    <button
+      className="button primary"
+      type="submit"
+    >
+      contact.form.send-button
+    </button>
+  </form>
+</div>
+`;

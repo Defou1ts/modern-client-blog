@@ -16,7 +16,7 @@ exports[`Footer button header snapshot 1`] = `
       className="nav"
     >
       <a
-        className="navlink"
+        className="navlink active"
         href="/"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -76,16 +76,18 @@ exports[`Footer button header snapshot 1`] = `
       onReset={[Function]}
       onSubmit={[Function]}
     >
-      <input
-        className="input"
-        id="email"
-        name="email"
-        onBlur={[Function]}
-        onChange={[Function]}
-        placeholder="subscribe.placeholder"
-        type="email"
-        value=""
-      />
+      <div
+        className="wrapper"
+      >
+        <input
+          className="input input"
+          name="email"
+          onBlur={[Function]}
+          onChange={[Function]}
+          placeholder="subscribe.placeholder"
+          value=""
+        />
+      </div>
       <button
         className="button primary"
         type="submit"
