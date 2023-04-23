@@ -8,7 +8,7 @@ import { Burger } from './ui/Burger';
 import { routes } from './constants/routes';
 
 import { Navbar } from '@features/Navbar';
-import { LocalesList } from '@features/LocalesList';
+import { LocaleSwitcher } from '@features/LocaleSwitcher';
 import { Button } from '@shared/ui/Button';
 
 export const Header = () => {
@@ -30,7 +30,7 @@ export const Header = () => {
 				})}
 			>
 				<h1 className={styles.title}>Modsen Client Blog</h1>
-				<LocalesList />
+				<LocaleSwitcher />
 				<Navbar routes={routes} />
 				<Button data-test-id="header-button" appearance="secondary">
 					{t('header.video')}

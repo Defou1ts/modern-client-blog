@@ -5,7 +5,7 @@ import cn from 'classnames';
 
 import styles from './index.module.scss';
 
-export const LocalesList = () => {
+export const LocaleSwitcher = () => {
 	const { locale, locales, pathname } = useRouter();
 
 	return (

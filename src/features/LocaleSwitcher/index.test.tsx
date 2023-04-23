@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 
 import renderer from 'react-test-renderer';
 
-import { LocalesList } from './index';
+import { LocaleSwitcher } from './index';
 
 import type { NextRouter } from 'next/router';
 
@@ -24,7 +24,7 @@ describe('LocalesList', () => {
 	});
 
 	it('renders a LocalesList', () => {
-		render(<LocalesList />);
+		render(<LocaleSwitcher />);
 
 		const titleText = screen.getByText('en');
 		expect(titleText).toBeInTheDocument();
@@ -32,7 +32,7 @@ describe('LocalesList', () => {
 	});
 
 	it('LocalesList snapshot', () => {
-		const component = renderer.create(<LocalesList />);
+		const component = renderer.create(<LocaleSwitcher />);
 
 		const tree = component.toJSON();
 		expect(tree).toMatchSnapshot();
