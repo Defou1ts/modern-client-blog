@@ -1,0 +1,25 @@
+@import '../../theme/theme.scss';
+
+.wrapper {
+	padding: 80px 0px 128px 0px;
+	display: grid;
+	grid-template-columns: minmax(10px, 80px) auto minmax(10px, 80px);
+	grid-template-rows: auto 128px auto 91px auto 128px auto;
+	grid-template-areas: '. about .' '. . .' '. ourteam .' '. . .' '. authorlist .' '. . .' '. join .';
+}
+
+.wrapper > div:nth-child(1) {
+	grid-area: about;
+}
+
+.wrapper > div:nth-child(2) {
+	grid-area: ourteam;
+}
+
+.wrapper > div:nth-child(3) {
+	grid-area: authorlist;
+}
+
+.wrapper > div:nth-child(4) {
+	grid-area: join;
+}
