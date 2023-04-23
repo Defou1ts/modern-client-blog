@@ -42,5 +42,14 @@
 				"requiredmessage": "Enter message"
 			}
 		}
+	},
+	"about": {
+		"overview": {
+			"subtitle": "about us",
+			"title": "We are a team of content writers who share their learnings",
+			"blogs-published": "Blogs Published",
+			"views-on-finsweet": "Views on Finsweet",
+			"total-active-users": "Total active Users"
+		}
 	}
 }

@@ -42,5 +42,14 @@
 				"requiredmessage": "Введите сообщение"
 			}
 		}
+	},
+	"about": {
+		"overview": {
+			"subtitle": "о нас",
+			"title": "Мы команда контент-мейкеров, которые деляться своими знаниями",
+			"blogs-published": "Блогов выпущено",
+			"views-on-finsweet": "Обзоров на Finsweet",
+			"total-active-users": "Всего активных пользователей"
+		}
 	}
 }

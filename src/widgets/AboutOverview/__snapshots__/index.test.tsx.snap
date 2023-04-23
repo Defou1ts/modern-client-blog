@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutOverview AboutOverview snapshot 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="wrapper"
+  >
+    <div
+      className="about"
+    >
+      <p
+        className="subtitle"
+      >
+        about.overview.subtitle
+      </p>
+      <h1
+        className="h h1"
+      >
+        about.overview.title
+      </h1>
+    </div>
+    <div
+      className="text"
+    >
+      <p
+        className="p medium"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+  </div>
+  <div
+    className="wrapper"
+  >
+    <div
+      className="header"
+    >
+      <div
+        className="statistics"
+      >
+        <div>
+          <h1
+            className="h display"
+          >
+            12+
+          </h1>
+          <p
+            className="p medium"
+          >
+            about.overview.blogs-published
+          </p>
+        </div>
+        <div>
+          <h1
+            className="h display"
+          >
+            18K+
+          </h1>
+          <p
+            className="p medium"
+          >
+            about.overview.views-on-finsweet
+          </p>
+        </div>
+        <div>
+          <h1
+            className="h display"
+          >
+            30K+
+          </h1>
+          <p
+            className="p medium"
+          >
+            about.overview.total-active-users
+          </p>
+        </div>
+      </div>
+      <div
+        className="rectangles"
+      >
+        <div
+          className="purpleRectangle"
+        />
+        <div
+          className="yellowRectangle"
+        />
+      </div>
+    </div>
+    <div
+      className="content"
+    />
+  </div>
+</div>
+`;
