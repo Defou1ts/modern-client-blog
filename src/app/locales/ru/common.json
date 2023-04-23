@@ -24,16 +24,23 @@
 			"title-contact": "Связаться с нами"
 		},
 		"form": {
-			"fullname": "Ваше имя",
+			"name": "Ваше имя",
 			"email": "Ваш Email",
-			"realted": "Запрос относится к",
+			"related": "Запрос относится к",
 			"locations": {
 				"warsaw": "Варшава",
 				"minsk": "Минск",
 				"london": "Лондон"
 			},
 			"message": "Сообщение",
-			"send-button": "Отправить сообщение"
+			"send-button": "Отправить сообщение",
+			"errors": {
+				"name": "Введите имя",
+				"email": "Некорректный Email",
+				"location": "Выберите локацию",
+				"message": "Длина должна быть больше 40 символов",
+				"requiredmessage": "Введите сообщение"
+			}
 		}
 	}
 }

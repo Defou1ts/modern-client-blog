@@ -5,8 +5,11 @@
 	"license": "MIT",
 	"dependencies": {
 		"@emailjs/browser": "^3.11.0",
+		"@googlemaps/react-wrapper": "^1.1.35",
+		"@types/google-maps-react": "^2.0.5",
 		"formik": "^2.2.9",
 		"fs": "^0.0.1-security",
+		"google-maps-react": "^2.0.6",
 		"i18next": "^22.4.15",
 		"next": "^13.3.0",
 		"next-i18next": "^13.2.2",

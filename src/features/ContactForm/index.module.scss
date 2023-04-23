@@ -1,0 +1,18 @@
+.wrapper {
+	grid-area: contactform;
+}
+
+.form {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 24px;
+}
+
+.input {
+	width: 100%;
+}
+
+.textarea {
+	width: 100%;
+	min-height: 144px;
+}

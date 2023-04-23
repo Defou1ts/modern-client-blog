@@ -24,16 +24,23 @@
 			"title-contact": "Contact Us"
 		},
 		"form": {
-			"fullname": "Full Name",
+			"name": "Full Name",
 			"email": "Your Email",
-			"realted": "Query Related",
+			"related": "Query Related",
 			"locations": {
 				"warsaw": "Warsaw",
 				"minsk": "Minsk",
 				"london": "London"
 			},
 			"message": "Message",
-			"send-button": "Send Message"
+			"send-button": "Send Message",
+			"errors": {
+				"name": "Enter your name",
+				"email": "Invalid Email",
+				"location": "Choose location",
+				"message": "Length should be greater that 40 characters",
+				"requiredmessage": "Enter message"
+			}
 		}
 	}
 }

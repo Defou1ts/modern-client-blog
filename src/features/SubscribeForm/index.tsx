@@ -19,11 +19,10 @@ export const SubscribeForm = () => {
 	const { t } = useTranslation();
 
 	const handleSubmit = (values: SubscribeFormState, { resetForm }: FormikHelpers<SubscribeFormState>) => {
-		console.log(values);
 		resetForm();
 	};
 
-	const validationSchema = Yup.object({
+	const validationSchema = Yup.object<SubscribeFormState>({
 		email: Yup.string().email(t('subscribe.error') ?? ''),
 	});
 
@@ -36,7 +35,7 @@ export const SubscribeForm = () => {
 				<Form className={styles.form}>
 					<Field name="email" id="email" type="email">
 						{(props: FieldProps<SubscribeFormState>) => (
-							<Input {...props} placeholder={t('subscribe.placeholder') ?? ''} />
+							<Input className={styles.input} {...props} placeholder={t('subscribe.placeholder') ?? ''} />
 						)}
 					</Field>
 					<Button appearance="primary" type="submit">
