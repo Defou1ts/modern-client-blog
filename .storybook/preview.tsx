@@ -1,6 +1,6 @@
 import type { Preview } from '@storybook/react';
-import '@shared/theme/global.scss';
-import '@shared/theme/normalize.scss';
+import '@app/theme/global.scss';
+import '@app/theme/normalize.scss';
 
 const preview: Preview = {
 	parameters: {
