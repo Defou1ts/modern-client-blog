@@ -92,5 +92,47 @@ exports[`AboutOverview AboutOverview snapshot 1`] = `
       className="content"
     />
   </div>
+  <div
+    className="wrapper"
+  >
+    <div
+      className="item"
+    >
+      <p
+        className="subtitle"
+      >
+        about.overview.our-mission-subtitle
+      </p>
+      <h3
+        className="h h3 title"
+      >
+        about.overview.our-mission-title
+      </h3>
+      <p
+        className="p medium text"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.
+      </p>
+    </div>
+    <div
+      className="item"
+    >
+      <p
+        className="subtitle"
+      >
+        about.overview.our-vision-subtitle
+      </p>
+      <h3
+        className="h h3 title"
+      >
+        about.overview.our-vision-title
+      </h3>
+      <p
+        className="p medium text"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.
+      </p>
+    </div>
+  </div>
 </div>
 `;
