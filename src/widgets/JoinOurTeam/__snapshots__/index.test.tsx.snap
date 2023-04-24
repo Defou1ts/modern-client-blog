@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JoinOurTeam JoinOurTeam snapshot 1`] = `
+<div
+  className="wrapper"
+>
+  <h2
+    className="h h2 title"
+  >
+    about.join-our-team.title
+  </h2>
+  <p
+    className="p medium text"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+  </p>
+  <a
+    className="link"
+    href="/contact"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    <button
+      className="button primary"
+    >
+      about.join-our-team.button
+    </button>
+  </a>
+</div>
+`;

@@ -8,6 +8,7 @@ import { AboutOverview } from '@widgets/AboutOverview';
 import { AboutOurTeam } from '@widgets/AboutOurTeam';
 import { AuthorList } from '@entities/Author/ui/AuthorList';
 import { authors } from '@entities/Author/lib/mock/authors';
+import { JoinOurTeam } from '@widgets/JoinOurTeam';
 
 import type { AuthorWithLocales } from '@entities/Author/interfaces';
 
@@ -24,6 +25,7 @@ const AboutPage = ({ authors }: AboutPageProps) => (
 			<AboutOverview />
 			<AboutOurTeam />
 			<AuthorList authors={authors} />
+			<JoinOurTeam />
 		</AboutPageWrapper>
 	</MainContainer>
 );

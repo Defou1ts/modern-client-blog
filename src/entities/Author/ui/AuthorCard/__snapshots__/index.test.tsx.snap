@@ -3,38 +3,51 @@
 exports[`AuthorCard AuthorCard snapshot 1`] = `
 <div
   className="wrapper"
-  onClick={[Function]}
 >
   <div
     className="avatarWrapper"
   >
-    <img
-      alt="Floyd Miles"
-      data-nimg="1"
-      decoding="async"
-      height={128}
-      loading="lazy"
-      onError={[Function]}
-      onLoad={[Function]}
-      src="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F7562313%2Fpexels-photo-7562313.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=256&q=75"
-      srcSet="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F7562313%2Fpexels-photo-7562313.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F7562313%2Fpexels-photo-7562313.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=256&q=75 2x"
-      style={
-        {
-          "color": "transparent",
+    <a
+      href="author/1"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
+    >
+      <img
+        alt="Floyd Miles"
+        data-nimg="1"
+        decoding="async"
+        height={128}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F7562313%2Fpexels-photo-7562313.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=256&q=75"
+        srcSet="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F7562313%2Fpexels-photo-7562313.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F7562313%2Fpexels-photo-7562313.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=256&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
         }
-      }
-      title="Floyd Miles"
-      width={128}
-    />
+        title="Floyd Miles"
+        width={128}
+      />
+    </a>
   </div>
   <div
     className="info"
   >
-    <h3
-      className="h h3"
+    <a
+      href="author/1"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
     >
-      Floyd Miles
-    </h3>
+      <h3
+        className="h h3"
+      >
+        Floyd Miles
+      </h3>
+    </a>
     <p
       className="p small position"
     >
