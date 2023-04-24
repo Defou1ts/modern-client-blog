@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutOurTeam AboutOurTeam snapshot 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="itemWrapper"
+  >
+    <div
+      className="info"
+    >
+      <h2
+        className="h h2"
+      >
+        about.our-team.our-team-title
+      </h2>
+      <h4
+        className="h h4"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+      </h4>
+      <p
+        className="p medium"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+      </p>
+    </div>
+    <div
+      className="imageWrapper"
+    >
+      <div
+        className="rectangle"
+      />
+      <img
+        alt="about.our-team.our-team-image-alt"
+        data-nimg="fill"
+        decoding="async"
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        sizes="100vw"
+        src="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F461049%2Fpexels-photo-461049.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=3840&q=75"
+        srcSet="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F461049%2Fpexels-photo-461049.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F461049%2Fpexels-photo-461049.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F461049%2Fpexels-photo-461049.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F461049%2Fpexels-photo-461049.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F461049%2Fpexels-photo-461049.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F461049%2Fpexels-photo-461049.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F461049%2Fpexels-photo-461049.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F461049%2Fpexels-photo-461049.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=3840&q=75 3840w"
+        style={
+          {
+            "bottom": 0,
+            "color": "transparent",
+            "height": "100%",
+            "left": 0,
+            "objectFit": undefined,
+            "objectPosition": undefined,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": "100%",
+          }
+        }
+        title="about.our-team.our-team-image-alt"
+      />
+    </div>
+  </div>
+  <div
+    className="itemWrapper"
+  >
+    <div
+      className="imageWrapper"
+    >
+      <div
+        className="circle"
+      />
+      <img
+        alt="about.our-team.why-we-started-image-alt"
+        data-nimg="fill"
+        decoding="async"
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        sizes="100vw"
+        src="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F1438072%2Fpexels-photo-1438072.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=3840&q=75"
+        srcSet="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F1438072%2Fpexels-photo-1438072.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F1438072%2Fpexels-photo-1438072.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F1438072%2Fpexels-photo-1438072.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F1438072%2Fpexels-photo-1438072.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F1438072%2Fpexels-photo-1438072.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F1438072%2Fpexels-photo-1438072.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F1438072%2Fpexels-photo-1438072.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F1438072%2Fpexels-photo-1438072.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=3840&q=75 3840w"
+        style={
+          {
+            "bottom": 0,
+            "color": "transparent",
+            "height": "100%",
+            "left": 0,
+            "objectFit": undefined,
+            "objectPosition": undefined,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": "100%",
+          }
+        }
+        title="about.our-team.why-we-started-image-alt"
+      />
+    </div>
+    <div
+      className="info"
+    >
+      <h2
+        className="h h2"
+      >
+        about.our-team.why-we-started-title
+      </h2>
+      <h4
+        className="h h4"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+      </h4>
+      <p
+        className="p medium"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+      </p>
+    </div>
+  </div>
+</div>
+`;

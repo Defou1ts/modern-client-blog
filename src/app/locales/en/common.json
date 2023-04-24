@@ -54,6 +54,12 @@
 			"our-mission-title": "Creating valuable content for creatives all around the world",
 			"our-vision-subtitle": "Our Vision",
 			"our-vision-title": "A platform that empowers individuals to improve"
+		},
+		"our-team": {
+			"our-team-title": "Our team of creatives",
+			"why-we-started-title": "Why we started this Blog",
+			"our-team-image-alt": "ground group growth hands",
+			"why-we-started-image-alt": "Three Persons Sitting on the Stairs Talking With Each Other"
 		}
 	}
 }

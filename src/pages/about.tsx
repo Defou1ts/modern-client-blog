@@ -5,6 +5,7 @@ import type { GetStaticProps } from 'next';
 import { MainContainer } from '@app/wrappers/MainContainer';
 import { AboutPageWrapper } from '@app/wrappers/AboutPageWrapper';
 import { AboutOverview } from '@widgets/AboutOverview';
+import { AboutOurTeam } from '@widgets/AboutOurTeam';
 
 const AboutPage = () => (
 	<MainContainer
@@ -13,6 +14,7 @@ const AboutPage = () => (
 	>
 		<AboutPageWrapper>
 			<AboutOverview />
+			<AboutOurTeam />
 		</AboutPageWrapper>
 	</MainContainer>
 );
