@@ -1,5 +1,6 @@
 import styles from './index.module.scss';
-import { socialIcons } from './contants/socialIcons';
+
+import { socialIcons } from '../../constants/socialIcons';
 
 import { P } from '@shared/ui/P';
 import { SocialLink } from '@shared/ui/SocialLink';
