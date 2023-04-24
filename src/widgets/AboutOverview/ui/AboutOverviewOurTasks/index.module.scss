@@ -1,6 +1,9 @@
 @import '@app/theme/theme.scss';
 
 .wrapper {
+	position: relative;
+	bottom: 40px;
+
 	padding: 128px 108px 64px 108px;
 
 	display: grid;
@@ -13,6 +16,7 @@
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr;
 		padding: 128px 50px 64px 50px;
+		bottom: 0px;
 	}
 }
 .item {
