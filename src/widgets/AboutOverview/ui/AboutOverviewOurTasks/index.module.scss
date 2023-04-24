@@ -1,0 +1,51 @@
+@import '@app/theme/theme.scss';
+
+.wrapper {
+	position: relative;
+	bottom: 40px;
+
+	padding: 128px 108px 64px 108px;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 32px;
+
+	background-color: $lavender;
+
+	@include lg {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		padding: 128px 50px 64px 50px;
+		bottom: 0px;
+	}
+}
+.item {
+}
+.subtitle {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+
+	letter-spacing: 3px;
+	text-transform: uppercase;
+
+	@include lg {
+		text-align: center;
+	}
+}
+
+.title {
+	margin-top: 24px;
+
+	@include lg {
+		text-align: center;
+	}
+}
+
+.text {
+	margin-top: 16px;
+	color: $medium-gray;
+	@include lg {
+		text-align: justify;
+	}
+}
