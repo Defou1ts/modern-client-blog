@@ -11,7 +11,6 @@
 	background-color: $light-gray;
 
 	justify-items: center;
-	cursor: pointer;
 
 	transition: all 0.2s ease;
 
@@ -28,6 +27,7 @@
 	height: 128px;
 	border-radius: 50%;
 	overflow: hidden;
+	cursor: pointer;
 
 	img {
 		object-fit: cover;
