@@ -1,10 +1,8 @@
-import Link from 'next/link';
-import Image from 'next/image';
-
 import styles from './index.module.scss';
-import { socialIcons } from './lib/socialIcons';
+import { socialIcons } from './contants/socialIcons';
 
 import { P } from '@shared/ui/P';
+import { SocialLink } from '@shared/ui/SocialLink';
 
 export const Social = () => {
 	return (
@@ -18,10 +16,8 @@ export const Social = () => {
 				</P>
 			</div>
 			<div className={styles.socialList}>
-				{socialIcons.map(({ path, alt, title, src }) => (
-					<Link key={path} href={path} target="_blank">
-						<Image src={src} alt={alt} title={title} />
-					</Link>
+				{socialIcons.map((props) => (
+					<SocialLink key={props.path} {...props} />
 				))}
 			</div>
 		</div>
