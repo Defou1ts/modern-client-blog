@@ -44,4 +44,8 @@
 .previewText {
 	margin-top: 16px;
 	color: $medium-gray;
+	-webkit-line-clamp: 4;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 }

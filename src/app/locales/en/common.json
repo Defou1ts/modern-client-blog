@@ -70,6 +70,8 @@
 		"list-title": "List of Authors"
 	},
 	"post": {
-		"post-list-title": "All posts"
+		"features-post-title": "Featured Post",
+		"post-list-title": "All posts",
+		"from": "By"	
 	}
 }

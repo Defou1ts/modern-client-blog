@@ -70,6 +70,8 @@
 		"list-title": "Список авторов"
 	},
 	"post": {
-		"post-list-title": "Все посты"
+		"features-post-title": "Лучший пост",
+		"post-list-title": "Все посты",
+		"from": "От автора"
 	}
 }

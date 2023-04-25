@@ -8,6 +8,7 @@ export interface Post {
 	category: PostCategory;
 	previewText: Record<string, string>;
 	content: Record<string, PostContentType[]>;
+	createdAt: number;
 }
 
 export class TitleContentType {

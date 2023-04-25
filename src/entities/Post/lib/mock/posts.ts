@@ -83,6 +83,7 @@ export const posts: Post[] = [
 				},
 			],
 		},
+		createdAt: 1682424396280,
 	},
 	{
 		id: 2,
@@ -166,6 +167,7 @@ export const posts: Post[] = [
 				},
 			],
 		},
+		createdAt: 1682424396280,
 	},
 	{
 		id: 3,
@@ -249,6 +251,7 @@ export const posts: Post[] = [
 				},
 			],
 		},
+		createdAt: 1682424396280,
 	},
 	{
 		id: 4,
@@ -332,6 +335,7 @@ export const posts: Post[] = [
 				},
 			],
 		},
+		createdAt: 1682424396280,
 	},
 	{
 		id: 5,
@@ -415,6 +419,7 @@ export const posts: Post[] = [
 				},
 			],
 		},
+		createdAt: 1682424396280,
 	},
 	{
 		id: 6,
@@ -498,6 +503,7 @@ export const posts: Post[] = [
 				},
 			],
 		},
+		createdAt: 1682424396280,
 	},
 	{
 		id: 7,
@@ -581,6 +587,7 @@ export const posts: Post[] = [
 				},
 			],
 		},
+		createdAt: 1682424396280,
 	},
 	{
 		id: 8,
@@ -664,6 +671,7 @@ export const posts: Post[] = [
 				},
 			],
 		},
+		createdAt: 1682424396280,
 	},
 	{
 		id: 9,
@@ -747,6 +755,7 @@ export const posts: Post[] = [
 				},
 			],
 		},
+		createdAt: 1682424396280,
 	},
 	{
 		id: 10,
@@ -830,6 +839,7 @@ export const posts: Post[] = [
 				},
 			],
 		},
+		createdAt: 1682424396280,
 	},
 	{
 		id: 11,
@@ -913,6 +923,7 @@ export const posts: Post[] = [
 				},
 			],
 		},
+		createdAt: 1682424396280,
 	},
 	{
 		id: 12,
@@ -996,5 +1007,6 @@ export const posts: Post[] = [
 				},
 			],
 		},
+		createdAt: 1682424396280,
 	},
 ];
