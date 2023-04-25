@@ -1,0 +1,42 @@
+@import '@app/theme/theme.scss';
+
+.line {
+	margin-top: 32px;
+	margin-bottom: 64px;
+	height: 1px;
+	background-color: $medium-gray;
+	opacity: 0.32;
+
+	@include md {
+		margin-top: 16px;
+		margin-bottom: 32px;
+	}
+}
+.list {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 64px;
+}
+
+.buttons {
+	margin-top: 69px;
+	display: grid;
+	justify-items: center;
+	justify-content: center;
+	grid-template-columns: auto auto;
+	gap: 17px;
+
+	@include md {
+		margin-top: 20px;
+	}
+}
+.button {
+	background-color: transparent;
+	cursor: pointer;
+	@include link($red, 0.2s ease, $black);
+}
+.disabled {
+	cursor: default;
+	pointer-events: none;
+	color: $medium-gray;
+}

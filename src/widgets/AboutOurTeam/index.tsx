@@ -11,7 +11,7 @@ export const AboutOurTeam = () => {
 	const { t } = useTranslation();
 
 	return (
-		<div>
+		<article>
 			<div className={styles.itemWrapper}>
 				<div className={styles.info}>
 					<H type="h2">{t('about.our-team.our-team-title')}</H>
@@ -59,6 +59,6 @@ export const AboutOurTeam = () => {
 					</P>
 				</div>
 			</div>
-		</div>
+		</article>
 	);
 };

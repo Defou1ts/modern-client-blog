@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`JoinOurTeam JoinOurTeam snapshot 1`] = `
-<div
+<article
   className="wrapper"
 >
   <h2
@@ -27,5 +27,5 @@ exports[`JoinOurTeam JoinOurTeam snapshot 1`] = `
       about.join-our-team.button
     </button>
   </a>
-</div>
+</article>
 `;

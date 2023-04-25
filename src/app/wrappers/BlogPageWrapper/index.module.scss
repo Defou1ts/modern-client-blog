@@ -2,29 +2,29 @@
 
 .wrapper {
 	position: relative;
-	padding: 80px 0px 128px 0px;
+	padding: 0px 0px 128px 0px;
 	display: grid;
 	grid-template-columns: minmax(0px, 80px) auto minmax(0px, 80px);
 	grid-template-rows: auto 64px auto 64px auto 128px auto;
-	grid-template-areas: '. featured .' '. . .' '. postlist .' '. . .' '. categories .' '. . .' '. join .';
+	grid-template-areas: 'featured featured featured' '. . .' '. postlist .' '. . .' '. categories .' '. . .' '. join .';
 
 	@include md {
-		grid-template-columns: minmax(0px, 10px) auto minmax(0px, 10px);
+		grid-template-columns: 10px auto 10px;
 	}
 }
 
-.wrapper > div:nth-child(1) {
+.wrapper > article:nth-child(1) {
 	grid-area: featured;
 }
 
-.wrapper > div:nth-child(2) {
+.wrapper > article:nth-child(2) {
 	grid-area: postlist;
 }
 
-.wrapper > div:nth-child(3) {
+.wrapper > article:nth-child(3) {
 	grid-area: categories;
 }
 
-.wrapper > div:nth-child(4) {
+.wrapper > article:nth-child(4) {
 	grid-area: join;
 }

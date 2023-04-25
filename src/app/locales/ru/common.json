@@ -68,5 +68,13 @@
 	},
 	"author": {
 		"list-title": "Список авторов"
+	},
+	"post": {
+		"features-post-title": "Лучший пост",
+		"post-list-title": "Все посты",
+		"from": "От автора"
+	},
+	"blog": {
+		"post-categories-title": "Все категории"
 	}
 }

@@ -1,0 +1,25 @@
+@import '@app/theme/theme.scss';
+
+.list {
+	display: grid;
+}
+
+.vertical {
+	grid-template-columns: 1fr;
+	row-gap: 24px;
+}
+
+.horizontal {
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
+	gap: 32px;
+
+	@include lg {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 16px;
+	}
+
+	@include md {
+		grid-template-columns: 1fr;
+	}
+}

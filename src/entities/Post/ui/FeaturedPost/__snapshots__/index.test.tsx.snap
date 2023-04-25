@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FeaturedPost FeaturedPost snapshot 1`] = `
+<article
+  className="wrapper"
+>
+  <div
+    className="post"
+  >
+    <div
+      className="content"
+    >
+      <p
+        className="featuredTitle"
+      >
+        post.features-post-title
+      </p>
+      <h2
+        className="h h2 title"
+      >
+        Step-by-step guide to choosing great font pairs
+      </h2>
+      <p
+        className="p label additionalInfo"
+      >
+        post.from
+         
+        <a
+          className="authorLink"
+          href="author/1"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          Floyd Miles
+        </a>
+              
+        |
+              
+        April 25, 2023
+      </p>
+      <p
+        className="p medium previewText"
+      >
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      </p>
+      <a
+        href="blog/1"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        <button
+          className="button primary readMoreButton"
+        >
+          Read More &gt;
+        </button>
+      </a>
+    </div>
+    <div
+      className="imageWrapper"
+    >
+      <img
+        alt="Step-by-step guide to choosing great font pairs"
+        data-nimg="1"
+        decoding="async"
+        height={318}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F3184405%2Fpexels-photo-3184405.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=1080&q=75"
+        srcSet="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F3184405%2Fpexels-photo-3184405.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F3184405%2Fpexels-photo-3184405.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=1080&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
+        }
+        title="Step-by-step guide to choosing great font pairs"
+        width={490}
+      />
+    </div>
+  </div>
+</article>
+`;

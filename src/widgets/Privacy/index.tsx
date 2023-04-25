@@ -6,15 +6,15 @@ import { P } from '@shared/ui/P';
 export const Privacy = () => {
 	return (
 		<div className={styles.privacy}>
-			<div className={styles.titleWrapper}>
+			<article className={styles.titleWrapper}>
 				<H type="h1" className={styles.title}>
 					Privacy Policy
 				</H>
 				<P type="medium" className={styles.updatedAt}>
 					Last Updated on 27th January 2022
 				</P>
-			</div>
-			<div className={styles.content}>
+			</article>
+			<article className={styles.content}>
 				<div className={styles.contentBlock}>
 					<H type="h1" className={styles.subtitle}>
 						Lorem ipsum dolor sit amet
@@ -59,7 +59,7 @@ export const Privacy = () => {
 						placerat orci nulla. Neque convallis a cras semper auctor neque vitae tempus quam.
 					</P>
 				</div>
-			</div>
+			</article>
 		</div>
 	);
 };

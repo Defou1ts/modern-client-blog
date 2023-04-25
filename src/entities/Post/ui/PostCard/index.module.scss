@@ -37,11 +37,15 @@
 	color: $purple;
 }
 .title {
-	@include link($yellow, 0.2s ease, $black);
+	@include link($red, 0.2s ease, $black);
 	margin-top: 20px;
 	color: $black;
 }
 .previewText {
 	margin-top: 16px;
 	color: $medium-gray;
+	-webkit-line-clamp: 4;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 }

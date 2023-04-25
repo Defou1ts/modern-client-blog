@@ -12,7 +12,7 @@ export const JoinOurTeam = () => {
 	const { t } = useTranslation();
 
 	return (
-		<div className={styles.wrapper}>
+		<article className={styles.wrapper}>
 			<H type="h2" className={styles.title}>
 				{t('about.join-our-team.title')}
 			</H>
@@ -22,6 +22,6 @@ export const JoinOurTeam = () => {
 			<Link href={'/contact'} className={styles.link}>
 				<Button appearance="primary">{t('about.join-our-team.button')}</Button>
 			</Link>
-		</div>
+		</article>
 	);
 };
