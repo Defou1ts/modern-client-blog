@@ -5,6 +5,7 @@ import type { GetStaticProps } from 'next';
 import { MainContainer } from '@app/wrappers/MainContainer';
 import { posts } from '@entities/Post/lib/mock/posts';
 import { BlogPageWrapper } from '@app/wrappers/BlogPageWrapper';
+import { PostList } from '@entities/Post/ui/PostList';
 
 import type { Post } from '@entities/Post/interfaces';
 
@@ -14,7 +15,9 @@ interface BlogPageProps {
 
 const BlogPage = ({ posts }: BlogPageProps) => (
 	<MainContainer title="Blog | Modsen client blog" description="Let's see all of the posts of our content writers!">
-		<BlogPageWrapper>Hello</BlogPageWrapper>
+		<BlogPageWrapper>
+			<PostList posts={posts} maxPosts={5} />
+		</BlogPageWrapper>
 	</MainContainer>
 );
 

@@ -37,7 +37,7 @@
 	color: $purple;
 }
 .title {
-	@include link($yellow, 0.2s ease, $black);
+	@include link($red, 0.2s ease, $black);
 	margin-top: 20px;
 	color: $black;
 }

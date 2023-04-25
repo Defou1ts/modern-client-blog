@@ -68,5 +68,8 @@
 	},
 	"author": {
 		"list-title": "Список авторов"
+	},
+	"post": {
+		"post-list-title": "Все посты"
 	}
 }

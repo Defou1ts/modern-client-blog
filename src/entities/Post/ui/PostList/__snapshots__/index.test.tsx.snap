@@ -1,0 +1,304 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostList PostList snapshot 1`] = `
+<div>
+  <h1
+    className="h h1"
+  >
+    post.post-list-title
+  </h1>
+  <div
+    className="line"
+  />
+  <div
+    className="list"
+  >
+    <div
+      className="wrapper"
+    >
+      <div
+        className="imageWrapper"
+      >
+        <img
+          alt="Step-by-step guide to choosing great font pairs"
+          data-nimg="1"
+          decoding="async"
+          height={318}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F3184405%2Fpexels-photo-3184405.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=1080&q=75"
+          srcSet="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F3184405%2Fpexels-photo-3184405.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F3184405%2Fpexels-photo-3184405.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=1080&q=75 2x"
+          style={
+            {
+              "color": "transparent",
+            }
+          }
+          title="Step-by-step guide to choosing great font pairs"
+          width={490}
+        />
+      </div>
+      <div
+        className="info"
+      >
+        <p
+          className="category"
+        >
+          startup
+        </p>
+        <a
+          href="blog/1"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <h2
+            className="h h2 title"
+          >
+            Step-by-step guide to choosing great font pairs
+          </h2>
+        </a>
+        <p
+          className="p medium previewText"
+        >
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+        </p>
+      </div>
+    </div>
+    <div
+      className="wrapper"
+    >
+      <div
+        className="imageWrapper"
+      >
+        <img
+          alt="Design tips for designers that cover everything you need"
+          data-nimg="1"
+          decoding="async"
+          height={318}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F1181533%2Fpexels-photo-1181533.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=1080&q=75"
+          srcSet="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F1181533%2Fpexels-photo-1181533.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F1181533%2Fpexels-photo-1181533.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=1080&q=75 2x"
+          style={
+            {
+              "color": "transparent",
+            }
+          }
+          title="Design tips for designers that cover everything you need"
+          width={490}
+        />
+      </div>
+      <div
+        className="info"
+      >
+        <p
+          className="category"
+        >
+          startup
+        </p>
+        <a
+          href="blog/2"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <h2
+            className="h h2 title"
+          >
+            Design tips for designers that cover everything you need
+          </h2>
+        </a>
+        <p
+          className="p medium previewText"
+        >
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+        </p>
+      </div>
+    </div>
+    <div
+      className="wrapper"
+    >
+      <div
+        className="imageWrapper"
+      >
+        <img
+          alt="How to build rapport with your web design clients"
+          data-nimg="1"
+          decoding="async"
+          height={318}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F3183197%2Fpexels-photo-3183197.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=1080&q=75"
+          srcSet="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F3183197%2Fpexels-photo-3183197.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F3183197%2Fpexels-photo-3183197.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=1080&q=75 2x"
+          style={
+            {
+              "color": "transparent",
+            }
+          }
+          title="How to build rapport with your web design clients"
+          width={490}
+        />
+      </div>
+      <div
+        className="info"
+      >
+        <p
+          className="category"
+        >
+          business
+        </p>
+        <a
+          href="blog/3"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <h2
+            className="h h2 title"
+          >
+            How to build rapport with your web design clients
+          </h2>
+        </a>
+        <p
+          className="p medium previewText"
+        >
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+        </p>
+      </div>
+    </div>
+    <div
+      className="wrapper"
+    >
+      <div
+        className="imageWrapper"
+      >
+        <img
+          alt="Logo design trends to avoid in 2022"
+          data-nimg="1"
+          decoding="async"
+          height={318}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F3183173%2Fpexels-photo-3183173.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=1080&q=75"
+          srcSet="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F3183173%2Fpexels-photo-3183173.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F3183173%2Fpexels-photo-3183173.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=1080&q=75 2x"
+          style={
+            {
+              "color": "transparent",
+            }
+          }
+          title="Logo design trends to avoid in 2022"
+          width={490}
+        />
+      </div>
+      <div
+        className="info"
+      >
+        <p
+          className="category"
+        >
+          startup
+        </p>
+        <a
+          href="blog/4"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <h2
+            className="h h2 title"
+          >
+            Logo design trends to avoid in 2022
+          </h2>
+        </a>
+        <p
+          className="p medium previewText"
+        >
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+        </p>
+      </div>
+    </div>
+    <div
+      className="wrapper"
+    >
+      <div
+        className="imageWrapper"
+      >
+        <img
+          alt="8 Figma design systems you can download for free today"
+          data-nimg="1"
+          decoding="async"
+          height={318}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F3182811%2Fpexels-photo-3182811.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=1080&q=75"
+          srcSet="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F3182811%2Fpexels-photo-3182811.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F3182811%2Fpexels-photo-3182811.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=1080&q=75 2x"
+          style={
+            {
+              "color": "transparent",
+            }
+          }
+          title="8 Figma design systems you can download for free today"
+          width={490}
+        />
+      </div>
+      <div
+        className="info"
+      >
+        <p
+          className="category"
+        >
+          technology
+        </p>
+        <a
+          href="blog/5"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <h2
+            className="h h2 title"
+          >
+            8 Figma design systems you can download for free today
+          </h2>
+        </a>
+        <p
+          className="p medium previewText"
+        >
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="buttons"
+  >
+    <button
+      className="button disabled"
+      disabled={true}
+      onClick={[Function]}
+    >
+      <h3
+        className="h h3"
+      >
+        &lt; Prev
+      </h3>
+    </button>
+    <button
+      className="button"
+      disabled={false}
+      onClick={[Function]}
+    >
+      <h3
+        className="h h3"
+      >
+        Next &gt;
+      </h3>
+    </button>
+  </div>
+</div>
+`;
