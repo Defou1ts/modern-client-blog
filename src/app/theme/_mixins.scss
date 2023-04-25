@@ -8,8 +8,6 @@
 
 @mixin link($hover-color, $transition, $color) {
 	color: $color;
-	font-size: 16px;
-	line-height: 28px;
 
 	transition: $transition;
 
