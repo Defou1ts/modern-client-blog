@@ -32,7 +32,7 @@ export const ContactForm = () => {
 	};
 
 	return (
-		<div>
+		<article>
 			<Formik
 				className={styles.wrapper}
 				validationSchema={validationSchema}
@@ -76,6 +76,6 @@ export const ContactForm = () => {
 					</Button>
 				</Form>
 			</Formik>
-		</div>
+		</article>
 	);
 };
