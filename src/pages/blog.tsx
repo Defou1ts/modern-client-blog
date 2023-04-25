@@ -9,21 +9,25 @@ import { PostList } from '@entities/Post/ui/PostList';
 import { FeaturedPost } from '@entities/Post/ui/FeaturedPost';
 import { authors } from '@entities/Author/lib/mock/authors';
 import { JoinOurTeam } from '@widgets/JoinOurTeam';
+import { allPostCategories } from '@entities/Post/lib/mock/allPostCategories';
+import { BlogPostCategoriesList } from '@widgets/BlogPostCategoriesList';
 
+import type { Post, PostCategory } from '@entities/Post/interfaces';
 import type { AuthorWithLocales } from '@entities/Author/interfaces';
-import type { Post } from '@entities/Post/interfaces';
 
 interface BlogPageProps {
 	posts: Post[];
 	featuredPost: Post;
 	featuredPostAuthor: AuthorWithLocales;
+	allPostCategories: PostCategory[];
 }
 
-const BlogPage = ({ posts, featuredPost, featuredPostAuthor }: BlogPageProps) => (
+const BlogPage = ({ posts, featuredPost, featuredPostAuthor, allPostCategories }: BlogPageProps) => (
 	<MainContainer title="Blog | Modsen client blog" description="Let's see all of the posts of our content writers!">
 		<BlogPageWrapper>
 			<FeaturedPost post={featuredPost} author={featuredPostAuthor} />
 			<PostList posts={posts} maxPosts={5} />
+			<BlogPostCategoriesList categories={allPostCategories} />
 			<JoinOurTeam />
 		</BlogPageWrapper>
 	</MainContainer>
@@ -47,6 +51,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
 			posts,
 			featuredPost,
 			featuredPostAuthor,
+			allPostCategories,
 		},
 	};
 };

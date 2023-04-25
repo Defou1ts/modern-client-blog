@@ -1,0 +1,613 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostCategoriesList PostCategoriesList snapshot horizontal large 1`] = `
+<div
+  className="list horizontal"
+>
+  <a
+    href="category/business"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    <div
+      className="card large"
+    >
+      <img
+        alt="Business"
+        data-nimg="1"
+        decoding="async"
+        height={40}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
+        }
+        title="Business"
+        width={40}
+      />
+      <h3
+        className="h h3 title"
+      >
+        Business
+      </h3>
+      <p
+        className="p medium description"
+      >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      </p>
+    </div>
+  </a>
+  <a
+    href="category/startup"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    <div
+      className="card large"
+    >
+      <img
+        alt="Startup"
+        data-nimg="1"
+        decoding="async"
+        height={40}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
+        }
+        title="Startup"
+        width={40}
+      />
+      <h3
+        className="h h3 title"
+      >
+        Startup
+      </h3>
+      <p
+        className="p medium description"
+      >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      </p>
+    </div>
+  </a>
+  <a
+    href="category/economy"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    <div
+      className="card large"
+    >
+      <img
+        alt="Economy"
+        data-nimg="1"
+        decoding="async"
+        height={40}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
+        }
+        title="Economy"
+        width={40}
+      />
+      <h3
+        className="h h3 title"
+      >
+        Economy
+      </h3>
+      <p
+        className="p medium description"
+      >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      </p>
+    </div>
+  </a>
+  <a
+    href="category/technology"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    <div
+      className="card large"
+    >
+      <img
+        alt="Technology"
+        data-nimg="1"
+        decoding="async"
+        height={40}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
+        }
+        title="Technology"
+        width={40}
+      />
+      <h3
+        className="h h3 title"
+      >
+        Technology
+      </h3>
+      <p
+        className="p medium description"
+      >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      </p>
+    </div>
+  </a>
+</div>
+`;
+
+exports[`PostCategoriesList PostCategoriesList snapshot horizontal medium 1`] = `
+<div
+  className="list horizontal"
+>
+  <a
+    href="category/business"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    <div
+      className="card medium"
+    >
+      <img
+        alt="Business"
+        data-nimg="1"
+        decoding="async"
+        height={40}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
+        }
+        title="Business"
+        width={40}
+      />
+      <h3
+        className="h h3 title"
+      >
+        Business
+      </h3>
+    </div>
+  </a>
+  <a
+    href="category/startup"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    <div
+      className="card medium"
+    >
+      <img
+        alt="Startup"
+        data-nimg="1"
+        decoding="async"
+        height={40}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
+        }
+        title="Startup"
+        width={40}
+      />
+      <h3
+        className="h h3 title"
+      >
+        Startup
+      </h3>
+    </div>
+  </a>
+  <a
+    href="category/economy"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    <div
+      className="card medium"
+    >
+      <img
+        alt="Economy"
+        data-nimg="1"
+        decoding="async"
+        height={40}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
+        }
+        title="Economy"
+        width={40}
+      />
+      <h3
+        className="h h3 title"
+      >
+        Economy
+      </h3>
+    </div>
+  </a>
+  <a
+    href="category/technology"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    <div
+      className="card medium"
+    >
+      <img
+        alt="Technology"
+        data-nimg="1"
+        decoding="async"
+        height={40}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
+        }
+        title="Technology"
+        width={40}
+      />
+      <h3
+        className="h h3 title"
+      >
+        Technology
+      </h3>
+    </div>
+  </a>
+</div>
+`;
+
+exports[`PostCategoriesList PostCategoriesList snapshot vertical large 1`] = `
+<div
+  className="list vertical"
+>
+  <a
+    href="category/business"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    <div
+      className="card large"
+    >
+      <img
+        alt="Business"
+        data-nimg="1"
+        decoding="async"
+        height={40}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
+        }
+        title="Business"
+        width={40}
+      />
+      <h3
+        className="h h3 title"
+      >
+        Business
+      </h3>
+      <p
+        className="p medium description"
+      >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      </p>
+    </div>
+  </a>
+  <a
+    href="category/startup"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    <div
+      className="card large"
+    >
+      <img
+        alt="Startup"
+        data-nimg="1"
+        decoding="async"
+        height={40}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
+        }
+        title="Startup"
+        width={40}
+      />
+      <h3
+        className="h h3 title"
+      >
+        Startup
+      </h3>
+      <p
+        className="p medium description"
+      >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      </p>
+    </div>
+  </a>
+  <a
+    href="category/economy"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    <div
+      className="card large"
+    >
+      <img
+        alt="Economy"
+        data-nimg="1"
+        decoding="async"
+        height={40}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
+        }
+        title="Economy"
+        width={40}
+      />
+      <h3
+        className="h h3 title"
+      >
+        Economy
+      </h3>
+      <p
+        className="p medium description"
+      >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      </p>
+    </div>
+  </a>
+  <a
+    href="category/technology"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    <div
+      className="card large"
+    >
+      <img
+        alt="Technology"
+        data-nimg="1"
+        decoding="async"
+        height={40}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
+        }
+        title="Technology"
+        width={40}
+      />
+      <h3
+        className="h h3 title"
+      >
+        Technology
+      </h3>
+      <p
+        className="p medium description"
+      >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      </p>
+    </div>
+  </a>
+</div>
+`;
+
+exports[`PostCategoriesList PostCategoriesList snapshot vertical medium 1`] = `
+<div
+  className="list vertical"
+>
+  <a
+    href="category/business"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    <div
+      className="card medium"
+    >
+      <img
+        alt="Business"
+        data-nimg="1"
+        decoding="async"
+        height={40}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
+        }
+        title="Business"
+        width={40}
+      />
+      <h3
+        className="h h3 title"
+      >
+        Business
+      </h3>
+    </div>
+  </a>
+  <a
+    href="category/startup"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    <div
+      className="card medium"
+    >
+      <img
+        alt="Startup"
+        data-nimg="1"
+        decoding="async"
+        height={40}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
+        }
+        title="Startup"
+        width={40}
+      />
+      <h3
+        className="h h3 title"
+      >
+        Startup
+      </h3>
+    </div>
+  </a>
+  <a
+    href="category/economy"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    <div
+      className="card medium"
+    >
+      <img
+        alt="Economy"
+        data-nimg="1"
+        decoding="async"
+        height={40}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
+        }
+        title="Economy"
+        width={40}
+      />
+      <h3
+        className="h h3 title"
+      >
+        Economy
+      </h3>
+    </div>
+  </a>
+  <a
+    href="category/technology"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    <div
+      className="card medium"
+    >
+      <img
+        alt="Technology"
+        data-nimg="1"
+        decoding="async"
+        height={40}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
+        }
+        title="Technology"
+        width={40}
+      />
+      <h3
+        className="h h3 title"
+      >
+        Technology
+      </h3>
+    </div>
+  </a>
+</div>
+`;

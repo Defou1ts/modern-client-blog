@@ -11,6 +11,7 @@ export const posts: Post[] = [
 			ru: 'Пошаговый гайд по выбору парных шрифтов',
 		},
 		category: 'startup',
+		tags: ['experience', 'business', 'marketing'],
 		previewText: {
 			en: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
 			ru: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
@@ -95,6 +96,7 @@ export const posts: Post[] = [
 			ru: 'Дизайнерские советы для дизайнеров, затрагивающие все основные аспекты',
 		},
 		category: 'startup',
+		tags: ['experience'],
 		previewText: {
 			en: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
 			ru: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
@@ -179,6 +181,7 @@ export const posts: Post[] = [
 			ru: 'Как собрать рапорт с вашими веб-дизайн клиентами',
 		},
 		category: 'business',
+		tags: ['life', 'screen'],
 		previewText: {
 			en: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
 			ru: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
@@ -263,6 +266,8 @@ export const posts: Post[] = [
 			ru: 'Дизайн тренды лого в 2022',
 		},
 		category: 'startup',
+		tags: ['life', 'screen'],
+
 		previewText: {
 			en: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
 			ru: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
@@ -347,6 +352,7 @@ export const posts: Post[] = [
 			ru: '8 дизайн система Figma, которые ты можешь бесплатно скачать уже сегодня',
 		},
 		category: 'technology',
+		tags: ['experience', 'business', 'marketing'],
 		previewText: {
 			en: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
 			ru: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
@@ -431,6 +437,7 @@ export const posts: Post[] = [
 			ru: 'Размеры шрифтов в UI: Пошаговый гайд',
 		},
 		category: 'economy',
+		tags: ['life'],
 		previewText: {
 			en: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
 			ru: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
@@ -515,6 +522,7 @@ export const posts: Post[] = [
 			ru: 'Пошаговый гайд по выбору парных шрифтов',
 		},
 		category: 'startup',
+		tags: ['technology'],
 		previewText: {
 			en: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
 			ru: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
@@ -599,6 +607,7 @@ export const posts: Post[] = [
 			ru: 'Дизайнерские советы для дизайнеров, затрагивающие все основные аспекты',
 		},
 		category: 'startup',
+		tags: ['marketing'],
 		previewText: {
 			en: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
 			ru: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
@@ -683,6 +692,7 @@ export const posts: Post[] = [
 			ru: 'Как собрать рапорт с вашими веб-дизайн клиентами',
 		},
 		category: 'business',
+		tags: ['marketing', 'business', 'screen'],
 		previewText: {
 			en: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
 			ru: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
@@ -767,6 +777,7 @@ export const posts: Post[] = [
 			ru: 'Дизайн тренды лого в 2022',
 		},
 		category: 'startup',
+		tags: ['business', 'marketing'],
 		previewText: {
 			en: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
 			ru: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
@@ -851,6 +862,7 @@ export const posts: Post[] = [
 			ru: '8 дизайн система Figma, которые ты можешь бесплатно скачать уже сегодня',
 		},
 		category: 'technology',
+		tags: ['technology', 'screen'],
 		previewText: {
 			en: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
 			ru: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
@@ -935,6 +947,7 @@ export const posts: Post[] = [
 			ru: 'Размеры шрифтов в UI: Пошаговый гайд',
 		},
 		category: 'economy',
+		tags: ['experience', 'screen'],
 		previewText: {
 			en: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
 			ru: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',

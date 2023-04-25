@@ -13,18 +13,18 @@
 	}
 }
 
-.wrapper > div:nth-child(1) {
+.wrapper > article:nth-child(1) {
 	grid-area: featured;
 }
 
-.wrapper > div:nth-child(2) {
+.wrapper > article:nth-child(2) {
 	grid-area: postlist;
 }
 
-.wrapper > div:nth-child(3) {
+.wrapper > article:nth-child(3) {
 	grid-area: categories;
 }
 
-.wrapper > div:nth-child(4) {
+.wrapper > article:nth-child(4) {
 	grid-area: join;
 }

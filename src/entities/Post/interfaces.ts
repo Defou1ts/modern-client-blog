@@ -1,14 +1,23 @@
-import type { PostCategory, PostContentType } from './types';
+import type { StaticImageData } from 'next/image';
+import type { PostCategoryType, PostContentType, PostTag } from './types';
 
 export interface Post {
 	id: number;
 	authorId: number;
 	previewImageURL: string;
 	title: Record<string, string>;
-	category: PostCategory;
+	category: PostCategoryType;
 	previewText: Record<string, string>;
 	content: Record<string, PostContentType[]>;
 	createdAt: number;
+	tags: PostTag[];
+}
+
+export interface PostCategory {
+	category: PostCategoryType;
+	icon: StaticImageData;
+	title: Record<string, string>;
+	description: Record<string, string>;
 }
 
 export class TitleContentType {

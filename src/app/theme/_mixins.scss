@@ -19,3 +19,7 @@
 @mixin BackgroundWhiteWithOpacity($opacity) {
 	background-color: rgba(255, 255, 255, $opacity);
 }
+
+@mixin BorderMediumGrayWithOpacity($size,$opacity) {
+	border: $size solid rgba(109, 110, 118, $opacity);
+}

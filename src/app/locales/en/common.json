@@ -72,6 +72,9 @@
 	"post": {
 		"features-post-title": "Featured Post",
 		"post-list-title": "All posts",
-		"from": "By"	
+		"from": "By"
+	},
+	"blog": {
+		"post-categories-title": "All Categories"
 	}
 }

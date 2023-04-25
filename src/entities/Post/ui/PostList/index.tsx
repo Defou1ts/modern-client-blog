@@ -19,7 +19,7 @@ export const PostList = ({ posts, maxPosts }: PostListProps) => {
 	const { t } = useTranslation();
 
 	return (
-		<div>
+		<article>
 			<H type="h1">{t('post.post-list-title')}</H>
 			<div className={styles.line}></div>
 			<div className={styles.list}>
@@ -47,6 +47,6 @@ export const PostList = ({ posts, maxPosts }: PostListProps) => {
 					<H type="h3">Next &gt;</H>
 				</button>
 			</div>
-		</div>
+		</article>
 	);
 };

@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostCategoryCard PostCategoryCard snapshot large 1`] = `
+<a
+  href="category/business"
+  onClick={[Function]}
+  onMouseEnter={[Function]}
+  onTouchStart={[Function]}
+>
+  <div
+    className="card large"
+  >
+    <img
+      alt="Business"
+      data-nimg="1"
+      decoding="async"
+      height={40}
+      loading="lazy"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+      srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+      style={
+        {
+          "color": "transparent",
+        }
+      }
+      title="Business"
+      width={40}
+    />
+    <h3
+      className="h h3 title"
+    >
+      Business
+    </h3>
+    <p
+      className="p medium description"
+    >
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    </p>
+  </div>
+</a>
+`;
+
+exports[`PostCategoryCard PostCategoryCard snapshot medium 1`] = `
+<a
+  href="category/business"
+  onClick={[Function]}
+  onMouseEnter={[Function]}
+  onTouchStart={[Function]}
+>
+  <div
+    className="card medium"
+  >
+    <img
+      alt="Business"
+      data-nimg="1"
+      decoding="async"
+      height={40}
+      loading="lazy"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+      srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+      style={
+        {
+          "color": "transparent",
+        }
+      }
+      title="Business"
+      width={40}
+    />
+    <h3
+      className="h h3 title"
+    >
+      Business
+    </h3>
+  </div>
+</a>
+`;
