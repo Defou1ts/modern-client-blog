@@ -4,6 +4,7 @@ import type { GetStaticProps } from 'next';
 
 import { MainContainer } from '@app/wrappers/MainContainer';
 import { Privacy } from '@widgets/Privacy';
+import { defaultLocale } from '@shared/contants/defaultLocale';
 
 const PrivacyPage = () => (
 	<MainContainer title="Privacy Policy | Modsen client blog" description="Page with company's privacy">
@@ -14,15 +15,9 @@ const PrivacyPage = () => (
 export default PrivacyPage;
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-	if (locale === undefined) {
-		return {
-			notFound: true,
-		};
-	}
-
 	return {
 		props: {
-			...(await serverSideTranslations(locale, ['common'])),
+			...(await serverSideTranslations(locale ?? defaultLocale, ['common'])),
 		},
 	};
 };

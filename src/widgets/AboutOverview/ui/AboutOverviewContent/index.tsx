@@ -4,6 +4,7 @@ import styles from './index.module.scss';
 
 import { P } from '@shared/ui/P';
 import { H } from '@shared/ui/H';
+import { RectangleLine } from '@shared/ui/RectangleLine';
 
 export const AboutOverviewContent = () => {
 	const { t } = useTranslation();
@@ -25,10 +26,7 @@ export const AboutOverviewContent = () => {
 						<P type="medium">{t('about.overview.total-active-users')}</P>
 					</div>
 				</div>
-				<div className={styles.rectangles}>
-					<div className={styles.purpleRectangle}></div>
-					<div className={styles.yellowRectangle}></div>
-				</div>
+				<RectangleLine className={styles.rectangles} />
 			</div>
 			<div className={styles.content}></div>
 		</div>

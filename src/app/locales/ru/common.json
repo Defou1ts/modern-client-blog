@@ -67,7 +67,9 @@
 		}
 	},
 	"author": {
-		"list-title": "Список авторов"
+		"list-title": "Список авторов",
+		"welcome-part-first": "Всем привет, меня зовут",
+		"welcome-part-second": "и добро пожаловать в мой блог!"
 	},
 	"post": {
 		"features-post-title": "Лучший пост",

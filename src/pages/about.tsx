@@ -9,6 +9,7 @@ import { AboutOurTeam } from '@widgets/AboutOurTeam';
 import { AuthorList } from '@entities/Author/ui/AuthorList';
 import { authors } from '@entities/Author/lib/mock/authors';
 import { JoinOurTeam } from '@widgets/JoinOurTeam';
+import { defaultLocale } from '@shared/contants/defaultLocale';
 
 import type { AuthorWithLocales } from '@entities/Author/interfaces';
 
@@ -33,15 +34,9 @@ const AboutPage = ({ authors }: AboutPageProps) => (
 export default AboutPage;
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-	if (locale === undefined) {
-		return {
-			notFound: true,
-		};
-	}
-
 	return {
 		props: {
-			...(await serverSideTranslations(locale, ['common'])),
+			...(await serverSideTranslations(locale ?? defaultLocale, ['common'])),
 			authors,
 		},
 	};

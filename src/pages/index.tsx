@@ -4,6 +4,7 @@ import type { GetStaticProps } from 'next';
 
 import { MainContainer } from '@app/wrappers/MainContainer';
 import { H } from '@shared/ui/H';
+import { defaultLocale } from '@shared/contants/defaultLocale';
 
 const Index = () => (
 	<MainContainer title="Home | Modsen client blog" description="Modsen client blog">
@@ -14,15 +15,11 @@ const Index = () => (
 export default Index;
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-	if (locale === undefined) {
-		return {
-			notFound: true,
-		};
-	}
+
 
 	return {
 		props: {
-			...(await serverSideTranslations(locale, ['common'])),
+			...(await serverSideTranslations(locale ?? defaultLocale, ['common'])),
 		},
 	};
 };

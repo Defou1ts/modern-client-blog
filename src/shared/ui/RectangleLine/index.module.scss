@@ -1,0 +1,21 @@
+@import '@app/theme/theme.scss';
+
+.rectangles {
+	display: grid;
+	grid-template-columns: 1fr 1.5fr;
+	grid-template-areas: 'purplerectangle yellowrectangle';
+	grid-template-rows: 23px;
+
+	&.reverse {
+		grid-template-columns: 2fr 1fr;
+		grid-template-areas: 'yellowrectangle purplerectangle';
+	}
+}
+.purpleRectangle {
+	grid-area: purplerectangle;
+	background-color: $purple;
+}
+.yellowRectangle {
+	grid-area: yellowrectangle;
+	background-color: $yellow;
+}

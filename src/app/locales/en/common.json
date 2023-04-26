@@ -67,7 +67,9 @@
 		}
 	},
 	"author": {
-		"list-title": "List of Authors"
+		"list-title": "List of Authors",
+		"welcome-part-first": "Hey There, I'm",
+		"welcome-part-second": "and welcome to my Blog"
 	},
 	"post": {
 		"features-post-title": "Featured Post",

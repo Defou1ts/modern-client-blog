@@ -1,0 +1,77 @@
+@import '@app/theme/theme.scss';
+
+.wrapper {
+	background-color: $lavender;
+
+	display: grid;
+	grid-template-columns: minmax(10px, 208px) auto minmax(10px, 208px);
+	grid-template-rows: 128px auto 104px auto;
+	grid-template-areas: '. . .' '. overview .' '. . .' '. rectangle .';
+
+	@include md {
+		grid-template-rows: 0px auto 24px auto;
+		grid-template-columns: 0px auto 0px;
+	}
+}
+
+.overview {
+	grid-area: overview;
+
+	display: grid;
+	grid-template-columns: 250px auto;
+	grid-template-rows: minmax(300px, auto);
+	gap: 32px;
+
+	@include md {
+		grid-template-columns: 1fr;
+		grid-template-rows: 300px auto;
+	}
+}
+
+.imageWrapper {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.content {
+	@include md {
+		padding: 0px 10px;
+		display: grid;
+	}
+}
+
+.title {
+	letter-spacing: -2px;
+}
+
+.description {
+	margin-top: 24px;
+	color: $medium-gray;
+}
+
+.socials {
+	display: grid;
+	gap: 16px;
+	margin-top: 24px;
+	grid-auto-flow: column;
+	justify-content: left;
+
+	@include md {
+		justify-self: center;
+	}
+}
+
+.rectangle {
+	grid-area: rectangle;
+
+	@include md {
+		margin: 0px -10px 0px -10px;
+	}
+}
