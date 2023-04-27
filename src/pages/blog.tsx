@@ -5,13 +5,13 @@ import type { GetStaticProps } from 'next';
 import { MainContainer } from '@app/wrappers/MainContainer';
 import { posts } from '@entities/Post/lib/mock/posts';
 import { BlogPageWrapper } from '@app/wrappers/BlogPageWrapper';
-import { PostList } from '@entities/Post/ui/PostList';
 import { FeaturedPost } from '@entities/Post/ui/FeaturedPost';
 import { authors } from '@entities/Author/lib/mock/authors';
 import { JoinOurTeam } from '@widgets/JoinOurTeam';
 import { allPostCategories } from '@entities/Post/lib/mock/allPostCategories';
 import { BlogPostCategoriesList } from '@widgets/BlogPostCategoriesList';
 import { defaultLocale } from '@shared/contants/defaultLocale';
+import { BlogPostList } from '@widgets/BlogPostsList';
 
 import type { Post, PostCategory } from '@entities/Post/interfaces';
 import type { AuthorWithLocales } from '@entities/Author/interfaces';
@@ -27,7 +27,7 @@ const BlogPage = ({ posts, featuredPost, featuredPostAuthor, allPostCategories }
 	<MainContainer title="Blog | Modsen client blog" description="Let's see all of the posts of our content writers!">
 		<BlogPageWrapper>
 			<FeaturedPost post={featuredPost} author={featuredPostAuthor} />
-			<PostList posts={posts} maxPosts={5} />
+			<BlogPostList posts={posts} />
 			<BlogPostCategoriesList categories={allPostCategories} />
 			<JoinOurTeam />
 		</BlogPageWrapper>

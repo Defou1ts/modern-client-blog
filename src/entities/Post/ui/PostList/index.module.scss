@@ -1,17 +1,5 @@
 @import '@app/theme/theme.scss';
 
-.line {
-	margin-top: 32px;
-	margin-bottom: 64px;
-	height: 1px;
-	background-color: $medium-gray;
-	opacity: 0.32;
-
-	@include md {
-		margin-top: 16px;
-		margin-bottom: 32px;
-	}
-}
 .list {
 	display: grid;
 	grid-template-columns: 1fr;
