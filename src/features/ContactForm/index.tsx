@@ -4,19 +4,26 @@ import { useTranslation } from 'next-i18next';
 import * as Yup from 'yup';
 
 import styles from './index.module.scss';
-import { locations } from './constants/locations';
-import { initialValues } from './constants/initialValues';
+import { locations } from './lib/constants/locations';
+import { initialValues } from './lib/constants/initialValues';
 
 import { Button } from '@shared/ui/Button';
 import { Input } from '@shared/ui/Input';
 import { Select } from '@shared/ui/Select';
 import { Textarea } from '@shared/ui/Textarea';
+import { P } from '@shared/ui/P';
+import { useSubmitFormState } from '@shared/hooks/useSubmitFormState';
+import { useGetFormApi } from '@shared/hooks/useGetFormApi';
 
 import type { HandleSubmit } from './types';
 import type { ContactFormState } from './interfaces';
 
 export const ContactForm = () => {
+	const { isSuccess, isError, setSuccesWithTimeout, setErrorWithTimeout } = useSubmitFormState();
+
 	const { t } = useTranslation();
+
+	const { sendContactMessage } = useGetFormApi();
 
 	const validationSchema = Yup.object<ContactFormState>({
 		name: Yup.string().required(t('contact.form.errors.name') ?? ''),
@@ -27,8 +34,15 @@ export const ContactForm = () => {
 			.min(40, t('contact.form.errors.message') ?? ''),
 	});
 
-	const handleSubmit: HandleSubmit = (values, { resetForm }) => {
+	const handleSubmit: HandleSubmit = async (values, { resetForm }) => {
 		resetForm();
+		const { isSuccess } = await sendContactMessage(values);
+		console.log(isSuccess);
+		if (isSuccess) {
+			setSuccesWithTimeout(4000);
+		} else {
+			setErrorWithTimeout(4000);
+		}
 	};
 
 	return (
@@ -76,6 +90,16 @@ export const ContactForm = () => {
 					</Button>
 				</Form>
 			</Formik>
+			{isSuccess && (
+				<P type="medium" className={styles.success}>
+					{t('contact.form.success')}
+				</P>
+			)}
+			{isError && (
+				<P type="medium" className={styles.error}>
+					{t('contact.form.error')}
+				</P>
+			)}
 		</article>
 	);
 };

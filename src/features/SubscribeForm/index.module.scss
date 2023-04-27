@@ -41,4 +41,18 @@
 
 .input {
 	width: 100%;
+	color: $black;
+}
+
+.success {
+	color: $green;
+	@include md {
+		text-align: center;
+	}
+}
+.error {
+	color: $red;
+	@include md {
+		text-align: center;
+	}
 }

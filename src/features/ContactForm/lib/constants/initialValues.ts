@@ -1,4 +1,4 @@
-import type { ContactFormState } from '../interfaces';
+import type { ContactFormState } from '../../interfaces';
 
 export const initialValues: ContactFormState = {
 	name: '',

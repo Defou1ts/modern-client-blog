@@ -11,7 +11,11 @@
 		"title": "Subscribe to our news letter to get latest updates and news",
 		"button": "Subscribe",
 		"placeholder": "Enter Your Email",
-		"error": "Invalid Email"
+		"error": "Invalid Email",
+		"form": {
+			"success": "You was successfuly subscribed to our news",
+			"error": "Something went wrong, try again later"
+		}
 	},
 	"contact": {
 		"title": "Contact us",
@@ -40,7 +44,9 @@
 				"location": "Choose location",
 				"message": "Length should be greater that 40 characters",
 				"requiredmessage": "Enter message"
-			}
+			},
+			"success": "Your message was successfully sent",
+			"error": "Something went wrong, try again later"
 		}
 	},
 	"about": {
