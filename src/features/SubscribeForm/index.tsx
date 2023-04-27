@@ -1,9 +1,10 @@
 import { useTranslation } from 'next-i18next';
 import { Formik, Form, Field } from 'formik';
 import type { FieldProps, FormikHelpers } from 'formik';
-import * as Yup from 'yup';
 
 import styles from './index.module.scss';
+import { useSubscribeFormValidationSchema } from './lib/hooks/useSubscribeFormValidationSchema';
+import { initialValues } from './lib/constants/initialValues';
 
 import { H } from '@shared/ui/H';
 import { Button } from '@shared/ui/Button';
@@ -14,16 +15,14 @@ import { P } from '@shared/ui/P';
 
 import type { SubscribeFormState } from './interfaces';
 
-const initialValues: SubscribeFormState = {
-	email: '',
-};
-
 export const SubscribeForm = () => {
 	const { isSuccess, isError, setSuccesWithTimeout, setErrorWithTimeout } = useSubmitFormState();
 
+	const { t } = useTranslation();
+
 	const { sendSubscribeMessage } = useGetFormApi();
 
-	const { t } = useTranslation();
+	const validationSchema = useSubscribeFormValidationSchema();
 
 	const handleSubmit = async ({ email }: SubscribeFormState, { resetForm }: FormikHelpers<SubscribeFormState>) => {
 		resetForm();
@@ -35,10 +34,6 @@ export const SubscribeForm = () => {
 			setErrorWithTimeout(4000);
 		}
 	};
-
-	const validationSchema = Yup.object<SubscribeFormState>({
-		email: Yup.string().email(t('subscribe.error') ?? ''),
-	});
 
 	return (
 		<div className={styles.formWrapper}>

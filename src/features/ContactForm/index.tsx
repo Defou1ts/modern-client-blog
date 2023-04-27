@@ -1,11 +1,11 @@
 import { Field, Form, Formik } from 'formik';
 import type { FieldProps } from 'formik';
 import { useTranslation } from 'next-i18next';
-import * as Yup from 'yup';
 
 import styles from './index.module.scss';
 import { locations } from './lib/constants/locations';
 import { initialValues } from './lib/constants/initialValues';
+import { useContactFormValidationSchema } from './lib/hooks/useContactFormValidationSchema';
 
 import { Button } from '@shared/ui/Button';
 import { Input } from '@shared/ui/Input';
@@ -25,14 +25,7 @@ export const ContactForm = () => {
 
 	const { sendContactMessage } = useGetFormApi();
 
-	const validationSchema = Yup.object<ContactFormState>({
-		name: Yup.string().required(t('contact.form.errors.name') ?? ''),
-		email: Yup.string().required(t('contact.form.errors.email') ?? ''),
-		location: Yup.string().required(t('contact.form.errors.location') ?? ''),
-		message: Yup.string()
-			.required(t('contact.form.errors.requiredmessage') ?? '')
-			.min(40, t('contact.form.errors.message') ?? ''),
-	});
+	const validationSchema = useContactFormValidationSchema();
 
 	const handleSubmit: HandleSubmit = async (values, { resetForm }) => {
 		resetForm();
