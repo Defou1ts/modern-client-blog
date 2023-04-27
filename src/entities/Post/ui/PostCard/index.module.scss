@@ -3,8 +3,10 @@
 .wrapper {
 	display: grid;
 	grid-template-columns: minmax(210px, 490px) auto;
-	grid-template-rows: 318px;
+	grid-template-rows: auto;
 	gap: 32px;
+
+	align-items: center;
 
 	@include lg {
 		grid-template-columns: 1fr;
@@ -17,6 +19,7 @@
 }
 .imageWrapper {
 	overflow: hidden;
+	max-height: 320px;
 
 	img {
 		width: 100%;

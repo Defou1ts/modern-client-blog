@@ -67,12 +67,16 @@
 		}
 	},
 	"author": {
-		"list-title": "Список авторов"
+		"list-title": "Список авторов",
+		"welcome-part-first": "Всем привет, меня зовут",
+		"welcome-part-second": "и добро пожаловать в мой блог!",
+		"post-list": "Мои публикации"
 	},
 	"post": {
 		"features-post-title": "Лучший пост",
 		"post-list-title": "Все посты",
-		"from": "От автора"
+		"from": "От автора",
+		"no-posts": "У этого автора ещё нет опубликованных постов"
 	},
 	"blog": {
 		"post-categories-title": "Все категории"

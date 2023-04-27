@@ -23,7 +23,6 @@
 
 	display: grid;
 	align-items: end;
-	justify-content: left;
 }
 
 .statistics {
@@ -47,13 +46,4 @@
 
 .rectangles {
 	grid-area: rectangles;
-	display: grid;
-	grid-template-columns: minmax(0px, 311px) minmax(0px, 550px);
-	grid-template-rows: 23px;
-}
-.purpleRectangle {
-	background-color: $purple;
-}
-.yellowRectangle {
-	background-color: $yellow;
 }

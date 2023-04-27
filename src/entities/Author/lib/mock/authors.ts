@@ -11,12 +11,14 @@ export const authors: AuthorWithLocales[] = [
 				surname: 'Miles',
 				position: 'Content Writer',
 				company: 'Modsen',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.'
 			},
 			ru: {
 				name: 'Флойд',
 				surname: 'Майлз',
 				position: 'Контент мейкер',
 				company: 'Modsen',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.'
 			},
 		},
 		socials: [
@@ -48,12 +50,14 @@ export const authors: AuthorWithLocales[] = [
 				surname: 'Russel',
 				position: 'Content Writer',
 				company: 'Modsen',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.'
 			},
 			ru: {
 				name: 'Дианал',
 				surname: 'Рассл',
 				position: 'Контент мейкер',
 				company: 'Modsen',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.'
 			},
 		},
 		socials: [
@@ -85,12 +89,14 @@ export const authors: AuthorWithLocales[] = [
 				surname: 'Wilson',
 				position: 'Content Writer',
 				company: 'Modsen',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.'
 			},
 			ru: {
 				name: 'Дженни',
 				surname: 'Уилсон',
 				position: 'Контент мейкер',
 				company: 'Modsen',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.'
 			},
 		},
 		socials: [
@@ -122,12 +128,14 @@ export const authors: AuthorWithLocales[] = [
 				surname: 'Alexander',
 				position: 'Content Writer',
 				company: 'Modsen',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.'
 			},
 			ru: {
 				name: 'Александр',
 				surname: 'Лесли',
 				position: 'Контент мейкер',
 				company: 'Modsen',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.'
 			},
 		},
 		socials: [
@@ -159,12 +167,14 @@ export const authors: AuthorWithLocales[] = [
 				surname: 'Hawkins',
 				position: 'Content Writer',
 				company: 'Modsen',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.'
 			},
 			ru: {
 				name: 'Гай',
 				surname: 'Хавкинс',
 				position: 'Контент мейкер',
 				company: 'Modsen',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.'
 			},
 		},
 		socials: [
@@ -196,12 +206,14 @@ export const authors: AuthorWithLocales[] = [
 				surname: 'Pena',
 				position: 'Content Writer',
 				company: 'Modsen',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.'
 			},
 			ru: {
 				name: 'Элеонора',
 				surname: 'Пена',
 				position: 'Контент мейкер',
 				company: 'Modsen',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.'
 			},
 		},
 		socials: [
@@ -233,12 +245,14 @@ export const authors: AuthorWithLocales[] = [
 				surname: 'Fox',
 				position: 'Content Writer',
 				company: 'Modsen',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.'
 			},
 			ru: {
 				name: 'Роберт',
 				surname: 'Фокс',
 				position: 'Контент мейкер',
 				company: 'Modsen',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.'
 			},
 		},
 		socials: [
@@ -270,12 +284,14 @@ export const authors: AuthorWithLocales[] = [
 				surname: 'Jones',
 				position: 'Content Writer',
 				company: 'Modsen',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.'
 			},
 			ru: {
 				name: 'Джейкоб',
 				surname: 'Джонс',
 				position: 'Контент мейкер',
 				company: 'Modsen',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.'
 			},
 		},
 		socials: [

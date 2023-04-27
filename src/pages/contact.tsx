@@ -9,6 +9,7 @@ import { ContactInfo } from '@widgets/ContactInfo';
 import { ContactWorkTime } from '@widgets/ContactWorktime';
 import { ContactForm } from '@features/ContactForm';
 import { GoogleMap } from '@features/GoogleMap';
+import { defaultLocale } from '@shared/contants/defaultLocale';
 
 const ContactPage = () => (
 	<MainContainer
@@ -27,15 +28,10 @@ const ContactPage = () => (
 export default ContactPage;
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-	if (locale === undefined) {
-		return {
-			notFound: true,
-		};
-	}
 
 	return {
 		props: {
-			...(await serverSideTranslations(locale, ['common'])),
+			...(await serverSideTranslations(locale ?? defaultLocale, ['common'])),
 		},
 	};
 };

@@ -18,6 +18,7 @@ export const usePostList = (posts: Post[], maxPosts: number) => {
 		() => currentPage * maxPosts + maxPosts >= posts.length,
 		[currentPage, maxPosts, posts]
 	);
+	const needButtons = !(isNextDisabled && isPrevDisabled);
 
 	const postsToRender = posts.slice(currentPage * maxPosts, currentPage * maxPosts + maxPosts);
 
@@ -27,5 +28,6 @@ export const usePostList = (posts: Post[], maxPosts: number) => {
 		handleNextClick,
 		isPrevDisabled,
 		isNextDisabled,
+		needButtons,
 	};
 };

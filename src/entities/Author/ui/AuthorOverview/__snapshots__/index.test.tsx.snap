@@ -1,0 +1,170 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuthorOverview AuthorOverview snapshot 1`] = `
+<article
+  className="wrapper"
+>
+  <div
+    className="overview"
+  >
+    <div
+      className="imageWrapper"
+    >
+      <img
+        alt="Floyd Miles"
+        data-nimg="1"
+        decoding="async"
+        height={300}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F7562313%2Fpexels-photo-7562313.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=640&q=75"
+        srcSet="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F7562313%2Fpexels-photo-7562313.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=256&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F7562313%2Fpexels-photo-7562313.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=640&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
+        }
+        title="Floyd Miles"
+        width={250}
+      />
+    </div>
+    <div
+      className="content"
+    >
+      <h1
+        className="h h1 title"
+      >
+        author.welcome-part-first
+         
+        Floyd Miles
+         
+        author.welcome-part-second
+      </h1>
+      <p
+        className="p medium description"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.
+      </p>
+      <div
+        className="socials"
+      >
+        <a
+          href="https://facebook.com/ModsenSoftware/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Facebook"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Facebook"
+            width={40}
+          />
+        </a>
+        <a
+          href="https://twitter.com/modsencompany"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Twitter"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Twitter"
+            width={40}
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/modsencompany/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Instagram"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Instagram"
+            width={40}
+          />
+        </a>
+        <a
+          href="https://linkedin.com/company/modsen"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Linkedin"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Linkedin"
+            width={40}
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="rectangles reverse rectangle"
+  >
+    <div
+      className="purpleRectangle"
+    />
+    <div
+      className="yellowRectangle"
+    />
+  </div>
+</article>
+`;

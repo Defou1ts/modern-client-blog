@@ -67,12 +67,16 @@
 		}
 	},
 	"author": {
-		"list-title": "List of Authors"
+		"list-title": "List of Authors",
+		"welcome-part-first": "Hey There, I'm",
+		"welcome-part-second": "and welcome to my Blog",
+		"post-list": "My Posts"
 	},
 	"post": {
 		"features-post-title": "Featured Post",
 		"post-list-title": "All posts",
-		"from": "By"
+		"from": "By",
+		"no-posts": "This author has no published posts yet"
 	},
 	"blog": {
 		"post-categories-title": "All Categories"

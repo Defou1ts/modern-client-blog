@@ -76,7 +76,7 @@ exports[`AboutOverview AboutOverview snapshot 1`] = `
         </div>
       </div>
       <div
-        className="rectangles"
+        className="rectangles rectangles"
       >
         <div
           className="purpleRectangle"

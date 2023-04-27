@@ -12,4 +12,5 @@ export interface AuthorContent {
 	surname: string;
 	position: string;
 	company: string;
+	description: string;
 }

@@ -1,0 +1,22 @@
+@import '../../theme/theme.scss';
+
+.wrapper {
+	position: relative;
+	display: grid;
+	grid-template-columns: minmax(10px, 208px) auto minmax(10px, 208px);
+	grid-template-rows: auto 128px auto 128px;
+	grid-template-areas: 'authoroverview authoroverview authoroverview' '. . .' '. postlist .' '. . .';
+
+	@include md {
+		grid-template-columns: 10px auto 10px;
+		grid-template-rows: auto 64px auto 128px;
+	}
+}
+
+.wrapper > article:nth-child(1) {
+	grid-area: authoroverview;
+}
+
+.wrapper > article:nth-child(2) {
+	grid-area: postlist;
+}
