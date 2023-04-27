@@ -6,11 +6,11 @@ import type { GetStaticPaths, GetStaticProps } from 'next';
 import { authors } from '@entities/Author/lib/mock/authors';
 import { MainContainer } from '@app/wrappers/MainContainer';
 import { getAuthorFullName } from '@entities/Author/lib/utils/getAuthorFullName';
-import { defaultLocale } from '@shared/contants/defaultLocale';
 import { AuthorPageWrapper } from '@app/wrappers/AuthorPageWrapper';
 import { AuthorOverview } from '@entities/Author/ui/AuthorOverview';
 import { AuthorPostList } from '@widgets/AuthorPostList';
 import { posts } from '@entities/Post/lib/mock/posts';
+import { defaultLocale } from '@shared/contants/defaultLocale';
 
 import type { Post } from '@entities/Post/interfaces';
 import type { AuthorWithLocales } from '@entities/Author/interfaces';
@@ -57,7 +57,7 @@ export const getStaticPaths: GetStaticPaths = ({ locales }) => {
 		};
 	}
 
-	const paths: AuthorPagePath[] = [];
+	let paths: AuthorPagePath[] = [];
 
 	locales.forEach((locale) => {
 		const pathsWithLocale: AuthorPagePath[] = authors.map((author) => ({
@@ -67,7 +67,7 @@ export const getStaticPaths: GetStaticPaths = ({ locales }) => {
 			locale,
 		}));
 
-		paths.concat(pathsWithLocale);
+		paths = paths.concat(pathsWithLocale);
 	});
 
 	return {
@@ -77,20 +77,16 @@ export const getStaticPaths: GetStaticPaths = ({ locales }) => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
-	if (typeof params?.id === 'string') {
-		const author = authors.filter((author) => author.id.toString() === params?.id)[0];
-		const authorPosts = posts.filter((post) => post.authorId.toString() === params?.id);
+	const id = params?.id;
 
-		return {
-			props: {
-				...(await serverSideTranslations(locale ?? defaultLocale, ['common'])),
-				author,
-				authorPosts,
-			},
-		};
-	} else {
-		return {
-			notFound: true,
-		};
-	}
+	const author = authors.filter((author) => author.id.toString() === id)[0];
+	const authorPosts = posts.filter((post) => post.authorId.toString() === id);
+
+	return {
+		props: {
+			...(await serverSideTranslations(locale ?? defaultLocale, ['common'])),
+			author,
+			authorPosts,
+		},
+	};
 };
