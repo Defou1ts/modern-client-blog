@@ -11,7 +11,7 @@ import { JoinOurTeam } from '@widgets/JoinOurTeam';
 import { allPostCategories } from '@entities/Post/lib/mock/allPostCategories';
 import { BlogPostCategoriesList } from '@widgets/BlogPostCategoriesList';
 import { defaultLocale } from '@shared/contants/defaultLocale';
-import { BlogPostList } from '@widgets/BlogPostsList';
+import { BlogPostList } from '@widgets/BlogPostList';
 
 import type { Post, PostCategory } from '@entities/Post/interfaces';
 import type { AuthorWithLocales } from '@entities/Author/interfaces';

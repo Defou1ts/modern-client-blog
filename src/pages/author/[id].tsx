@@ -9,14 +9,18 @@ import { getAuthorFullName } from '@entities/Author/lib/utils/getAuthorFullName'
 import { defaultLocale } from '@shared/contants/defaultLocale';
 import { AuthorPageWrapper } from '@app/wrappers/AuthorPageWrapper';
 import { AuthorOverview } from '@entities/Author/ui/AuthorOverview';
+import { AuthorPostList } from '@widgets/AuthorPostList';
+import { posts } from '@entities/Post/lib/mock/posts';
 
+import type { Post } from '@entities/Post/interfaces';
 import type { AuthorWithLocales } from '@entities/Author/interfaces';
 
 interface AuthorPageProps {
 	author: AuthorWithLocales;
+	authorPosts: Post[];
 }
 
-const AuthorPage = ({ author }: AuthorPageProps) => {
+const AuthorPage = ({ author, authorPosts }: AuthorPageProps) => {
 	const { locale } = useRouter();
 
 	const { content } = author;
@@ -30,7 +34,7 @@ const AuthorPage = ({ author }: AuthorPageProps) => {
 		>
 			<AuthorPageWrapper>
 				<AuthorOverview author={author} />
-				<article>author</article>
+				<AuthorPostList posts={authorPosts} />
 			</AuthorPageWrapper>
 		</MainContainer>
 	);
@@ -75,11 +79,13 @@ export const getStaticPaths: GetStaticPaths = ({ locales }) => {
 export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
 	if (typeof params?.id === 'string') {
 		const author = authors.filter((author) => author.id.toString() === params?.id)[0];
+		const authorPosts = posts.filter((post) => post.authorId.toString() === params?.id);
 
 		return {
 			props: {
 				...(await serverSideTranslations(locale ?? defaultLocale, ['common'])),
 				author,
+				authorPosts,
 			},
 		};
 	} else {

@@ -9,6 +9,7 @@
 
 	@include md {
 		grid-template-columns: 10px auto 10px;
+		grid-template-rows: auto 64px auto 128px;
 	}
 }
 

@@ -1,4 +1,5 @@
 import cn from 'classnames';
+import { useTranslation } from 'next-i18next';
 
 import styles from './index.module.scss';
 
@@ -13,13 +14,20 @@ export const PostList = ({ posts, maxPosts }: PostListProps) => {
 	const { postsToRender, handlePrevClick, handleNextClick, isPrevDisabled, isNextDisabled, needButtons } =
 		usePostList(posts, maxPosts);
 
+	const { t } = useTranslation();
+
 	return (
 		<div>
-			<div className={styles.list}>
-				{postsToRender.map((post) => (
-					<PostCard key={post.id} post={post} />
-				))}
-			</div>
+			{posts.length > 0 ? (
+				<div className={styles.list}>
+					{postsToRender.map((post) => (
+						<PostCard key={post.id} post={post} />
+					))}
+				</div>
+			) : (
+				<H type="h5">{t('post.no-posts')}</H>
+			)}
+
 			{needButtons && (
 				<div className={styles.buttons}>
 					<button
