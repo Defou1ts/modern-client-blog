@@ -10,7 +10,7 @@ import { H } from '@shared/ui/H';
 import { P } from '@shared/ui/P';
 import { getAuthorFullName } from '@entities/Author/lib/utils/getAuthorFullName';
 import { defaultLocale } from '@shared/contants/defaultLocale';
-import { getFeaturePostDateFormatedDate } from '@shared/utils/formatDateByLocale';
+import { getFormattedDateByLocale } from '@shared/utils/getFormattedDateByLocale';
 import { Button } from '@shared/ui/Button';
 
 import type { FeaturedPostProps } from './interfaces';
@@ -42,7 +42,7 @@ export const FeaturedPost = ({ post, author }: FeaturedPostProps) => {
 							{getAuthorFullName(name, surname)}
 						</Link>
 						{'      '}|{'      '}
-						{getFeaturePostDateFormatedDate(locale, new Date(createdAt))}
+						{getFormattedDateByLocale(locale, new Date(createdAt))}
 					</P>
 					<P type="medium" className={styles.previewText}>
 						{localePreviewText}

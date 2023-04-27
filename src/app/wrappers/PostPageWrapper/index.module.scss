@@ -1,0 +1,58 @@
+@import '../../theme/theme.scss';
+
+.wrapper {
+	position: relative;
+	display: grid;
+	grid-template-columns: minmax(10px, 80px) auto minmax(10px, 80px);
+	grid-template-rows: 128px auto 64px auto 64px auto 128px auto 128px auto 128px;
+	grid-template-areas:
+		'. . .'
+		'. header .'
+		'. . .'
+		'. overviewimage .'
+		'. . .'
+		'. content .'
+		'. . .'
+		'. readnext .'
+		'. . .'
+		'. joinourteam .'
+		'. . .';
+
+	@include md {
+		grid-template-columns: 10px auto 10px;
+		grid-template-rows: 64px auto 64px auto 64px auto 128px auto 128px auto 128px;
+
+		grid-template-areas:
+			'. . .'
+			'. header .'
+			'. . .'
+			'overviewimage overviewimage overviewimage'
+			'. . .'
+			'. content .'
+			'. . .'
+			'. readnext .'
+			'. . .'
+			'. joinourteam .'
+			'. . .';
+	}
+}
+
+.wrapper > article:nth-child(1) {
+	grid-area: header;
+}
+
+.wrapper > article:nth-child(2) {
+	grid-area: overviewimage;
+}
+
+.wrapper > article:nth-child(3) {
+	grid-area: content;
+}
+
+.wrapper > article:nth-child(4) {
+	grid-area: readnext;
+}
+
+.wrapper > article:nth-child(5) {
+	grid-area: joinourteam;
+}

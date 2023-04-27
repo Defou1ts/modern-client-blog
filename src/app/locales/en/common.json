@@ -76,7 +76,8 @@
 		"features-post-title": "Featured Post",
 		"post-list-title": "All posts",
 		"from": "By",
-		"no-posts": "This author has no published posts yet"
+		"no-posts": "This author has no published posts yet",
+		"posted": "Posted"
 	},
 	"blog": {
 		"post-categories-title": "All Categories"
