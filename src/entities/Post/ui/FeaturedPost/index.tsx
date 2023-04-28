@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 import { useTranslation } from 'next-i18next';
@@ -9,25 +8,25 @@ import styles from './index.module.scss';
 import { H } from '@shared/ui/H';
 import { P } from '@shared/ui/P';
 import { getAuthorFullName } from '@entities/Author/lib/utils/getAuthorFullName';
-import { defaultLocale } from '@shared/contants/defaultLocale';
 import { getFormattedDateByLocale } from '@shared/utils/getFormattedDateByLocale';
 import { Button } from '@shared/ui/Button';
 import { ROUTES } from '@shared/contants/routes';
+import { useLocale } from '@shared/hooks/useLocale';
 
 import type { FeaturedPostProps } from './interfaces';
 
 export const FeaturedPost = ({ post, author }: FeaturedPostProps) => {
-	const { locale } = useRouter();
+	const { locale } = useLocale();
 
 	const { t } = useTranslation();
 
 	const { id: authorId, content } = author;
-	const { name, surname } = content[locale ?? defaultLocale];
+	const { name, surname } = content[locale];
 
 	const { previewImageURL, title, previewText, createdAt, id: postId } = post;
 
-	const localeTitle = title[locale ?? defaultLocale];
-	const localePreviewText = previewText[locale ?? defaultLocale];
+	const localeTitle = title[locale];
+	const localePreviewText = previewText[locale];
 
 	return (
 		<article className={styles.wrapper}>

@@ -1,27 +1,26 @@
-import { useRouter } from 'next/router';
 import Image from 'next/image';
 
 import { useTranslation } from 'next-i18next';
 
 import styles from './index.module.scss';
 
-import { defaultLocale } from '@shared/contants/defaultLocale';
 import { getAuthorFullName } from '@entities/Author/lib/utils/getAuthorFullName';
 import { H } from '@shared/ui/H';
 import { P } from '@shared/ui/P';
 import { SocialLink } from '@shared/ui/SocialLink';
 import { RectangleLine } from '@shared/ui/RectangleLine';
+import { useLocale } from '@shared/hooks/useLocale';
 
 import type { AuthorOverviewProps } from './interfaces';
 
 export const AuthorOverview = ({ author }: AuthorOverviewProps) => {
-	const { locale } = useRouter();
+	const { locale } = useLocale();
 
 	const { t } = useTranslation();
 
 	const { content, socials, avatarURL } = author;
 
-	const { name, surname, description } = content[locale ?? defaultLocale];
+	const { name, surname, description } = content[locale];
 
 	const authorFullName = getAuthorFullName(name, surname);
 

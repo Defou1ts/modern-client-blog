@@ -1,25 +1,24 @@
 import Image from 'next/image';
-import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 import cn from 'classnames';
 
 import styles from './index.module.scss';
 
-import { defaultLocale } from '@shared/contants/defaultLocale';
 import { H } from '@shared/ui/H';
 import { P } from '@shared/ui/P';
 import { ROUTES } from '@shared/contants/routes';
+import { useLocale } from '@shared/hooks/useLocale';
 
 import type { PostCategoryCardProps } from './interfaces';
 
 export const PostCategoryCard = ({ postCategory, type }: PostCategoryCardProps) => {
-	const { locale } = useRouter();
+	const { locale } = useLocale();
 
 	const { category, icon, title, description } = postCategory;
 
-	const translatedTitle = title[locale ?? defaultLocale];
-	const translatedDescription = description[locale ?? defaultLocale];
+	const translatedTitle = title[locale];
+	const translatedDescription = description[locale];
 
 	return (
 		<Link href={`${ROUTES.CATEGORY}${category}`}>

@@ -1,23 +1,22 @@
 import Image from 'next/image';
-import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 import styles from './index.module.scss';
 
-import { defaultLocale } from '@shared/contants/defaultLocale';
 import { H } from '@shared/ui/H';
 import { P } from '@shared/ui/P';
 import { ROUTES } from '@shared/contants/routes';
+import { useLocale } from '@shared/hooks/useLocale';
 
 import type { PostCardProps } from './interfaces';
 
 export const PostCard = ({ post }: PostCardProps) => {
-	const { locale } = useRouter();
+	const { locale } = useLocale();
 
 	const { previewImageURL, title, previewText, category, id } = post;
 
-	const localeTitle = title[locale ?? defaultLocale];
-	const localePreviewText = previewText[locale ?? defaultLocale];
+	const localeTitle = title[locale];
+	const localePreviewText = previewText[locale];
 
 	return (
 		<div className={styles.wrapper}>
