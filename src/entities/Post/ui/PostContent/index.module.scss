@@ -1,0 +1,55 @@
+@import '@app/theme/theme.scss';
+
+.wrapper {
+	display: grid;
+	grid-template-columns: minmax(0px, 219px) 1fr minmax(0px, 219px);
+	grid-template-areas: '. content .';
+
+	@include lx {
+		grid-template-columns: minmax(0px, 119px) 1fr minmax(0px, 119px);
+	}
+	@include lg {
+		grid-template-columns: minmax(0px, 50px) 1fr minmax(0px, 50px);
+	}
+	@include md {
+		grid-template-columns: 30px 1fr 30px;
+	}
+}
+
+.content {
+	grid-area: content;
+}
+
+.title {
+	margin-top: 48px;
+	letter-spacing: -2px;
+}
+.text {
+	color: $medium-gray;
+	margin-top: 16px;
+}
+
+.list {
+	margin-top: 24px;
+}
+
+.listItem {
+	position: relative;
+	left: 15px;
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		background-color: $black;
+		left: -12px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+.listItemTitle {
+	opacity: 0.78;
+}

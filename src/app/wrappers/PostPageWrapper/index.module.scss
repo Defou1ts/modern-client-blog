@@ -20,7 +20,7 @@
 
 	@include md {
 		grid-template-columns: 10px auto 10px;
-		grid-template-rows: 64px auto 64px auto 64px auto 128px auto 128px auto 128px;
+		grid-template-rows: 64px auto 64px auto 32px auto 128px auto 128px auto 128px;
 
 		grid-template-areas:
 			'. . .'

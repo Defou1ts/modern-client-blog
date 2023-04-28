@@ -83,7 +83,8 @@
 		"post-list-title": "All posts",
 		"from": "By",
 		"no-posts": "This author has no published posts yet",
-		"posted": "Posted"
+		"posted": "Posted",
+		"what-to-read-next": "What to read next"
 	},
 	"blog": {
 		"post-categories-title": "All Categories"

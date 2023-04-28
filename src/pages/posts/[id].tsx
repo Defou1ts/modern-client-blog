@@ -11,6 +11,8 @@ import { PostAuthorInfo } from '@widgets/PostAuthorInfo';
 import { PostImageOverview } from '@widgets/PostImageOverview';
 import { useLocale } from '@shared/hooks/useLocale';
 import { JoinOurTeam } from '@widgets/JoinOurTeam';
+import { PostContent } from '@entities/Post/ui/PostContent/Index';
+import { WhatToReadNext } from '@widgets/WhatToReadNext';
 
 import type { Post } from '@entities/Post/interfaces';
 import type { AuthorWithLocales } from '@entities/Author/interfaces';
@@ -18,22 +20,25 @@ import type { AuthorWithLocales } from '@entities/Author/interfaces';
 interface PostPageProps {
 	post: Post;
 	author: AuthorWithLocales;
+	similarPosts: [Post, Post, Post];
+	similarPostsAuthors: [AuthorWithLocales, AuthorWithLocales, AuthorWithLocales];
 }
 
-const PostPage = ({ author, post }: PostPageProps) => {
+const PostPage = ({ author, post, similarPosts, similarPostsAuthors }: PostPageProps) => {
 	const { locale } = useLocale();
 
-	const { title } = post;
+	const { title, content } = post;
 
 	const translatedTitle = title[locale];
+	const translatedContent = content[locale];
 
 	return (
 		<MainContainer title={`${translatedTitle} | Modsen client blog`} description={`${translatedTitle}`}>
 			<PostPageWrapper>
 				<PostAuthorInfo author={author} post={post} />
 				<PostImageOverview post={post} />
-				<article>1</article>
-				<article>1</article>
+				<PostContent content={translatedContent} />
+				<WhatToReadNext posts={similarPosts} authors={similarPostsAuthors} />
 				<JoinOurTeam />
 			</PostPageWrapper>
 		</MainContainer>
@@ -81,12 +86,18 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
 
 	const post = posts.filter((post) => post.id.toString() === id)[0];
 	const author = authors.filter((author) => author.id === post.authorId)[0];
+	const similarPosts = posts
+		.filter((postItem) => postItem.category === post.category && postItem.id !== post.id)
+		.slice(0, 3);
+	const similarPostsAuthors = similarPosts.map((post) => authors.filter((author) => author.id === post.authorId)[0]);
 
 	return {
 		props: {
 			...(await serverSideTranslations(locale ?? defaultLocale, ['common'])),
 			post,
 			author,
+			similarPosts,
+			similarPostsAuthors,
 		},
 	};
 };
