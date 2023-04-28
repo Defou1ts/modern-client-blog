@@ -10,6 +10,7 @@ import { getAuthorFullName } from '@entities/Author/lib/utils/getAuthorFullName'
 import { P } from '@shared/ui/P';
 import { getFormattedDateByLocale } from '@shared/utils/getFormattedDateByLocale';
 import { H } from '@shared/ui/H';
+import { ROUTES } from '@shared/contants/routes';
 
 import type { PostCardWithAuthorProps } from './interfaces';
 
@@ -35,14 +36,14 @@ export const PostCardWithAuthor = ({ post, author }: PostCardWithAuthorProps) =>
 			<div className={styles.content}>
 				<P type="label" className={styles.additionalInfo}>
 					{t('post.from')}{' '}
-					<Link href={`/author/${authorId}`} className={styles.authorLink}>
+					<Link href={`${ROUTES.AUTHOR}${authorId}`} className={styles.authorLink}>
 						{getAuthorFullName(name, surname)}
 					</Link>
 					{'      '}|{'      '}
 					{getFormattedDateByLocale(locale, new Date(createdAt))}
 				</P>
 				<H type="h3" className={styles.title}>
-					<Link href={`/posts/${id}`} className={styles.postLink}>
+					<Link href={`${ROUTES.POSTS}${id}`} className={styles.postLink}>
 						{translatedTitle}
 					</Link>
 				</H>

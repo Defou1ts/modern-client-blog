@@ -9,6 +9,7 @@ import styles from './index.module.scss';
 import { defaultLocale } from '@shared/contants/defaultLocale';
 import { H } from '@shared/ui/H';
 import { P } from '@shared/ui/P';
+import { ROUTES } from '@shared/contants/routes';
 
 import type { PostCategoryCardProps } from './interfaces';
 
@@ -21,7 +22,7 @@ export const PostCategoryCard = ({ postCategory, type }: PostCategoryCardProps) 
 	const translatedDescription = description[locale ?? defaultLocale];
 
 	return (
-		<Link href={`category/${category}`}>
+		<Link href={`${ROUTES.CATEGORY}${category}`}>
 			<div className={cn(styles.card, styles[type])}>
 				<Image src={icon} alt={translatedTitle} title={translatedTitle} />
 				<H type="h3" className={styles.title}>

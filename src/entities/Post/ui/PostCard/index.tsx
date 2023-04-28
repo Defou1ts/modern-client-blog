@@ -7,6 +7,7 @@ import styles from './index.module.scss';
 import { defaultLocale } from '@shared/contants/defaultLocale';
 import { H } from '@shared/ui/H';
 import { P } from '@shared/ui/P';
+import { ROUTES } from '@shared/contants/routes';
 
 import type { PostCardProps } from './interfaces';
 
@@ -25,7 +26,7 @@ export const PostCard = ({ post }: PostCardProps) => {
 			</div>
 			<div className={styles.info}>
 				<p className={styles.category}>{category}</p>
-				<Link href={`blog/${id}`}>
+				<Link href={`${ROUTES.POSTS}${id}`}>
 					<H type="h2" className={styles.title}>
 						{localeTitle}
 					</H>

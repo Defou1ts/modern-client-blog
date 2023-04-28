@@ -12,6 +12,7 @@ import { getAuthorFullName } from '@entities/Author/lib/utils/getAuthorFullName'
 import { defaultLocale } from '@shared/contants/defaultLocale';
 import { getFormattedDateByLocale } from '@shared/utils/getFormattedDateByLocale';
 import { Button } from '@shared/ui/Button';
+import { ROUTES } from '@shared/contants/routes';
 
 import type { FeaturedPostProps } from './interfaces';
 
@@ -38,7 +39,7 @@ export const FeaturedPost = ({ post, author }: FeaturedPostProps) => {
 					</H>
 					<P type="label" className={styles.additionalInfo}>
 						{t('post.from')}{' '}
-						<Link href={`author/${authorId}`} className={styles.authorLink}>
+						<Link href={`${ROUTES.AUTHOR}${authorId}`} className={styles.authorLink}>
 							{getAuthorFullName(name, surname)}
 						</Link>
 						{'      '}|{'      '}
@@ -47,7 +48,7 @@ export const FeaturedPost = ({ post, author }: FeaturedPostProps) => {
 					<P type="medium" className={styles.previewText}>
 						{localePreviewText}
 					</P>
-					<Link href={`blog/${postId}`}>
+					<Link href={`${ROUTES.POSTS}${postId}`}>
 						<Button appearance="primary" className={styles.readMoreButton}>
 							Read More &gt;
 						</Button>

@@ -1,24 +1,26 @@
+import { ROUTES } from '@shared/contants/routes';
+
 import type { Route } from '@shared/interfaces/route';
 
 export const routes: Route[] = [
 	{
 		translationPath: 'home',
-		path: '/',
+		path: ROUTES.HOME,
 	},
 	{
 		translationPath: 'blog',
-		path: '/blog',
+		path: ROUTES.BLOG,
 	},
 	{
 		translationPath: 'about',
-		path: '/about',
+		path: ROUTES.ABOUT,
 	},
 	{
 		translationPath: 'contact',
-		path: '/contact',
+		path: ROUTES.CONTACT,
 	},
 	{
 		translationPath: 'privacy',
-		path: '/privacy',
+		path: ROUTES.PRIVACY,
 	},
 ];

@@ -11,6 +11,7 @@ import { H } from '@shared/ui/H';
 import { P } from '@shared/ui/P';
 import { getFormattedDateByLocale } from '@shared/utils/getFormattedDateByLocale';
 import { allPostCategories } from '@entities/Post/lib/mock/allPostCategories';
+import { ROUTES } from '@shared/contants/routes';
 
 import type { PostAuthorInfoProps } from './interfaces';
 
@@ -38,7 +39,7 @@ export const PostAuthorInfo = ({ post, author }: PostAuthorInfoProps) => {
 						<Image src={avatarURL} alt={authorFullName} title={authorFullName} width={48} height={48} />
 					</div>
 					<div className={styles.info}>
-						<Link href={`/author/${id}`} className={styles.authorLink}>
+						<Link href={`${ROUTES.AUTHOR}${id}`} className={styles.authorLink}>
 							<H type="h3">{authorFullName}</H>
 						</Link>
 						<P type="medium" className={styles.createdAt}>
