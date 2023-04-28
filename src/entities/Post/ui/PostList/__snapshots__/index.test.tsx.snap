@@ -39,7 +39,7 @@ exports[`PostList PostList snapshot 1`] = `
           startup
         </p>
         <a
-          href="blog/1"
+          href="/posts/1"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
@@ -91,7 +91,7 @@ exports[`PostList PostList snapshot 1`] = `
           startup
         </p>
         <a
-          href="blog/2"
+          href="/posts/2"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
@@ -143,7 +143,7 @@ exports[`PostList PostList snapshot 1`] = `
           business
         </p>
         <a
-          href="blog/3"
+          href="/posts/3"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
@@ -195,7 +195,7 @@ exports[`PostList PostList snapshot 1`] = `
           startup
         </p>
         <a
-          href="blog/4"
+          href="/posts/4"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
@@ -247,7 +247,7 @@ exports[`PostList PostList snapshot 1`] = `
           technology
         </p>
         <a
-          href="blog/5"
+          href="/posts/5"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}

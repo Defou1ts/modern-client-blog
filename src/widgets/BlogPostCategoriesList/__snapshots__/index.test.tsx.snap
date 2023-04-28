@@ -11,7 +11,7 @@ exports[`BlogPostCategoriesList BlogPostCategoriesList snapshot 1`] = `
     className="list horizontal"
   >
     <a
-      href="category/business"
+      href="/category/business"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}
@@ -50,7 +50,7 @@ exports[`BlogPostCategoriesList BlogPostCategoriesList snapshot 1`] = `
       </div>
     </a>
     <a
-      href="category/startup"
+      href="/category/startup"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}
@@ -89,7 +89,7 @@ exports[`BlogPostCategoriesList BlogPostCategoriesList snapshot 1`] = `
       </div>
     </a>
     <a
-      href="category/economy"
+      href="/category/economy"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}
@@ -128,7 +128,7 @@ exports[`BlogPostCategoriesList BlogPostCategoriesList snapshot 1`] = `
       </div>
     </a>
     <a
-      href="category/technology"
+      href="/category/technology"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}

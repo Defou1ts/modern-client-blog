@@ -42,7 +42,9 @@ exports[`ContactForm ContactForm snapshot 1`] = `
         onChange={[Function]}
         value=""
       >
-        <option>
+        <option
+          value=""
+        >
           contact.form.related
         </option>
         <option

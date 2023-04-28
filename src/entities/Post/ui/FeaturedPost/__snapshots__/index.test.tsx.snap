@@ -27,7 +27,7 @@ exports[`FeaturedPost FeaturedPost snapshot 1`] = `
          
         <a
           className="authorLink"
-          href="author/1"
+          href="/author/1"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
@@ -45,7 +45,7 @@ exports[`FeaturedPost FeaturedPost snapshot 1`] = `
         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
       </p>
       <a
-        href="blog/1"
+        href="/posts/1"
         onClick={[Function]}
         onMouseEnter={[Function]}
         onTouchStart={[Function]}

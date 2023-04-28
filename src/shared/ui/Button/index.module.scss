@@ -24,4 +24,8 @@
 	&:hover {
 		background-color: $yellow-hover;
 	}
+
+	@include lx {
+		padding: 16px 24px;
+	}
 }

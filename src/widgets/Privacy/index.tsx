@@ -1,17 +1,26 @@
+import { useTranslation } from 'next-i18next';
+
 import styles from './index.module.scss';
 
+import { useLocale } from '@shared/hooks/useLocale';
 import { H } from '@shared/ui/H';
 import { P } from '@shared/ui/P';
+import { getFormattedDateByLocale } from '@shared/utils/getFormattedDateByLocale';
 
 export const Privacy = () => {
+	const { locale } = useLocale();
+	const { t } = useTranslation();
+
+	const updatedDate = new Date(2022, 0, 22);
+
 	return (
 		<div className={styles.privacy}>
 			<article className={styles.titleWrapper}>
 				<H type="h1" className={styles.title}>
-					Privacy Policy
+					{t('privacy.title')}
 				</H>
 				<P type="medium" className={styles.updatedAt}>
-					Last Updated on 27th January 2022
+					{t('privacy.updatedAt')} {getFormattedDateByLocale(locale, updatedDate)}
 				</P>
 			</article>
 			<article className={styles.content}>

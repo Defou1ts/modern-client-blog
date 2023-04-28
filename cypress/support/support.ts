@@ -33,7 +33,7 @@ export const checkHeader = () => {
 			.wait(150)
 			.click({ force: true })
 			.get('[data-test-id=menu-wrapper]')
-			.should('have.css', 'left', '0px')
+			.should('have.css', 'top', '0px')
 			.get('[data-test-id=menu-wrapper]')
 			.should('be.visible');
 	});

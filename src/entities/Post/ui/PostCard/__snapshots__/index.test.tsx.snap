@@ -35,7 +35,7 @@ exports[`PostCard PostCard snapshot 1`] = `
       startup
     </p>
     <a
-      href="blog/1"
+      href="/posts/1"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}

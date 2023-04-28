@@ -17,6 +17,10 @@
 			"error": "Something went wrong, try again later"
 		}
 	},
+	"privacy": {
+		"title": "Privacy Policy",
+		"updatedAt": "Last Updated on"
+	},
 	"contact": {
 		"title": "Contact us",
 		"subtitle": "Let’s Start a Conversation",

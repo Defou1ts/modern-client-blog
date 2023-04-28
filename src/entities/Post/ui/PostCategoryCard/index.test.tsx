@@ -26,27 +26,27 @@ describe('PostCategoryCard', () => {
 	});
 
 	it('renders a  PostCategoryCard large', () => {
-		render(<PostCategoryCard postCategory={allPostCategories[0]} type="large" />);
+		render(<PostCategoryCard postCategory={Object.values(allPostCategories)[0]} type="large" />);
 		const text = screen.getByText('Business');
 		expect(text).toBeInTheDocument();
 		expect(text).toBeVisible();
 	});
 	it('renders a  PostCategoryCard medium', () => {
-		render(<PostCategoryCard postCategory={allPostCategories[0]} type="medium" />);
+		render(<PostCategoryCard postCategory={Object.values(allPostCategories)[0]} type="medium" />);
 		const text = screen.getByText('Business');
 		expect(text).toBeInTheDocument();
 		expect(text).toBeVisible();
 	});
 
 	it('PostCategoryCard snapshot large', () => {
-		const component = renderer.create(<PostCategoryCard postCategory={allPostCategories[0]} type="large" />);
+		const component = renderer.create(<PostCategoryCard postCategory={Object.values(allPostCategories)[0]} type="large" />);
 
 		const tree = component.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
 
 	it('PostCategoryCard snapshot medium', () => {
-		const component = renderer.create(<PostCategoryCard postCategory={allPostCategories[0]} type="medium" />);
+		const component = renderer.create(<PostCategoryCard postCategory={Object.values(allPostCategories)[0]} type="medium" />);
 
 		const tree = component.toJSON();
 		expect(tree).toMatchSnapshot();
