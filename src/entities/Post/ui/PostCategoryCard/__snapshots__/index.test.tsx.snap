@@ -2,7 +2,7 @@
 
 exports[`PostCategoryCard PostCategoryCard snapshot large 1`] = `
 <a
-  href="category/business"
+  href="/category/business"
   onClick={[Function]}
   onMouseEnter={[Function]}
   onTouchStart={[Function]}
@@ -44,7 +44,7 @@ exports[`PostCategoryCard PostCategoryCard snapshot large 1`] = `
 
 exports[`PostCategoryCard PostCategoryCard snapshot medium 1`] = `
 <a
-  href="category/business"
+  href="/category/business"
   onClick={[Function]}
   onMouseEnter={[Function]}
   onTouchStart={[Function]}

@@ -1,0 +1,59 @@
+@import '@app/theme/theme.scss';
+
+.wrapper {
+	display: grid;
+	grid-template-columns: minmax(0px, 256px) 1fr minmax(0px, 256px);
+	grid-template-areas: '. info .';
+
+	@include lx {
+		grid-template-columns: minmax(0px, 100px) 1fr minmax(0px, 100px);
+	}
+
+	@include lg {
+		grid-template-columns: minmax(0px, 10px) 1fr minmax(0px, 10px);
+	}
+}
+
+.infoWrapper {
+	grid-area: info;
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: left;
+	gap: 24px;
+}
+.author {
+	display: grid;
+	grid-template-columns: 48px auto;
+	justify-items: left;
+	gap: 16px;
+	white-space: nowrap;
+}
+.authorIconWrapper {
+	border-radius: 50%;
+	overflow: hidden;
+	width: 48px;
+	height: 48px;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+.info {
+}
+.authorLink {
+	@include link($red, 0.2s ease, $purple);
+}
+.createdAt {
+	color: $medium-gray;
+}
+.category {
+	display: grid;
+	grid-template-columns: 24px auto;
+	gap: 8px;
+}
+
+.categoryImage {
+	width: 24px;
+	height: 24px;
+}

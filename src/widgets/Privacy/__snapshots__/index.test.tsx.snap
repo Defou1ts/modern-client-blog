@@ -10,12 +10,14 @@ exports[`Privacy Privacy snapshot 1`] = `
     <h1
       className="h h1 title"
     >
-      Privacy Policy
+      privacy.title
     </h1>
     <p
       className="p medium updatedAt"
     >
-      Last Updated on 27th January 2022
+      privacy.updatedAt
+       
+      January 22, 2022
     </p>
   </article>
   <article

@@ -19,7 +19,7 @@ exports[`AuthorList AuthorList snapshot 1`] = `
         className="avatarWrapper"
       >
         <a
-          href="author/1"
+          href="/author/1"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
@@ -48,7 +48,7 @@ exports[`AuthorList AuthorList snapshot 1`] = `
         className="info"
       >
         <a
-          href="author/1"
+          href="/author/1"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
@@ -183,7 +183,7 @@ exports[`AuthorList AuthorList snapshot 1`] = `
         className="avatarWrapper"
       >
         <a
-          href="author/2"
+          href="/author/2"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
@@ -212,7 +212,7 @@ exports[`AuthorList AuthorList snapshot 1`] = `
         className="info"
       >
         <a
-          href="author/2"
+          href="/author/2"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
@@ -347,7 +347,7 @@ exports[`AuthorList AuthorList snapshot 1`] = `
         className="avatarWrapper"
       >
         <a
-          href="author/3"
+          href="/author/3"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
@@ -376,7 +376,7 @@ exports[`AuthorList AuthorList snapshot 1`] = `
         className="info"
       >
         <a
-          href="author/3"
+          href="/author/3"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
@@ -511,7 +511,7 @@ exports[`AuthorList AuthorList snapshot 1`] = `
         className="avatarWrapper"
       >
         <a
-          href="author/4"
+          href="/author/4"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
@@ -540,7 +540,7 @@ exports[`AuthorList AuthorList snapshot 1`] = `
         className="info"
       >
         <a
-          href="author/4"
+          href="/author/4"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
@@ -675,7 +675,7 @@ exports[`AuthorList AuthorList snapshot 1`] = `
         className="avatarWrapper"
       >
         <a
-          href="author/5"
+          href="/author/5"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
@@ -704,7 +704,7 @@ exports[`AuthorList AuthorList snapshot 1`] = `
         className="info"
       >
         <a
-          href="author/5"
+          href="/author/5"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
@@ -839,7 +839,7 @@ exports[`AuthorList AuthorList snapshot 1`] = `
         className="avatarWrapper"
       >
         <a
-          href="author/6"
+          href="/author/6"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
@@ -868,7 +868,7 @@ exports[`AuthorList AuthorList snapshot 1`] = `
         className="info"
       >
         <a
-          href="author/6"
+          href="/author/6"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
@@ -1003,7 +1003,7 @@ exports[`AuthorList AuthorList snapshot 1`] = `
         className="avatarWrapper"
       >
         <a
-          href="author/7"
+          href="/author/7"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
@@ -1032,7 +1032,7 @@ exports[`AuthorList AuthorList snapshot 1`] = `
         className="info"
       >
         <a
-          href="author/7"
+          href="/author/7"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
@@ -1167,7 +1167,7 @@ exports[`AuthorList AuthorList snapshot 1`] = `
         className="avatarWrapper"
       >
         <a
-          href="author/8"
+          href="/author/8"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
@@ -1196,7 +1196,7 @@ exports[`AuthorList AuthorList snapshot 1`] = `
         className="info"
       >
         <a
-          href="author/8"
+          href="/author/8"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}

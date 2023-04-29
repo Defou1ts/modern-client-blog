@@ -1,4 +1,4 @@
-export const getFeaturePostDateFormatedDate = (locale: Intl.LocalesArgument, date: Date) => {
+export const getFormattedDateByLocale = (locale: Intl.LocalesArgument, date: Date) => {
 	return date.toLocaleString(locale, {
 		month: 'long',
 		day: 'numeric',

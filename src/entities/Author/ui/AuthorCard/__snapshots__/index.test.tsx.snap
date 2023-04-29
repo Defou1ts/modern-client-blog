@@ -8,7 +8,7 @@ exports[`AuthorCard AuthorCard snapshot 1`] = `
     className="avatarWrapper"
   >
     <a
-      href="author/1"
+      href="/author/1"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}
@@ -37,7 +37,7 @@ exports[`AuthorCard AuthorCard snapshot 1`] = `
     className="info"
   >
     <a
-      href="author/1"
+      href="/author/1"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}

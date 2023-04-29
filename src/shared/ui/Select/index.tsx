@@ -15,14 +15,14 @@ export const Select = forwardRef(function Input(
 	{ field, form, meta, className, children, ...props }: SelectProps,
 	ref: ForwardedRef<HTMLSelectElement>
 ) {
-	const { error } = meta;
+	const { error, touched } = meta;
 
 	return (
 		<div className={styles.wrapper}>
 			<select
 				ref={ref}
 				className={cn(className, styles.select, {
-					[styles.error]: error !== undefined,
+					[styles.error]: error !== undefined && touched,
 				})}
 				{...field}
 				{...props}
@@ -30,7 +30,7 @@ export const Select = forwardRef(function Input(
 				{children}
 			</select>
 			<Image className={styles.arrow} src={ArrowDownIcon} alt="arrow-down" />
-			{error !== undefined && <span className={styles.errorMessage}>{error}</span>}
+			{error !== undefined && touched && <span className={styles.errorMessage}>{error}</span>}
 		</div>
 	);
 });

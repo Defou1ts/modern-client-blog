@@ -1,6 +1,5 @@
 @import '@app/theme/theme.scss';
 
-
 .nav {
 	background-color: $black;
 	justify-self: right;
@@ -12,6 +11,12 @@
 	grid-template-columns: auto;
 
 	gap: 24px;
+
+	align-items: center;
+
+	@include lx {
+		gap: 12px;
+	}
 
 	@include lg {
 		justify-self: center;

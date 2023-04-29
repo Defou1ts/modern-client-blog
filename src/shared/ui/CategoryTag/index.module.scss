@@ -1,0 +1,35 @@
+@import '@app/theme/theme.scss';
+
+.tag {
+	border: 2px solid $medium-gray;
+	border-radius: 28px;
+	padding: 8px;
+
+	cursor: pointer;
+
+	display: grid;
+	align-items: center;
+	justify-items: center;
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 32px;
+
+	transition: 0.2s ease;
+
+	&:hover {
+		border: 2px solid $yellow-hover;
+		color: $yellow-hover;
+	}
+}
+
+.active {
+	border: 2px solid $yellow;
+	color: $yellow;
+
+	cursor: default;
+
+	&:hover {
+		border: 2px solid $yellow;
+	}
+}

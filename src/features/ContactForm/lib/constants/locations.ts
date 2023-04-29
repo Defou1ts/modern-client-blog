@@ -1,4 +1,4 @@
-import type { Location } from '../interfaces';
+import type { Location } from '../../interfaces';
 
 export const locations: Location[] = [
 	{

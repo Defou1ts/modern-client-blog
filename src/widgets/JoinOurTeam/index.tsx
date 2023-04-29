@@ -7,6 +7,7 @@ import styles from './index.module.scss';
 import { H } from '@shared/ui/H';
 import { P } from '@shared/ui/P';
 import { Button } from '@shared/ui/Button';
+import { ROUTES } from '@shared/contants/routes';
 
 export const JoinOurTeam = () => {
 	const { t } = useTranslation();
@@ -19,7 +20,7 @@ export const JoinOurTeam = () => {
 			<P type="medium" className={styles.text}>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
 			</P>
-			<Link href={'/contact'} className={styles.link}>
+			<Link href={`${ROUTES.CONTACT}`} className={styles.link}>
 				<Button appearance="primary">{t('about.join-our-team.button')}</Button>
 			</Link>
 		</article>

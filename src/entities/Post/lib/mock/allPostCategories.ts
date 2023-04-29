@@ -3,10 +3,11 @@ import StartupIcon from '@app/assets/icons/startup.png';
 import EconomyIcon from '@app/assets/icons/economy.png';
 import TechnologyIcon from '@app/assets/icons/technology.png';
 
+import type { PostCategoryType } from '@entities/Post/types';
 import type { PostCategory } from '@entities/Post/interfaces';
 
-export const allPostCategories: PostCategory[] = [
-	{
+export const allPostCategories: Record<PostCategoryType, PostCategory> = {
+	business: {
 		category: 'business',
 		icon: BusinessIcon,
 		title: {
@@ -18,7 +19,7 @@ export const allPostCategories: PostCategory[] = [
 			ru: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
 		},
 	},
-	{
+	startup: {
 		category: 'startup',
 		icon: StartupIcon,
 		title: {
@@ -30,7 +31,7 @@ export const allPostCategories: PostCategory[] = [
 			ru: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
 		},
 	},
-	{
+	economy: {
 		category: 'economy',
 		icon: EconomyIcon,
 		title: {
@@ -42,7 +43,7 @@ export const allPostCategories: PostCategory[] = [
 			ru: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
 		},
 	},
-	{
+	technology: {
 		category: 'technology',
 		icon: TechnologyIcon,
 		title: {
@@ -54,4 +55,4 @@ export const allPostCategories: PostCategory[] = [
 			ru: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
 		},
 	},
-];
+};
