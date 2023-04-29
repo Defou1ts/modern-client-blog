@@ -86,11 +86,17 @@
 		"features-post-title": "Лучший пост",
 		"post-list-title": "Все посты",
 		"from": "От автора",
-		"no-posts": "У этого автора ещё нет опубликованных постов",
+		"no-posts": "Здесь ещё нет таких публикаций",
 		"posted": "Опубликовано",
 		"what-to-read-next": "Что читать дальше"
 	},
 	"blog": {
 		"post-categories-title": "Все категории"
+	},
+	"category": {
+		"search-submit": "Искать",
+		"search-placeholder": "Искать по тегу",
+		"categories-list-title": "Категории",
+		"tags-list-title": "Все теги"
 	}
 }

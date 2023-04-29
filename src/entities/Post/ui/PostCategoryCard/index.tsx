@@ -12,18 +12,27 @@ import { useLocale } from '@shared/hooks/useLocale';
 
 import type { PostCategoryCardProps } from './interfaces';
 
-export const PostCategoryCard = ({ postCategory, type }: PostCategoryCardProps) => {
+export const PostCategoryCard = ({ postCategory, type, isActive }: PostCategoryCardProps) => {
 	const { locale } = useLocale();
 
-	const { category, icon, title, description } = postCategory;
+	const { categoryType: category, icon, title, description } = postCategory;
 
 	const translatedTitle = title[locale];
 	const translatedDescription = description[locale];
 
 	return (
-		<Link href={`${ROUTES.CATEGORY}${category}`}>
-			<div className={cn(styles.card, styles[type])}>
-				<Image src={icon} alt={translatedTitle} title={translatedTitle} />
+		<Link
+			href={`${ROUTES.CATEGORY}${category}`}
+			className={cn({
+				[styles.active]: isActive,
+			})}
+		>
+			<div
+				className={cn(styles.card, styles[type], {
+					[styles.active]: isActive,
+				})}
+			>
+				<Image src={icon} alt={translatedTitle} title={translatedTitle} className={styles.icon} />
 				<H type="h3" className={styles.title}>
 					{translatedTitle}
 				</H>

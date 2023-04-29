@@ -5,4 +5,5 @@ export interface PostCategoriesListProps {
 	categories: PostCategory[];
 	type: 'horizontal' | 'vertical';
 	postCategoryCardType: PostCategoryCardType;
+	activeCategory?: PostCategory;
 }

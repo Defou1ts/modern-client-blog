@@ -6,12 +6,25 @@ import { PostCategoryCard } from '@entities/Post/ui/PostCategoryCard';
 
 import type { PostCategoriesListProps } from './interfaces';
 
-export const PostCategoriesList = ({ categories, type, postCategoryCardType }: PostCategoriesListProps) => {
+export const PostCategoriesList = ({
+	categories,
+	type,
+	postCategoryCardType,
+	activeCategory,
+}: PostCategoriesListProps) => {
 	return (
 		<div className={cn(styles.list, styles[type])}>
-			{Object.values(categories).map((category) => (
-				<PostCategoryCard key={category.category} postCategory={category} type={postCategoryCardType} />
-			))}
+			{Object.values(categories).map((category) => {
+				const { categoryType } = category;
+				return (
+					<PostCategoryCard
+						key={categoryType}
+						postCategory={category}
+						type={postCategoryCardType}
+						isActive={activeCategory?.categoryType === categoryType}
+					/>
+				);
+			})}
 		</div>
 	);
 };

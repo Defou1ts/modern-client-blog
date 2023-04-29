@@ -14,7 +14,7 @@ export interface Post {
 }
 
 export interface PostCategory {
-	category: PostCategoryType;
+	categoryType: PostCategoryType;
 	icon: StaticImageData;
 	title: Record<string, string>;
 	description: Record<string, string>;

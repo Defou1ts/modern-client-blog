@@ -11,6 +11,7 @@ exports[`BlogPostCategoriesList BlogPostCategoriesList snapshot 1`] = `
     className="list horizontal"
   >
     <a
+      className=""
       href="/category/business"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -21,6 +22,7 @@ exports[`BlogPostCategoriesList BlogPostCategoriesList snapshot 1`] = `
       >
         <img
           alt="Business"
+          className="icon"
           data-nimg="1"
           decoding="async"
           height={40}
@@ -50,6 +52,7 @@ exports[`BlogPostCategoriesList BlogPostCategoriesList snapshot 1`] = `
       </div>
     </a>
     <a
+      className=""
       href="/category/startup"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -60,6 +63,7 @@ exports[`BlogPostCategoriesList BlogPostCategoriesList snapshot 1`] = `
       >
         <img
           alt="Startup"
+          className="icon"
           data-nimg="1"
           decoding="async"
           height={40}
@@ -89,6 +93,7 @@ exports[`BlogPostCategoriesList BlogPostCategoriesList snapshot 1`] = `
       </div>
     </a>
     <a
+      className=""
       href="/category/economy"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -99,6 +104,7 @@ exports[`BlogPostCategoriesList BlogPostCategoriesList snapshot 1`] = `
       >
         <img
           alt="Economy"
+          className="icon"
           data-nimg="1"
           decoding="async"
           height={40}
@@ -128,6 +134,7 @@ exports[`BlogPostCategoriesList BlogPostCategoriesList snapshot 1`] = `
       </div>
     </a>
     <a
+      className=""
       href="/category/technology"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -138,6 +145,7 @@ exports[`BlogPostCategoriesList BlogPostCategoriesList snapshot 1`] = `
       >
         <img
           alt="Technology"
+          className="icon"
           data-nimg="1"
           decoding="async"
           height={40}

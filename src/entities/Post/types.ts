@@ -6,4 +6,4 @@ export type PostContentType = TitleContentType | TextContentType | ListContentTy
 
 export type PostTag = 'business' | 'experience' | 'screen' | 'technology' | 'marketing' | 'life';
 
-export type PostCategoryCardType = 'large' | 'medium';
+export type PostCategoryCardType = 'large' | 'medium' | 'small';

@@ -1,0 +1,14 @@
+@import '@app/theme/theme.scss';
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 40px;
+}
+
+.title {
+	letter-spacing: -2px;
+	@include lx {
+		display: none;
+	}
+}

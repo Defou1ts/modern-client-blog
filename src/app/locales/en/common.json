@@ -86,11 +86,17 @@
 		"features-post-title": "Featured Post",
 		"post-list-title": "All posts",
 		"from": "By",
-		"no-posts": "This author has no published posts yet",
+		"no-posts": "There are no published posts yet",
 		"posted": "Posted",
 		"what-to-read-next": "What to read next"
 	},
 	"blog": {
 		"post-categories-title": "All Categories"
+	},
+	"category": {
+		"search-submit": "Search",
+		"search-placeholder": "Search for tag...",
+		"categories-list-title": "Categories",
+		"tags-list-title": "All Tags"
 	}
 }

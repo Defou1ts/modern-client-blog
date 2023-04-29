@@ -1,0 +1,31 @@
+@import '../../theme/theme.scss';
+
+.wrapper {
+	position: relative;
+	padding: 0px 0px 128px 0px;
+	display: grid;
+	grid-template-columns: minmax(0px, 80px) auto minmax(10px, 147px) 300px minmax(0px, 80px);
+	grid-template-rows: auto 102px auto;
+	grid-template-areas: 'categoryoverview categoryoverview categoryoverview categoryoverview categoryoverview' '. . . . .' '. postlist . sidebar .';
+
+	@include lx {
+		grid-template-rows: auto 40px auto 40px auto;
+		grid-template-columns: 10px auto 10px;
+		grid-template-areas: 'categoryoverview categoryoverview categoryoverview' '. . .' '. sidebar .' '. . .' '. postlist . ';
+	}
+}
+
+.wrapper > article:nth-child(1) {
+	grid-area: categoryoverview;
+}
+.wrapper > article:nth-child(2) {
+	margin-top: 24px;
+	grid-area: postlist;
+
+	@include lx {
+		margin-top: 0;
+	}
+}
+.wrapper > article:nth-child(3) {
+	grid-area: sidebar;
+}

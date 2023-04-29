@@ -12,6 +12,15 @@
 	}
 
 	height: 100%;
+
+	&.active {
+		background-color: $yellow-hover;
+	}
+}
+
+.active {
+	pointer-events: none;
+	cursor: none;
 }
 
 .large {
@@ -29,6 +38,19 @@
 	justify-content: left;
 	gap: 16px;
 	align-items: center;
+}
+
+.small {
+	border: none;
+	padding: 6px;
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: left;
+	gap: 8px;
+	align-items: center;
+	& .title {
+		font-size: 16px;
+	}
 }
 
 .description {
