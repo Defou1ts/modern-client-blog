@@ -1,0 +1,40 @@
+@import '@app/theme/theme.scss';
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-template-rows: 54px;
+	position: relative;
+}
+.input {
+	padding: 15px 25px;
+	border: 1px solid $black;
+	outline: none;
+	&:focus {
+		border: 1px solid $yellow;
+	}
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+
+	letter-spacing: -0.015em;
+}
+.button {
+	padding: 15px;
+	background-color: $yellow;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+
+	text-align: center;
+	letter-spacing: -0.015em;
+
+	cursor: pointer;
+
+	transition: all 0.2s ease;
+
+	&:hover {
+		background-color: $yellow-hover;
+	}
+}

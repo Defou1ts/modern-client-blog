@@ -4,14 +4,18 @@ import styles from './index.module.scss';
 
 import type { CategoryTagProps } from './interfaces';
 
-export const CategoryTag = ({ tagName, isActive }: CategoryTagProps) => {
+export const CategoryTag = ({ tagName, isActive, onClick, type, disabled }: CategoryTagProps) => {
 	return (
 		<div
-			className={cn(styles.tag, {
+			onClick={onClick}
+			className={cn(styles.tag, styles[type], {
 				[styles.active]: isActive,
+				[styles.disabled]: disabled,
 			})}
 		>
-			{tagName}
+			<div className={styles.label}>
+				<span>{tagName}</span>
+			</div>
 		</div>
 	);
 };

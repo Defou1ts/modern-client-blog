@@ -1,6 +1,9 @@
+import { useEffect } from 'react';
+
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import type { GetStaticPaths, GetStaticProps } from 'next';
+import { useDispatch } from 'react-redux';
 
 import { MainContainer } from '@app/wrappers/MainContainer';
 import { defaultLocale } from '@shared/contants/defaultLocale';
@@ -8,20 +11,32 @@ import { useLocale } from '@shared/hooks/useLocale';
 import { CategoryPageWrapper } from '@app/wrappers/CategoryPageWrapper';
 import { allPostCategories } from '@entities/Post/lib/mock/allPostCategories';
 import { posts } from '@entities/Post/lib/mock/posts';
-import { PostList } from '@entities/Post/ui/PostList';
 import { CategoryOverview } from '@widgets/CategoryOverview';
 import { CategorySidebar } from '@widgets/CategorySidebar';
+import { CategoryPostList } from '@widgets/CategoryPostList';
+import { setPosts, setTags } from '@app/store/slices/category.slice';
 import { allPostTags } from '@entities/Post/lib/mock/allPostTags';
 
+import type { PostTag } from '@entities/Post/types';
 import type { Post, PostCategory } from '@entities/Post/interfaces';
 
 interface CategoryPageProps {
 	category: PostCategory;
 	categoryPosts: Post[];
+	allPostTags: PostTag[];
 }
 
-const PostPage = ({ category, categoryPosts }: CategoryPageProps) => {
+const CategoryPage = ({ category, categoryPosts, allPostTags }: CategoryPageProps) => {
 	const { locale } = useLocale();
+	const dispatch = useDispatch();
+
+	useEffect(() => {
+		dispatch(setPosts(categoryPosts));
+	}, [categoryPosts, dispatch]);
+
+	useEffect(() => {
+		dispatch(setTags(allPostTags));
+	}, [allPostTags, dispatch]);
 
 	const { title, description } = category;
 
@@ -34,18 +49,16 @@ const PostPage = ({ category, categoryPosts }: CategoryPageProps) => {
 				<article>
 					<CategoryOverview category={category} />
 				</article>
+				<CategoryPostList />
 				<article>
-					<PostList posts={categoryPosts} maxPosts={5} />
-				</article>
-				<article>
-					<CategorySidebar allTags={allPostTags} activeTags={allPostTags} activeCategory={category} />
+					<CategorySidebar activeCategory={category} />
 				</article>
 			</CategoryPageWrapper>
 		</MainContainer>
 	);
 };
 
-export default PostPage;
+export default CategoryPage;
 
 interface AuthorPagePath {
 	params: {
@@ -92,6 +105,7 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
 			...(await serverSideTranslations(locale ?? defaultLocale, ['common'])),
 			category,
 			categoryPosts,
+			allPostTags,
 		},
 	};
 };

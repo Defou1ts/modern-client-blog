@@ -16,8 +16,6 @@
 	@include md {
 		grid-template-columns: 1fr;
 		grid-template-areas: 'search' 'categories' 'tags';
-		gap: 32px;
-
 	}
 }
 
@@ -30,4 +28,20 @@
 }
 .wrapper > div:nth-child(3) {
 	grid-area: tags;
+}
+
+.categoriesTitle {
+	letter-spacing: -2px;
+	margin-bottom: 40px;
+	@include lx {
+		display: none;
+	}
+}
+
+.tagsTitle {
+	letter-spacing: -2px;
+	margin-bottom: 24px;
+	@include lx {
+		display: none;
+	}
 }
