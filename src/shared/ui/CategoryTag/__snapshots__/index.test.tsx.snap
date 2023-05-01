@@ -2,8 +2,14 @@
 
 exports[`CategoryTag CategoryTag snapshot 1`] = `
 <div
-  className="tag"
+  className="tag undefined"
 >
-  Business
+  <div
+    className="label"
+  >
+    <span>
+      Business
+    </span>
+  </div>
 </div>
 `;

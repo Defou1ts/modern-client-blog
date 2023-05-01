@@ -10,9 +10,9 @@ import { CategoryTag } from '@shared/ui/CategoryTag';
 const Index = () => (
 	<MainContainer title="Home | Modsen client blog" description="Modsen client blog">
 		<H type="display">Home</H>
-		<CategoryTag tagName="Life" isActive />
-		<CategoryTag tagName="Experience" />
-		<CategoryTag tagName="Business" />
+		<CategoryTag tagName="Life" isActive type="medium" />
+		<CategoryTag tagName="Experience" type="medium" />
+		<CategoryTag tagName="Business" type="medium" />
 	</MainContainer>
 );
 

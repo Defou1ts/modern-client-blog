@@ -29,7 +29,6 @@ export const SearchCategoryPostsByTag = () => {
 				value={searchByTagValue}
 				placeholder={t('category.search-placeholder') ?? ''}
 			/>
-			<button className={styles.button}>{t('category.search-submit')}</button>
 			<SearchCategoryPostsByTagResult />
 		</div>
 	);
