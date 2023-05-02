@@ -7,6 +7,11 @@
 		"video": "Video about us",
 		"privacy": "Privacy Policy"
 	},
+	"why-we-started": {
+		"subtitle": "Why we started",
+		"title": "It started out as a simple idea and evolved into our passion",
+		"button": "Discover our story >"
+	},
 	"home": {
 		"categories-title": "Choose A Catagory"
 	},

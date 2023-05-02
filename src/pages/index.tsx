@@ -10,6 +10,7 @@ import { AuthorList } from '@entities/Author/ui/AuthorList';
 import { authors } from '@entities/Author/lib/mock/authors';
 import { HomeCategoriesList } from '@widgets/HomeCategoriesList';
 import { allPostCategories } from '@entities/Post/lib/mock/allPostCategories';
+import { WhyWeStarted } from '@widgets/WhyWeStarted';
 
 import type { PostCategory } from '@entities/Post/interfaces';
 import type { AuthorWithLocales } from '@entities/Author/interfaces';
@@ -26,7 +27,7 @@ const HomePage = ({ authors, categories }: HomePageProps) => (
 			<article>1</article>
 			<article>1</article>
 			<HomeCategoriesList categories={categories} />
-			<article>1</article>
+			<WhyWeStarted />
 			<AuthorList authors={authors} />
 			<article>1</article>
 			<article>1</article>
