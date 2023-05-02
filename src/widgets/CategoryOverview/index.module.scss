@@ -1,0 +1,27 @@
+@import '@app/theme/theme.scss';
+
+.wrapper {
+	background-color: $lavender;
+	display: grid;
+	justify-items: center;
+	padding: 80px 10px;
+
+	text-align: center;
+}
+
+.title {
+}
+.description {
+	margin-top: 16px;
+}
+.path {
+	margin-top: 32px;
+
+	@include font-family($font-family-inter);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}

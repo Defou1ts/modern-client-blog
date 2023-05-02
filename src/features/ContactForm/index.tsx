@@ -30,7 +30,6 @@ export const ContactForm = () => {
 	const handleSubmit: HandleSubmit = async (values, { resetForm }) => {
 		resetForm();
 		const { isSuccess } = await sendContactMessage(values);
-		console.log(isSuccess);
 		if (isSuccess) {
 			setSuccesWithTimeout(4000);
 		} else {

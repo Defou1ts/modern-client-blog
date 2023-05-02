@@ -27,7 +27,6 @@ export const SubscribeForm = () => {
 	const handleSubmit = async ({ email }: SubscribeFormState, { resetForm }: FormikHelpers<SubscribeFormState>) => {
 		resetForm();
 		const { isSuccess } = await sendSubscribeMessage(email);
-		console.log(isSuccess);
 		if (isSuccess) {
 			setSuccesWithTimeout(4000);
 		} else {

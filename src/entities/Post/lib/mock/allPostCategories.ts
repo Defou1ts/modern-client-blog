@@ -8,7 +8,7 @@ import type { PostCategory } from '@entities/Post/interfaces';
 
 export const allPostCategories: Record<PostCategoryType, PostCategory> = {
 	business: {
-		category: 'business',
+		categoryType: 'business',
 		icon: BusinessIcon,
 		title: {
 			en: 'Business',
@@ -20,7 +20,7 @@ export const allPostCategories: Record<PostCategoryType, PostCategory> = {
 		},
 	},
 	startup: {
-		category: 'startup',
+		categoryType: 'startup',
 		icon: StartupIcon,
 		title: {
 			en: 'Startup',
@@ -32,7 +32,7 @@ export const allPostCategories: Record<PostCategoryType, PostCategory> = {
 		},
 	},
 	economy: {
-		category: 'economy',
+		categoryType: 'economy',
 		icon: EconomyIcon,
 		title: {
 			en: 'Economy',
@@ -44,7 +44,7 @@ export const allPostCategories: Record<PostCategoryType, PostCategory> = {
 		},
 	},
 	technology: {
-		category: 'technology',
+		categoryType: 'technology',
 		icon: TechnologyIcon,
 		title: {
 			en: 'Technology',

@@ -2,6 +2,7 @@
 
 exports[`PostCategoryCard PostCategoryCard snapshot large 1`] = `
 <a
+  className=""
   href="/category/business"
   onClick={[Function]}
   onMouseEnter={[Function]}
@@ -12,6 +13,7 @@ exports[`PostCategoryCard PostCategoryCard snapshot large 1`] = `
   >
     <img
       alt="Business"
+      className="icon"
       data-nimg="1"
       decoding="async"
       height={40}
@@ -44,6 +46,7 @@ exports[`PostCategoryCard PostCategoryCard snapshot large 1`] = `
 
 exports[`PostCategoryCard PostCategoryCard snapshot medium 1`] = `
 <a
+  className=""
   href="/category/business"
   onClick={[Function]}
   onMouseEnter={[Function]}
@@ -54,6 +57,7 @@ exports[`PostCategoryCard PostCategoryCard snapshot medium 1`] = `
   >
     <img
       alt="Business"
+      className="icon"
       data-nimg="1"
       decoding="async"
       height={40}
