@@ -7,6 +7,9 @@
 		"video": "Video about us",
 		"privacy": "Privacy Policy"
 	},
+	"home": {
+		"categories-title": "Choose A Catagory"
+	},
 	"subscribe": {
 		"title": "Subscribe to our news letter to get latest updates and news",
 		"button": "Subscribe",
