@@ -8,7 +8,7 @@ import { HomePageWrapper } from '@app/wrappers/HomePageWrapper';
 import { JoinOurTeam } from '@widgets/JoinOurTeam';
 import { AuthorList } from '@entities/Author/ui/AuthorList';
 import { authors } from '@entities/Author/lib/mock/authors';
-import { HomeCategoriesList } from '@widgets/HomeCategoriesList/BlogPostCategoriesList';
+import { HomeCategoriesList } from '@widgets/HomeCategoriesList';
 import { allPostCategories } from '@entities/Post/lib/mock/allPostCategories';
 
 import type { PostCategory } from '@entities/Post/interfaces';
