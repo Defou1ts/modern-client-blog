@@ -1,7 +1,6 @@
-
 import styles from './index.module.scss';
 
-import { routes } from '../../constants/routes';
+import { routes } from '../../lib/constants/routes';
 
 import { Navbar } from '@features/Navbar';
 

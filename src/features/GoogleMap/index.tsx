@@ -1,8 +1,8 @@
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 
-import { markersCoords } from './consts/markersCoords';
-import { initialCenterCoord } from './consts/initialCenterCoords';
-import { mapStyles } from './consts/mapStyles';
+import { markersCoords } from './lib/constants/markersCoords';
+import { initialCenterCoord } from './lib/constants/initialCenterCoords';
+import { mapStyles } from './lib/constants/mapStyles';
 import styles from './index.module.scss';
 
 import type { WindowWithGoogle } from './types';

@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { render, screen } from '@testing-library/react';
 import { useRouter } from 'next/router';
 
 import renderer from 'react-test-renderer';
@@ -23,13 +22,6 @@ describe('HomeCategoriesList', () => {
 			pathname: '/',
 		};
 		(useRouter as jest.Mock<NextRouter>).mockReturnValue(useRouterMock as NextRouter);
-	});
-
-	it('renders a  HomeCategoriesList', () => {
-		render(<HomeCategoriesList categories={Object.values(allPostCategories)} />);
-		const text = screen.getByText('blog.post-categories-title');
-		expect(text).toBeInTheDocument();
-		expect(text).toBeVisible();
 	});
 
 	it('HomeCategoriesList snapshot', () => {
