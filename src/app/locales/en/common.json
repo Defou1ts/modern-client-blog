@@ -13,7 +13,9 @@
 		"button": "Discover our story >"
 	},
 	"home": {
-		"categories-title": "Choose A Catagory"
+		"categories-title": "Choose A Catagory",
+		"logo-list-subtitle": "We are",
+		"logo-list-title": "Featured in"
 	},
 	"subscribe": {
 		"title": "Subscribe to our news letter to get latest updates and news",
