@@ -1,7 +1,6 @@
 import Link from 'next/link';
 
 import { useTranslation } from 'next-i18next';
-import cn from 'classnames';
 
 import styles from './index.module.scss';
 
@@ -13,7 +12,7 @@ import { getFormattedDateByLocale } from '@shared/utils/getFormattedDateByLocale
 
 import type { PostAuthorDateInfoProps } from './interfaces';
 
-export const PostAuthorDateInfo = ({ author, post, type, className, ...props }: PostAuthorDateInfoProps) => {
+export const PostAuthorDateInfo = ({ author, post, type, ...props }: PostAuthorDateInfoProps) => {
 	const { t } = useTranslation();
 	const { locale } = useLocale();
 
@@ -23,7 +22,7 @@ export const PostAuthorDateInfo = ({ author, post, type, className, ...props }: 
 	const { createdAt } = post;
 
 	return (
-		<P type="medium" className={cn(styles.author, className)} {...props}>
+		<P type="medium" {...props}>
 			{t('by')}{' '}
 			<Link href={`${ROUTES.AUTHOR}${authorId}`} className={styles[type]}>
 				{getAuthorFullName(name, surname)}

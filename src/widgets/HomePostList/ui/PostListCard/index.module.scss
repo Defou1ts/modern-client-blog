@@ -1,0 +1,23 @@
+@import '@app/theme/theme.scss';
+
+.card {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto;
+	gap: 8px;
+
+	padding: 32px 115px 25px 32px;
+
+	transition: all 0.2s ease;
+	&:hover {
+		background-color: $light-yellow;
+	}
+
+	@include md {
+		padding: 32px 32px 25px 32px;
+	}
+}
+
+.link {
+	@include link($red, 0.2s ease, $black);
+}

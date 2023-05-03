@@ -1,5 +1,6 @@
 {
 	"by": "От автора",
+	"read-more": "Узнать больше >",
 	"header": {
 		"home": "Главная",
 		"blog": "Блог",
@@ -31,6 +32,11 @@
 		"testimonals": {
 			"subtitle": "Отзывы",
 			"title": "Что люди говорят о нашем блоге"
+		},
+		"postlist": {
+			"featured-post-title": "Избранный пост",
+			"all-posts-title": "Все посты",
+			"view-all": "Посмотреть все"
 		}
 	},
 	"subscribe": {

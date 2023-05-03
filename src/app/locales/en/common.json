@@ -1,5 +1,6 @@
 {
 	"by": "By",
+	"read-more": "Read More >",
 	"header": {
 		"home": "Home",
 		"blog": "Blog",
@@ -31,6 +32,11 @@
 		"testimonals": {
 			"subtitle": "TESTIMONIALs",
 			"title": "What people say about our blog"
+		},
+		"postlist": {
+			"featured-post-title": "Featured Post",
+			"all-posts-title": "All Posts",
+			"view-all": "View All"
 		}
 	},
 	"subscribe": {

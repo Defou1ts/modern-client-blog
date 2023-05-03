@@ -16,6 +16,7 @@ import { TestimonalsCarousel } from '@features/TestimonalsCarousel';
 import { HomeAboutUs } from '@widgets/HomeAboutUs';
 import { HomeOverviewPost } from '@widgets/HomeOverviewPost';
 import { posts } from '@entities/Post/lib/mock/posts';
+import { HomePostList } from '@widgets/HomePostList';
 
 import type { Post, PostCategory } from '@entities/Post/interfaces';
 import type { AuthorWithLocales } from '@entities/Author/interfaces';
@@ -23,15 +24,33 @@ import type { AuthorWithLocales } from '@entities/Author/interfaces';
 interface HomePageProps {
 	authors: AuthorWithLocales[];
 	categories: PostCategory[];
-	post: Post;
-	author: AuthorWithLocales;
+	overviewPost: Post;
+	overviewPostAuthor: AuthorWithLocales;
+	featuredPost: Post;
+	featuredPostAuthor: AuthorWithLocales;
+	postList: [Post, Post, Post, Post];
+	postListAuthors: [AuthorWithLocales, AuthorWithLocales, AuthorWithLocales, AuthorWithLocales];
 }
 
-const HomePage = ({ authors, categories, post, author }: HomePageProps) => (
+const HomePage = ({
+	authors,
+	categories,
+	overviewPost,
+	overviewPostAuthor,
+	featuredPostAuthor,
+	featuredPost,
+	postList,
+	postListAuthors,
+}: HomePageProps) => (
 	<MainContainer title="Home | Modsen client blog" description="Modsen client blog">
 		<HomePageWrapper>
-			<HomeOverviewPost post={post} author={author} />
-			<article>1</article>
+			<HomeOverviewPost post={overviewPost} author={overviewPostAuthor} />
+			<HomePostList
+				featuredPost={featuredPost}
+				featuredPostAuthor={featuredPostAuthor}
+				posts={postList}
+				postsAuthors={postListAuthors}
+			/>
 			<HomeAboutUs />
 			<HomeCategoriesList categories={categories} />
 			<WhyWeStarted />
@@ -48,15 +67,24 @@ const HomePage = ({ authors, categories, post, author }: HomePageProps) => (
 export default HomePage;
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-	const post = posts[0];
-	const author = authors.find((author) => author.id === post.authorId);
+	const overviewPost = posts[0];
+	const overviewPostAuthor = authors.find((author) => author.id === overviewPost.authorId);
+	const featuredPost = posts[1];
+	const featuredPostAuthor = authors.find((author) => author.id === featuredPost.authorId);
+	const postList = posts.slice(0, 4);
+	const postListAuthors = postList.map((post) => authors.find((author) => author.id === post.authorId));
+
 	return {
 		props: {
 			...(await serverSideTranslations(locale ?? defaultLocale, ['common'])),
 			authors,
 			categories: allPostCategories,
-			post,
-			author,
+			overviewPost,
+			overviewPostAuthor,
+			featuredPost,
+			featuredPostAuthor,
+			postList,
+			postListAuthors,
 		},
 	};
 };
