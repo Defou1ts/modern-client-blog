@@ -1,0 +1,58 @@
+@import '@app/theme/theme.scss';
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	grid-template-areas: '. rectangles' 'about about';
+	grid-template-rows: auto auto;
+}
+.rectangles {
+	grid-area: rectangles;
+	width: 100%;
+}
+.about {
+	grid-area: about;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 61px;
+
+	padding: 96px 80px;
+
+	background-color: lavender;
+
+	@include lg {
+		padding: 60px 60px;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
+	}
+
+	@include md {
+		padding: 40px 40px;
+	}
+}
+.item {
+}
+.subtitle {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+.title {
+	margin-top: 24px;
+	letter-spacing: -1px;
+}
+.description {
+	margin-top: 16px;
+	color: $medium-gray;
+}
+.link {
+	display: inline-block;
+	margin-top: 16px;
+	@include link($red, 0.2s ease, $purple);
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 32px;
+}

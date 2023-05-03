@@ -16,6 +16,13 @@
 		"categories-title": "Выберите категорию",
 		"logo-list-subtitle": "Мы",
 		"logo-list-title": "Состоим из",
+		"about": {
+			"about-subtitle": "О нас",
+			"mission-subtitle": "Наша миссия",
+			"about-title": "Мы команда контент-мейкеров, которые деляться своими знаниями",
+			"mission-title": "Создание ценного контента для творческих людей во всём мире",
+			"read-more": "Узнать больше >"
+		},
 		"testimonals": {
 			"subtitle": "Отзывы",
 			"title": "Что люди говорят о нашем блоге"

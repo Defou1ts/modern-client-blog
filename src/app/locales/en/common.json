@@ -16,6 +16,13 @@
 		"categories-title": "Choose A Catagory",
 		"logo-list-subtitle": "We are",
 		"logo-list-title": "Featured in",
+		"about": {
+			"about-subtitle": "About us",
+			"mission-subtitle": "Our mission",
+			"about-title": "We are a community of content writers who share their learnings",
+			"mission-title": "Creating valuable content for creatives all around the world",
+			"read-more": "Read More >"
+		},
 		"testimonals": {
 			"subtitle": "TESTIMONIALs",
 			"title": "What people say about our blog"

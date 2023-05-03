@@ -13,6 +13,7 @@ import { allPostCategories } from '@entities/Post/lib/mock/allPostCategories';
 import { WhyWeStarted } from '@widgets/WhyWeStarted';
 import { LogoList } from '@widgets/LogoList';
 import { TestimonalsCarousel } from '@features/TestimonalsCarousel';
+import { HomeAboutUs } from '@widgets/HomeAboutUs';
 
 import type { PostCategory } from '@entities/Post/interfaces';
 import type { AuthorWithLocales } from '@entities/Author/interfaces';
@@ -27,7 +28,7 @@ const HomePage = ({ authors, categories }: HomePageProps) => (
 		<HomePageWrapper>
 			<article>1</article>
 			<article>1</article>
-			<article>1</article>
+			<HomeAboutUs />
 			<HomeCategoriesList categories={categories} />
 			<WhyWeStarted />
 			<AuthorList authors={authors} />
