@@ -16,6 +16,11 @@
 		"categories-title": "Выберите категорию",
 		"logo-list-subtitle": "Мы",
 		"logo-list-title": "Состоим из",
+		"overview": {
+			"posted-on": "Опубликовано в",
+			"read-more": "Узнать больше >",
+			"by": "От автора"
+		},
 		"about": {
 			"about-subtitle": "О нас",
 			"mission-subtitle": "Наша миссия",

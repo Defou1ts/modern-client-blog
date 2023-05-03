@@ -16,6 +16,11 @@
 		"categories-title": "Choose A Catagory",
 		"logo-list-subtitle": "We are",
 		"logo-list-title": "Featured in",
+		"overview": {
+			"posted-on": "posted on",
+			"read-more": "Read More >",
+			"by": "By"
+		},
 		"about": {
 			"about-subtitle": "About us",
 			"mission-subtitle": "Our mission",

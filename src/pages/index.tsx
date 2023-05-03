@@ -14,19 +14,23 @@ import { WhyWeStarted } from '@widgets/WhyWeStarted';
 import { LogoList } from '@widgets/LogoList';
 import { TestimonalsCarousel } from '@features/TestimonalsCarousel';
 import { HomeAboutUs } from '@widgets/HomeAboutUs';
+import { HomeOverviewPost } from '@widgets/HomeOverviewPost';
+import { posts } from '@entities/Post/lib/mock/posts';
 
-import type { PostCategory } from '@entities/Post/interfaces';
+import type { Post, PostCategory } from '@entities/Post/interfaces';
 import type { AuthorWithLocales } from '@entities/Author/interfaces';
 
 interface HomePageProps {
 	authors: AuthorWithLocales[];
 	categories: PostCategory[];
+	post: Post;
+	author: AuthorWithLocales;
 }
 
-const HomePage = ({ authors, categories }: HomePageProps) => (
+const HomePage = ({ authors, categories, post, author }: HomePageProps) => (
 	<MainContainer title="Home | Modsen client blog" description="Modsen client blog">
 		<HomePageWrapper>
-			<article>1</article>
+			<HomeOverviewPost post={post} author={author} />
 			<article>1</article>
 			<HomeAboutUs />
 			<HomeCategoriesList categories={categories} />
@@ -44,11 +48,15 @@ const HomePage = ({ authors, categories }: HomePageProps) => (
 export default HomePage;
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
+	const post = posts[0];
+	const author = authors.find((author) => author.id === post.authorId);
 	return {
 		props: {
 			...(await serverSideTranslations(locale ?? defaultLocale, ['common'])),
 			authors,
 			categories: allPostCategories,
+			post,
+			author,
 		},
 	};
 };
