@@ -1,0 +1,84 @@
+@import '../../theme/theme.scss';
+
+.wrapper {
+	position: relative;
+	padding: 0px 0px 128px 0px;
+	display: grid;
+	grid-template-columns: minmax(0px, 80px) auto minmax(0px, 80px);
+	grid-template-rows:
+		100vh
+		128px
+		auto
+		128px
+		auto
+		128px
+		auto
+		128px
+		auto
+		128px
+		auto
+		96px
+		auto
+		96px
+		auto
+		128px
+		auto
+		128px;
+
+	grid-template-areas:
+		'overview overview overview'
+		'. . .'
+		'. postlist .'
+		'. . .'
+		'. about .'
+		'. . .'
+		'. categories .'
+		'. . .'
+		'. whywestarted .'
+		'. . .'
+		'. authorlist .'
+		'. . .'
+		'. logolist .'
+		'. . .'
+		'. testimonals .'
+		'. . .'
+		'. join .';
+
+	@include md {
+		grid-template-columns: 10px auto 10px;
+	}
+}
+
+.wrapper > article:nth-child(1) {
+	grid-area: overview;
+}
+
+.wrapper > article:nth-child(2) {
+	grid-area: postlist;
+}
+
+.wrapper > article:nth-child(3) {
+	grid-area: about;
+}
+
+.wrapper > article:nth-child(4) {
+	grid-area: categories;
+}
+
+.wrapper > article:nth-child(5) {
+	grid-area: whywestarted;
+}
+
+.wrapper > article:nth-child(6) {
+	grid-area: authorlist;
+}
+
+.wrapper > article:nth-child(7) {
+	grid-area: logolist;
+}
+.wrapper > article:nth-child(8) {
+	grid-area: testimonals;
+}
+.wrapper > article:nth-child(9) {
+	grid-area: join;
+}

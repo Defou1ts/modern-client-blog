@@ -5,7 +5,7 @@ import { useTranslation } from 'next-i18next';
 
 import styles from './index.module.scss';
 import { Burger } from './ui/Burger';
-import { routes } from './constants/routes';
+import { routes } from './lib/constants/routes';
 
 import { Navbar } from '@features/Navbar';
 import { LocaleSwitcher } from '@features/LocaleSwitcher';

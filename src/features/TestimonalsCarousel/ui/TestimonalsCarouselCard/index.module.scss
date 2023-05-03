@@ -1,0 +1,25 @@
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr auto;
+	height: 100%;
+	gap: 40px;
+}
+.author {
+	display: grid;
+	grid-template-columns: 48px 1fr;
+	gap: 16px;
+	align-items: center;
+}
+.authorImageWrapper {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	overflow: hidden;
+
+	img {
+		object-fit: cover;
+	}
+}
+.authorLocation {
+}

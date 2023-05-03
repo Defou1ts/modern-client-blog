@@ -1,0 +1,9 @@
+@import '@app/theme/theme.scss';
+
+.yellow {
+	@include link($red, 0.2s ease, $yellow);
+}
+
+.purple {
+	@include link($red, 0.2s ease, $purple);
+}

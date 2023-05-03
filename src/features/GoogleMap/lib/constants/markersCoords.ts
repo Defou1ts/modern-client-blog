@@ -1,4 +1,4 @@
-import type { MapPosition } from '../interfaces';
+import type { MapPosition } from '../../interfaces';
 
 export const markersCoords: MapPosition[] = [
 	{

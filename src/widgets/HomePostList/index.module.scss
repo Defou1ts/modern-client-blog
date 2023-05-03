@@ -1,0 +1,30 @@
+@import '@app/theme/theme.scss';
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+	gap: 32px;
+
+	@include lg {
+		grid-template-columns: 1fr;
+	}
+}
+.item {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 32px;
+}
+
+.title {
+	letter-spacing: -2px;
+}
+
+.postlistTitleWrapper {
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: space-between;
+}
+
+.viewAll {
+	@include link($red, 0.2s ease, $purple);
+}

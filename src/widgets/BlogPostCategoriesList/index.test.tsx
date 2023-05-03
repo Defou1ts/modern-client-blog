@@ -26,14 +26,14 @@ describe('BlogPostCategoriesList', () => {
 	});
 
 	it('renders a  BlogPostCategoriesList', () => {
-		render(<BlogPostCategoriesList categories={allPostCategories} />);
+		render(<BlogPostCategoriesList categories={Object.values(allPostCategories)} />);
 		const text = screen.getByText('blog.post-categories-title');
 		expect(text).toBeInTheDocument();
 		expect(text).toBeVisible();
 	});
 
 	it('BlogPostCategoriesList snapshot', () => {
-		const component = renderer.create(<BlogPostCategoriesList categories={allPostCategories} />);
+		const component = renderer.create(<BlogPostCategoriesList categories={Object.values(allPostCategories)} />);
 
 		const tree = component.toJSON();
 		expect(tree).toMatchSnapshot();

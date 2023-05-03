@@ -1,4 +1,6 @@
 {
+	"by": "By",
+	"read-more": "Read More >",
 	"header": {
 		"home": "Home",
 		"blog": "Blog",
@@ -6,6 +8,36 @@
 		"contact": "Contact Us",
 		"video": "Video about us",
 		"privacy": "Privacy Policy"
+	},
+	"why-we-started": {
+		"subtitle": "Why we started",
+		"title": "It started out as a simple idea and evolved into our passion",
+		"button": "Discover our story >"
+	},
+	"home": {
+		"categories-title": "Choose A Catagory",
+		"logo-list-subtitle": "We are",
+		"logo-list-title": "Featured in",
+		"overview": {
+			"posted-on": "posted on",
+			"read-more": "Read More >"
+		},
+		"about": {
+			"about-subtitle": "About us",
+			"mission-subtitle": "Our mission",
+			"about-title": "We are a community of content writers who share their learnings",
+			"mission-title": "Creating valuable content for creatives all around the world",
+			"read-more": "Read More >"
+		},
+		"testimonals": {
+			"subtitle": "TESTIMONIALs",
+			"title": "What people say about our blog"
+		},
+		"postlist": {
+			"featured-post-title": "Featured Post",
+			"all-posts-title": "All Posts",
+			"view-all": "View All"
+		}
 	},
 	"subscribe": {
 		"title": "Subscribe to our news letter to get latest updates and news",
