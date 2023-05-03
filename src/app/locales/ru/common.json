@@ -15,7 +15,11 @@
 	"home": {
 		"categories-title": "Выберите категорию",
 		"logo-list-subtitle": "Мы",
-		"logo-list-title": "Состоим из"
+		"logo-list-title": "Состоим из",
+		"testimonals": {
+			"subtitle": "Отзывы",
+			"title": "Что люди говорят о нашем блоге"
+		}
 	},
 	"subscribe": {
 		"title": "Подпишитесь на наши новости, чтобы получать последние обновления",

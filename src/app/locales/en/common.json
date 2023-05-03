@@ -15,7 +15,11 @@
 	"home": {
 		"categories-title": "Choose A Catagory",
 		"logo-list-subtitle": "We are",
-		"logo-list-title": "Featured in"
+		"logo-list-title": "Featured in",
+		"testimonals": {
+			"subtitle": "TESTIMONIALs",
+			"title": "What people say about our blog"
+		}
 	},
 	"subscribe": {
 		"title": "Subscribe to our news letter to get latest updates and news",
