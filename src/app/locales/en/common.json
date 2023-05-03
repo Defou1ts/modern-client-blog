@@ -1,4 +1,5 @@
 {
+	"by": "By",
 	"header": {
 		"home": "Home",
 		"blog": "Blog",
@@ -18,8 +19,7 @@
 		"logo-list-title": "Featured in",
 		"overview": {
 			"posted-on": "posted on",
-			"read-more": "Read More >",
-			"by": "By"
+			"read-more": "Read More >"
 		},
 		"about": {
 			"about-subtitle": "About us",

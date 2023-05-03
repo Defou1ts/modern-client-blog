@@ -1,4 +1,5 @@
 {
+	"by": "От автора",
 	"header": {
 		"home": "Главная",
 		"blog": "Блог",
@@ -18,8 +19,7 @@
 		"logo-list-title": "Состоим из",
 		"overview": {
 			"posted-on": "Опубликовано в",
-			"read-more": "Узнать больше >",
-			"by": "От автора"
+			"read-more": "Узнать больше >"
 		},
 		"about": {
 			"about-subtitle": "О нас",

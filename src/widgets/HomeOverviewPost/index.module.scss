@@ -51,10 +51,6 @@
 	grid-area: author;
 }
 
-.authorLink {
-	@include link($red, 0.2s ease, $yellow);
-}
-
 .description {
 	grid-area: description;
 }
