@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import YouTube from 'react-youtube';
 
+import styles from './index.module.scss';
 import { videoOptions } from './lib/constants/videoOptions';
 import { videoId } from './lib/constants/videoId';
 
@@ -18,7 +19,9 @@ export const VideoModal = () => {
 
 	return (
 		<Modal isOpened={isOpenedVideoModal} onClose={handleCloseModal}>
-			<YouTube videoId={videoId} opts={videoOptions} />
+			<div className={styles.videoWrapper}>
+				<YouTube videoId={videoId} opts={videoOptions} />
+			</div>
 		</Modal>
 	);
 };
