@@ -6,14 +6,17 @@ import { Provider } from 'react-redux';
 
 import { inter, sen } from '@app/lib/fonts';
 import { store } from '@app/store/store';
+import { ErrorBoundary } from '@app/wrappers/ErrorBoundary';
 
 import type { AppProps } from 'next/app';
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
-		<Provider store={store}>
-			<Component className={cn(inter.className, sen.className)} {...pageProps} />
-		</Provider>
+		<ErrorBoundary>
+			<Provider store={store}>
+				<Component className={cn(inter.className, sen.className)} {...pageProps} />
+			</Provider>
+		</ErrorBoundary>
 	);
 }
 
