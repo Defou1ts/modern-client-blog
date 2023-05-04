@@ -23,8 +23,14 @@ const videoSlice = createSlice({
 		toggleIsOpenedMenu: (state) => {
 			state.isOpenedMenu = !state.isOpenedMenu;
 		},
+		closeMenu: (state) => {
+			state.isOpenedMenu = false;
+		},
+		openMenu: (state) => {
+			state.isOpenedMenu = true;
+		},
 	},
 });
 
 export default videoSlice.reducer;
-export const { closeVideoModal, openVideoModal, toggleIsOpenedMenu } = videoSlice.actions;
+export const { closeVideoModal, openVideoModal, toggleIsOpenedMenu, closeMenu, openMenu } = videoSlice.actions;
