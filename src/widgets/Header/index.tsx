@@ -1,50 +1,25 @@
-import { useState } from 'react';
-
-import cn from 'classnames';
-import { useTranslation } from 'next-i18next';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import styles from './index.module.scss';
 import { Burger } from './ui/Burger';
-import { routes } from './lib/constants/routes';
+import { HeaderMenu } from './ui/HeaderMenu';
 
-import { Navbar } from '@features/Navbar';
-import { LocaleSwitcher } from '@features/LocaleSwitcher';
-import { Button } from '@shared/ui/Button';
-import { openVideoModal } from '@app/store/slices/header.slice';
-import { VideoModal } from '@widgets/VideoModal';
+import { toggleIsOpenedMenu } from '@app/store/slices/header.slice';
+import { selectIsOpenedMenu } from '@app/store/selectors/header.selectors';
 
 export const Header = () => {
-	const [isOpenedMenu, setIsOpenedMenu] = useState<boolean>(false);
+	const isOpenedMenu = useSelector(selectIsOpenedMenu);
+
 	const dispatch = useDispatch();
 
-	const { t } = useTranslation();
-
 	const handleToggleOpenedMenu = () => {
-		setIsOpenedMenu(!isOpenedMenu);
-	};
-
-	const handleOpenVideoModal = () => {
-		dispatch(openVideoModal());
+		dispatch(toggleIsOpenedMenu());
 	};
 
 	return (
 		<header data-test-id="header" className={styles.header}>
 			<Burger onClick={handleToggleOpenedMenu} isActive={isOpenedMenu} />
-			<div
-				data-test-id="menu-wrapper"
-				className={cn(styles.headerWrapper, {
-					[styles.active]: isOpenedMenu,
-				})}
-			>
-				<h1 className={styles.title}>Modsen Client Blog</h1>
-				<LocaleSwitcher />
-				<Navbar routes={routes} />
-				<Button onClick={handleOpenVideoModal} data-test-id="header-button" appearance="secondary">
-					{t('header.video')}
-				</Button>
-				<VideoModal />
-			</div>
+			<HeaderMenu />
 		</header>
 	);
 };

@@ -12,41 +12,4 @@
 	}
 }
 
-.headerWrapper {
-	display: grid;
-	grid-template-columns: auto auto 1fr auto;
-	align-items: center;
-	padding: 12px 31px;
-	column-gap: 32px;
-	background-color: $black;
 
-	@include lx {
-		column-gap: 16px;
-	}
-
-	@include lg {
-		position: absolute;
-		left: 0;
-		top: 0;
-		grid-template-columns: auto;
-		justify-items: center;
-		gap: 16px;
-		z-index: 1;
-		width: 100vw;
-		top: -110%;
-
-		transition: 0.2s ease all;
-	}
-
-	&.active {
-		top: 0;
-	}
-}
-
-.title {
-	color: $white;
-	font-weight: $font-weight-bold;
-	font-size: 24px;
-	line-height: 48px;
-	white-space: nowrap;
-}

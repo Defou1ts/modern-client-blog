@@ -2,10 +2,12 @@ import { createSlice } from '@reduxjs/toolkit';
 
 export interface VideoState {
 	isOpenedVideoModal: boolean;
+	isOpenedMenu: boolean;
 }
 
 const initialState: VideoState = {
 	isOpenedVideoModal: false,
+	isOpenedMenu: false,
 };
 
 const videoSlice = createSlice({
@@ -18,8 +20,11 @@ const videoSlice = createSlice({
 		openVideoModal: (state) => {
 			state.isOpenedVideoModal = true;
 		},
+		toggleIsOpenedMenu: (state) => {
+			state.isOpenedMenu = !state.isOpenedMenu;
+		},
 	},
 });
 
 export default videoSlice.reducer;
-export const { closeVideoModal, openVideoModal } = videoSlice.actions;
+export const { closeVideoModal, openVideoModal, toggleIsOpenedMenu } = videoSlice.actions;

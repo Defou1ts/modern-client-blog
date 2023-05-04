@@ -5,10 +5,14 @@ import { createPortal } from 'react-dom';
 
 import styles from './index.module.scss';
 
+import { useGlobalScrollBlock } from '@shared/hooks/useGlobalScrollBlock';
+
 import type { ModalProps } from './interfaces';
 
 export const Modal = ({ children, isOpened, onClose }: ModalProps) => {
 	const [domLoaded, setDomLoaded] = useState(false);
+
+	useGlobalScrollBlock(isOpened);
 
 	useEffect(() => {
 		setDomLoaded(true);
@@ -19,17 +23,6 @@ export const Modal = ({ children, isOpened, onClose }: ModalProps) => {
 			onClose();
 		}
 	};
-
-	useEffect(() => {
-		const html = document.querySelector('html');
-		if (html !== null) {
-			if (isOpened) {
-				html.style.overflowY = 'hidden';
-			} else {
-				html.style.overflowY = 'scroll';
-			}
-		}
-	}, [isOpened]);
 
 	return domLoaded && isOpened
 		? createPortal(
