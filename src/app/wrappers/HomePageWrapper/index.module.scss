@@ -49,6 +49,12 @@
 	}
 }
 
+.wrapper > article {
+	position: relative;
+	animation-name: fade-in;
+	animation-duration: 1s;
+}
+
 .wrapper > article:nth-child(1) {
 	grid-area: overview;
 }
@@ -81,4 +87,15 @@
 }
 .wrapper > article:nth-child(9) {
 	grid-area: join;
+}
+
+@keyframes fade-in {
+	from {
+		bottom: -200%;
+		opacity: 0;
+	}
+	to {
+		bottom: 0;
+		opacity: 1;
+	}
 }

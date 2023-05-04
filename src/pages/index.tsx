@@ -17,6 +17,7 @@ import { HomeAboutUs } from '@widgets/HomeAboutUs';
 import { HomeOverviewPost } from '@widgets/HomeOverviewPost';
 import { posts } from '@entities/Post/lib/mock/posts';
 import { HomePostList } from '@widgets/HomePostList';
+import { InfinityScroll } from '@features/InfinityScroll';
 
 import type { Post, PostCategory } from '@entities/Post/interfaces';
 import type { AuthorWithLocales } from '@entities/Author/interfaces';
@@ -41,28 +42,31 @@ const HomePage = ({
 	featuredPost,
 	postList,
 	postListAuthors,
-}: HomePageProps) => (
-	<MainContainer title="Home | Modsen client blog" description="Modsen client blog">
-		<HomePageWrapper>
-			<HomeOverviewPost post={overviewPost} author={overviewPostAuthor} />
-			<HomePostList
-				featuredPost={featuredPost}
-				featuredPostAuthor={featuredPostAuthor}
-				posts={postList}
-				postsAuthors={postListAuthors}
-			/>
-			<HomeAboutUs />
-			<HomeCategoriesList categories={categories} />
-			<WhyWeStarted />
-			<AuthorList authors={authors} />
-			<LogoList />
-			<TestimonalsCarousel />
-			<article>
-				<JoinOurTeam />
-			</article>
-		</HomePageWrapper>
-	</MainContainer>
-);
+}: HomePageProps) => {
+	return (
+		<MainContainer title="Home | Modsen client blog" description="Modsen client blog">
+			<InfinityScroll Wrapper={<HomePageWrapper />} customHeight={924}>
+				<HomeOverviewPost post={overviewPost} author={overviewPostAuthor} />
+				<HomePostList
+					featuredPost={featuredPost}
+					featuredPostAuthor={featuredPostAuthor}
+					posts={postList}
+					postsAuthors={postListAuthors}
+					key={featuredPost.id}
+				/>
+				<HomeAboutUs />
+				<HomeCategoriesList categories={categories} />
+				<WhyWeStarted />
+				<AuthorList authors={authors} />
+				<LogoList />
+				<TestimonalsCarousel />
+				<article>
+					<JoinOurTeam />
+				</article>
+			</InfinityScroll>
+		</MainContainer>
+	);
+};
 
 export default HomePage;
 
