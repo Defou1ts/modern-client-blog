@@ -60,9 +60,7 @@ const HomePage = ({
 				<AuthorList authors={authors} />
 				<LogoList />
 				<TestimonalsCarousel />
-				<article>
-					<JoinOurTeam />
-				</article>
+				<JoinOurTeam />
 			</InfinityScroll>
 		</MainContainer>
 	);
