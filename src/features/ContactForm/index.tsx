@@ -14,12 +14,14 @@ import { Textarea } from '@shared/ui/Textarea';
 import { P } from '@shared/ui/P';
 import { useSubmitFormState } from '@shared/hooks/useSubmitFormState';
 import { useGetFormApi } from '@shared/hooks/useGetFormApi';
+import { Spinner } from '@shared/ui/Spinner';
 
 import type { HandleSubmit } from './types';
 import type { ContactFormState } from './interfaces';
 
 export const ContactForm = () => {
-	const { isSuccess, isError, setSuccesWithTimeout, setErrorWithTimeout } = useSubmitFormState();
+	const { isSuccess, isError, setSuccesWithTimeout, setErrorWithTimeout, isLoading, setLoading } =
+		useSubmitFormState();
 
 	const { t } = useTranslation();
 
@@ -29,6 +31,7 @@ export const ContactForm = () => {
 
 	const handleSubmit: HandleSubmit = async (values, { resetForm }) => {
 		resetForm();
+		setLoading();
 		const { isSuccess } = await sendContactMessage(values);
 		if (isSuccess) {
 			setSuccesWithTimeout(4000);
@@ -92,6 +95,7 @@ export const ContactForm = () => {
 					{t('contact.form.error')}
 				</P>
 			)}
+			{isLoading && <Spinner />}
 		</article>
 	);
 };

@@ -1,0 +1,12 @@
+.wrapper {
+	display: grid;
+	grid-template-columns: 64px;
+	grid-template-rows: 64px;
+	align-items: center;
+	justify-content: center;
+
+	svg {
+		width: 64px;
+		height: 64px;
+	}
+}

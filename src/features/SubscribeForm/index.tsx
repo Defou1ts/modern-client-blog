@@ -12,11 +12,13 @@ import { Input } from '@shared/ui/Input';
 import { useGetFormApi } from '@shared/hooks/useGetFormApi';
 import { useSubmitFormState } from '@shared/hooks/useSubmitFormState';
 import { P } from '@shared/ui/P';
+import { Spinner } from '@shared/ui/Spinner';
 
 import type { SubscribeFormState } from './interfaces';
 
 export const SubscribeForm = () => {
-	const { isSuccess, isError, setSuccesWithTimeout, setErrorWithTimeout } = useSubmitFormState();
+	const { isSuccess, isError, isLoading, setSuccesWithTimeout, setErrorWithTimeout, setLoading } =
+		useSubmitFormState();
 
 	const { t } = useTranslation();
 
@@ -26,6 +28,7 @@ export const SubscribeForm = () => {
 
 	const handleSubmit = async ({ email }: SubscribeFormState, { resetForm }: FormikHelpers<SubscribeFormState>) => {
 		resetForm();
+		setLoading();
 		const { isSuccess } = await sendSubscribeMessage(email);
 		if (isSuccess) {
 			setSuccesWithTimeout(4000);
@@ -59,6 +62,7 @@ export const SubscribeForm = () => {
 							{t('subscribe.form.error')}
 						</P>
 					)}
+					{isLoading && <Spinner />}
 				</Form>
 			</Formik>
 		</div>
