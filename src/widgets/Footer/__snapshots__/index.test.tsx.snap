@@ -3,6 +3,7 @@
 exports[`Footer button header snapshot 1`] = `
 <footer
   className="footer"
+  data-test-id="footer"
 >
   <div
     className="navbar"
@@ -81,6 +82,7 @@ exports[`Footer button header snapshot 1`] = `
       >
         <input
           className="input input"
+          data-test-id="subsribe-form-input"
           name="email"
           onBlur={[Function]}
           onChange={[Function]}
@@ -90,6 +92,7 @@ exports[`Footer button header snapshot 1`] = `
       </div>
       <button
         className="button primary"
+        data-test-id="subcribe-form-submit"
         type="submit"
       >
         subscribe.button

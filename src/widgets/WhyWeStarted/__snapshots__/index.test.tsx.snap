@@ -3,6 +3,7 @@
 exports[`WhyWeStarted WhyWeStarted snapshot 1`] = `
 <article
   className="wrapper"
+  data-test-id="wy-we-started"
 >
   <div
     className="backgroundWrapper"

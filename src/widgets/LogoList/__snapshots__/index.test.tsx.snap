@@ -3,6 +3,7 @@
 exports[`LogoList LogoList snapshot 1`] = `
 <article
   className="wrapper"
+  data-test-id="logo-list"
 >
   <div
     className="info"

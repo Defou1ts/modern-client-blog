@@ -26,7 +26,7 @@ export const HomeOverviewPost = ({ author, post }: HomeOverviewPostProps) => {
 	const translatedCategoryTitle = categoryTitle[locale];
 
 	return (
-		<article data-test-id='home-overview-post' className={styles.backgroundImageWrapper}>
+		<article data-test-id="home-overview-post" className={styles.backgroundImageWrapper}>
 			<div className={styles.backgroundEffectWrapper}>
 				<div className={styles.content}>
 					<p className={styles.categoryInfo}>
@@ -41,7 +41,9 @@ export const HomeOverviewPost = ({ author, post }: HomeOverviewPostProps) => {
 						{translatedPreviewText}
 					</P>
 					<Button appearance="primary" className={styles.button}>
-						<Link href={`${ROUTES.POSTS}${postId}`}>{t('home.overview.read-more')}</Link>
+						<Link href={`${ROUTES.POSTS}${postId}`} data-test-id="home-overview-post-link">
+							{t('home.overview.read-more')}
+						</Link>
 					</Button>
 				</div>
 			</div>

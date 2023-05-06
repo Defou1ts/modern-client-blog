@@ -16,7 +16,7 @@ export const PostListCard = ({ post, author }: PostListCardProps) => {
 	return (
 		<div className={styles.card}>
 			<PostAuthorDateInfo post={post} author={author} type="purple" />
-			<Link href={`${ROUTES.POSTS}${id}`} className={styles.link}>
+			<Link href={`${ROUTES.POSTS}${id}`} className={styles.link} data-test-id='home-postlist-post-link'>
 				<H type="h4">{translatedTitle}</H>
 			</Link>
 		</div>

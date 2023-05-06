@@ -3,6 +3,7 @@
 exports[`JoinOurTeam JoinOurTeam snapshot 1`] = `
 <article
   className="wrapper"
+  data-test-id="join-our-team"
 >
   <h2
     className="h h2 title"

@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`HomeCategoriesList HomeCategoriesList snapshot 1`] = `
-<article>
+<article
+  data-test-id="home-categories-list"
+>
   <h2
     className="h h2 title"
   >
@@ -12,6 +14,7 @@ exports[`HomeCategoriesList HomeCategoriesList snapshot 1`] = `
   >
     <a
       className=""
+      data-test-id="category-link"
       href="/category/business"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -53,6 +56,7 @@ exports[`HomeCategoriesList HomeCategoriesList snapshot 1`] = `
     </a>
     <a
       className=""
+      data-test-id="category-link"
       href="/category/startup"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -94,6 +98,7 @@ exports[`HomeCategoriesList HomeCategoriesList snapshot 1`] = `
     </a>
     <a
       className=""
+      data-test-id="category-link"
       href="/category/economy"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -135,6 +140,7 @@ exports[`HomeCategoriesList HomeCategoriesList snapshot 1`] = `
     </a>
     <a
       className=""
+      data-test-id="category-link"
       href="/category/technology"
       onClick={[Function]}
       onMouseEnter={[Function]}
