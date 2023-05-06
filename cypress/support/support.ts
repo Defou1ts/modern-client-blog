@@ -58,7 +58,7 @@ export const checkHeader = () => {
 	});
 };
 
-export const CheckFooter = () => {
+export const checkFooter = () => {
 	it('Check footer layout', () => {
 		cy.get('[data-test-id=footer]')
 			.should('be.visible')
@@ -85,5 +85,42 @@ export const CheckFooter = () => {
 			.wait(4000)
 			.get('[data-test-id=subsribe-form-success]')
 			.should('not.exist');
+	});
+};
+
+export const checkHomePageLayout = () => {
+	it('Check Home Page Layout', () => {
+		cy.get('[data-test-id=home-overview-post]')
+			.should('exist')
+			.get('[data-test-id=home-post-list]')
+			.should('not.exist');
+		cy.window()
+			.scrollTo('bottom', { duration: 1000 })
+			.get('[data-test-id=home-post-list]')
+			.should('be.visible')
+			.get('[data-test-id=home-about-us]')
+			.should('be.visible')
+			.get('[data-test-id=home-categories-list]')
+			.window()
+			.scrollTo('bottom', { duration: 1000 })
+			.get('[data-test-id=wy-we-started]')
+			.should('be.visible')
+			.get('[data-test-id=author-list]')
+			.should('be.visible')
+			.window()
+			.scrollTo('bottom', { duration: 1000 })
+			.get('[data-test-id=logo-list]')
+			.should('be.visible')
+			.get('[data-test-id=testimonals-carousel]')
+			.should('be.visible')
+			.get('[data-test-id=join-our-team]')
+			.should('be.visible')
+			.window()
+			.scrollTo('bottom', { duration: 1000 })
+			.get('[data-test-id=home-page-wrapper]')
+			.screenshot('Home Page Wrapper', { overwrite: true })
+			.viewport(390, 800)
+			.get('[data-test-id=home-page-wrapper]')
+			.screenshot('Home Page Wrapper mobile', { overwrite: true });
 	});
 };

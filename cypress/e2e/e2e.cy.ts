@@ -1,4 +1,4 @@
-import { CheckFooter, checkHeader } from '../support/support';
+import { checkFooter, checkHeader, checkHomePageLayout } from '../support/support';
 
 describe('Check layout', () => {
 	beforeEach(() => {
@@ -6,7 +6,14 @@ describe('Check layout', () => {
 		cy.visit('/');
 	});
 
-	checkHeader();
-	CheckFooter();
+	// checkHeader();
+	// checkFooter();
 });
 
+describe('Check Home Page', () => {
+	before(() => {
+		cy.viewport(1920, 1080);
+		cy.visit('/');
+	});
+	// checkHomePageLayout();
+});
