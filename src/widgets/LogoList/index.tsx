@@ -11,7 +11,7 @@ import { H } from '@shared/ui/H';
 export const LogoList = () => {
 	const { t } = useTranslation();
 	return (
-		<article className={styles.wrapper}>
+		<article data-test-id="logo-list" className={styles.wrapper}>
 			<div className={styles.info}>
 				<P type="small" className={styles.subtitle}>
 					{t('home.logo-list-subtitle')}

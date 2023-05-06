@@ -20,6 +20,7 @@ exports[`SubscribeForm SubscribeForm snapshot 1`] = `
     >
       <input
         className="input input"
+        data-test-id="subsribe-form-input"
         name="email"
         onBlur={[Function]}
         onChange={[Function]}
@@ -29,6 +30,7 @@ exports[`SubscribeForm SubscribeForm snapshot 1`] = `
     </div>
     <button
       className="button primary"
+      data-test-id="subcribe-form-submit"
       type="submit"
     >
       subscribe.button

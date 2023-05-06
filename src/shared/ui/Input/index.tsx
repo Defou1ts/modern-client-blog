@@ -23,7 +23,11 @@ export const Input = forwardRef(function Input(
 				{...field}
 				{...props}
 			/>
-			{error !== undefined && touched && <span className={styles.errorMessage}>{error}</span>}
+			{error !== undefined && touched && (
+				<span data-test-id="input-error" className={styles.errorMessage}>
+					{error}
+				</span>
+			)}
 		</div>
 	);
 });

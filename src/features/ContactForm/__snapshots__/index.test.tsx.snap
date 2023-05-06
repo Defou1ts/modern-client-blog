@@ -5,6 +5,7 @@ exports[`ContactForm ContactForm snapshot 1`] = `
   <form
     action="#"
     className="form"
+    data-test-id="contact-form"
     onReset={[Function]}
     onSubmit={[Function]}
   >
@@ -13,6 +14,7 @@ exports[`ContactForm ContactForm snapshot 1`] = `
     >
       <input
         className="input input"
+        data-test-id="contact-form-input-name"
         name="name"
         onBlur={[Function]}
         onChange={[Function]}
@@ -25,6 +27,7 @@ exports[`ContactForm ContactForm snapshot 1`] = `
     >
       <input
         className="input input"
+        data-test-id="contact-form-input-email"
         name="email"
         onBlur={[Function]}
         onChange={[Function]}
@@ -37,6 +40,7 @@ exports[`ContactForm ContactForm snapshot 1`] = `
     >
       <select
         className="input select"
+        data-test-id="contact-form-select"
         name="location"
         onBlur={[Function]}
         onChange={[Function]}
@@ -48,16 +52,19 @@ exports[`ContactForm ContactForm snapshot 1`] = `
           contact.form.related
         </option>
         <option
+          data-test-id="contact-form-option"
           value="Warsaw"
         >
           contact.form.locations.warsaw
         </option>
         <option
+          data-test-id="contact-form-option"
           value="Minsk"
         >
           contact.form.locations.minsk
         </option>
         <option
+          data-test-id="contact-form-option"
           value="London"
         >
           contact.form.locations.london
@@ -87,6 +94,7 @@ exports[`ContactForm ContactForm snapshot 1`] = `
     >
       <textarea
         className="textarea textarea"
+        data-test-id="contact-form-textarea"
         name="message"
         onBlur={[Function]}
         onChange={[Function]}
@@ -96,6 +104,7 @@ exports[`ContactForm ContactForm snapshot 1`] = `
     </div>
     <button
       className="button primary"
+      data-test-id="contact-form-submit"
       type="submit"
     >
       contact.form.send-button

@@ -22,6 +22,7 @@ export const PostCategoryCard = ({ postCategory, type, isActive }: PostCategoryC
 
 	return (
 		<Link
+			data-test-id="category-link"
 			href={`${ROUTES.CATEGORY}${category}`}
 			className={cn({
 				[styles.active]: isActive,

@@ -12,6 +12,7 @@ exports[`BlogPostCategoriesList BlogPostCategoriesList snapshot 1`] = `
   >
     <a
       className=""
+      data-test-id="category-link"
       href="/category/business"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -53,6 +54,7 @@ exports[`BlogPostCategoriesList BlogPostCategoriesList snapshot 1`] = `
     </a>
     <a
       className=""
+      data-test-id="category-link"
       href="/category/startup"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -94,6 +96,7 @@ exports[`BlogPostCategoriesList BlogPostCategoriesList snapshot 1`] = `
     </a>
     <a
       className=""
+      data-test-id="category-link"
       href="/category/economy"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -135,6 +138,7 @@ exports[`BlogPostCategoriesList BlogPostCategoriesList snapshot 1`] = `
     </a>
     <a
       className=""
+      data-test-id="category-link"
       href="/category/technology"
       onClick={[Function]}
       onMouseEnter={[Function]}

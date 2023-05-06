@@ -3,8 +3,10 @@ import { useState } from 'react';
 export const useSubmitFormState = () => {
 	const [isSuccess, setIsSuccess] = useState<boolean>(false);
 	const [isError, setIsError] = useState<boolean>(false);
+	const [isLoading, setIsLodaing] = useState<boolean>(false);
 
 	const setSuccesWithTimeout = (time: number) => {
+		setIsLodaing(false);
 		setIsSuccess(true);
 		setTimeout(() => {
 			setIsSuccess(false);
@@ -12,11 +14,16 @@ export const useSubmitFormState = () => {
 	};
 
 	const setErrorWithTimeout = (time: number) => {
+		setIsLodaing(false);
 		setIsError(false);
 		setTimeout(() => {
 			setIsError(false);
 		}, time);
 	};
 
-	return { isSuccess, isError, setSuccesWithTimeout, setErrorWithTimeout };
+	const setLoading = () => {
+		setIsLodaing(true);
+	};
+
+	return { isSuccess, isLoading, isError, setSuccesWithTimeout, setErrorWithTimeout, setLoading };
 };

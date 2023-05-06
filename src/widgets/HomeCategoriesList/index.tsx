@@ -11,7 +11,7 @@ export const HomeCategoriesList = ({ categories }: HomeCategoriesListProps) => {
 	const { t } = useTranslation();
 
 	return (
-		<article>
+		<article data-test-id="home-categories-list">
 			<H type="h2" className={styles.title}>
 				{t('home.categories-title')}
 			</H>

@@ -3,6 +3,7 @@
 exports[`AuthorList AuthorList snapshot 1`] = `
 <article
   className="wrapper"
+  data-test-id="author-list"
 >
   <h2
     className="h h2 title"

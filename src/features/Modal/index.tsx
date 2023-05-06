@@ -26,7 +26,7 @@ export const Modal = ({ children, isOpened, onClose }: ModalProps) => {
 
 	return domLoaded && isOpened
 		? createPortal(
-				<div onClick={handleOutsideClick} className={styles.wrapper}>
+				<div data-test-id="modal" onClick={handleOutsideClick} className={styles.wrapper}>
 					<div className={styles.content}>{children}</div>
 				</div>,
 				document.body

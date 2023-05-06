@@ -12,11 +12,13 @@ import { Input } from '@shared/ui/Input';
 import { useGetFormApi } from '@shared/hooks/useGetFormApi';
 import { useSubmitFormState } from '@shared/hooks/useSubmitFormState';
 import { P } from '@shared/ui/P';
+import { Spinner } from '@shared/ui/Spinner';
 
 import type { SubscribeFormState } from './interfaces';
 
 export const SubscribeForm = () => {
-	const { isSuccess, isError, setSuccesWithTimeout, setErrorWithTimeout } = useSubmitFormState();
+	const { isSuccess, isError, isLoading, setSuccesWithTimeout, setErrorWithTimeout, setLoading } =
+		useSubmitFormState();
 
 	const { t } = useTranslation();
 
@@ -26,6 +28,7 @@ export const SubscribeForm = () => {
 
 	const handleSubmit = async ({ email }: SubscribeFormState, { resetForm }: FormikHelpers<SubscribeFormState>) => {
 		resetForm();
+		setLoading();
 		const { isSuccess } = await sendSubscribeMessage(email);
 		if (isSuccess) {
 			setSuccesWithTimeout(4000);
@@ -43,22 +46,28 @@ export const SubscribeForm = () => {
 				<Form className={styles.form}>
 					<Field name="email" id="email" type="email">
 						{(props: FieldProps<SubscribeFormState>) => (
-							<Input className={styles.input} {...props} placeholder={t('subscribe.placeholder') ?? ''} />
+							<Input
+								className={styles.input}
+								{...props}
+								placeholder={t('subscribe.placeholder') ?? ''}
+								data-test-id="subsribe-form-input"
+							/>
 						)}
 					</Field>
-					<Button appearance="primary" type="submit">
+					<Button appearance="primary" type="submit" data-test-id='subcribe-form-submit'>
 						{t('subscribe.button')}
 					</Button>
 					{isSuccess && (
-						<P type="medium" className={styles.success}>
+						<P type="medium" className={styles.success} data-test-id="subsribe-form-success">
 							{t('subscribe.form.success')}
 						</P>
 					)}
 					{isError && (
-						<P type="medium" className={styles.error}>
+						<P type="medium" className={styles.error} data-test-id="subsribe-form-error">
 							{t('subscribe.form.error')}
 						</P>
 					)}
+					{isLoading && <Spinner />}
 				</Form>
 			</Formik>
 		</div>

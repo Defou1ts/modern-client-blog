@@ -16,7 +16,7 @@ export const HomePostList = ({ featuredPost, featuredPostAuthor, posts, postsAut
 	const { t } = useTranslation();
 
 	return (
-		<article className={styles.wrapper}>
+		<article data-test-id="home-post-list" className={styles.wrapper}>
 			<div className={styles.item}>
 				<H type="h2" className={styles.title}>
 					{t('home.postlist.featured-post-title')}

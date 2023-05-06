@@ -34,7 +34,7 @@ export const FeaturedPost = ({ post, author }: FeaturedPostProps) => {
 			<P type="medium" className={styles.description}>
 				{translatedPreviewText}
 			</P>
-			<Link href={`${ROUTES.POSTS}${id}`} className={styles.button}>
+			<Link href={`${ROUTES.POSTS}${id}`} className={styles.button} data-test-id="home-post-list-featured-link">
 				<Button appearance="primary">{t('read-more')}</Button>
 			</Link>
 		</div>

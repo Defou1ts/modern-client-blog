@@ -12,7 +12,7 @@ import { ROUTES } from '@shared/contants/routes';
 export const HomeAboutUs = () => {
 	const { t } = useTranslation();
 	return (
-		<article className={styles.wrapper}>
+		<article data-test-id="home-about-us" className={styles.wrapper}>
 			<RectangleLine className={styles.rectangles} reverse />
 			<div className={styles.about}>
 				<div className={styles.item}>
@@ -24,7 +24,7 @@ export const HomeAboutUs = () => {
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 						labore et dolore magna aliqua.
 					</P>
-					<Link href={ROUTES.ABOUT} className={styles.link}>
+					<Link href={ROUTES.ABOUT} className={styles.link} data-test-id='home-about-us-link'>
 						{t('home.about.read-more')}
 					</Link>
 				</div>

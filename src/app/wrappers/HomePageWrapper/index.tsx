@@ -10,7 +10,7 @@ export const HomePageWrapper = forwardRef(function HomePageWrapper(
 	ref: ForwardedRef<HTMLDivElement>
 ) {
 	return (
-		<div ref={ref} className={styles.wrapper}>
+		<div data-test-id='home-page-wrapper' ref={ref} className={styles.wrapper}>
 			{children}
 		</div>
 	);
