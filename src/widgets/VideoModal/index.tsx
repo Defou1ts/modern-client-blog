@@ -19,7 +19,7 @@ export const VideoModal = () => {
 
 	return (
 		<Modal isOpened={isOpenedVideoModal} onClose={handleCloseModal}>
-			<div className={styles.videoWrapper}>
+			<div data-test-id="video" className={styles.videoWrapper}>
 				<YouTube videoId={videoId} opts={videoOptions} />
 			</div>
 		</Modal>

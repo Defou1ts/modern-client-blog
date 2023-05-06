@@ -26,7 +26,7 @@ export const HomeOverviewPost = ({ author, post }: HomeOverviewPostProps) => {
 	const translatedCategoryTitle = categoryTitle[locale];
 
 	return (
-		<article className={styles.backgroundImageWrapper}>
+		<article data-test-id='home-overview-post' className={styles.backgroundImageWrapper}>
 			<div className={styles.backgroundEffectWrapper}>
 				<div className={styles.content}>
 					<p className={styles.categoryInfo}>

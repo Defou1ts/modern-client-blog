@@ -6,7 +6,7 @@ import { SubscribeForm } from '@features/SubscribeForm';
 
 export const Footer = () => {
 	return (
-		<footer className={styles.footer}>
+		<footer data-test-id="footer" className={styles.footer}>
 			<FooterNavbar />
 			<SubscribeForm />
 			<Social />
