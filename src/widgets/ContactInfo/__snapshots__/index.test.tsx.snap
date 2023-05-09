@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactInfo ContactInfo snapshot 1`] = `
+<article
+  className="wrapper"
+>
+  <h6
+    className="h h6 contact"
+  >
+    contact.title
+  </h6>
+  <h1
+    className="h h1 conversation"
+  >
+    contact.subtitle
+  </h1>
+  <p
+    className="p medium description"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+  </p>
+</article>
+`;

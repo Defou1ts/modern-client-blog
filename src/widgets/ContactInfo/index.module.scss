@@ -1,0 +1,28 @@
+@import '@app/theme/theme.scss';
+
+.wrapper {
+	grid-area: info;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-auto-flow: row;
+	justify-items: center;
+	grid-template-areas: 'contact' '.' 'conversation' '.' 'description';
+	grid-template-rows: auto 12px auto 24px auto;
+}
+
+.contact {
+	text-transform: uppercase;
+	grid-area: contact;
+	text-align: center;
+}
+
+.conversation {
+	grid-area: conversation;
+	text-align: center;
+}
+
+.description {
+	color: $medium-gray;
+	grid-area: description;
+	text-align: center;
+}

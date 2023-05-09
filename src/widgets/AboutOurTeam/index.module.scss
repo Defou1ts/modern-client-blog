@@ -1,0 +1,102 @@
+@import '@app/theme/theme.scss';
+
+.wrapper {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	row-gap: 128px;
+
+	@include lg {
+		row-gap: 64px;
+	}
+}
+
+.itemWrapper {
+	position: relative;
+	display: grid;
+	grid-template-rows: minmax(480px, auto);
+	gap: 137px;
+	align-items: center;
+
+	@include lx {
+		gap: 32px;
+	}
+
+	@include lg {
+		align-items: start;
+	}
+}
+
+.itemWrapper:first-child {
+	grid-template-columns: auto minmax(120px, 624px);
+	@include lg {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 480px;
+	}
+}
+
+.itemWrapper:last-child {
+	grid-template-columns: minmax(120px, 624px) auto;
+	@include lg {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 480px;
+	}
+
+	@include lg {
+		& .imageWrapper {
+			order: 2;
+		}
+	}
+}
+
+.info {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 16px;
+
+	@include lg {
+		text-align: center;
+		padding: 0px 10px;
+	}
+}
+
+.imageWrapper {
+	position: relative;
+	height: 100%;
+
+	img {
+		object-fit: cover;
+	}
+}
+
+.rectangle {
+	width: 103px;
+	height: 116px;
+	background-color: $yellow;
+	position: absolute;
+	top: 114px;
+	left: -57px;
+	z-index: 1;
+
+	border-radius: 50% 0px 0px 0px;
+
+	@include lg {
+		left: auto;
+		top: -57px;
+		right: 50px;
+	}
+}
+.circle {
+	position: absolute;
+	width: 74px;
+	height: 74px;
+	border-radius: 50%;
+	background-color: $purple;
+	left: 107px;
+	bottom: -37px;
+	z-index: 1;
+
+	@include lg {
+		left: auto;
+		right: 80px;
+	}
+}

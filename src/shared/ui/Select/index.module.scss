@@ -1,0 +1,45 @@
+@import '@app/theme/theme.scss';
+
+.wrapper {
+	position: relative;
+}
+
+.select {
+	border: 1px solid $dark-gray;
+	background: transparent;
+	outline: none;
+	padding: 14px 24px;
+	font-size: 16px;
+	line-height: 28px;
+
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+
+	&::placeholder {
+		color: $dark-gray;
+	}
+
+	&:focus {
+		border: 1px solid $yellow;
+	}
+
+	&.error {
+		border: 1px solid $red;
+	}
+}
+
+.arrow {
+	position: absolute;
+	right: 36px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.errorMessage {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	color: $red;
+	font-size: 12px;
+}

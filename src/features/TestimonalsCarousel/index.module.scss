@@ -1,0 +1,131 @@
+@import '@app/theme/theme.scss';
+
+.wrapper {
+	position: relative;
+	background-color: $light-yellow;
+	min-height: 464px;
+	padding: 80px 112px;
+
+	display: grid;
+	grid-template-columns: auto minmax(10px, 80px) 1px minmax(10px, 80px) auto;
+	grid-template-rows: 1fr;
+	grid-template-areas: 'info . line . carousel';
+
+	@include lx {
+		padding: 40px 40px;
+	}
+
+	@include lg {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 30px 1px 30px auto;
+		grid-template-areas:
+			'info'
+			'.'
+			'line'
+			'.'
+			'carousel';
+	}
+}
+
+.info {
+	grid-area: info;
+}
+
+.subtitle {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+.title {
+	margin-top: 12px;
+}
+.description {
+	margin-top: 16px;
+}
+
+.line {
+	grid-area: line;
+	width: 1px;
+	background-color: $medium-gray;
+	opacity: 0.4;
+
+	@include lg {
+		height: 1px;
+		width: 100%;
+	}
+}
+
+.carouselWrapper {
+	position: relative;
+	overflow: hidden;
+
+	grid-area: carousel;
+
+	@include lg {
+		padding: 0px 0px 70px 0px;
+	}
+}
+.carousel {
+	width: 300%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	height: 100%;
+	position: relative;
+	left: 0;
+	transition: all 0.2s ease;
+}
+
+.navigation {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 24px;
+
+	@include lg {
+		right: 50%;
+		transform: translateX(50%);
+	}
+}
+
+.button {
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+	justify-items: center;
+	cursor: pointer;
+	transition: all 0.2s ease;
+
+	background-color: $white;
+
+	border-radius: 50%;
+	width: 48px;
+	height: 48px;
+
+	svg {
+		fill: $black;
+	}
+
+	&:hover {
+		background-color: $black;
+		svg {
+			fill: $light-gray;
+		}
+	}
+
+	&.disabled {
+		cursor: default;
+		pointer-events: none;
+		@include BorderMediumGrayWithOpacity(1px, 0.3);
+	}
+}
+.navigationButtonPrev {
+}
+.buttonNext {
+	transform: rotate(180deg);
+}

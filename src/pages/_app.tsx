@@ -1,11 +1,21 @@
-import '@shared/theme/global.scss';
-import '@shared/theme/normalize.scss';
-import { inter, sen } from '@shared/lib/fonts';
+import '@app/theme/normalize.scss';
+import '@app/theme/global.scss';
+import { appWithTranslation } from 'next-i18next';
+import { Provider } from 'react-redux';
 
-import cn from 'classnames';
+import { store } from '@app/store/store';
+import { ErrorBoundary } from '@app/wrappers/ErrorBoundary';
 
 import type { AppProps } from 'next/app';
 
-export default function MyApp({ Component, pageProps }: AppProps) {
-	return <Component className={cn(inter.className, sen.className)} {...pageProps} />;
+function MyApp({ Component, pageProps }: AppProps) {
+	return (
+		<ErrorBoundary>
+			<Provider store={store}>
+				<Component {...pageProps} />
+			</Provider>
+		</ErrorBoundary>
+	);
 }
+
+export default appWithTranslation(MyApp);

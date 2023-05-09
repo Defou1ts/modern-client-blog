@@ -1,0 +1,54 @@
+@import '@app/theme/theme.scss';
+
+.wrapper {
+	display: grid;
+	grid-template-columns: minmax(210px, 490px) auto;
+	grid-template-rows: auto;
+	gap: 32px;
+
+	align-items: center;
+
+	@include lg {
+		grid-template-columns: 1fr;
+		grid-template-rows: minmax(210px, 390px) auto;
+	}
+
+	@include md {
+		grid-template-rows: minmax(210px, 290px) auto;
+	}
+}
+.imageWrapper {
+	overflow: hidden;
+	max-height: 320px;
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+.info {
+}
+.category {
+	@include font-family($font-family-inter);
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: $purple;
+}
+.title {
+	@include link($red, 0.2s ease, $black);
+	margin-top: 20px;
+	color: $black;
+}
+.previewText {
+	margin-top: 16px;
+	color: $medium-gray;
+	-webkit-line-clamp: 4;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LocalesList LocalesList snapshot 1`] = `
+<div
+  className="locales"
+  data-test-id="locales"
+>
+  <a
+    className="locale active"
+    data-test-id="en"
+    href="/"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    en
+  </a>
+  <a
+    className="locale"
+    data-test-id="ru"
+    href="/"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    ru
+  </a>
+</div>
+`;

@@ -1,0 +1,1330 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuthorList AuthorList snapshot 1`] = `
+<article
+  className="wrapper"
+  data-test-id="author-list"
+>
+  <h2
+    className="h h2 title"
+  >
+    author.list-title
+  </h2>
+  <div
+    className="listWrapper"
+  >
+    <div
+      className="wrapper"
+    >
+      <div
+        className="avatarWrapper"
+      >
+        <a
+          href="/author/1"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <img
+            alt="Floyd Miles"
+            data-nimg="1"
+            decoding="async"
+            height={128}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F7562313%2Fpexels-photo-7562313.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=256&q=75"
+            srcSet="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F7562313%2Fpexels-photo-7562313.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F7562313%2Fpexels-photo-7562313.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=256&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Floyd Miles"
+            width={128}
+          />
+        </a>
+      </div>
+      <div
+        className="info"
+      >
+        <a
+          href="/author/1"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <h3
+            className="h h3"
+          >
+            Floyd Miles
+          </h3>
+        </a>
+        <p
+          className="p small position"
+        >
+          Content Writer
+           
+          Modsen
+        </p>
+      </div>
+      <div
+        className="socials"
+      >
+        <a
+          href="https://facebook.com/ModsenSoftware/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Facebook"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Facebook"
+            width={40}
+          />
+        </a>
+        <a
+          href="https://twitter.com/modsencompany"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Twitter"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Twitter"
+            width={40}
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/modsencompany/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Instagram"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Instagram"
+            width={40}
+          />
+        </a>
+        <a
+          href="https://linkedin.com/company/modsen"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Linkedin"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Linkedin"
+            width={40}
+          />
+        </a>
+      </div>
+    </div>
+    <div
+      className="wrapper"
+    >
+      <div
+        className="avatarWrapper"
+      >
+        <a
+          href="/author/2"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <img
+            alt="Diana Russel"
+            data-nimg="1"
+            decoding="async"
+            height={128}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F16424676%2Fpexels-photo-16424676.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=256&q=75"
+            srcSet="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F16424676%2Fpexels-photo-16424676.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F16424676%2Fpexels-photo-16424676.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=256&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Diana Russel"
+            width={128}
+          />
+        </a>
+      </div>
+      <div
+        className="info"
+      >
+        <a
+          href="/author/2"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <h3
+            className="h h3"
+          >
+            Diana Russel
+          </h3>
+        </a>
+        <p
+          className="p small position"
+        >
+          Content Writer
+           
+          Modsen
+        </p>
+      </div>
+      <div
+        className="socials"
+      >
+        <a
+          href="https://facebook.com/ModsenSoftware/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Facebook"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Facebook"
+            width={40}
+          />
+        </a>
+        <a
+          href="https://twitter.com/modsencompany"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Twitter"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Twitter"
+            width={40}
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/modsencompany/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Instagram"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Instagram"
+            width={40}
+          />
+        </a>
+        <a
+          href="https://linkedin.com/company/modsen"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Linkedin"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Linkedin"
+            width={40}
+          />
+        </a>
+      </div>
+    </div>
+    <div
+      className="wrapper"
+    >
+      <div
+        className="avatarWrapper"
+      >
+        <a
+          href="/author/3"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <img
+            alt="Jenny Wilson"
+            data-nimg="1"
+            decoding="async"
+            height={128}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F5704849%2Fpexels-photo-5704849.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=256&q=75"
+            srcSet="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F5704849%2Fpexels-photo-5704849.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F5704849%2Fpexels-photo-5704849.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=256&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Jenny Wilson"
+            width={128}
+          />
+        </a>
+      </div>
+      <div
+        className="info"
+      >
+        <a
+          href="/author/3"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <h3
+            className="h h3"
+          >
+            Jenny Wilson
+          </h3>
+        </a>
+        <p
+          className="p small position"
+        >
+          Content Writer
+           
+          Modsen
+        </p>
+      </div>
+      <div
+        className="socials"
+      >
+        <a
+          href="https://facebook.com/ModsenSoftware/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Facebook"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Facebook"
+            width={40}
+          />
+        </a>
+        <a
+          href="https://twitter.com/modsencompany"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Twitter"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Twitter"
+            width={40}
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/modsencompany/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Instagram"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Instagram"
+            width={40}
+          />
+        </a>
+        <a
+          href="https://linkedin.com/company/modsen"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Linkedin"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Linkedin"
+            width={40}
+          />
+        </a>
+      </div>
+    </div>
+    <div
+      className="wrapper"
+    >
+      <div
+        className="avatarWrapper"
+      >
+        <a
+          href="/author/4"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <img
+            alt="Leslie Alexander"
+            data-nimg="1"
+            decoding="async"
+            height={128}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F6205509%2Fpexels-photo-6205509.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=256&q=75"
+            srcSet="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F6205509%2Fpexels-photo-6205509.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F6205509%2Fpexels-photo-6205509.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=256&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Leslie Alexander"
+            width={128}
+          />
+        </a>
+      </div>
+      <div
+        className="info"
+      >
+        <a
+          href="/author/4"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <h3
+            className="h h3"
+          >
+            Leslie Alexander
+          </h3>
+        </a>
+        <p
+          className="p small position"
+        >
+          Content Writer
+           
+          Modsen
+        </p>
+      </div>
+      <div
+        className="socials"
+      >
+        <a
+          href="https://facebook.com/ModsenSoftware/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Facebook"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Facebook"
+            width={40}
+          />
+        </a>
+        <a
+          href="https://twitter.com/modsencompany"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Twitter"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Twitter"
+            width={40}
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/modsencompany/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Instagram"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Instagram"
+            width={40}
+          />
+        </a>
+        <a
+          href="https://linkedin.com/company/modsen"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Linkedin"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Linkedin"
+            width={40}
+          />
+        </a>
+      </div>
+    </div>
+    <div
+      className="wrapper"
+    >
+      <div
+        className="avatarWrapper"
+      >
+        <a
+          href="/author/5"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <img
+            alt="Guy Hawkins"
+            data-nimg="1"
+            decoding="async"
+            height={128}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F14687031%2Fpexels-photo-14687031.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=256&q=75"
+            srcSet="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F14687031%2Fpexels-photo-14687031.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F14687031%2Fpexels-photo-14687031.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=256&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Guy Hawkins"
+            width={128}
+          />
+        </a>
+      </div>
+      <div
+        className="info"
+      >
+        <a
+          href="/author/5"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <h3
+            className="h h3"
+          >
+            Guy Hawkins
+          </h3>
+        </a>
+        <p
+          className="p small position"
+        >
+          Content Writer
+           
+          Modsen
+        </p>
+      </div>
+      <div
+        className="socials"
+      >
+        <a
+          href="https://facebook.com/ModsenSoftware/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Facebook"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Facebook"
+            width={40}
+          />
+        </a>
+        <a
+          href="https://twitter.com/modsencompany"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Twitter"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Twitter"
+            width={40}
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/modsencompany/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Instagram"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Instagram"
+            width={40}
+          />
+        </a>
+        <a
+          href="https://linkedin.com/company/modsen"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Linkedin"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Linkedin"
+            width={40}
+          />
+        </a>
+      </div>
+    </div>
+    <div
+      className="wrapper"
+    >
+      <div
+        className="avatarWrapper"
+      >
+        <a
+          href="/author/6"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <img
+            alt="Eleanor Pena"
+            data-nimg="1"
+            decoding="async"
+            height={128}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F4467687%2Fpexels-photo-4467687.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=256&q=75"
+            srcSet="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F4467687%2Fpexels-photo-4467687.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F4467687%2Fpexels-photo-4467687.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=256&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Eleanor Pena"
+            width={128}
+          />
+        </a>
+      </div>
+      <div
+        className="info"
+      >
+        <a
+          href="/author/6"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <h3
+            className="h h3"
+          >
+            Eleanor Pena
+          </h3>
+        </a>
+        <p
+          className="p small position"
+        >
+          Content Writer
+           
+          Modsen
+        </p>
+      </div>
+      <div
+        className="socials"
+      >
+        <a
+          href="https://facebook.com/ModsenSoftware/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Facebook"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Facebook"
+            width={40}
+          />
+        </a>
+        <a
+          href="https://twitter.com/modsencompany"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Twitter"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Twitter"
+            width={40}
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/modsencompany/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Instagram"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Instagram"
+            width={40}
+          />
+        </a>
+        <a
+          href="https://linkedin.com/company/modsen"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Linkedin"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Linkedin"
+            width={40}
+          />
+        </a>
+      </div>
+    </div>
+    <div
+      className="wrapper"
+    >
+      <div
+        className="avatarWrapper"
+      >
+        <a
+          href="/author/7"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <img
+            alt="Robert Fox"
+            data-nimg="1"
+            decoding="async"
+            height={128}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F5262459%2Fpexels-photo-5262459.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=256&q=75"
+            srcSet="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F5262459%2Fpexels-photo-5262459.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F5262459%2Fpexels-photo-5262459.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=256&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Robert Fox"
+            width={128}
+          />
+        </a>
+      </div>
+      <div
+        className="info"
+      >
+        <a
+          href="/author/7"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <h3
+            className="h h3"
+          >
+            Robert Fox
+          </h3>
+        </a>
+        <p
+          className="p small position"
+        >
+          Content Writer
+           
+          Modsen
+        </p>
+      </div>
+      <div
+        className="socials"
+      >
+        <a
+          href="https://facebook.com/ModsenSoftware/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Facebook"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Facebook"
+            width={40}
+          />
+        </a>
+        <a
+          href="https://twitter.com/modsencompany"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Twitter"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Twitter"
+            width={40}
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/modsencompany/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Instagram"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Instagram"
+            width={40}
+          />
+        </a>
+        <a
+          href="https://linkedin.com/company/modsen"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Linkedin"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Linkedin"
+            width={40}
+          />
+        </a>
+      </div>
+    </div>
+    <div
+      className="wrapper"
+    >
+      <div
+        className="avatarWrapper"
+      >
+        <a
+          href="/author/8"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <img
+            alt="Jacob Jones"
+            data-nimg="1"
+            decoding="async"
+            height={128}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F6147118%2Fpexels-photo-6147118.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=256&q=75"
+            srcSet="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F6147118%2Fpexels-photo-6147118.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F6147118%2Fpexels-photo-6147118.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=256&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Jacob Jones"
+            width={128}
+          />
+        </a>
+      </div>
+      <div
+        className="info"
+      >
+        <a
+          href="/author/8"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <h3
+            className="h h3"
+          >
+            Jacob Jones
+          </h3>
+        </a>
+        <p
+          className="p small position"
+        >
+          Content Writer
+           
+          Modsen
+        </p>
+      </div>
+      <div
+        className="socials"
+      >
+        <a
+          href="https://facebook.com/ModsenSoftware/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Facebook"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Facebook"
+            width={40}
+          />
+        </a>
+        <a
+          href="https://twitter.com/modsencompany"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Twitter"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Twitter"
+            width={40}
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/modsencompany/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Instagram"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Instagram"
+            width={40}
+          />
+        </a>
+        <a
+          href="https://linkedin.com/company/modsen"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+          target="_blank"
+        >
+          <img
+            alt="Linkedin"
+            data-nimg="1"
+            decoding="async"
+            height={40}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style={
+              {
+                "color": "transparent",
+              }
+            }
+            title="Linkedin"
+            width={40}
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</article>
+`;

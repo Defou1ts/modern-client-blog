@@ -1,0 +1,91 @@
+@import '@app/theme/theme.scss';
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 140px auto;
+	gap: 70px;
+	align-items: center;
+
+	@include lx {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		gap: 20px;
+	}
+}
+
+.info {
+	justify-self: left;
+	display: grid;
+	justify-items: left;
+
+	@include lx {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		justify-self: center;
+	}
+}
+.logolist {
+	justify-self: end;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+	width: 100%;
+	justify-items: center;
+
+	@include lx {
+		grid-template-columns: repeat(6, auto);
+		grid-template-areas: 'logo1 logo1 logo2 logo2 logo3 logo3' ' . logo4 logo4 logo5 logo5 . ';
+		justify-content: center;
+		gap: 20px 73px;
+	}
+
+	@include md {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		grid-template-areas:
+			'logo1'
+			'logo2'
+			'logo3'
+			'logo4'
+			'logo5'
+			'logo5';
+		gap: 30px 30px;
+	}
+
+	img:nth-child(1) {
+		@include lx {
+			grid-area: logo1;
+		}
+	}
+
+	img:nth-child(2) {
+		@include lx {
+			grid-area: logo2;
+		}
+	}
+
+	img:nth-child(3) {
+		@include lx {
+			grid-area: logo3;
+		}
+	}
+
+	img:nth-child(4) {
+		@include lx {
+			grid-area: logo4;
+		}
+	}
+
+	img:nth-child(5) {
+		@include lx {
+			grid-area: logo5;
+		}
+	}
+}
+
+.subtitle {
+	color: $medium-gray;
+	opacity: 0.6;
+}
+.title {
+	color: $medium-gray;
+}

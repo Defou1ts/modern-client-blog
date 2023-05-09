@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`H component H Display snapshot 1`] = `
+<h1
+  className="h display"
+>
+  Hello
+</h1>
+`;
+
+exports[`H component H1 snapshot 1`] = `
+<h1
+  className="h h1"
+>
+  Hello
+</h1>
+`;
+
+exports[`H component H2 snapshot 1`] = `
+<h2
+  className="h h2"
+>
+  Hello
+</h2>
+`;
+
+exports[`H component H3 snapshot 1`] = `
+<h3
+  className="h h3"
+>
+  Hello
+</h3>
+`;
+
+exports[`H component H4 snapshot 1`] = `
+<h4
+  className="h h4"
+>
+  Hello
+</h4>
+`;
+
+exports[`H component H5 snapshot 1`] = `
+<h5
+  className="h h5"
+>
+  Hello
+</h5>
+`;
+
+exports[`H component H6 snapshot 1`] = `
+<h6
+  className="h h6"
+>
+  Hello
+</h6>
+`;

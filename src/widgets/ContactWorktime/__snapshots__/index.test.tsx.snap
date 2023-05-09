@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactWorkTime ContactWorkTime snapshot 1`] = `
+<article
+  className="wrapper"
+>
+  <div>
+    <p
+      className="p small itemTitle"
+    >
+      contact.working.title-days
+    </p>
+    <div
+      className="line"
+    />
+    <h5
+      className="h h5 info"
+    >
+      contact.working.days
+       
+      <br />
+       
+      contact.working.hours
+       
+    </h5>
+    <p
+      className="p medium support"
+    >
+      contact.working.availability
+    </p>
+  </div>
+  <div>
+    <p
+      className="p small itemTitle"
+    >
+      contact.working.title-contact
+    </p>
+    <div
+      className="line"
+    />
+    <h5
+      className="h h5 info"
+    >
+      020 7993 2905
+    </h5>
+    <p
+      className="p medium support"
+    >
+      hello@finsweet.com
+    </p>
+  </div>
+</article>
+`;

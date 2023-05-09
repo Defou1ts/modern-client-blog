@@ -1,0 +1,47 @@
+@import '@app/theme/theme.scss';
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-left: 109px;
+	gap: 32px;
+
+	@include lx {
+		margin-left: 29px;
+	}
+
+	@include lg {
+		margin: 0;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		padding: 0px 10px;
+	}
+}
+.about {
+	padding: 64px;
+	background-color: $white;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 16px;
+
+	@include lg {
+		padding: 0;
+		text-align: center;
+	}
+}
+.subtitle {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+.text {
+	margin-top: 102px;
+	color: $dark-gray;
+
+	@include lg {
+		text-align: center;
+		margin: 0;
+	}
+}

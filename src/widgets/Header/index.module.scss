@@ -1,0 +1,15 @@
+@import '@app/theme/theme.scss';
+
+.header {
+	grid-area: header;
+
+	background-color: $black;
+
+	display: grid;
+
+	@include lg {
+		padding: 16px;
+	}
+}
+
+

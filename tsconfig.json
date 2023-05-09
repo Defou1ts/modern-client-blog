@@ -9,6 +9,7 @@
 		"strict": true,
 		"forceConsistentCasingInFileNames": true,
 		"noFallthroughCasesInSwitch": true,
+		"strictPropertyInitialization": false,
 		"module": "esnext",
 		"moduleResolution": "node",
 		"resolveJsonModule": true,
@@ -16,13 +17,19 @@
 		"noEmit": false,
 		"jsx": "preserve",
 		"baseUrl": "./src",
+		"declaration": true,
 		"paths": {
 			"@/*": ["./src/*"],
+			"@pages/*": ["./pages/*"],
 			"@shared/*": ["./shared/*"],
-			"@app/*": ["./app/*"]
+			"@app/*": ["./app/*"],
+			"@widgets/*": ["./widgets/*"],
+			"@entities/*": ["./entities/*"],
+			"@features/*": ["./features/*"]
 		},
-		"incremental": true
+		"incremental": true,
+		"types": ["jest", "node", "@types/testing-library__jest-dom"]
 	},
-	"include": ["src", "cypress.config.ts", "cypress"],
-	"exclude": ["node_modules"]
+	"include": ["src", "jest.config.ts", "next-env.d.ts", ".storybook"],
+	"exclude": ["node_modules", "cypress"]
 }

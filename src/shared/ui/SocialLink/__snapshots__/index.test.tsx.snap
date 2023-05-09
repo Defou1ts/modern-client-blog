@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialLink component facebook SocialLink snapshot 1`] = `
+<a
+  href="/"
+  onClick={[Function]}
+  onMouseEnter={[Function]}
+  onTouchStart={[Function]}
+  target="_blank"
+>
+  <img
+    alt="Facebook"
+    data-nimg="1"
+    decoding="async"
+    height={40}
+    loading="lazy"
+    onError={[Function]}
+    onLoad={[Function]}
+    src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+    srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+    style={
+      {
+        "color": "transparent",
+      }
+    }
+    title="Facebook"
+    width={40}
+  />
+</a>
+`;
+
+exports[`SocialLink component instagram SocialLink snapshot 1`] = `
+<a
+  href="/"
+  onClick={[Function]}
+  onMouseEnter={[Function]}
+  onTouchStart={[Function]}
+  target="_blank"
+>
+  <img
+    alt="Instagram"
+    data-nimg="1"
+    decoding="async"
+    height={40}
+    loading="lazy"
+    onError={[Function]}
+    onLoad={[Function]}
+    src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+    srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+    style={
+      {
+        "color": "transparent",
+      }
+    }
+    title="Instagram"
+    width={40}
+  />
+</a>
+`;
+
+exports[`SocialLink component linkedin SocialLink snapshot 1`] = `
+<a
+  href="/"
+  onClick={[Function]}
+  onMouseEnter={[Function]}
+  onTouchStart={[Function]}
+  target="_blank"
+>
+  <img
+    alt="Linkedin"
+    data-nimg="1"
+    decoding="async"
+    height={40}
+    loading="lazy"
+    onError={[Function]}
+    onLoad={[Function]}
+    src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+    srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+    style={
+      {
+        "color": "transparent",
+      }
+    }
+    title="Linkedin"
+    width={40}
+  />
+</a>
+`;
+
+exports[`SocialLink component twitter SocialLink snapshot 1`] = `
+<a
+  href="/"
+  onClick={[Function]}
+  onMouseEnter={[Function]}
+  onTouchStart={[Function]}
+  target="_blank"
+>
+  <img
+    alt="Twitter"
+    data-nimg="1"
+    decoding="async"
+    height={40}
+    loading="lazy"
+    onError={[Function]}
+    onLoad={[Function]}
+    src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+    srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+    style={
+      {
+        "color": "transparent",
+      }
+    }
+    title="Twitter"
+    width={40}
+  />
+</a>
+`;

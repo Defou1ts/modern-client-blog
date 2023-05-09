@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WhyWeStarted WhyWeStarted snapshot 1`] = `
+<article
+  className="wrapper"
+  data-test-id="wy-we-started"
+>
+  <div
+    className="backgroundWrapper"
+  />
+  <div
+    className="content"
+  >
+    <p
+      className="subtitle"
+    >
+      why-we-started.subtitle
+    </p>
+    <h1
+      className="h h1 title"
+    >
+      why-we-started.title
+    </h1>
+    <p
+      className="p medium description"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+    </p>
+    <a
+      href="/about"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
+    >
+      <button
+        className="button primary button"
+      >
+        why-we-started.button
+      </button>
+    </a>
+  </div>
+</article>
+`;

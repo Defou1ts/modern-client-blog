@@ -1,0 +1,36 @@
+@import '@app/theme/theme.scss';
+
+.nav {
+	background-color: $black;
+	justify-self: right;
+
+	display: grid;
+
+	grid-auto-flow: column;
+	grid-template-rows: 1fr;
+	grid-template-columns: auto;
+
+	gap: 24px;
+
+	align-items: center;
+
+	@include lx {
+		gap: 12px;
+	}
+
+	@include lg {
+		justify-self: center;
+		justify-items: center;
+		grid-template-columns: 1fr;
+		grid-auto-flow: row;
+	}
+}
+
+.navlink {
+	@include link($yellow-hover, all 0.2s ease, $white);
+	white-space: nowrap;
+
+	&.active {
+		color: $yellow;
+	}
+}

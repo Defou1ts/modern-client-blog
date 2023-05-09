@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeOverviewPost HomeOverviewPost snapshot 1`] = `
+<article
+  className="backgroundImageWrapper"
+  data-test-id="home-overview-post"
+>
+  <div
+    className="backgroundEffectWrapper"
+  >
+    <div
+      className="content"
+    >
+      <p
+        className="categoryInfo"
+      >
+        home.overview.posted-on
+         
+        <span
+          className="category"
+        >
+          Startup
+        </span>
+      </p>
+      <h1
+        className="h display title"
+      >
+        Step-by-step guide to choosing great font pairs
+      </h1>
+      <p
+        className="p medium author"
+      >
+        by
+         
+        <a
+          className="yellow"
+          href="/author/1"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          Floyd Miles
+        </a>
+          
+        | 
+          
+        April 25, 2023
+      </p>
+      <p
+        className="p medium description"
+      >
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      </p>
+      <button
+        className="button primary button"
+      >
+        <a
+          data-test-id="home-overview-post-link"
+          href="/posts/1"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          home.overview.read-more
+        </a>
+      </button>
+    </div>
+  </div>
+</article>
+`;

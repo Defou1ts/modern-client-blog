@@ -1,0 +1,27 @@
+@import '@app/theme/theme.scss';
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto;
+	gap: 48px;
+}
+
+.title {
+	text-align: center;
+}
+
+.listWrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 32px;
+	justify-items: center;
+
+	@include lg {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@include md {
+		gap: 16px;
+	}
+}

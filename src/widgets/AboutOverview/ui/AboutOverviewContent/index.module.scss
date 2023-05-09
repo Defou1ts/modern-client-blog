@@ -1,0 +1,49 @@
+@import '@app/theme/theme.scss';
+
+.wrapper {
+	position: relative;
+	bottom: 40px;
+	z-index: -1;
+
+	@include lg {
+		bottom: 0;
+	}
+}
+
+.header {
+	height: 444px;
+	background: url('../../../../app/assets/images/overview.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	grid-template-columns: minmax(0px, 109px) auto minmax(0px, 109px);
+	grid-template-rows: 1fr auto auto;
+	grid-template-areas: '. . .' '. statistics .' '. rectangles .';
+
+	display: grid;
+	align-items: end;
+}
+
+.statistics {
+	grid-area: statistics;
+	background-color: $yellow;
+	padding: 32px 48px;
+	justify-self: left;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 68px;
+
+	@include lg {
+		gap: 32px;
+	}
+
+	@include sm {
+		padding: 32px 24px;
+	}
+}
+
+.rectangles {
+	grid-area: rectangles;
+}

@@ -1,0 +1,51 @@
+@import '@app/theme/theme.scss';
+
+.privacy {
+}
+.titleWrapper {
+	padding: 80px 0px;
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	justify-items: center;
+	background-color: $lavender;
+}
+.title {
+}
+.updatedAt {
+	opacity: 0.6;
+}
+.content {
+	padding: 128px 0px;
+	display: grid;
+	grid-template-areas: '. content-first .' '. content-second .';
+	grid-template-columns: minmax(10px, 336px) auto minmax(10px, 336px);
+	row-gap: 32px;
+
+	@include md {
+		grid-template-columns: 20px auto 20px;
+	}
+}
+
+.contentBlock:first-child {
+	grid-area: content-first;
+}
+
+.contentBlock:last-child {
+	grid-area: content-second;
+}
+
+.subtitle:first-child {
+	margin-bottom: 32px;
+}
+
+.subtitle:last-child {
+	margin-bottom: 24px;
+}
+
+.subtitle {
+}
+
+.text {
+	text-align: justify;
+}

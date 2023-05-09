@@ -1,0 +1,30 @@
+@import '../../theme/theme.scss';
+
+.wrapper {
+	padding: 128px 0px 0px 0px;
+	display: grid;
+	grid-template-columns: minmax(10px, 336px) auto minmax(10px, 336px);
+	grid-template-rows: auto 64px auto 32px auto 70px 355px;
+	grid-template-areas: '. info .' '. . .' '. worktime .' '. . .' '. contactform .' '. . .' 'map map map';
+
+	@include lg {
+		padding: 64px 0px 0px 0px;
+		grid-template-rows: auto 32px auto 16px auto 70px 355px;
+	}
+
+	@include md {
+		grid-template-columns: minmax(10px, 30px) auto minmax(10px, 30px);
+	}
+
+	@include sm {
+		grid-template-columns: 10px auto 10px;
+	}
+}
+
+.wrapper > article:nth-child(3) {
+	grid-area: contactform;
+}
+
+.wrapper > div:nth-child(4) {
+	grid-area: map;
+}

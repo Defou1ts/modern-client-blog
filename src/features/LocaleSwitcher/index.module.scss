@@ -1,0 +1,17 @@
+@import '@app/theme/theme.scss';
+
+.locales {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px;
+}
+
+.locale {
+	@include link($yellow-hover, all 0.2s ease, $white);
+	text-transform: uppercase;
+	&.active {
+		color: $yellow;
+		cursor: default;
+		pointer-events: none;
+	}
+}

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategoryOverview CategoryOverview snapshot 1`] = `
+<article
+  className="wrapper"
+>
+  <h1
+    className="h display title"
+  >
+    Business
+  </h1>
+  <p
+    className="p medium description"
+  >
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+  </p>
+  <p
+    className="path"
+  >
+    BLOG &gt; 
+    business
+     
+  </p>
+</article>
+`;

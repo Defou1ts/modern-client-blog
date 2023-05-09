@@ -1,0 +1,29 @@
+@import '@app/theme/theme.scss';
+
+.social {
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: space-between;
+
+	@include md {
+		grid-template-columns: 1fr;
+		gap: 12px;
+		justify-content: center;
+		justify-items: center;
+	}
+}
+
+.adressItem {
+	color: $white;
+	opacity: 0.7;
+
+	@include md {
+		text-align: center;
+	}
+}
+
+.socialList {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 26.67px;
+}

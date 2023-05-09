@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategoryTag CategoryTag snapshot 1`] = `
+<div
+  className="tag undefined"
+>
+  <div
+    className="label"
+  >
+    <span>
+      Business
+    </span>
+  </div>
+</div>
+`;

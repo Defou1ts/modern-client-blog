@@ -1,0 +1,51 @@
+@import '@app/theme/theme.scss';
+
+.wrapper {
+	grid-area: worktime;
+	padding: 48px 64px;
+	background-color: $purple;
+	color: $white;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 42px;
+
+	@include lg {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	@include md {
+		padding: 24px 32px;
+	}
+}
+.item {
+	@include lg {
+		text-align: center;
+	}
+}
+.itemTitle {
+	opacity: 0.6;
+
+	@include lg {
+		text-align: center;
+	}
+}
+.line {
+	margin: 16px 0px;
+	opacity: 0.1;
+	height: 1px;
+	background-color: $white;
+	width: 100%;
+}
+.info {
+	@include lg {
+		text-align: center;
+	}
+}
+.support {
+	opacity: 0.6;
+
+	@include lg {
+		text-align: center;
+	}
+}

@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LogoList LogoList snapshot 1`] = `
+<article
+  className="wrapper"
+  data-test-id="logo-list"
+>
+  <div
+    className="info"
+  >
+    <p
+      className="p small subtitle"
+    >
+      home.logo-list-subtitle
+    </p>
+    <h4
+      className="h h4 title"
+    >
+      home.logo-list-title
+    </h4>
+  </div>
+  <div
+    className="logolist"
+  >
+    <img
+      alt="logo 1"
+      data-nimg="1"
+      decoding="async"
+      height={40}
+      loading="lazy"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+      srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+      style={
+        {
+          "color": "transparent",
+        }
+      }
+      title="logo 1"
+      width={40}
+    />
+    <img
+      alt="logo 2"
+      data-nimg="1"
+      decoding="async"
+      height={40}
+      loading="lazy"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+      srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+      style={
+        {
+          "color": "transparent",
+        }
+      }
+      title="logo 2"
+      width={40}
+    />
+    <img
+      alt="logo 3"
+      data-nimg="1"
+      decoding="async"
+      height={40}
+      loading="lazy"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+      srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+      style={
+        {
+          "color": "transparent",
+        }
+      }
+      title="logo 3"
+      width={40}
+    />
+    <img
+      alt="logo 4"
+      data-nimg="1"
+      decoding="async"
+      height={40}
+      loading="lazy"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+      srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+      style={
+        {
+          "color": "transparent",
+        }
+      }
+      title="logo 4"
+      width={40}
+    />
+    <img
+      alt="logo 5"
+      data-nimg="1"
+      decoding="async"
+      height={40}
+      loading="lazy"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+      srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+      style={
+        {
+          "color": "transparent",
+        }
+      }
+      title="logo 5"
+      width={40}
+    />
+  </div>
+</article>
+`;

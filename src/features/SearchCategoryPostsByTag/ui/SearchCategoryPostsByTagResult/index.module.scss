@@ -1,0 +1,57 @@
+@import 'app/theme/theme.scss';
+
+.wrapper {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	background-color: $white;
+	@include BorderMediumGrayWithOpacity(1px, 0.3);
+	border-top: none;
+	border-radius: 0px 0px 12px 12px;
+}
+.searchResultItem {
+	position: relative;
+	padding: 10px;
+
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 10px;
+
+	@include link($red, 0.2s ease, $black);
+
+	font-weight: 700;
+	font-size: 16px;
+
+	letter-spacing: -0.015em;
+
+	img {
+		object-fit: cover;
+		height: 100%;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 1px;
+		background-color: $black;
+		opacity: 0.31;
+	}
+}
+
+.info {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr auto;
+	gap: 20px;
+}
+
+.tags {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(60px,auto));
+	gap: 5px;
+}

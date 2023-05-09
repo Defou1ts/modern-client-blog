@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeAboutUs HomeAboutUs snapshot 1`] = `
+<article
+  className="wrapper"
+  data-test-id="home-about-us"
+>
+  <div
+    className="rectangles reverse rectangles"
+  >
+    <div
+      className="purpleRectangle"
+    />
+    <div
+      className="yellowRectangle"
+    />
+  </div>
+  <div
+    className="about"
+  >
+    <div
+      className="item"
+    >
+      <p
+        className="subtitle"
+      >
+        home.about.about-subtitle
+      </p>
+      <h2
+        className="h h2 title"
+      >
+        home.about.about-title
+      </h2>
+      <p
+        className="p medium description"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <a
+        className="link"
+        data-test-id="home-about-us-link"
+        href="/about"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        home.about.read-more
+      </a>
+    </div>
+    <div
+      className="item"
+    >
+      <p
+        className="subtitle"
+      >
+        home.about.mission-subtitle
+      </p>
+      <h3
+        className="h h3 title"
+      >
+        home.about.mission-title
+      </h3>
+      <p
+        className="p medium description"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+  </div>
+</article>
+`;

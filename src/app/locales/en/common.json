@@ -1,0 +1,134 @@
+{
+	"by": "By",
+	"read-more": "Read More >",
+	"header": {
+		"home": "Home",
+		"blog": "Blog",
+		"about": "About Us",
+		"contact": "Contact Us",
+		"video": "Video about us",
+		"privacy": "Privacy Policy"
+	},
+	"why-we-started": {
+		"subtitle": "Why we started",
+		"title": "It started out as a simple idea and evolved into our passion",
+		"button": "Discover our story >"
+	},
+	"home": {
+		"categories-title": "Choose A Catagory",
+		"logo-list-subtitle": "We are",
+		"logo-list-title": "Featured in",
+		"overview": {
+			"posted-on": "posted on",
+			"read-more": "Read More >"
+		},
+		"about": {
+			"about-subtitle": "About us",
+			"mission-subtitle": "Our mission",
+			"about-title": "We are a community of content writers who share their learnings",
+			"mission-title": "Creating valuable content for creatives all around the world",
+			"read-more": "Read More >"
+		},
+		"testimonals": {
+			"subtitle": "TESTIMONIALs",
+			"title": "What people say about our blog"
+		},
+		"postlist": {
+			"featured-post-title": "Featured Post",
+			"all-posts-title": "All Posts",
+			"view-all": "View All"
+		}
+	},
+	"subscribe": {
+		"title": "Subscribe to our news letter to get latest updates and news",
+		"button": "Subscribe",
+		"placeholder": "Enter Your Email",
+		"error": "Invalid Email",
+		"form": {
+			"success": "You was successfuly subscribed to our news",
+			"error": "Something went wrong, try again later"
+		}
+	},
+	"privacy": {
+		"title": "Privacy Policy",
+		"updatedAt": "Last Updated on"
+	},
+	"contact": {
+		"title": "Contact us",
+		"subtitle": "Let’s Start a Conversation",
+		"working": {
+			"title-days": "Working hours",
+			"days": "Monday To Friday",
+			"hours": "9:00 AM to 8:00 PM ",
+			"availability": "Our Support Team is available 24/7",
+			"title-contact": "Contact Us"
+		},
+		"form": {
+			"name": "Full Name",
+			"email": "Your Email",
+			"related": "Query Related",
+			"locations": {
+				"warsaw": "Warsaw",
+				"minsk": "Minsk",
+				"london": "London"
+			},
+			"message": "Message",
+			"send-button": "Send Message",
+			"errors": {
+				"name": "Enter your name",
+				"email": "Invalid Email",
+				"location": "Choose location",
+				"message": "Length should be greater that 40 characters",
+				"requiredmessage": "Enter message"
+			},
+			"success": "Your message was successfully sent",
+			"error": "Something went wrong, try again later"
+		}
+	},
+	"about": {
+		"overview": {
+			"subtitle": "about us",
+			"title": "We are a team of content writers who share their learnings",
+			"blogs-published": "Blogs Published",
+			"views-on-finsweet": "Views on Finsweet",
+			"total-active-users": "Total active Users",
+			"our-mission-subtitle": "Our mision",
+			"our-mission-title": "Creating valuable content for creatives all around the world",
+			"our-vision-subtitle": "Our Vision",
+			"our-vision-title": "A platform that empowers individuals to improve"
+		},
+		"our-team": {
+			"our-team-title": "Our team of creatives",
+			"why-we-started-title": "Why we started this Blog",
+			"our-team-image-alt": "ground group growth hands",
+			"why-we-started-image-alt": "Three Persons Sitting on the Stairs Talking With Each Other"
+		},
+		"join-our-team": {
+			"title": "Join our team to be a part of our story",
+			"button": "Join Now"
+		}
+	},
+	"author": {
+		"list-title": "List of Authors",
+		"welcome-part-first": "Hey There, I'm",
+		"welcome-part-second": "and welcome to my Blog",
+		"post-list": "My Posts"
+	},
+	"post": {
+		"features-post-title": "Featured Post",
+		"post-list-title": "All posts",
+		"from": "By",
+		"no-posts": "There are no published posts yet",
+		"posted": "Posted",
+		"what-to-read-next": "What to read next"
+	},
+	"blog": {
+		"post-categories-title": "All Categories"
+	},
+	"category": {
+		"search-submit": "Search",
+		"search-placeholder": "Search for tag...",
+		"categories-list-title": "Categories",
+		"tags-list-title": "All Tags"
+	}
+}

@@ -1,0 +1,28 @@
+@import '@app/theme/theme.scss';
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 64px;
+}
+
+.title {
+	letter-spacing: -2px;
+}
+
+.cardsWrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 32px;
+
+	@include lg {
+		grid-template-columns: 1fr;
+	}
+}
+
+.line {
+	height: 1px;
+	width: 100%;
+	background-color: $medium-gray;
+	opacity: 0.3;
+}

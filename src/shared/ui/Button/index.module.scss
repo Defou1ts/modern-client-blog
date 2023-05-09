@@ -1,0 +1,31 @@
+@import '@app/theme/theme.scss';
+
+.button {
+	color: $black;
+	padding: 16px 48px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+
+	cursor: pointer;
+
+	transition: 0.2s ease;
+}
+
+.primary {
+	background-color: $yellow;
+	&:hover {
+		background-color: $yellow-hover;
+	}
+}
+
+.secondary {
+	background-color: $white;
+	&:hover {
+		background-color: $yellow-hover;
+	}
+
+	@include lx {
+		padding: 16px 24px;
+	}
+}

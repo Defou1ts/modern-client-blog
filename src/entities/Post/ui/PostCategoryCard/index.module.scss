@@ -1,0 +1,59 @@
+@import '@app/theme/theme.scss';
+
+.card {
+	@include BorderMediumGrayWithOpacity(1px, 0.3);
+	background-color: $white;
+
+	transition: all 0.2s ease;
+
+	&:hover {
+		border: none;
+		background-color: $yellow-hover;
+	}
+
+	height: 100%;
+
+	&.active {
+		background-color: $yellow-hover;
+	}
+}
+
+.active {
+	pointer-events: none;
+	cursor: none;
+}
+
+.large {
+	padding: 32px;
+}
+
+.large .title {
+	margin-top: 16px;
+}
+
+.medium {
+	padding: 24px;
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: left;
+	gap: 16px;
+	align-items: center;
+}
+
+.small {
+	border: none;
+	padding: 6px;
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: left;
+	gap: 8px;
+	align-items: center;
+	& .title {
+		font-size: 16px;
+	}
+}
+
+.description {
+	margin-top: 4px;
+	color: $medium-gray;
+}

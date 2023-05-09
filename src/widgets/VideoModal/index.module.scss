@@ -1,0 +1,9 @@
+@import '@app/theme/theme.scss';
+
+.videoWrapper {
+	@include lg {
+		iframe {
+			max-width: 90vw;
+		}
+	}
+}

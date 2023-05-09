@@ -1,0 +1,50 @@
+@import '@app/theme/theme.scss';
+
+.wrapper {
+	padding: 32px;
+	@include BorderMediumGrayWithOpacity(1px, 0.1);
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 350px 32px auto 16px auto 16px auto 32px auto;
+	grid-template-areas:
+		'image'
+		'.'
+		'by'
+		'.'
+		'title'
+		'.'
+		'description'
+		'.'
+		'button';
+	justify-items: left;
+}
+
+.imageWrapper {
+	grid-area: image;
+	width: 100%;
+
+	img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.by {
+	grid-area: by;
+}
+
+.title {
+	grid-area: title;
+	letter-spacing: -1px;
+}
+
+.description {
+	grid-area: description;
+	color: $medium-gray;
+}
+
+.button {
+	grid-area: button;
+}

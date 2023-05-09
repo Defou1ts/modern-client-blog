@@ -1,0 +1,47 @@
+@import '@app/theme/theme.scss';
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 54px 58px auto 48px auto;
+	grid-template-areas: 'search' '.' 'categories' '.' 'tags';
+
+	@include lx {
+		grid-template-columns: 1fr 1.5fr;
+		grid-template-rows: auto auto;
+		grid-template-areas: 'categories search' 'categories tags';
+		gap: 16px;
+	}
+
+	@include md {
+		grid-template-columns: 1fr;
+		grid-template-areas: 'search' 'categories' 'tags';
+	}
+}
+
+.wrapper > div:nth-child(1) {
+	grid-area: search;
+}
+
+.wrapper > div:nth-child(2) {
+	grid-area: categories;
+}
+.wrapper > div:nth-child(3) {
+	grid-area: tags;
+}
+
+.categoriesTitle {
+	letter-spacing: -2px;
+	margin-bottom: 40px;
+	@include lx {
+		display: none;
+	}
+}
+
+.tagsTitle {
+	letter-spacing: -2px;
+	margin-bottom: 24px;
+	@include lx {
+		display: none;
+	}
+}

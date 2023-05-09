@@ -1,0 +1,58 @@
+@import '@app/theme/theme.scss';
+
+.formWrapper {
+	@include BackgroundWhiteWithOpacity(0.05);
+	padding: 80px 64px;
+	display: grid;
+	grid-template-columns: minmax(100px, 564px) auto;
+	gap: 64px;
+
+	@include lg {
+		grid-template-columns: 1fr;
+		padding: 60px 34px;
+	}
+
+	@include md {
+		grid-template-columns: 1fr;
+		padding: 34px;
+		gap: 32px;
+	}
+}
+
+.form {
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+	grid-template-rows: 56px;
+	gap: 24px;
+
+	@include md {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 56px;
+	}
+}
+
+.title {
+	color: $white;
+
+	@include lx {
+		text-align: center;
+	}
+}
+
+.input {
+	width: 100%;
+	color: $black;
+}
+
+.success {
+	color: $green;
+	@include md {
+		text-align: center;
+	}
+}
+.error {
+	color: $red;
+	@include md {
+		text-align: center;
+	}
+}
