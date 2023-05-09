@@ -1,4 +1,4 @@
-import type { Route } from '../../shared/interfaces/route';
+import type { Route } from '@shared/lib/interfaces/route';
 
 export interface NavbarProps {
 	routes: Route[];

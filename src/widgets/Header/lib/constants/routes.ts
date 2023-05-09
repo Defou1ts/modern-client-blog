@@ -1,6 +1,6 @@
 import { ROUTES } from '@shared/lib/contants/routes';
 
-import type { Route } from '@shared/interfaces/route';
+import type { Route } from '@shared/lib/interfaces/route';
 
 export const routes: Route[] = [
 	{

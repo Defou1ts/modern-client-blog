@@ -4,7 +4,7 @@ import LogoIcon3 from '@app/assets/icons/logo3.png';
 import LogoIcon4 from '@app/assets/icons/logo4.png';
 import LogoIcon5 from '@app/assets/icons/logo5.png';
 
-import type { Image } from '@shared/interfaces/image';
+import type { Image } from '@shared/lib/interfaces/image';
 
 export const logos: Image[] = [
 	{
