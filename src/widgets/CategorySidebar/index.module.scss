@@ -3,7 +3,7 @@
 .wrapper {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: auto 58px auto 48px auto;
+	grid-template-rows: 54px 58px auto 48px auto;
 	grid-template-areas: 'search' '.' 'categories' '.' 'tags';
 
 	@include lx {
