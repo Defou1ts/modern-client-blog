@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import styles from './index.module.scss';
 
-import { useLocale } from '@shared/hooks/useLocale';
+import { useLocale } from '@shared/lib/hooks/useLocale';
 import { H } from '@shared/ui/H';
 import { getAuthorFullName } from '@entities/Author/lib/utils/getAuthorFullName';
 import { P } from '@shared/ui/P';

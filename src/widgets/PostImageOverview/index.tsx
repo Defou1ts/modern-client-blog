@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import styles from './index.module.scss';
 
-import { useLocale } from '@shared/hooks/useLocale';
+import { useLocale } from '@shared/lib/hooks/useLocale';
 
 import type { PostImageOverviewProps } from './interfaces';
 
@@ -15,7 +15,7 @@ export const PostImageOverview = ({ post }: PostImageOverviewProps) => {
 
 	return (
 		<article className={styles.imageWrapper}>
-			<Image src={previewImageURL} alt={translatedTitle} title={translatedTitle} width={1280} height={580}/>
+			<Image src={previewImageURL} alt={translatedTitle} title={translatedTitle} width={1280} height={580} />
 		</article>
 	);
 };

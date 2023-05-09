@@ -12,8 +12,8 @@ import { Input } from '@shared/ui/Input';
 import { Select } from '@shared/ui/Select';
 import { Textarea } from '@shared/ui/Textarea';
 import { P } from '@shared/ui/P';
-import { useSubmitFormState } from '@shared/hooks/useSubmitFormState';
-import { useGetFormApi } from '@shared/hooks/useGetFormApi';
+import { useSubmitFormState } from '@shared/lib/hooks/useSubmitFormState';
+import { useGetFormApi } from '@shared/lib/hooks/useGetFormApi';
 import { Spinner } from '@shared/ui/Spinner';
 
 import type { HandleSubmit } from './types';
@@ -48,7 +48,7 @@ export const ContactForm = () => {
 				initialValues={initialValues}
 				onSubmit={handleSubmit}
 			>
-				<Form className={styles.form} data-test-id='contact-form'>
+				<Form className={styles.form} data-test-id="contact-form">
 					<Field name="name" id="name" type="text">
 						{(props: FieldProps<ContactFormState>) => (
 							<Input

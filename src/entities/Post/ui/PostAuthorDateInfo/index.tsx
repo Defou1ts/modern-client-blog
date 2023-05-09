@@ -5,10 +5,10 @@ import { useTranslation } from 'next-i18next';
 import styles from './index.module.scss';
 
 import { getAuthorFullName } from '@entities/Author/lib/utils/getAuthorFullName';
-import { ROUTES } from '@shared/contants/routes';
-import { useLocale } from '@shared/hooks/useLocale';
+import { ROUTES } from '@shared/lib/contants/routes';
+import { useLocale } from '@shared/lib/hooks/useLocale';
 import { P } from '@shared/ui/P';
-import { getFormattedDateByLocale } from '@shared/utils/getFormattedDateByLocale';
+import { getFormattedDateByLocale } from '@shared/lib/utils/getFormattedDateByLocale';
 
 import type { PostAuthorDateInfoProps } from './interfaces';
 

@@ -2,14 +2,14 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import type { GetStaticPaths, GetStaticProps } from 'next';
 
+import { useLocale } from '@shared/lib/hooks/useLocale';
 import { authors } from '@entities/Author/lib/mock/authors';
 import { MainContainer } from '@app/wrappers/MainContainer';
 import { posts } from '@entities/Post/lib/mock/posts';
-import { defaultLocale } from '@shared/contants/defaultLocale';
+import { defaultLocale } from '@shared/lib/contants/defaultLocale';
 import { PostPageWrapper } from '@app/wrappers/PostPageWrapper';
 import { PostAuthorInfo } from '@widgets/PostAuthorInfo';
 import { PostImageOverview } from '@widgets/PostImageOverview';
-import { useLocale } from '@shared/hooks/useLocale';
 import { JoinOurTeam } from '@widgets/JoinOurTeam';
 import { PostContent } from '@entities/Post/ui/PostContent/Index';
 import { WhatToReadNext } from '@widgets/WhatToReadNext';

@@ -5,9 +5,9 @@ import { useSelector } from 'react-redux';
 
 import styles from './index.module.scss';
 
+import { useLocale } from '@shared/lib/hooks/useLocale';
 import { selectPostsBySearchTagValue } from '@app/store/selectors/category.selectors';
-import { useLocale } from '@shared/hooks/useLocale';
-import { ROUTES } from '@shared/contants/routes';
+import { ROUTES } from '@shared/lib/contants/routes';
 import { CategoryTag } from '@shared/ui/CategoryTag';
 
 export const SearchCategoryPostsByTagResult = () => {

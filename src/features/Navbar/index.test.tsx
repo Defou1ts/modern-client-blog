@@ -7,25 +7,27 @@ import renderer from 'react-test-renderer';
 
 import { Navbar } from './index';
 
-import type { Route } from '@shared/interfaces/route';
+import { ROUTES } from '@shared/lib/contants/routes';
+
+import type { Route } from '@shared/lib/interfaces/route';
 import type { NextRouter } from 'next/router';
 
 const mockRoutes: Route[] = [
 	{
 		translationPath: 'home',
-		path: '/',
+		path: ROUTES.HOME,
 	},
 	{
 		translationPath: 'blog',
-		path: '/blog',
+		path: ROUTES.BLOG,
 	},
 	{
 		translationPath: 'about',
-		path: '/contact',
+		path: ROUTES.CONTACT,
 	},
 	{
 		translationPath: 'contact',
-		path: '/about',
+		path: ROUTES.ABOUT,
 	},
 ];
 

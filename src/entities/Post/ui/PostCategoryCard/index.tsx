@@ -7,8 +7,8 @@ import styles from './index.module.scss';
 
 import { H } from '@shared/ui/H';
 import { P } from '@shared/ui/P';
-import { ROUTES } from '@shared/contants/routes';
-import { useLocale } from '@shared/hooks/useLocale';
+import { ROUTES } from '@shared/lib/contants/routes';
+import { useLocale } from '@shared/lib/hooks/useLocale';
 
 import type { PostCategoryCardProps } from './interfaces';
 

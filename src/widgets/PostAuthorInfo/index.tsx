@@ -5,13 +5,13 @@ import { useTranslation } from 'next-i18next';
 
 import styles from './index.module.scss';
 
-import { useLocale } from '@shared/hooks/useLocale';
+import { useLocale } from '@shared/lib/hooks/useLocale';
 import { getAuthorFullName } from '@entities/Author/lib/utils/getAuthorFullName';
 import { H } from '@shared/ui/H';
 import { P } from '@shared/ui/P';
-import { getFormattedDateByLocale } from '@shared/utils/getFormattedDateByLocale';
+import { getFormattedDateByLocale } from '@shared/lib/utils/getFormattedDateByLocale';
 import { allPostCategories } from '@entities/Post/lib/mock/allPostCategories';
-import { ROUTES } from '@shared/contants/routes';
+import { ROUTES } from '@shared/lib/contants/routes';
 
 import type { PostAuthorInfoProps } from './interfaces';
 

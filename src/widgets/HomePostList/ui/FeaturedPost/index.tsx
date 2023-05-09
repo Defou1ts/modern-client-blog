@@ -5,10 +5,10 @@ import { useTranslation } from 'next-i18next';
 
 import styles from './index.module.scss';
 
-import { useLocale } from '@shared/hooks/useLocale';
+import { useLocale } from '@shared/lib/hooks/useLocale';
 import { PostAuthorDateInfo } from '@entities/Post/ui/PostAuthorDateInfo';
 import { H } from '@shared/ui/H';
-import { ROUTES } from '@shared/contants/routes';
+import { ROUTES } from '@shared/lib/contants/routes';
 import { P } from '@shared/ui/P';
 import { Button } from '@shared/ui/Button';
 

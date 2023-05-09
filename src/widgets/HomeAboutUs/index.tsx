@@ -7,7 +7,7 @@ import styles from './index.module.scss';
 import { P } from '@shared/ui/P';
 import { RectangleLine } from '@shared/ui/RectangleLine';
 import { H } from '@shared/ui/H';
-import { ROUTES } from '@shared/contants/routes';
+import { ROUTES } from '@shared/lib/contants/routes';
 
 export const HomeAboutUs = () => {
 	const { t } = useTranslation();
@@ -24,7 +24,7 @@ export const HomeAboutUs = () => {
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 						labore et dolore magna aliqua.
 					</P>
-					<Link href={ROUTES.ABOUT} className={styles.link} data-test-id='home-about-us-link'>
+					<Link href={ROUTES.ABOUT} className={styles.link} data-test-id="home-about-us-link">
 						{t('home.about.read-more')}
 					</Link>
 				</div>

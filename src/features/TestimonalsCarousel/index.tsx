@@ -8,7 +8,7 @@ import { TestimonalsCarouselCard } from './ui/TestimonalsCarouselCard';
 import ArrowLeftIcon from '@app/assets/icons/arrow-left.svg';
 import { H } from '@shared/ui/H';
 import { P } from '@shared/ui/P';
-import { useCarousel } from '@shared/hooks/useCarousel';
+import { useCarousel } from '@shared/lib/hooks/useCarousel';
 
 export const TestimonalsCarousel = () => {
 	const { slideIndex, handleNext, handlePrev, isDisabledPrev, isDisabledNext } = useCarousel(3);

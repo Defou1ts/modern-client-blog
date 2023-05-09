@@ -3,10 +3,10 @@ import Link from 'next/link';
 
 import styles from './index.module.scss';
 
+import { useLocale } from '@shared/lib/hooks/useLocale';
 import { H } from '@shared/ui/H';
 import { P } from '@shared/ui/P';
-import { ROUTES } from '@shared/contants/routes';
-import { useLocale } from '@shared/hooks/useLocale';
+import { ROUTES } from '@shared/lib/contants/routes';
 
 import type { PostCardProps } from './interfaces';
 

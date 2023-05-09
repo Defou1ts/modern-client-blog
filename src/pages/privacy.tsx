@@ -4,7 +4,7 @@ import type { GetStaticProps } from 'next';
 
 import { MainContainer } from '@app/wrappers/MainContainer';
 import { Privacy } from '@widgets/Privacy';
-import { defaultLocale } from '@shared/contants/defaultLocale';
+import { defaultLocale } from '@shared/lib/contants/defaultLocale';
 
 const PrivacyPage = () => (
 	<MainContainer title="Privacy Policy | Modsen client blog" description="Page with company's privacy">

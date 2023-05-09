@@ -9,7 +9,7 @@ import { H } from '@shared/ui/H';
 import { P } from '@shared/ui/P';
 import { SocialLink } from '@shared/ui/SocialLink';
 import { RectangleLine } from '@shared/ui/RectangleLine';
-import { useLocale } from '@shared/hooks/useLocale';
+import { useLocale } from '@shared/lib/hooks/useLocale';
 
 import type { AuthorOverviewProps } from './interfaces';
 

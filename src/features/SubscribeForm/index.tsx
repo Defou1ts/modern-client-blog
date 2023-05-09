@@ -6,11 +6,11 @@ import styles from './index.module.scss';
 import { useSubscribeFormValidationSchema } from './lib/hooks/useSubscribeFormValidationSchema';
 import { initialValues } from './lib/constants/initialValues';
 
+import { useSubmitFormState } from '@shared/lib/hooks/useSubmitFormState';
+import { useGetFormApi } from '@shared/lib/hooks/useGetFormApi';
 import { H } from '@shared/ui/H';
 import { Button } from '@shared/ui/Button';
 import { Input } from '@shared/ui/Input';
-import { useGetFormApi } from '@shared/hooks/useGetFormApi';
-import { useSubmitFormState } from '@shared/hooks/useSubmitFormState';
 import { P } from '@shared/ui/P';
 import { Spinner } from '@shared/ui/Spinner';
 
@@ -54,7 +54,7 @@ export const SubscribeForm = () => {
 							/>
 						)}
 					</Field>
-					<Button appearance="primary" type="submit" data-test-id='subcribe-form-submit'>
+					<Button appearance="primary" type="submit" data-test-id="subcribe-form-submit">
 						{t('subscribe.button')}
 					</Button>
 					{isSuccess && (

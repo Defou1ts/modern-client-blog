@@ -1,7 +1,7 @@
 import styles from './index.module.scss';
 
 import { H } from '@shared/ui/H';
-import { useLocale } from '@shared/hooks/useLocale';
+import { useLocale } from '@shared/lib/hooks/useLocale';
 import { P } from '@shared/ui/P';
 
 import type { CategoryOverviewProps } from './interfaces';

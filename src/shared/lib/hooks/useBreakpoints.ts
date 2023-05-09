@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { breakpoints } from '@shared/contants/breakpoints';
+import { breakpoints } from '@shared/lib/contants/breakpoints';
 
 const { lx, lg, md, sm } = breakpoints;
 

@@ -2,7 +2,7 @@ import styles from './index.module.scss';
 
 import { PostCategoriesList } from '@entities/Post/ui/PostCategoriesList';
 import { allPostCategories } from '@entities/Post/lib/mock/allPostCategories';
-import { useBreakpoints } from '@shared/hooks/useBreakpoints';
+import { useBreakpoints } from '@shared/lib/hooks/useBreakpoints';
 
 import type { CategoriesSwitcherProps } from './interfaces';
 

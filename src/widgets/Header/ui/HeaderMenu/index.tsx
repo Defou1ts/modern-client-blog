@@ -16,8 +16,8 @@ import { Navbar } from '@features/Navbar';
 import { Button } from '@shared/ui/Button';
 import { routes } from '@widgets/Footer/lib/constants/routes';
 import { VideoModal } from '@widgets/VideoModal';
-import { useGlobalScrollBlock } from '@shared/hooks/useGlobalScrollBlock';
-import { ROUTES } from '@shared/contants/routes';
+import { useGlobalScrollBlock } from '@shared/lib/hooks/useGlobalScrollBlock';
+import { ROUTES } from '@shared/lib/contants/routes';
 
 export const HeaderMenu = () => {
 	const isOpenedMenu = useSelector(selectIsOpenedMenu);

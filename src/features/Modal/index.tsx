@@ -5,7 +5,7 @@ import { createPortal } from 'react-dom';
 
 import styles from './index.module.scss';
 
-import { useGlobalScrollBlock } from '@shared/hooks/useGlobalScrollBlock';
+import { useGlobalScrollBlock } from '@shared/lib/hooks/useGlobalScrollBlock';
 
 import type { ModalProps } from './interfaces';
 

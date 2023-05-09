@@ -10,7 +10,7 @@ import { AuthorPageWrapper } from '@app/wrappers/AuthorPageWrapper';
 import { AuthorOverview } from '@entities/Author/ui/AuthorOverview';
 import { AuthorPostList } from '@widgets/AuthorPostList';
 import { posts } from '@entities/Post/lib/mock/posts';
-import { defaultLocale } from '@shared/contants/defaultLocale';
+import { defaultLocale } from '@shared/lib/contants/defaultLocale';
 
 import type { Post } from '@entities/Post/interfaces';
 import type { AuthorWithLocales } from '@entities/Author/interfaces';

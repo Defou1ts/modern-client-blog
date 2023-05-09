@@ -8,10 +8,10 @@ import styles from './index.module.scss';
 import { H } from '@shared/ui/H';
 import { P } from '@shared/ui/P';
 import { getAuthorFullName } from '@entities/Author/lib/utils/getAuthorFullName';
-import { getFormattedDateByLocale } from '@shared/utils/getFormattedDateByLocale';
+import { getFormattedDateByLocale } from '@shared/lib/utils/getFormattedDateByLocale';
 import { Button } from '@shared/ui/Button';
-import { ROUTES } from '@shared/contants/routes';
-import { useLocale } from '@shared/hooks/useLocale';
+import { ROUTES } from '@shared/lib/contants/routes';
+import { useLocale } from '@shared/lib/hooks/useLocale';
 
 import type { FeaturedPostProps } from './interfaces';
 

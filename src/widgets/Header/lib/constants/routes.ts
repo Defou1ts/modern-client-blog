@@ -1,4 +1,4 @@
-import { ROUTES } from '@shared/contants/routes';
+import { ROUTES } from '@shared/lib/contants/routes';
 
 import type { Route } from '@shared/interfaces/route';
 

@@ -2,10 +2,10 @@ import { useTranslation } from 'next-i18next';
 
 import styles from './index.module.scss';
 
-import { useLocale } from '@shared/hooks/useLocale';
+import { useLocale } from '@shared/lib/hooks/useLocale';
 import { H } from '@shared/ui/H';
 import { P } from '@shared/ui/P';
-import { getFormattedDateByLocale } from '@shared/utils/getFormattedDateByLocale';
+import { getFormattedDateByLocale } from '@shared/lib/utils/getFormattedDateByLocale';
 
 export const Privacy = () => {
 	const { locale } = useLocale();

@@ -7,7 +7,7 @@ import styles from './index.module.scss';
 import { H } from '@shared/ui/H';
 import { P } from '@shared/ui/P';
 import { Button } from '@shared/ui/Button';
-import { ROUTES } from '@shared/contants/routes';
+import { ROUTES } from '@shared/lib/contants/routes';
 
 export const WhyWeStarted = () => {
 	const { t } = useTranslation();
