@@ -62,7 +62,7 @@ export default CategoryPage;
 
 interface AuthorPagePath {
 	params: {
-		name: string;
+		type: string;
 	};
 	locale: string;
 }
@@ -80,7 +80,7 @@ export const getStaticPaths: GetStaticPaths = ({ locales }) => {
 	locales.forEach((locale) => {
 		const pathsWithLocale: AuthorPagePath[] = Object.values(allPostCategories).map((category) => ({
 			params: {
-				name: category.categoryType,
+				type: category.categoryType,
 			},
 			locale,
 		}));
@@ -95,9 +95,9 @@ export const getStaticPaths: GetStaticPaths = ({ locales }) => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
-	const name = params?.name;
+	const type = params?.type;
 
-	const category = Object.values(allPostCategories).filter((category) => category.categoryType === name)[0];
+	const category = Object.values(allPostCategories).filter((category) => category.categoryType === type)[0];
 	const categoryPosts = posts.filter((post) => post.category === category.categoryType);
 
 	return {
