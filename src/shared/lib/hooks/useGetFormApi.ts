@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-import type { ContactFormState } from '../../features/ContactForm/interfaces';
+import type { ContactFormState } from '@features/ContactForm/interfaces';
 
 export const useGetFormApi = () => {
 	const sendContactMessage = async (message: ContactFormState) => {
