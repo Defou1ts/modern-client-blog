@@ -1,0 +1,265 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePostList HomePostList snapshot 1`] = `
+<article
+  className="wrapper"
+  data-test-id="home-post-list"
+>
+  <div
+    className="item"
+  >
+    <h2
+      className="h h2 title"
+    >
+      home.postlist.featured-post-title
+    </h2>
+    <div
+      className="wrapper"
+    >
+      <div
+        className="imageWrapper"
+      >
+        <img
+          alt="Step-by-step guide to choosing great font pairs"
+          data-nimg="1"
+          decoding="async"
+          height={350}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F3184405%2Fpexels-photo-3184405.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=1920&q=75"
+          srcSet="/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F3184405%2Fpexels-photo-3184405.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=750&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F3184405%2Fpexels-photo-3184405.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&w=1920&q=75 2x"
+          style={
+            {
+              "color": "transparent",
+            }
+          }
+          title="Step-by-step guide to choosing great font pairs"
+          width={670}
+        />
+      </div>
+      <p
+        className="p medium by"
+      >
+        by
+         
+        <a
+          className="purple"
+          href="/author/1"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          Floyd Miles
+        </a>
+          
+        | 
+          
+        April 25, 2023
+      </p>
+      <h3
+        className="h h3 title"
+      >
+        Step-by-step guide to choosing great font pairs
+      </h3>
+      <p
+        className="p medium description"
+      >
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      </p>
+      <a
+        className="button"
+        data-test-id="home-post-list-featured-link"
+        href="/posts/1"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        <button
+          className="button primary"
+        >
+          read-more
+        </button>
+      </a>
+    </div>
+  </div>
+  <div
+    className="item"
+  >
+    <div
+      className="postlistTitleWrapper"
+    >
+      <h2
+        className="h h2 title"
+      >
+        home.postlist.all-posts-title
+      </h2>
+      <a
+        className="viewAll"
+        href="/blog"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        <p
+          className="p medium"
+        >
+          home.postlist.view-all
+        </p>
+      </a>
+    </div>
+    <div
+      className="wrapper"
+    >
+      <div
+        className="card"
+      >
+        <p
+          className="p medium"
+        >
+          by
+           
+          <a
+            className="purple"
+            href="/author/1"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Floyd Miles
+          </a>
+            
+          | 
+            
+          April 25, 2023
+        </p>
+        <a
+          className="link"
+          data-test-id="home-postlist-post-link"
+          href="/posts/1"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <h4
+            className="h h4"
+          >
+            Step-by-step guide to choosing great font pairs
+          </h4>
+        </a>
+      </div>
+      <div
+        className="card"
+      >
+        <p
+          className="p medium"
+        >
+          by
+           
+          <a
+            className="purple"
+            href="/author/2"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Diana Russel
+          </a>
+            
+          | 
+            
+          April 25, 2023
+        </p>
+        <a
+          className="link"
+          data-test-id="home-postlist-post-link"
+          href="/posts/2"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <h4
+            className="h h4"
+          >
+            Design tips for designers that cover everything you need
+          </h4>
+        </a>
+      </div>
+      <div
+        className="card"
+      >
+        <p
+          className="p medium"
+        >
+          by
+           
+          <a
+            className="purple"
+            href="/author/3"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Jenny Wilson
+          </a>
+            
+          | 
+            
+          April 25, 2023
+        </p>
+        <a
+          className="link"
+          data-test-id="home-postlist-post-link"
+          href="/posts/3"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <h4
+            className="h h4"
+          >
+            How to build rapport with your web design clients
+          </h4>
+        </a>
+      </div>
+      <div
+        className="card"
+      >
+        <p
+          className="p medium"
+        >
+          by
+           
+          <a
+            className="purple"
+            href="/author/4"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Leslie Alexander
+          </a>
+            
+          | 
+            
+          April 25, 2023
+        </p>
+        <a
+          className="link"
+          data-test-id="home-postlist-post-link"
+          href="/posts/4"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <h4
+            className="h h4"
+          >
+            Logo design trends to avoid in 2022
+          </h4>
+        </a>
+      </div>
+    </div>
+  </div>
+</article>
+`;
