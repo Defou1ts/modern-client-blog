@@ -13,7 +13,7 @@ export const CategorySidebar = ({ activeCategory }: CategorySidebarProps) => {
 	const { t } = useTranslation();
 
 	return (
-		<div className={styles.wrapper}>
+		<article className={styles.wrapper}>
 			<SearchCategoryPostsByTag />
 			<div>
 				<H type="h2" className={styles.categoriesTitle}>
@@ -27,6 +27,6 @@ export const CategorySidebar = ({ activeCategory }: CategorySidebarProps) => {
 				</H>
 				<TagsSwitcher />
 			</div>
-		</div>
+		</article>
 	);
 };

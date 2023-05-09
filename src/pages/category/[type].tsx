@@ -46,13 +46,9 @@ const CategoryPage = ({ category, categoryPosts, allPostTags }: CategoryPageProp
 	return (
 		<MainContainer title={`${translatedTitle} | Modsen client blog`} description={`${translatedDescription}`}>
 			<CategoryPageWrapper>
-				<article>
-					<CategoryOverview category={category} />
-				</article>
+				<CategoryOverview category={category} />
 				<CategoryPostList />
-				<article>
-					<CategorySidebar activeCategory={category} />
-				</article>
+				<CategorySidebar activeCategory={category} />
 			</CategoryPageWrapper>
 		</MainContainer>
 	);
