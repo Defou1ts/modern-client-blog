@@ -3,7 +3,7 @@ import { Children, cloneElement, useCallback, useEffect, useRef, useState } from
 import type { InfinityScrollProps } from './interfaces';
 
 export const InfinityScroll = ({ Wrapper, children, customHeight = 0 }: InfinityScrollProps) => {
-	const [componentsRendered, setComponentsRendered] = useState<number>(1);
+	const [componentsRendered, setComponentsRendered] = useState(1);
 	const wrapperRef = useRef<HTMLElement>(null);
 
 	const handleScroll = useCallback(() => {

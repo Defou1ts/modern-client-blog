@@ -5,7 +5,7 @@ import { breakpoints } from '@shared/lib/constants/breakpoints';
 const { lx, lg, md, sm } = breakpoints;
 
 export const useBreakpoints = () => {
-	const [windowWidth, setWindowWidth] = useState<number>(1920);
+	const [windowWidth, setWindowWidth] = useState(1920);
 
 	const handleResize = () => {
 		const { innerWidth } = window;

@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
 export const useSubmitFormState = () => {
-	const [isSuccess, setIsSuccess] = useState<boolean>(false);
-	const [isError, setIsError] = useState<boolean>(false);
-	const [isLoading, setIsLodaing] = useState<boolean>(false);
+	const [isSuccess, setIsSuccess] = useState(false);
+	const [isError, setIsError] = useState(false);
+	const [isLoading, setIsLodaing] = useState(false);
 
 	const setSuccesWithTimeout = (time: number) => {
 		setIsLodaing(false);

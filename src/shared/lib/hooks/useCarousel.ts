@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export const useCarousel = (maxSlides: number) => {
-	const [slideIndex, setSlideIndex] = useState<number>(0);
+	const [slideIndex, setSlideIndex] = useState(0);
 
 	const handleNext = () => {
 		setSlideIndex(slideIndex + 1);

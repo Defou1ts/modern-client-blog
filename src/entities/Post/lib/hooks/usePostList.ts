@@ -3,7 +3,7 @@ import { useState, useMemo } from 'react';
 import type { Post } from '../../interfaces';
 
 export const usePostList = (posts: Post[], maxPosts: number) => {
-	const [currentPage, setCurrentPage] = useState<number>(0);
+	const [currentPage, setCurrentPage] = useState(0);
 
 	const handlePrevClick = () => {
 		setCurrentPage(currentPage - 1);
