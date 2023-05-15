@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 import { useTranslation } from 'next-i18next';
 
@@ -11,6 +12,7 @@ import { ROUTES } from '@shared/lib/constants/routes';
 import { Paragraph } from '@shared/ui/Paragraph';
 import { Button } from '@shared/ui/Button';
 import { PostAuthorDateInfo } from '@entities/Post/ui/PostAuthorDateInfo';
+import HomeOverviewPostBackground from '@app/assets/images/homeoverview.png';
 
 import type { HomeOverviewPostProps } from './interfaces';
 
@@ -26,7 +28,13 @@ export const HomeOverviewPost = ({ author, post }: HomeOverviewPostProps) => {
 	const translatedCategoryTitle = categoryTitle[locale];
 
 	return (
-		<article data-test-id="home-overview-post" className={styles.backgroundImageWrapper}>
+		<article data-test-id="home-overview-post" className={styles.wrapper}>
+			<Image
+				src={HomeOverviewPostBackground}
+				className={styles.backgroundImage}
+				alt={translatedPostTitle}
+				title={translatedPostTitle}
+			/>
 			<div className={styles.backgroundEffectWrapper}>
 				<div className={styles.content}>
 					<p className={styles.categoryInfo}>
