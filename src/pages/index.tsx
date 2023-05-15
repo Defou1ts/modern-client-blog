@@ -17,7 +17,7 @@ import { HomeAboutUs } from '@widgets/HomeAboutUs';
 import { HomeOverviewPost } from '@widgets/HomeOverviewPost';
 import { posts } from '@entities/Post/lib/mock/posts';
 import { HomePostList } from '@widgets/HomePostList';
-import { InfinityScroll } from '@features/InfinityScroll';
+import { InfinityScroll } from '@shared/ui/InfinityScroll';
 
 import type { Post, PostCategory } from '@entities/Post/interfaces';
 import type { AuthorWithLocales } from '@entities/Author/interfaces';
