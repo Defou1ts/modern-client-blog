@@ -20,11 +20,3 @@
 		padding: 20px;
 	}
 }
-
-.title {
-	white-space: nowrap;
-	color: $white;
-	@include font-weight($font-weight-bold);
-	font-size: 24px;
-	line-height: 48px;
-}

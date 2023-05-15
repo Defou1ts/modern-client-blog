@@ -1,6 +1,5 @@
 import { useCallback, useEffect } from 'react';
 
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 import { useTranslation } from 'next-i18next';
@@ -17,7 +16,7 @@ import { Button } from '@shared/ui/Button';
 import { routes } from '@widgets/Footer/lib/constants/routes';
 import { VideoModal } from '@widgets/VideoModal';
 import { useGlobalScrollBlock } from '@shared/lib/hooks/useGlobalScrollBlock';
-import { ROUTES } from '@shared/lib/contants/routes';
+import { Logo } from '@shared/ui/Logo';
 
 export const HeaderMenu = () => {
 	const isOpenedMenu = useSelector(selectIsOpenedMenu);
@@ -50,9 +49,7 @@ export const HeaderMenu = () => {
 				[styles.active]: isOpenedMenu,
 			})}
 		>
-			<Link href={ROUTES.HOME}>
-				<h1 className={styles.title}>Modsen Client Blog</h1>
-			</Link>
+			<Logo />
 			<LocaleSwitcher />
 			<Navbar routes={routes} />
 			<Button onClick={handleOpenVideoModal} data-test-id="header-button" appearance="secondary">
