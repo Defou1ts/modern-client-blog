@@ -16,7 +16,7 @@ export const HomePostList = ({ featuredPost, featuredPostAuthor, posts, postsAut
 	const { t } = useTranslation();
 
 	return (
-		<article data-test-id="home-post-list" className={styles.wrapper}>
+		<section data-test-id="home-post-list" className={styles.wrapper}>
 			<div className={styles.item}>
 				<Heading type="h2" className={styles.title}>
 					{t('home.postlist.featured-post-title')}
@@ -34,6 +34,6 @@ export const HomePostList = ({ featuredPost, featuredPostAuthor, posts, postsAut
 				</div>
 				<PostList posts={posts} postsAuthors={postsAuthors} />
 			</div>
-		</article>
+		</section>
 	);
 };

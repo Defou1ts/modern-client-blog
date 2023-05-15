@@ -11,7 +11,7 @@ export const WhatToReadNext = ({ posts, authors }: WhatToReadNextProps) => {
 	const { t } = useTranslation();
 
 	return (
-		<article className={styles.wrapper}>
+		<section className={styles.wrapper}>
 			<Heading type="h2" className={styles.title}>
 				{t('post.what-to-read-next')}
 			</Heading>
@@ -21,6 +21,6 @@ export const WhatToReadNext = ({ posts, authors }: WhatToReadNextProps) => {
 				))}
 			</div>
 			<div className={styles.line}></div>
-		</article>
+		</section>
 	);
 };

@@ -9,7 +9,7 @@ export const ContactWorkTime = () => {
 	const { t } = useTranslation();
 
 	return (
-		<article className={styles.wrapper}>
+		<section className={styles.wrapper}>
 			<div>
 				<Paragraph type="small" className={styles.itemTitle}>
 					{t('contact.working.title-days')}
@@ -34,6 +34,6 @@ export const ContactWorkTime = () => {
 					hello@finsweet.com
 				</Paragraph>
 			</div>
-		</article>
+		</section>
 	);
 };

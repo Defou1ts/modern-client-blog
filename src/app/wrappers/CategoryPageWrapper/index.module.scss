@@ -15,10 +15,10 @@
 	}
 }
 
-.wrapper > article:nth-child(1) {
+.wrapper > section:nth-child(1) {
 	grid-area: categoryoverview;
 }
-.wrapper > article:nth-child(2) {
+.wrapper > section:nth-child(2) {
 	margin-top: 24px;
 	grid-area: postlist;
 
@@ -26,6 +26,6 @@
 		margin-top: 0;
 	}
 }
-.wrapper > article:nth-child(3) {
+.wrapper > section:nth-child(3) {
 	grid-area: sidebar;
 }

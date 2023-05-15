@@ -11,11 +11,11 @@ export const BlogPostCategoriesList = ({ categories }: BlogPostCategoriesListPro
 	const { t } = useTranslation();
 
 	return (
-		<article>
+		<section>
 			<Heading type="h2" className={styles.title}>
 				{t('blog.post-categories-title')}
 			</Heading>
 			<PostCategoriesList categories={categories} type="horizontal" postCategoryCardType="large" />
-		</article>
+		</section>
 	);
 };

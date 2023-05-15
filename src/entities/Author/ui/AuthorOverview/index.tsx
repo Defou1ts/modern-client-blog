@@ -25,7 +25,7 @@ export const AuthorOverview = ({ author }: AuthorOverviewProps) => {
 	const authorFullName = getAuthorFullName(name, surname);
 
 	return (
-		<article className={styles.wrapper}>
+		<section className={styles.wrapper}>
 			<div className={styles.overview}>
 				<div className={styles.imageWrapper}>
 					<Image src={avatarURL} alt={authorFullName} title={authorFullName} width="250" height="300" />
@@ -45,6 +45,6 @@ export const AuthorOverview = ({ author }: AuthorOverviewProps) => {
 				</div>
 			</div>
 			<RectangleLine reverse className={styles.rectangle} />
-		</article>
+		</section>
 	);
 };

@@ -11,9 +11,9 @@ export const AuthorPostList = ({ posts }: AuthorPostListProps) => {
 	const { t } = useTranslation();
 
 	return (
-		<article className={styles.wrapper}>
+		<section className={styles.wrapper}>
 			<Heading type="h1">{t('author.post-list')}</Heading>
 			<PostList posts={posts} maxPosts={5} />
-		</article>
+		</section>
 	);
 };

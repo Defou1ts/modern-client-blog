@@ -32,7 +32,7 @@ export const PostAuthorInfo = ({ post, author }: PostAuthorInfoProps) => {
 	const authorFullName = getAuthorFullName(name, surname);
 
 	return (
-		<article className={styles.wrapper}>
+		<section className={styles.wrapper}>
 			<div className={styles.infoWrapper}>
 				<div className={styles.author}>
 					<div className={styles.authorIconWrapper}>
@@ -60,6 +60,6 @@ export const PostAuthorInfo = ({ post, author }: PostAuthorInfoProps) => {
 					<Heading type="h4">{translatedCategoryTitle}</Heading>
 				</div>
 			</div>
-		</article>
+		</section>
 	);
 };

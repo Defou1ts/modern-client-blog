@@ -28,7 +28,7 @@ export const HomeOverviewPost = ({ author, post }: HomeOverviewPostProps) => {
 	const translatedCategoryTitle = categoryTitle[locale];
 
 	return (
-		<article data-test-id="home-overview-post" className={styles.wrapper}>
+		<section data-test-id="home-overview-post" className={styles.wrapper}>
 			<Image
 				src={HomeOverviewPostBackground}
 				className={styles.backgroundImage}
@@ -55,6 +55,6 @@ export const HomeOverviewPost = ({ author, post }: HomeOverviewPostProps) => {
 					</Button>
 				</div>
 			</div>
-		</article>
+		</section>
 	);
 };

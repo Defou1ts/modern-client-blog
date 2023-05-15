@@ -12,7 +12,7 @@ import { ROUTES } from '@shared/lib/constants/routes';
 export const HomeAboutUs = () => {
 	const { t } = useTranslation();
 	return (
-		<article data-test-id="home-about-us" className={styles.wrapper}>
+		<section data-test-id="home-about-us" className={styles.wrapper}>
 			<RectangleLine className={styles.rectangles} reverse />
 			<div className={styles.about}>
 				<div className={styles.item}>
@@ -40,6 +40,6 @@ export const HomeAboutUs = () => {
 					</Paragraph>
 				</div>
 			</div>
-		</article>
+		</section>
 	);
 };

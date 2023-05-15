@@ -7,7 +7,7 @@ import type { PostContentProps } from './interfaces';
 
 export const PostContent = ({ content }: PostContentProps) => {
 	return (
-		<article className={styles.wrapper}>
+		<section className={styles.wrapper}>
 			<div className={styles.content}>
 				{content.map((contentItem) => {
 					if ('title' in contentItem) {
@@ -46,6 +46,6 @@ export const PostContent = ({ content }: PostContentProps) => {
 					return <></>;
 				})}
 			</div>
-		</article>
+		</section>
 	);
 };

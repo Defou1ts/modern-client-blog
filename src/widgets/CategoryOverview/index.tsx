@@ -15,7 +15,7 @@ export const CategoryOverview = ({ category }: CategoryOverviewProps) => {
 	const translatedDescription = description[locale];
 
 	return (
-		<article className={styles.wrapper}>
+		<section className={styles.wrapper}>
 			<Heading type="display" className={styles.title}>
 				{translatedTitle}
 			</Heading>
@@ -23,6 +23,6 @@ export const CategoryOverview = ({ category }: CategoryOverviewProps) => {
 				{translatedDescription}
 			</Paragraph>
 			<p className={styles.path}>BLOG &gt; {categoryType} </p>
-		</article>
+		</section>
 	);
 };

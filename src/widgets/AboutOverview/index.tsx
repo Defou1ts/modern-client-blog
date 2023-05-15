@@ -3,9 +3,9 @@ import { AboutOverviewHeader } from './ui/AboutOverviewHeader';
 import { AboutOverviewOurTasks } from './ui/AboutOverviewOurTasks';
 
 export const AboutOverview = () => (
-	<article>
+	<section>
 		<AboutOverviewHeader />
 		<AboutOverviewContent />
 		<AboutOverviewOurTasks />
-	</article>
+	</section>
 );

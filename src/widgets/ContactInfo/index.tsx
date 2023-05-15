@@ -9,7 +9,7 @@ export const ContactInfo = () => {
 	const { t } = useTranslation();
 
 	return (
-		<article className={styles.wrapper}>
+		<section className={styles.wrapper}>
 			<Heading type="h6" className={styles.contact}>
 				{t('contact.title')}
 			</Heading>
@@ -20,6 +20,6 @@ export const ContactInfo = () => {
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
 				dolore magna aliqua. Ut enim ad minim.
 			</Paragraph>
-		</article>
+		</section>
 	);
 };

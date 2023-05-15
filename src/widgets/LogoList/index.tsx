@@ -11,7 +11,7 @@ import { Heading } from '@shared/ui/Heading';
 export const LogoList = () => {
 	const { t } = useTranslation();
 	return (
-		<article data-test-id="logo-list" className={styles.wrapper}>
+		<section data-test-id="logo-list" className={styles.wrapper}>
 			<div className={styles.info}>
 				<Paragraph type="small" className={styles.subtitle}>
 					{t('home.logo-list-subtitle')}
@@ -25,6 +25,6 @@ export const LogoList = () => {
 					<Image key={alt} src={src} alt={alt} title={title} />
 				))}
 			</div>
-		</article>
+		</section>
 	);
 };

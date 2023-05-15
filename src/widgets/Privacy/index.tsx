@@ -15,15 +15,15 @@ export const Privacy = () => {
 
 	return (
 		<div className={styles.privacy}>
-			<article className={styles.titleWrapper}>
+			<section className={styles.titleWrapper}>
 				<Heading type="h1" className={styles.title}>
 					{t('privacy.title')}
 				</Heading>
 				<Paragraph type="medium" className={styles.updatedAt}>
 					{t('privacy.updatedAt')} {getFormattedDateByLocale(locale, updatedDate)}
 				</Paragraph>
-			</article>
-			<article className={styles.content}>
+			</section>
+			<section className={styles.content}>
 				<div className={styles.contentBlock}>
 					<Heading type="h1" className={styles.subtitle}>
 						Lorem ipsum dolor sit amet
@@ -68,7 +68,7 @@ export const Privacy = () => {
 						placerat orci nulla. Neque convallis a cras semper auctor neque vitae tempus quam.
 					</Paragraph>
 				</div>
-			</article>
+			</section>
 		</div>
 	);
 };

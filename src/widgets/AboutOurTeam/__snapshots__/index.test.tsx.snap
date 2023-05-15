@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AboutOurTeam AboutOurTeam snapshot 1`] = `
-<article>
+<section>
   <div
     className="itemWrapper"
   >
@@ -114,5 +114,5 @@ exports[`AboutOurTeam AboutOurTeam snapshot 1`] = `
       </p>
     </div>
   </div>
-</article>
+</section>
 `;

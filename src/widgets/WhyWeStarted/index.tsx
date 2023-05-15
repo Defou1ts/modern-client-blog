@@ -13,7 +13,7 @@ export const WhyWeStarted = () => {
 	const { t } = useTranslation();
 
 	return (
-		<article data-test-id="wy-we-started" className={styles.wrapper}>
+		<section data-test-id="wy-we-started" className={styles.wrapper}>
 			<div className={styles.backgroundWrapper}></div>
 			<div className={styles.content}>
 				<p className={styles.subtitle}>{t('why-we-started.subtitle')}</p>
@@ -31,6 +31,6 @@ export const WhyWeStarted = () => {
 					</Button>
 				</Link>
 			</div>
-		</article>
+		</section>
 	);
 };

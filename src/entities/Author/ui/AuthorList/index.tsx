@@ -12,7 +12,7 @@ export const AuthorList = ({ authors }: AuthorListProps) => {
 	const { t } = useTranslation();
 
 	return (
-		<article data-test-id="author-list" className={styles.wrapper}>
+		<section data-test-id="author-list" className={styles.wrapper}>
 			<Heading type="h2" className={styles.title}>
 				{t('author.list-title')}
 			</Heading>
@@ -21,6 +21,6 @@ export const AuthorList = ({ authors }: AuthorListProps) => {
 					<AuthorCard key={author.id} author={author} />
 				))}
 			</div>
-		</article>
+		</section>
 	);
 };

@@ -13,7 +13,7 @@ export const JoinOurTeam = () => {
 	const { t } = useTranslation();
 
 	return (
-		<article data-test-id="join-our-team" className={styles.wrapper}>
+		<section data-test-id="join-our-team" className={styles.wrapper}>
 			<Heading type="h2" className={styles.title}>
 				{t('about.join-our-team.title')}
 			</Heading>
@@ -23,6 +23,6 @@ export const JoinOurTeam = () => {
 			<Link href={ROUTES.CONTACT} className={styles.link}>
 				<Button appearance="primary">{t('about.join-our-team.button')}</Button>
 			</Link>
-		</article>
+		</section>
 	);
 };

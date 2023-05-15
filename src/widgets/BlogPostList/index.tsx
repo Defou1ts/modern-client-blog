@@ -11,10 +11,10 @@ export const BlogPostList = ({ posts }: BlogPostListProps) => {
 	const { t } = useTranslation();
 
 	return (
-		<article>
+		<section>
 			<Heading type="h1">{t('post.post-list-title')}</Heading>
 			<div className={styles.line}></div>
 			<PostList posts={posts} maxPosts={5} />
-		</article>
+		</section>
 	);
 };

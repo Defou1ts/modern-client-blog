@@ -14,8 +14,8 @@ export const PostImageOverview = ({ post }: PostImageOverviewProps) => {
 	const translatedTitle = title[locale];
 
 	return (
-		<article className={styles.imageWrapper}>
+		<section className={styles.imageWrapper}>
 			<Image src={previewImageURL} alt={translatedTitle} title={translatedTitle} width={1280} height={580} />
-		</article>
+		</section>
 	);
 };

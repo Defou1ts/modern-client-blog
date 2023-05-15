@@ -13,10 +13,10 @@
 	}
 }
 
-.wrapper > article:nth-child(1) {
+.wrapper > section:nth-child(1) {
 	grid-area: authoroverview;
 }
 
-.wrapper > article:nth-child(2) {
+.wrapper > section:nth-child(2) {
 	grid-area: postlist;
 }

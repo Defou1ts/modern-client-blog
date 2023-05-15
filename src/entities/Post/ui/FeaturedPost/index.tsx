@@ -29,7 +29,7 @@ export const FeaturedPost = ({ post, author }: FeaturedPostProps) => {
 	const localePreviewText = previewText[locale];
 
 	return (
-		<article className={styles.wrapper}>
+		<section className={styles.wrapper}>
 			<div className={styles.post}>
 				<div className={styles.content}>
 					<p className={styles.featuredTitle}>{t('post.features-post-title')}</p>
@@ -57,6 +57,6 @@ export const FeaturedPost = ({ post, author }: FeaturedPostProps) => {
 					<Image src={previewImageURL} alt={localeTitle} title={localeTitle} width="490" height="318" />
 				</div>
 			</div>
-		</article>
+		</section>
 	);
 };

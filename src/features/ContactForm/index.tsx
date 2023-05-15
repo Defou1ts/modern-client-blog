@@ -41,7 +41,7 @@ export const ContactForm = () => {
 	};
 
 	return (
-		<article>
+		<section>
 			<Formik
 				className={styles.wrapper}
 				validationSchema={validationSchema}
@@ -107,6 +107,6 @@ export const ContactForm = () => {
 				</Paragraph>
 			)}
 			{isLoading && <Spinner />}
-		</article>
+		</section>
 	);
 };

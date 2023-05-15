@@ -15,7 +15,7 @@ export const TestimonalsCarousel = () => {
 
 	const { t } = useTranslation();
 	return (
-		<article data-test-id="testimonals-carousel" className={styles.wrapper}>
+		<section data-test-id="testimonals-carousel" className={styles.wrapper}>
 			<div className={styles.info}>
 				<p className={styles.subtitle}>{t('home.testimonals.subtitle')}</p>
 				<Heading type="h2" className={styles.title}>
@@ -51,6 +51,6 @@ export const TestimonalsCarousel = () => {
 					</button>
 				</div>
 			</div>
-		</article>
+		</section>
 	);
 };

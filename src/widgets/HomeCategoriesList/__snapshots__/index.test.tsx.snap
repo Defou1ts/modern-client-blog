@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`HomeCategoriesList HomeCategoriesList snapshot 1`] = `
-<article
+<section
   data-test-id="home-categories-list"
 >
   <h2
@@ -181,5 +181,5 @@ exports[`HomeCategoriesList HomeCategoriesList snapshot 1`] = `
       </div>
     </a>
   </div>
-</article>
+</section>
 `;
