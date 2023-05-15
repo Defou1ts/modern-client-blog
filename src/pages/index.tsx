@@ -12,7 +12,7 @@ import { HomeCategoriesList } from '@widgets/HomeCategoriesList';
 import { allPostCategories } from '@entities/Post/lib/mock/allPostCategories';
 import { WhyWeStarted } from '@widgets/WhyWeStarted';
 import { LogoList } from '@widgets/LogoList';
-import { TestimonalsCarousel } from '@features/TestimonalsCarousel';
+import { TestimonalsCarousel } from '@widgets/TestimonalsCarousel';
 import { HomeAboutUs } from '@widgets/HomeAboutUs';
 import { HomeOverviewPost } from '@widgets/HomeOverviewPost';
 import { posts } from '@entities/Post/lib/mock/posts';
