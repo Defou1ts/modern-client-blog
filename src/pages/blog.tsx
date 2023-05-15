@@ -1,8 +1,8 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Head from 'next/head';
 
 import type { GetStaticProps } from 'next';
 
-import { MainContainer } from '@app/wrappers/MainContainer';
 import { posts } from '@entities/Post/lib/mock/posts';
 import { BlogPageWrapper } from '@app/wrappers/BlogPageWrapper';
 import { FeaturedPost } from '@entities/Post/ui/FeaturedPost';
@@ -24,14 +24,18 @@ interface BlogPageProps {
 }
 
 const BlogPage = ({ posts, featuredPost, featuredPostAuthor, allPostCategories }: BlogPageProps) => (
-	<MainContainer title="Blog | Modsen client blog" description="Let's see all of the posts of our content writers!">
+	<>
+		<Head>
+			<meta name="description" content="Let's see all of the posts of our content writers!" />
+			<title>Blog | Modsen client blog</title>
+		</Head>
 		<BlogPageWrapper>
 			<FeaturedPost post={featuredPost} author={featuredPostAuthor} />
 			<BlogPostList posts={posts} />
 			<BlogPostCategoriesList categories={allPostCategories} />
 			<JoinOurTeam />
 		</BlogPageWrapper>
-	</MainContainer>
+	</>
 );
 
 export default BlogPage;

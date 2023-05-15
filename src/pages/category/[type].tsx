@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Head from 'next/head';
 
 import type { GetStaticPaths, GetStaticProps } from 'next';
 import { useDispatch } from 'react-redux';
 
 import { useLocale } from '@shared/lib/hooks/useLocale';
-import { MainContainer } from '@app/wrappers/MainContainer';
 import { defaultLocale } from '@shared/lib/constants/defaultLocale';
 import { CategoryPageWrapper } from '@app/wrappers/CategoryPageWrapper';
 import { allPostCategories } from '@entities/Post/lib/mock/allPostCategories';
@@ -44,13 +44,17 @@ const CategoryPage = ({ category, categoryPosts, allPostTags }: CategoryPageProp
 	const translatedDescription = description[locale];
 
 	return (
-		<MainContainer title={`${translatedTitle} | Modsen client blog`} description={`${translatedDescription}`}>
+		<>
+			<Head>
+				<meta name="description" content={translatedDescription} />
+				<title>{translatedTitle} | Modsen client blog</title>
+			</Head>
 			<CategoryPageWrapper>
 				<CategoryOverview category={category} />
 				<CategoryPostList />
 				<CategorySidebar activeCategory={category} />
 			</CategoryPageWrapper>
-		</MainContainer>
+		</>
 	);
 };
 

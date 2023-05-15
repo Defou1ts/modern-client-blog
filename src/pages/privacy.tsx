@@ -1,15 +1,19 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Head from 'next/head';
 
 import type { GetStaticProps } from 'next';
 
-import { MainContainer } from '@app/wrappers/MainContainer';
 import { Privacy } from '@widgets/Privacy';
 import { defaultLocale } from '@shared/lib/constants/defaultLocale';
 
 const PrivacyPage = () => (
-	<MainContainer title="Privacy Policy | Modsen client blog" description="Page with company's privacy">
+	<>
+		<Head>
+			<meta name="description" content="Page with company's privacy" />
+			<title>Privacy Policy | Modsen client blog</title>
+		</Head>
 		<Privacy />
-	</MainContainer>
+	</>
 );
 
 export default PrivacyPage;

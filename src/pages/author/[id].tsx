@@ -1,10 +1,10 @@
 import { useRouter } from 'next/router';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Head from 'next/head';
 
 import type { GetStaticPaths, GetStaticProps } from 'next';
 
 import { authors } from '@entities/Author/lib/mock/authors';
-import { MainContainer } from '@app/wrappers/MainContainer';
 import { getAuthorFullName } from '@entities/Author/lib/utils/getAuthorFullName';
 import { AuthorPageWrapper } from '@app/wrappers/AuthorPageWrapper';
 import { AuthorOverview } from '@entities/Author/ui/AuthorOverview';
@@ -28,15 +28,19 @@ const AuthorPage = ({ author, authorPosts }: AuthorPageProps) => {
 	const { name, surname } = content[locale ?? defaultLocale];
 
 	return (
-		<MainContainer
-			title={`${getAuthorFullName(name, surname)} | Modsen client blog`}
-			description={`${getAuthorFullName(name, surname)} is our content writer, let's read about`}
-		>
+		<>
+			<Head>
+				<meta
+					name="description"
+					content={`${getAuthorFullName(name, surname)} is our content writer, let's read about`}
+				/>
+				<title>{getAuthorFullName(name, surname)} | Modsen client blog</title>
+			</Head>
 			<AuthorPageWrapper>
 				<AuthorOverview author={author} />
 				<AuthorPostList posts={authorPosts} />
 			</AuthorPageWrapper>
-		</MainContainer>
+		</>
 	);
 };
 

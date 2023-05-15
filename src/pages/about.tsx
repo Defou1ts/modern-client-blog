@@ -1,8 +1,8 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Head from 'next/head';
 
 import type { GetStaticProps } from 'next';
 
-import { MainContainer } from '@app/wrappers/MainContainer';
 import { AboutPageWrapper } from '@app/wrappers/AboutPageWrapper';
 import { AboutOverview } from '@widgets/AboutOverview';
 import { AboutOurTeam } from '@widgets/AboutOurTeam';
@@ -18,17 +18,18 @@ interface AboutPageProps {
 }
 
 const AboutPage = ({ authors }: AboutPageProps) => (
-	<MainContainer
-		title="About Us | Modsen client blog"
-		description="Looking about Modsen history? You can learn interesting news about us"
-	>
+	<>
+		<Head>
+			<meta name="description" content="Looking about Modsen history? You can learn interesting news about us" />
+			<title>About Us | Modsen client blog</title>
+		</Head>
 		<AboutPageWrapper>
 			<AboutOverview />
 			<AboutOurTeam />
 			<AuthorList authors={authors} />
 			<JoinOurTeam />
 		</AboutPageWrapper>
-	</MainContainer>
+	</>
 );
 
 export default AboutPage;

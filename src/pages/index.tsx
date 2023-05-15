@@ -1,8 +1,8 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Head from 'next/head';
 
 import type { GetStaticProps } from 'next';
 
-import { MainContainer } from '@app/wrappers/MainContainer';
 import { defaultLocale } from '@shared/lib/constants/defaultLocale';
 import { HomePageWrapper } from '@app/wrappers/HomePageWrapper';
 import { JoinOurTeam } from '@widgets/JoinOurTeam';
@@ -44,7 +44,11 @@ const HomePage = ({
 	postListAuthors,
 }: HomePageProps) => {
 	return (
-		<MainContainer title="Home | Modsen client blog" description="Modsen client blog">
+		<>
+			<Head>
+				<meta name="description" content="Modsen client blog" />
+				<title>Home | Modsen client blog</title>
+			</Head>
 			<InfinityScroll Wrapper={<HomePageWrapper />} customHeight={924}>
 				<HomeOverviewPost post={overviewPost} author={overviewPostAuthor} />
 				<HomePostList
@@ -62,7 +66,7 @@ const HomePage = ({
 				<TestimonalsCarousel />
 				<JoinOurTeam />
 			</InfinityScroll>
-		</MainContainer>
+		</>
 	);
 };
 
