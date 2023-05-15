@@ -5,7 +5,7 @@ import styles from './index.module.scss';
 import { videoOptions } from './lib/constants/videoOptions';
 import { videoId } from './lib/constants/videoId';
 
-import { Modal } from '@features/Modal';
+import { Modal } from '@entities/Modal';
 import { selectIsOpenedVideoModal } from '@app/store/selectors/header.selectors';
 import { closeVideoModal } from '@app/store/slices/header.slice';
 

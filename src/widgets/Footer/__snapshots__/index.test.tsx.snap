@@ -8,11 +8,18 @@ exports[`Footer button header snapshot 1`] = `
   <div
     className="navbar"
   >
-    <h1
-      className="title"
+    <a
+      href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
     >
-      Modsen Client Blog
-    </h1>
+      <h1
+        className="logo"
+      >
+        Modsen Client Blog
+      </h1>
+    </a>
     <nav
       className="nav"
     >
