@@ -14,7 +14,7 @@ import { LocaleSwitcher } from '@features/LocaleSwitcher';
 import { Navbar } from '@features/Navbar';
 import { Button } from '@shared/ui/Button';
 import { routes } from '@widgets/Footer/lib/constants/routes';
-import { VideoModal } from '@widgets/VideoModal';
+import { VideoModal } from '@features/VideoModal';
 import { useGlobalScrollBlock } from '@shared/lib/hooks/useGlobalScrollBlock';
 import { Logo } from '@shared/ui/Logo';
 
