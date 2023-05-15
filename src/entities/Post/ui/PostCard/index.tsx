@@ -24,7 +24,7 @@ export const PostCard = ({ post }: PostCardProps) => {
 				<Image src={previewImageURL} alt={localeTitle} title={localeTitle} width="490" height="318" />
 			</div>
 			<div className={styles.info}>
-				<p className={styles.category}>{category}</p>
+				<span className={styles.category}>{category}</span>
 				<Link href={`${ROUTES.POSTS}${id}`}>
 					<Heading type="h2" className={styles.title}>
 						{localeTitle}
