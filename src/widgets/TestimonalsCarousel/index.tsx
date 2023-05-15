@@ -1,14 +1,13 @@
-import cn from 'classnames';
 import { useTranslation } from 'next-i18next';
 
 import styles from './index.module.scss';
 import { cards } from './lib/constants/cards';
 import { TestimonalsCarouselCard } from './ui/TestimonalsCarouselCard';
 
-import ArrowLeftIcon from '@app/assets/icons/arrow-left.svg';
 import { Heading } from '@shared/ui/Heading';
 import { Paragraph } from '@shared/ui/Paragraph';
 import { useCarousel } from '@shared/lib/hooks/useCarousel';
+import { ArrowButton } from '@shared/ui/ArrowButton';
 
 export const TestimonalsCarousel = () => {
 	const { slideIndex, handleNext, handlePrev, isDisabledPrev, isDisabledNext } = useCarousel(3);
@@ -33,22 +32,8 @@ export const TestimonalsCarousel = () => {
 					))}
 				</div>
 				<div className={styles.navigation}>
-					{!isDisabledPrev && (
-						<button
-							className={cn(styles.button, styles.buttonPrev)}
-							onClick={handlePrev}
-						>
-							<ArrowLeftIcon />
-						</button>
-					)}
-					{!isDisabledNext && (
-						<button
-							className={cn(styles.button, styles.buttonNext)}
-							onClick={handleNext}
-						>
-							<ArrowLeftIcon />
-						</button>
-					)}
+					{!isDisabledPrev && <ArrowButton type="left" onClick={handlePrev} />}
+					{!isDisabledNext && <ArrowButton type="right" onClick={handleNext} />}
 				</div>
 			</div>
 		</section>
