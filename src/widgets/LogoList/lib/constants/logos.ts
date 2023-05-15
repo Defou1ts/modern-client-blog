@@ -1,34 +1,34 @@
-import LogoIcon1 from '@app/assets/icons/logo1.png';
-import LogoIcon2 from '@app/assets/icons/logo2.png';
-import LogoIcon3 from '@app/assets/icons/logo3.png';
-import LogoIcon4 from '@app/assets/icons/logo4.png';
-import LogoIcon5 from '@app/assets/icons/logo5.png';
+import BlackRoundsLogo from '@app/assets/icons/logo1.png';
+import BlackWhiteRoundLogo from '@app/assets/icons/logo2.png';
+import PlanetLogo from '@app/assets/icons/logo3.png';
+import MedusaLogo from '@app/assets/icons/logo4.png';
+import SquareRoundLogo from '@app/assets/icons/logo5.png';
 
 import type { Image } from '@shared/lib/interfaces/image';
 
 export const logos: Image[] = [
 	{
-		src: LogoIcon1,
+		src: BlackRoundsLogo,
 		alt: 'logo 1',
 		title: 'logo 1',
 	},
 	{
-		src: LogoIcon2,
+		src: BlackWhiteRoundLogo,
 		alt: 'logo 2',
 		title: 'logo 2',
 	},
 	{
-		src: LogoIcon3,
+		src: PlanetLogo,
 		alt: 'logo 3',
 		title: 'logo 3',
 	},
 	{
-		src: LogoIcon4,
+		src: MedusaLogo,
 		alt: 'logo 4',
 		title: 'logo 4',
 	},
 	{
-		src: LogoIcon5,
+		src: SquareRoundLogo,
 		alt: 'logo 5',
 		title: 'logo 5',
 	},
