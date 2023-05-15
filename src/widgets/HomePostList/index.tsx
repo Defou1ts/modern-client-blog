@@ -8,7 +8,7 @@ import { PostList } from './ui/PostList';
 
 import { Heading } from '@shared/ui/Heading';
 import { Paragraph } from '@shared/ui/Paragraph';
-import { ROUTES } from '@shared/lib/contants/routes';
+import { ROUTES } from '@shared/lib/constants/routes';
 
 import type { HomePostListProps } from './interfaces';
 

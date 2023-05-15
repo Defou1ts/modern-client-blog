@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import styles from './index.module.scss';
 
-import { ROUTES } from '@shared/lib/contants/routes';
+import { ROUTES } from '@shared/lib/constants/routes';
 
 export const Logo = () => {
 	return (

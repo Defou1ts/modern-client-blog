@@ -9,7 +9,7 @@ import { AboutOurTeam } from '@widgets/AboutOurTeam';
 import { AuthorList } from '@entities/Author/ui/AuthorList';
 import { authors } from '@entities/Author/lib/mock/authors';
 import { JoinOurTeam } from '@widgets/JoinOurTeam';
-import { defaultLocale } from '@shared/lib/contants/defaultLocale';
+import { defaultLocale } from '@shared/lib/constants/defaultLocale';
 
 import type { AuthorWithLocales } from '@entities/Author/interfaces';
 

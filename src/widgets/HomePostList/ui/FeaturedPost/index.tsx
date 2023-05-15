@@ -8,7 +8,7 @@ import styles from './index.module.scss';
 import { useLocale } from '@shared/lib/hooks/useLocale';
 import { PostAuthorDateInfo } from '@entities/Post/ui/PostAuthorDateInfo';
 import { Heading } from '@shared/ui/Heading';
-import { ROUTES } from '@shared/lib/contants/routes';
+import { ROUTES } from '@shared/lib/constants/routes';
 import { Paragraph } from '@shared/ui/Paragraph';
 import { Button } from '@shared/ui/Button';
 

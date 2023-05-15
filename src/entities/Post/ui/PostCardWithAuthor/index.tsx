@@ -8,7 +8,7 @@ import { PostAuthorDateInfo } from '../PostAuthorDateInfo';
 import { useLocale } from '@shared/lib/hooks/useLocale';
 import { Paragraph } from '@shared/ui/Paragraph';
 import { Heading } from '@shared/ui/Heading';
-import { ROUTES } from '@shared/lib/contants/routes';
+import { ROUTES } from '@shared/lib/constants/routes';
 
 import type { PostCardWithAuthorProps } from './interfaces';
 

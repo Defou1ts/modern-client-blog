@@ -9,7 +9,7 @@ import { ContactInfo } from '@widgets/ContactInfo';
 import { ContactWorkTime } from '@widgets/ContactWorktime';
 import { ContactForm } from '@features/ContactForm';
 import { GoogleMap } from '@features/GoogleMap';
-import { defaultLocale } from '@shared/lib/contants/defaultLocale';
+import { defaultLocale } from '@shared/lib/constants/defaultLocale';
 
 const ContactPage = () => (
 	<MainContainer

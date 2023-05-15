@@ -6,7 +6,7 @@ import styles from './index.module.scss';
 import { useLocale } from '@shared/lib/hooks/useLocale';
 import { Heading } from '@shared/ui/Heading';
 import { Paragraph } from '@shared/ui/Paragraph';
-import { ROUTES } from '@shared/lib/contants/routes';
+import { ROUTES } from '@shared/lib/constants/routes';
 
 import type { PostCardProps } from './interfaces';
 

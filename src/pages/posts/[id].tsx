@@ -6,7 +6,7 @@ import { useLocale } from '@shared/lib/hooks/useLocale';
 import { authors } from '@entities/Author/lib/mock/authors';
 import { MainContainer } from '@app/wrappers/MainContainer';
 import { posts } from '@entities/Post/lib/mock/posts';
-import { defaultLocale } from '@shared/lib/contants/defaultLocale';
+import { defaultLocale } from '@shared/lib/constants/defaultLocale';
 import { PostPageWrapper } from '@app/wrappers/PostPageWrapper';
 import { PostAuthorInfo } from '@widgets/PostAuthorInfo';
 import { PostImageOverview } from '@widgets/PostImageOverview';

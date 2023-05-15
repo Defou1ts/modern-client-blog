@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux';
 
 import { useLocale } from '@shared/lib/hooks/useLocale';
 import { MainContainer } from '@app/wrappers/MainContainer';
-import { defaultLocale } from '@shared/lib/contants/defaultLocale';
+import { defaultLocale } from '@shared/lib/constants/defaultLocale';
 import { CategoryPageWrapper } from '@app/wrappers/CategoryPageWrapper';
 import { allPostCategories } from '@entities/Post/lib/mock/allPostCategories';
 import { posts } from '@entities/Post/lib/mock/posts';

@@ -11,7 +11,7 @@ import { Heading } from '@shared/ui/Heading';
 import { Paragraph } from '@shared/ui/Paragraph';
 import { getFormattedDateByLocale } from '@shared/lib/utils/getFormattedDateByLocale';
 import { allPostCategories } from '@entities/Post/lib/mock/allPostCategories';
-import { ROUTES } from '@shared/lib/contants/routes';
+import { ROUTES } from '@shared/lib/constants/routes';
 
 import type { PostAuthorInfoProps } from './interfaces';
 

@@ -3,7 +3,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import type { GetStaticProps } from 'next';
 
 import { MainContainer } from '@app/wrappers/MainContainer';
-import { defaultLocale } from '@shared/lib/contants/defaultLocale';
+import { defaultLocale } from '@shared/lib/constants/defaultLocale';
 import { HomePageWrapper } from '@app/wrappers/HomePageWrapper';
 import { JoinOurTeam } from '@widgets/JoinOurTeam';
 import { AuthorList } from '@entities/Author/ui/AuthorList';

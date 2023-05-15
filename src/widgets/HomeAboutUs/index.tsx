@@ -7,7 +7,7 @@ import styles from './index.module.scss';
 import { Paragraph } from '@shared/ui/Paragraph';
 import { RectangleLine } from '@shared/ui/RectangleLine';
 import { Heading } from '@shared/ui/Heading';
-import { ROUTES } from '@shared/lib/contants/routes';
+import { ROUTES } from '@shared/lib/constants/routes';
 
 export const HomeAboutUs = () => {
 	const { t } = useTranslation();

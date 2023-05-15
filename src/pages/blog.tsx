@@ -10,7 +10,7 @@ import { authors } from '@entities/Author/lib/mock/authors';
 import { JoinOurTeam } from '@widgets/JoinOurTeam';
 import { allPostCategories } from '@entities/Post/lib/mock/allPostCategories';
 import { BlogPostCategoriesList } from '@widgets/BlogPostCategoriesList';
-import { defaultLocale } from '@shared/lib/contants/defaultLocale';
+import { defaultLocale } from '@shared/lib/constants/defaultLocale';
 import { BlogPostList } from '@widgets/BlogPostList';
 
 import type { Post, PostCategory } from '@entities/Post/interfaces';

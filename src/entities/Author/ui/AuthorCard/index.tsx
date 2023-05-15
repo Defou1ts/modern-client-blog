@@ -8,7 +8,7 @@ import { getAuthorFullName } from '../../lib/utils/getAuthorFullName';
 import { Heading } from '@shared/ui/Heading';
 import { Paragraph } from '@shared/ui/Paragraph';
 import { SocialLink } from '@shared/ui/SocialLink';
-import { ROUTES } from '@shared/lib/contants/routes';
+import { ROUTES } from '@shared/lib/constants/routes';
 import { useLocale } from '@shared/lib/hooks/useLocale';
 
 import type { AuthCardProps } from './interfaces';
