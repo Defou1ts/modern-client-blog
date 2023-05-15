@@ -33,22 +33,22 @@ export const TestimonalsCarousel = () => {
 					))}
 				</div>
 				<div className={styles.navigation}>
-					<button
-						className={cn(styles.button, styles.buttonPrev, {
-							[styles.disabled]: isDisabledPrev,
-						})}
-						onClick={handlePrev}
-					>
-						<ArrowLeftIcon />
-					</button>
-					<button
-						className={cn(styles.button, styles.buttonNext, {
-							[styles.disabled]: isDisabledNext,
-						})}
-						onClick={handleNext}
-					>
-						<ArrowLeftIcon />
-					</button>
+					{!isDisabledPrev && (
+						<button
+							className={cn(styles.button, styles.buttonPrev)}
+							onClick={handlePrev}
+						>
+							<ArrowLeftIcon />
+						</button>
+					)}
+					{!isDisabledNext && (
+						<button
+							className={cn(styles.button, styles.buttonNext)}
+							onClick={handleNext}
+						>
+							<ArrowLeftIcon />
+						</button>
+					)}
 				</div>
 			</div>
 		</section>

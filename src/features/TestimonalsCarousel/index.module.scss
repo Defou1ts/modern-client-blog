@@ -117,12 +117,6 @@
 			fill: $light-gray;
 		}
 	}
-
-	&.disabled {
-		cursor: default;
-		pointer-events: none;
-		@include BorderMediumGrayWithOpacity(1px, 0.3);
-	}
 }
 .navigationButtonPrev {
 }
