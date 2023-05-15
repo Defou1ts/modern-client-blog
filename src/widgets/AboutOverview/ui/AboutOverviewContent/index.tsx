@@ -2,8 +2,8 @@ import { useTranslation } from 'next-i18next';
 
 import styles from './index.module.scss';
 
-import { P } from '@shared/ui/P';
-import { H } from '@shared/ui/H';
+import { Paragraph } from '@shared/ui/Paragraph';
+import { Heading } from '@shared/ui/Heading';
 import { RectangleLine } from '@shared/ui/RectangleLine';
 
 export const AboutOverviewContent = () => {
@@ -14,16 +14,16 @@ export const AboutOverviewContent = () => {
 			<div className={styles.header}>
 				<div className={styles.statistics}>
 					<div>
-						<H type="display">12+</H>
-						<P type="medium">{t('about.overview.blogs-published')}</P>
+						<Heading type="display">12+</Heading>
+						<Paragraph type="medium">{t('about.overview.blogs-published')}</Paragraph>
 					</div>
 					<div>
-						<H type="display">18K+</H>
-						<P type="medium">{t('about.overview.views-on-finsweet')}</P>
+						<Heading type="display">18K+</Heading>
+						<Paragraph type="medium">{t('about.overview.views-on-finsweet')}</Paragraph>
 					</div>
 					<div>
-						<H type="display">30K+</H>
-						<P type="medium">{t('about.overview.total-active-users')}</P>
+						<Heading type="display">30K+</Heading>
+						<Paragraph type="medium">{t('about.overview.total-active-users')}</Paragraph>
 					</div>
 				</div>
 				<RectangleLine className={styles.rectangles} />

@@ -2,9 +2,9 @@ import cn from 'classnames';
 
 import styles from './index.module.scss';
 
-import type { HProps } from './interfaces';
+import type { HeadingProps } from './interfaces';
 
-export const H = ({ type, children, className, ...props }: HProps) => {
+export const Heading = ({ type, children, className, ...props }: HeadingProps) => {
 	const HTag = type === 'display' ? 'h1' : type;
 
 	return (

@@ -6,8 +6,8 @@ import { cards } from './lib/constants/cards';
 import { TestimonalsCarouselCard } from './ui/TestimonalsCarouselCard';
 
 import ArrowLeftIcon from '@app/assets/icons/arrow-left.svg';
-import { H } from '@shared/ui/H';
-import { P } from '@shared/ui/P';
+import { Heading } from '@shared/ui/Heading';
+import { Paragraph } from '@shared/ui/Paragraph';
 import { useCarousel } from '@shared/lib/hooks/useCarousel';
 
 export const TestimonalsCarousel = () => {
@@ -18,12 +18,12 @@ export const TestimonalsCarousel = () => {
 		<article data-test-id="testimonals-carousel" className={styles.wrapper}>
 			<div className={styles.info}>
 				<p className={styles.subtitle}>{t('home.testimonals.subtitle')}</p>
-				<H type="h2" className={styles.title}>
+				<Heading type="h2" className={styles.title}>
 					{t('home.testimonals.title')}
-				</H>
-				<P type="medium" className={styles.description}>
+				</Heading>
+				<Paragraph type="medium" className={styles.description}>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-				</P>
+				</Paragraph>
 			</div>
 			<div className={styles.line}></div>
 			<div className={styles.carouselWrapper}>

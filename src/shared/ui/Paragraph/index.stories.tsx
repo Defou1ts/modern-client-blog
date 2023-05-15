@@ -1,20 +1,20 @@
-import { P } from '.';
+import { Paragraph } from '.';
 
 import type { Meta, StoryFn } from '@storybook/react';
 
-const PMeta: Meta<typeof P> = {
+const PMeta: Meta<typeof Paragraph> = {
 	title: 'P',
-	component: P,
+	component: Paragraph,
 };
 
 export default PMeta;
 
-const Template: StoryFn<typeof P> = (args) => (
-	<P {...args}>
+const Template: StoryFn<typeof Paragraph> = (args) => (
+	<Paragraph {...args}>
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ratione eveniet saepe quasi odit ipsum illum
 		delectus amet atque ducimus! Officiis natus consequatur quas doloribus sed, accusantium adipisci quidem
 		recusandae in quo quis ullam. Quaerat facere voluptatum tenetur veniam exercitationem!
-	</P>
+	</Paragraph>
 );
 
 export const Medium = Template.bind({});

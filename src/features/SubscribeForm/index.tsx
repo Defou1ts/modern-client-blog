@@ -8,10 +8,10 @@ import { initialValues } from './lib/constants/initialValues';
 
 import { useSubmitFormState } from '@shared/lib/hooks/useSubmitFormState';
 import { useGetFormApi } from '@shared/lib/hooks/useGetFormApi';
-import { H } from '@shared/ui/H';
+import { Heading } from '@shared/ui/Heading';
 import { Button } from '@shared/ui/Button';
 import { Input } from '@shared/ui/Input';
-import { P } from '@shared/ui/P';
+import { Paragraph } from '@shared/ui/Paragraph';
 import { Spinner } from '@shared/ui/Spinner';
 
 import type { SubscribeFormState } from './interfaces';
@@ -39,9 +39,9 @@ export const SubscribeForm = () => {
 
 	return (
 		<div className={styles.formWrapper}>
-			<H type="h2" className={styles.title}>
+			<Heading type="h2" className={styles.title}>
 				{t('subscribe.title')}
-			</H>
+			</Heading>
 			<Formik validationSchema={validationSchema} initialValues={initialValues} onSubmit={handleSubmit}>
 				<Form className={styles.form}>
 					<Field name="email" id="email" type="email">
@@ -58,14 +58,14 @@ export const SubscribeForm = () => {
 						{t('subscribe.button')}
 					</Button>
 					{isSuccess && (
-						<P type="medium" className={styles.success} data-test-id="subsribe-form-success">
+						<Paragraph type="medium" className={styles.success} data-test-id="subsribe-form-success">
 							{t('subscribe.form.success')}
-						</P>
+						</Paragraph>
 					)}
 					{isError && (
-						<P type="medium" className={styles.error} data-test-id="subsribe-form-error">
+						<Paragraph type="medium" className={styles.error} data-test-id="subsribe-form-error">
 							{t('subscribe.form.error')}
-						</P>
+						</Paragraph>
 					)}
 					{isLoading && <Spinner />}
 				</Form>

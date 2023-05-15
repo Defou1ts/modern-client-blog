@@ -4,93 +4,93 @@ import { render, screen } from '@testing-library/react';
 
 import renderer from 'react-test-renderer';
 
-import { H } from './index';
+import { Heading } from './index';
 
 describe('H component', () => {
 	it('renders a H display', () => {
-		render(<H type="display">Hello</H>);
+		render(<Heading type="display">Hello</Heading>);
 		const text = screen.getByText('Hello');
 		expect(text).toBeInTheDocument();
 		expect(text).toBeVisible();
 	});
 
 	it('renders a H1', () => {
-		render(<H type="h1">Hello</H>);
+		render(<Heading type="h1">Hello</Heading>);
 		const text = screen.getByText('Hello');
 		expect(text).toBeInTheDocument();
 		expect(text).toBeVisible();
 	});
 
 	it('renders a H2', () => {
-		render(<H type="h2">Hello</H>);
+		render(<Heading type="h2">Hello</Heading>);
 		const text = screen.getByText('Hello');
 		expect(text).toBeInTheDocument();
 		expect(text).toBeVisible();
 	});
 
 	it('renders a H3', () => {
-		render(<H type="h3">Hello</H>);
+		render(<Heading type="h3">Hello</Heading>);
 		const text = screen.getByText('Hello');
 		expect(text).toBeInTheDocument();
 		expect(text).toBeVisible();
 	});
 
 	it('renders a H4', () => {
-		render(<H type="h4">Hello</H>);
+		render(<Heading type="h4">Hello</Heading>);
 		const text = screen.getByText('Hello');
 		expect(text).toBeInTheDocument();
 		expect(text).toBeVisible();
 	});
 
 	it('renders a H5', () => {
-		render(<H type="h5">Hello</H>);
+		render(<Heading type="h5">Hello</Heading>);
 		const text = screen.getByText('Hello');
 		expect(text).toBeInTheDocument();
 		expect(text).toBeVisible();
 	});
 
 	it('renders a H6', () => {
-		render(<H type="h6">Hello</H>);
+		render(<Heading type="h6">Hello</Heading>);
 		const text = screen.getByText('Hello');
 		expect(text).toBeInTheDocument();
 		expect(text).toBeVisible();
 	});
 
 	it('H Display snapshot', () => {
-		const component = renderer.create(<H type="display">Hello</H>);
+		const component = renderer.create(<Heading type="display">Hello</Heading>);
 		const tree = component.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
 
 	it('H1 snapshot', () => {
-		const component = renderer.create(<H type="h1">Hello</H>);
+		const component = renderer.create(<Heading type="h1">Hello</Heading>);
 		const tree = component.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
 
 	it('H2 snapshot', () => {
-		const component = renderer.create(<H type="h2">Hello</H>);
+		const component = renderer.create(<Heading type="h2">Hello</Heading>);
 		const tree = component.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
 
 	it('H3 snapshot', () => {
-		const component = renderer.create(<H type="h3">Hello</H>);
+		const component = renderer.create(<Heading type="h3">Hello</Heading>);
 		const tree = component.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
 	it('H4 snapshot', () => {
-		const component = renderer.create(<H type="h4">Hello</H>);
+		const component = renderer.create(<Heading type="h4">Hello</Heading>);
 		const tree = component.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
 	it('H5 snapshot', () => {
-		const component = renderer.create(<H type="h5">Hello</H>);
+		const component = renderer.create(<Heading type="h5">Hello</Heading>);
 		const tree = component.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
 	it('H6 snapshot', () => {
-		const component = renderer.create(<H type="h6">Hello</H>);
+		const component = renderer.create(<Heading type="h6">Hello</Heading>);
 		const tree = component.toJSON();
 		expect(tree).toMatchSnapshot();
 	});

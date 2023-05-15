@@ -5,8 +5,8 @@ import { useTranslation } from 'next-i18next';
 import styles from './index.module.scss';
 
 import { getAuthorFullName } from '@entities/Author/lib/utils/getAuthorFullName';
-import { H } from '@shared/ui/H';
-import { P } from '@shared/ui/P';
+import { Heading } from '@shared/ui/Heading';
+import { Paragraph } from '@shared/ui/Paragraph';
 import { SocialLink } from '@shared/ui/SocialLink';
 import { RectangleLine } from '@shared/ui/RectangleLine';
 import { useLocale } from '@shared/lib/hooks/useLocale';
@@ -31,12 +31,12 @@ export const AuthorOverview = ({ author }: AuthorOverviewProps) => {
 					<Image src={avatarURL} alt={authorFullName} title={authorFullName} width="250" height="300" />
 				</div>
 				<div className={styles.content}>
-					<H type="h1" className={styles.title}>
+					<Heading type="h1" className={styles.title}>
 						{t('author.welcome-part-first')} {authorFullName} {t('author.welcome-part-second')}
-					</H>
-					<P type="medium" className={styles.description}>
+					</Heading>
+					<Paragraph type="medium" className={styles.description}>
 						{description}
-					</P>
+					</Paragraph>
 					<div className={styles.socials}>
 						{socials.map(({ type, path }) => (
 							<SocialLink key={path} type={type} path={path} />

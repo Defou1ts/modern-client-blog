@@ -3,7 +3,7 @@ import { useTranslation } from 'next-i18next';
 import styles from './index.module.scss';
 
 import { CategoriesSwitcher } from '@features/CategoriesSwitcher';
-import { H } from '@shared/ui/H';
+import { Heading } from '@shared/ui/Heading';
 import { TagsSwitcher } from '@features/TagsSwitcher';
 import { SearchCategoryPostsByTag } from '@features/SearchCategoryPostsByTag';
 
@@ -16,15 +16,15 @@ export const CategorySidebar = ({ activeCategory }: CategorySidebarProps) => {
 		<article className={styles.wrapper}>
 			<SearchCategoryPostsByTag />
 			<div>
-				<H type="h2" className={styles.categoriesTitle}>
+				<Heading type="h2" className={styles.categoriesTitle}>
 					{t('category.categories-list-title')}
-				</H>
+				</Heading>
 				<CategoriesSwitcher activeCategory={activeCategory} />
 			</div>
 			<div>
-				<H type="h2" className={styles.tagsTitle}>
+				<Heading type="h2" className={styles.tagsTitle}>
 					{t('category.tags-list-title')}
-				</H>
+				</Heading>
 				<TagsSwitcher />
 			</div>
 		</article>

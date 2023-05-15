@@ -6,9 +6,9 @@ import styles from './index.module.scss';
 
 import { useLocale } from '@shared/lib/hooks/useLocale';
 import { allPostCategories } from '@entities/Post/lib/mock/allPostCategories';
-import { H } from '@shared/ui/H';
+import { Heading } from '@shared/ui/Heading';
 import { ROUTES } from '@shared/lib/contants/routes';
-import { P } from '@shared/ui/P';
+import { Paragraph } from '@shared/ui/Paragraph';
 import { Button } from '@shared/ui/Button';
 import { PostAuthorDateInfo } from '@entities/Post/ui/PostAuthorDateInfo';
 
@@ -33,13 +33,13 @@ export const HomeOverviewPost = ({ author, post }: HomeOverviewPostProps) => {
 						{t('home.overview.posted-on')}{' '}
 						<span className={styles.category}>{translatedCategoryTitle}</span>
 					</p>
-					<H type="display" className={styles.title}>
+					<Heading type="display" className={styles.title}>
 						{translatedPostTitle}
-					</H>
+					</Heading>
 					<PostAuthorDateInfo post={post} author={author} type="yellow" className={styles.author} />
-					<P type="medium" className={styles.description}>
+					<Paragraph type="medium" className={styles.description}>
 						{translatedPreviewText}
-					</P>
+					</Paragraph>
 					<Button appearance="primary" className={styles.button}>
 						<Link href={`${ROUTES.POSTS}${postId}`} data-test-id="home-overview-post-link">
 							{t('home.overview.read-more')}

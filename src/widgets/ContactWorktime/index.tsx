@@ -2,8 +2,8 @@ import { useTranslation } from 'next-i18next';
 
 import styles from './index.module.scss';
 
-import { P } from '@shared/ui/P';
-import { H } from '@shared/ui/H';
+import { Paragraph } from '@shared/ui/Paragraph';
+import { Heading } from '@shared/ui/Heading';
 
 export const ContactWorkTime = () => {
 	const { t } = useTranslation();
@@ -11,28 +11,28 @@ export const ContactWorkTime = () => {
 	return (
 		<article className={styles.wrapper}>
 			<div>
-				<P type="small" className={styles.itemTitle}>
+				<Paragraph type="small" className={styles.itemTitle}>
 					{t('contact.working.title-days')}
-				</P>
+				</Paragraph>
 				<div className={styles.line}></div>
-				<H type="h5" className={styles.info}>
+				<Heading type="h5" className={styles.info}>
 					{t('contact.working.days')} <br /> {t('contact.working.hours')}{' '}
-				</H>
-				<P type="medium" className={styles.support}>
+				</Heading>
+				<Paragraph type="medium" className={styles.support}>
 					{t('contact.working.availability')}
-				</P>
+				</Paragraph>
 			</div>
 			<div>
-				<P type="small" className={styles.itemTitle}>
+				<Paragraph type="small" className={styles.itemTitle}>
 					{t('contact.working.title-contact')}
-				</P>
+				</Paragraph>
 				<div className={styles.line}></div>
-				<H type="h5" className={styles.info}>
+				<Heading type="h5" className={styles.info}>
 					020 7993 2905
-				</H>
-				<P type="medium" className={styles.support}>
+				</Heading>
+				<Paragraph type="medium" className={styles.support}>
 					hello@finsweet.com
-				</P>
+				</Paragraph>
 			</div>
 		</article>
 	);

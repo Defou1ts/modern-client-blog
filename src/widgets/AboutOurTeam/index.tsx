@@ -4,8 +4,8 @@ import { useTranslation } from 'next-i18next';
 
 import styles from './index.module.scss';
 
-import { H } from '@shared/ui/H';
-import { P } from '@shared/ui/P';
+import { Heading } from '@shared/ui/Heading';
+import { Paragraph } from '@shared/ui/Paragraph';
 
 export const AboutOurTeam = () => {
 	const { t } = useTranslation();
@@ -14,16 +14,16 @@ export const AboutOurTeam = () => {
 		<article>
 			<div className={styles.itemWrapper}>
 				<div className={styles.info}>
-					<H type="h2">{t('about.our-team.our-team-title')}</H>
-					<H type="h4">
+					<Heading type="h2">{t('about.our-team.our-team-title')}</Heading>
+					<Heading type="h4">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-					</H>
-					<P type="medium">
+					</Heading>
+					<Paragraph type="medium">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 						laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
 						voluptate velit esse cillum dolore eu fugiat.
-					</P>
+					</Paragraph>
 				</div>
 				<div className={styles.imageWrapper}>
 					<div className={styles.rectangle}></div>
@@ -47,16 +47,16 @@ export const AboutOurTeam = () => {
 				</div>
 
 				<div className={styles.info}>
-					<H type="h2">{t('about.our-team.why-we-started-title')}</H>
-					<H type="h4">
+					<Heading type="h2">{t('about.our-team.why-we-started-title')}</Heading>
+					<Heading type="h4">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-					</H>
-					<P type="medium">
+					</Heading>
+					<Paragraph type="medium">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 						laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
 						voluptate velit esse cillum dolore eu fugiat.
-					</P>
+					</Paragraph>
 				</div>
 			</div>
 		</article>

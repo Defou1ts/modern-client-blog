@@ -4,7 +4,7 @@ import styles from './index.module.scss';
 
 import { AuthorCard } from '../AuthorCard';
 
-import { H } from '@shared/ui/H';
+import { Heading } from '@shared/ui/Heading';
 
 import type { AuthorListProps } from './interfaces';
 
@@ -13,9 +13,9 @@ export const AuthorList = ({ authors }: AuthorListProps) => {
 
 	return (
 		<article data-test-id="author-list" className={styles.wrapper}>
-			<H type="h2" className={styles.title}>
+			<Heading type="h2" className={styles.title}>
 				{t('author.list-title')}
-			</H>
+			</Heading>
 			<div className={styles.listWrapper}>
 				{authors.map((author) => (
 					<AuthorCard key={author.id} author={author} />

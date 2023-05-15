@@ -2,19 +2,19 @@ import styles from './index.module.scss';
 
 import { socialIcons } from '../../lib/constants/socialIcons';
 
-import { P } from '@shared/ui/P';
+import { Paragraph } from '@shared/ui/Paragraph';
 import { SocialLink } from '@shared/ui/SocialLink';
 
 export const Social = () => {
 	return (
 		<div className={styles.social}>
 			<div>
-				<P className={styles.adressItem} type="medium">
+				<Paragraph className={styles.adressItem} type="medium">
 					Finstreet 118 2561 Fintown
-				</P>
-				<P className={styles.adressItem} type="medium">
+				</Paragraph>
+				<Paragraph className={styles.adressItem} type="medium">
 					Hello@finsweet.com 020 7993 2905
-				</P>
+				</Paragraph>
 			</div>
 			<div className={styles.socialList}>
 				{socialIcons.map((props) => (

@@ -11,7 +11,7 @@ import { Button } from '@shared/ui/Button';
 import { Input } from '@shared/ui/Input';
 import { Select } from '@shared/ui/Select';
 import { Textarea } from '@shared/ui/Textarea';
-import { P } from '@shared/ui/P';
+import { Paragraph } from '@shared/ui/Paragraph';
 import { useSubmitFormState } from '@shared/lib/hooks/useSubmitFormState';
 import { useGetFormApi } from '@shared/lib/hooks/useGetFormApi';
 import { Spinner } from '@shared/ui/Spinner';
@@ -97,14 +97,14 @@ export const ContactForm = () => {
 				</Form>
 			</Formik>
 			{isSuccess && (
-				<P type="medium" className={styles.success} data-test-id="contact-form-success">
+				<Paragraph type="medium" className={styles.success} data-test-id="contact-form-success">
 					{t('contact.form.success')}
-				</P>
+				</Paragraph>
 			)}
 			{isError && (
-				<P type="medium" className={styles.error} data-test-id="contact-form-error">
+				<Paragraph type="medium" className={styles.error} data-test-id="contact-form-error">
 					{t('contact.form.error')}
-				</P>
+				</Paragraph>
 			)}
 			{isLoading && <Spinner />}
 		</article>

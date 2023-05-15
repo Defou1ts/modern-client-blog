@@ -1,15 +1,15 @@
-import { H } from '.';
+import { Heading } from '.';
 
 import type { Meta, StoryFn } from '@storybook/react';
 
-const HMeta: Meta<typeof H> = {
+const HMeta: Meta<typeof Heading> = {
 	title: 'H',
-	component: H,
+	component: Heading,
 };
 
 export default HMeta;
 
-const Template: StoryFn<typeof H> = (args) => <H {...args}>Heading</H>;
+const Template: StoryFn<typeof Heading> = (args) => <Heading {...args}>Heading</Heading>;
 
 export const Display = Template.bind({});
 

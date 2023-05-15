@@ -5,8 +5,8 @@ import cn from 'classnames';
 
 import styles from './index.module.scss';
 
-import { H } from '@shared/ui/H';
-import { P } from '@shared/ui/P';
+import { Heading } from '@shared/ui/Heading';
+import { Paragraph } from '@shared/ui/Paragraph';
 import { ROUTES } from '@shared/lib/contants/routes';
 import { useLocale } from '@shared/lib/hooks/useLocale';
 
@@ -34,13 +34,13 @@ export const PostCategoryCard = ({ postCategory, type, isActive }: PostCategoryC
 				})}
 			>
 				<Image src={icon} alt={translatedTitle} title={translatedTitle} className={styles.icon} />
-				<H type="h3" className={styles.title}>
+				<Heading type="h3" className={styles.title}>
 					{translatedTitle}
-				</H>
+				</Heading>
 				{type === 'large' && (
-					<P type="medium" className={styles.description}>
+					<Paragraph type="medium" className={styles.description}>
 						{translatedDescription}
-					</P>
+					</Paragraph>
 				)}
 			</div>
 		</Link>

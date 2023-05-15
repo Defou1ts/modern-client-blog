@@ -3,9 +3,9 @@ import Image from 'next/image';
 import styles from './index.module.scss';
 
 import { useLocale } from '@shared/lib/hooks/useLocale';
-import { H } from '@shared/ui/H';
+import { Heading } from '@shared/ui/Heading';
 import { getAuthorFullName } from '@entities/Author/lib/utils/getAuthorFullName';
-import { P } from '@shared/ui/P';
+import { Paragraph } from '@shared/ui/Paragraph';
 
 import type { TestimonalsCarouselCardProps } from './interfaces';
 
@@ -22,17 +22,17 @@ export const TestimonalsCarouselCard = ({ testimonal }: TestimonalsCarouselCardP
 
 	return (
 		<div className={styles.wrapper}>
-			<H type="h4">{translatedDescription}</H>
+			<Heading type="h4">{translatedDescription}</Heading>
 
 			<div className={styles.author}>
 				<div className={styles.authorImageWrapper}>
 					<Image src={avatarURL} alt={authorFullName} title={authorFullName} width={48} height={48} />
 				</div>
 				<div>
-					<H type="h4">{authorFullName}</H>
-					<P type="medium" className={styles.authorLocation}>
+					<Heading type="h4">{authorFullName}</Heading>
+					<Paragraph type="medium" className={styles.authorLocation}>
 						{location}
-					</P>
+					</Paragraph>
 				</div>
 			</div>
 		</div>

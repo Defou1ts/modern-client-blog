@@ -5,8 +5,8 @@ import { useTranslation } from 'next-i18next';
 
 import styles from './index.module.scss';
 
-import { H } from '@shared/ui/H';
-import { P } from '@shared/ui/P';
+import { Heading } from '@shared/ui/Heading';
+import { Paragraph } from '@shared/ui/Paragraph';
 import { getAuthorFullName } from '@entities/Author/lib/utils/getAuthorFullName';
 import { getFormattedDateByLocale } from '@shared/lib/utils/getFormattedDateByLocale';
 import { Button } from '@shared/ui/Button';
@@ -33,20 +33,20 @@ export const FeaturedPost = ({ post, author }: FeaturedPostProps) => {
 			<div className={styles.post}>
 				<div className={styles.content}>
 					<p className={styles.featuredTitle}>{t('post.features-post-title')}</p>
-					<H type="h2" className={styles.title}>
+					<Heading type="h2" className={styles.title}>
 						{localeTitle}
-					</H>
-					<P type="label" className={styles.additionalInfo}>
+					</Heading>
+					<Paragraph type="label" className={styles.additionalInfo}>
 						{t('post.from')}{' '}
 						<Link href={`${ROUTES.AUTHOR}${authorId}`} className={styles.authorLink}>
 							{getAuthorFullName(name, surname)}
 						</Link>
 						{'      '}|{'      '}
 						{getFormattedDateByLocale(locale, new Date(createdAt))}
-					</P>
-					<P type="medium" className={styles.previewText}>
+					</Paragraph>
+					<Paragraph type="medium" className={styles.previewText}>
 						{localePreviewText}
-					</P>
+					</Paragraph>
 					<Link href={`${ROUTES.POSTS}${postId}`}>
 						<Button appearance="primary" className={styles.readMoreButton}>
 							Read More &gt;

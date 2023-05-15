@@ -5,7 +5,7 @@ import styles from './index.module.scss';
 
 import { PostCard } from '../PostCard';
 
-import { H } from '@shared/ui/H';
+import { Heading } from '@shared/ui/Heading';
 import { usePostList } from '@entities/Post/lib/hooks/usePostList';
 
 import type { PostListProps } from './interfaces';
@@ -25,7 +25,7 @@ export const PostList = ({ posts, maxPosts }: PostListProps) => {
 					))}
 				</div>
 			) : (
-				<H type="h5">{t('post.no-posts')}</H>
+				<Heading type="h5">{t('post.no-posts')}</Heading>
 			)}
 
 			{needButtons && (
@@ -37,7 +37,7 @@ export const PostList = ({ posts, maxPosts }: PostListProps) => {
 						})}
 						disabled={isPrevDisabled}
 					>
-						<H type="h3">&lt; Prev</H>
+						<Heading type="h3">&lt; Prev</Heading>
 					</button>
 
 					<button
@@ -47,7 +47,7 @@ export const PostList = ({ posts, maxPosts }: PostListProps) => {
 						})}
 						disabled={isNextDisabled}
 					>
-						<H type="h3">Next &gt;</H>
+						<Heading type="h3">Next &gt;</Heading>
 					</button>
 				</div>
 			)}
