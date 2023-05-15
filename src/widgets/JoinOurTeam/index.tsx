@@ -20,7 +20,7 @@ export const JoinOurTeam = () => {
 			<Paragraph type="medium" className={styles.text}>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
 			</Paragraph>
-			<Link href={`${ROUTES.CONTACT}`} className={styles.link}>
+			<Link href={ROUTES.CONTACT} className={styles.link}>
 				<Button appearance="primary">{t('about.join-our-team.button')}</Button>
 			</Link>
 		</article>

@@ -25,7 +25,7 @@ export const WhyWeStarted = () => {
 					et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
 					aliquip.
 				</Paragraph>
-				<Link href={`${ROUTES.ABOUT}`}>
+				<Link href={ROUTES.ABOUT}>
 					<Button appearance="primary" className={styles.button}>
 						{t('why-we-started.button')}
 					</Button>
