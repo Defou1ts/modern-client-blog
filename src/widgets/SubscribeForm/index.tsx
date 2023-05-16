@@ -1,6 +1,6 @@
 import { useTranslation } from 'next-i18next';
-import { Formik, Form, Field } from 'formik';
-import type { FieldProps, FormikHelpers } from 'formik';
+import { Formik, Form } from 'formik';
+import type { FormikHelpers } from 'formik';
 
 import styles from './index.module.scss';
 import { useSubscribeFormValidationSchema } from './lib/hooks/useSubscribeFormValidationSchema';
@@ -10,9 +10,9 @@ import { useSubmitFormState } from '@shared/lib/hooks/useSubmitFormState';
 import { useGetFormApi } from '@shared/lib/hooks/useGetFormApi';
 import { Heading } from '@shared/ui/Heading';
 import { Button } from '@shared/ui/Button';
-import { Input } from '@shared/ui/Input';
 import { Paragraph } from '@shared/ui/Paragraph';
 import { Spinner } from '@shared/ui/Spinner';
+import { FormikInput } from '@shared/ui/FormikInput';
 
 import type { SubscribeFormState } from './interfaces';
 
@@ -44,16 +44,14 @@ export const SubscribeForm = () => {
 			</Heading>
 			<Formik validationSchema={validationSchema} initialValues={initialValues} onSubmit={handleSubmit}>
 				<Form className={styles.form}>
-					<Field name="email" id="email" type="email">
-						{(props: FieldProps<SubscribeFormState>) => (
-							<Input
-								className={styles.input}
-								{...props}
-								placeholder={t('subscribe.placeholder') ?? ''}
-								data-test-id="subsribe-form-input"
-							/>
-						)}
-					</Field>
+					<FormikInput
+						name="email"
+						id="email"
+						type="email"
+						className={styles.input}
+						placeholder={t('subscribe.placeholder') ?? ''}
+						data-test-id="subsribe-form-input"
+					/>
 					<Button appearance="primary" type="submit" data-test-id="subcribe-form-submit">
 						{t('subscribe.button')}
 					</Button>
