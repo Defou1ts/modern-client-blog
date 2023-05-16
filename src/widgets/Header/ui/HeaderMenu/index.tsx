@@ -13,7 +13,7 @@ import { selectIsOpenedMenu } from '@app/store/selectors/header.selectors';
 import { LocaleSwitcher } from '@features/LocaleSwitcher';
 import { Navbar } from '@features/Navbar';
 import { Button } from '@shared/ui/Button';
-import { routes } from '@widgets/Footer/lib/constants/routes';
+import { routes } from '@widgets/Header/lib/constants/routes';
 import { VideoModal } from '@features/VideoModal';
 import { useGlobalScrollBlock } from '@shared/lib/hooks/useGlobalScrollBlock';
 import { Logo } from '@shared/ui/Logo';
