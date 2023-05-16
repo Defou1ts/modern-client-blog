@@ -54,7 +54,7 @@ export const checkHeader = () => {
 			.get('[data-test-id=video]')
 			.should('exist')
 			.get('[data-test-id=modal]')
-			.click('topRight')
+			.click('bottomRight')
 			.get('[data-test-id=modal]')
 			.should('not.exist');
 	});
