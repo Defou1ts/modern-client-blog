@@ -1,30 +1,30 @@
 import styles from './index.module.scss';
 
-import { H } from '@shared/ui/H';
-import { P } from '@shared/ui/P';
+import { Heading } from '@shared/ui/Heading';
+import { Paragraph } from '@shared/ui/Paragraph';
 
 import type { PostContentProps } from './interfaces';
 
 export const PostContent = ({ content }: PostContentProps) => {
 	return (
-		<article className={styles.wrapper}>
+		<section className={styles.wrapper}>
 			<div className={styles.content}>
 				{content.map((contentItem) => {
 					if ('title' in contentItem) {
 						const { title } = contentItem;
 						return (
-							<H key={title} type="h2" className={styles.title}>
+							<Heading key={title} type="h2" className={styles.title}>
 								{title}
-							</H>
+							</Heading>
 						);
 					}
 					if ('text' in contentItem) {
 						const { text } = contentItem;
 
 						return (
-							<P type="medium" className={styles.text} key={text}>
+							<Paragraph type="medium" className={styles.text} key={text}>
 								{text}
-							</P>
+							</Paragraph>
 						);
 					}
 					if ('li' in contentItem) {
@@ -34,9 +34,9 @@ export const PostContent = ({ content }: PostContentProps) => {
 							<ul className={styles.list} key={li[0]}>
 								{li.map((text) => (
 									<li key={text} className={styles.listItem}>
-										<H type="h4" className={styles.listItemTitle}>
+										<Heading type="h4" className={styles.listItemTitle}>
 											{text}
-										</H>
+										</Heading>
 									</li>
 								))}
 							</ul>
@@ -46,6 +46,6 @@ export const PostContent = ({ content }: PostContentProps) => {
 					return <></>;
 				})}
 			</div>
-		</article>
+		</section>
 	);
 };

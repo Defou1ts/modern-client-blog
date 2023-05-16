@@ -1,8 +1,8 @@
 import styles from './index.module.scss';
 
-import { H } from '@shared/ui/H';
+import { Heading } from '@shared/ui/Heading';
 import { useLocale } from '@shared/lib/hooks/useLocale';
-import { P } from '@shared/ui/P';
+import { Paragraph } from '@shared/ui/Paragraph';
 
 import type { CategoryOverviewProps } from './interfaces';
 
@@ -15,14 +15,14 @@ export const CategoryOverview = ({ category }: CategoryOverviewProps) => {
 	const translatedDescription = description[locale];
 
 	return (
-		<article className={styles.wrapper}>
-			<H type="display" className={styles.title}>
+		<section className={styles.wrapper}>
+			<Heading type="display" className={styles.title}>
 				{translatedTitle}
-			</H>
-			<P type="medium" className={styles.description}>
+			</Heading>
+			<Paragraph type="medium" className={styles.description}>
 				{translatedDescription}
-			</P>
+			</Paragraph>
 			<p className={styles.path}>BLOG &gt; {categoryType} </p>
-		</article>
+		</section>
 	);
 };

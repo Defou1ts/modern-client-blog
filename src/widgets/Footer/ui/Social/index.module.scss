@@ -3,13 +3,23 @@
 .social {
 	display: grid;
 	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
 	justify-content: space-between;
+
+	grid-template-areas:
+		'adressItemFirst socialList'
+		'adressItemSecond .';
 
 	@include md {
 		grid-template-columns: 1fr;
 		gap: 12px;
 		justify-content: center;
 		justify-items: center;
+
+		grid-template-areas:
+			'adressItemFirst'
+			'adressItemSecond'
+			'socialList';
 	}
 }
 
@@ -20,9 +30,18 @@
 	@include md {
 		text-align: center;
 	}
+
+	&:first-child {
+		grid-area: adressItemFirst;
+	}
+
+	&:last-child {
+		grid-area: adressItemSecond;
+	}
 }
 
 .socialList {
+	grid-area: socialList;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 26.67px;

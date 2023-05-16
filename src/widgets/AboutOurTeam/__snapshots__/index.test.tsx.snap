@@ -1,9 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AboutOurTeam AboutOurTeam snapshot 1`] = `
-<article>
+<section
+  className="wrapper"
+>
   <div
-    className="itemWrapper"
+    className="wrapper"
   >
     <div
       className="info"
@@ -21,7 +23,10 @@ exports[`AboutOurTeam AboutOurTeam snapshot 1`] = `
       <p
         className="p medium"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+						laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+						voluptate velit esse cillum dolore eu fugiat.
       </p>
     </div>
     <div
@@ -59,8 +64,30 @@ exports[`AboutOurTeam AboutOurTeam snapshot 1`] = `
     </div>
   </div>
   <div
-    className="itemWrapper"
+    className="wrapper reverse"
   >
+    <div
+      className="info"
+    >
+      <h2
+        className="h h2"
+      >
+        about.our-team.why-we-started-title
+      </h2>
+      <h4
+        className="h h4"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+      </h4>
+      <p
+        className="p medium"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+						laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+						voluptate velit esse cillum dolore eu fugiat.
+      </p>
+    </div>
     <div
       className="imageWrapper"
     >
@@ -94,25 +121,6 @@ exports[`AboutOurTeam AboutOurTeam snapshot 1`] = `
         title="about.our-team.why-we-started-image-alt"
       />
     </div>
-    <div
-      className="info"
-    >
-      <h2
-        className="h h2"
-      >
-        about.our-team.why-we-started-title
-      </h2>
-      <h4
-        className="h h4"
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-      </h4>
-      <p
-        className="p medium"
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
-      </p>
-    </div>
   </div>
-</article>
+</section>
 `;

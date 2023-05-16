@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 
-import { defaultLocale } from '@shared/lib/contants/defaultLocale';
+import { defaultLocale } from '@shared/lib/constants/defaultLocale';
 
 export const useLocale = () => {
 	const { locale } = useRouter();

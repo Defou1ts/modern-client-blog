@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`HomeAboutUs HomeAboutUs snapshot 1`] = `
-<article
+<section
   className="wrapper"
   data-test-id="home-about-us"
 >
@@ -67,5 +67,5 @@ exports[`HomeAboutUs HomeAboutUs snapshot 1`] = `
       </p>
     </div>
   </div>
-</article>
+</section>
 `;

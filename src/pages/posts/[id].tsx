@@ -1,12 +1,12 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Head from 'next/head';
 
 import type { GetStaticPaths, GetStaticProps } from 'next';
 
 import { useLocale } from '@shared/lib/hooks/useLocale';
 import { authors } from '@entities/Author/lib/mock/authors';
-import { MainContainer } from '@app/wrappers/MainContainer';
 import { posts } from '@entities/Post/lib/mock/posts';
-import { defaultLocale } from '@shared/lib/contants/defaultLocale';
+import { defaultLocale } from '@shared/lib/constants/defaultLocale';
 import { PostPageWrapper } from '@app/wrappers/PostPageWrapper';
 import { PostAuthorInfo } from '@widgets/PostAuthorInfo';
 import { PostImageOverview } from '@widgets/PostImageOverview';
@@ -33,7 +33,11 @@ const PostPage = ({ author, post, similarPosts, similarPostsAuthors }: PostPageP
 	const translatedContent = content[locale];
 
 	return (
-		<MainContainer title={`${translatedTitle} | Modsen client blog`} description={`${translatedTitle}`}>
+		<>
+			<Head>
+				<meta name="description" content={translatedTitle} />
+				<title>{translatedTitle} | Modsen client blog</title>
+			</Head>
 			<PostPageWrapper>
 				<PostAuthorInfo author={author} post={post} />
 				<PostImageOverview post={post} />
@@ -41,7 +45,7 @@ const PostPage = ({ author, post, similarPosts, similarPostsAuthors }: PostPageP
 				<WhatToReadNext posts={similarPosts} authors={similarPostsAuthors} />
 				<JoinOurTeam />
 			</PostPageWrapper>
-		</MainContainer>
+		</>
 	);
 };
 

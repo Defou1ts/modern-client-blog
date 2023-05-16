@@ -7,11 +7,11 @@ import styles from './index.module.scss';
 
 import { useLocale } from '@shared/lib/hooks/useLocale';
 import { getAuthorFullName } from '@entities/Author/lib/utils/getAuthorFullName';
-import { H } from '@shared/ui/H';
-import { P } from '@shared/ui/P';
+import { Heading } from '@shared/ui/Heading';
+import { Paragraph } from '@shared/ui/Paragraph';
 import { getFormattedDateByLocale } from '@shared/lib/utils/getFormattedDateByLocale';
 import { allPostCategories } from '@entities/Post/lib/mock/allPostCategories';
-import { ROUTES } from '@shared/lib/contants/routes';
+import { ROUTES } from '@shared/lib/constants/routes';
 
 import type { PostAuthorInfoProps } from './interfaces';
 
@@ -32,7 +32,7 @@ export const PostAuthorInfo = ({ post, author }: PostAuthorInfoProps) => {
 	const authorFullName = getAuthorFullName(name, surname);
 
 	return (
-		<article className={styles.wrapper}>
+		<section className={styles.wrapper}>
 			<div className={styles.infoWrapper}>
 				<div className={styles.author}>
 					<div className={styles.authorIconWrapper}>
@@ -40,14 +40,14 @@ export const PostAuthorInfo = ({ post, author }: PostAuthorInfoProps) => {
 					</div>
 					<div className={styles.info}>
 						<Link href={`${ROUTES.AUTHOR}${id}`} className={styles.authorLink}>
-							<H type="h3">{authorFullName}</H>
+							<Heading type="h3">{authorFullName}</Heading>
 						</Link>
-						<P type="medium" className={styles.createdAt}>
+						<Paragraph type="medium" className={styles.createdAt}>
 							{t('post.posted')} {getFormattedDateByLocale(locale, new Date(createdAt))}
-						</P>
+						</Paragraph>
 					</div>
 				</div>
-				<H type="h1">{translatedTitle}</H>
+				<Heading type="h1">{translatedTitle}</Heading>
 				<div className={styles.category}>
 					<Image
 						className={styles.categoryImage}
@@ -57,9 +57,9 @@ export const PostAuthorInfo = ({ post, author }: PostAuthorInfoProps) => {
 						width={24}
 						height={24}
 					/>
-					<H type="h4">{translatedCategoryTitle}</H>
+					<Heading type="h4">{translatedCategoryTitle}</Heading>
 				</div>
 			</div>
-		</article>
+		</section>
 	);
 };

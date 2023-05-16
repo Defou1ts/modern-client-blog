@@ -6,9 +6,9 @@ import styles from './index.module.scss';
 import { PostAuthorDateInfo } from '../PostAuthorDateInfo';
 
 import { useLocale } from '@shared/lib/hooks/useLocale';
-import { P } from '@shared/ui/P';
-import { H } from '@shared/ui/H';
-import { ROUTES } from '@shared/lib/contants/routes';
+import { Paragraph } from '@shared/ui/Paragraph';
+import { Heading } from '@shared/ui/Heading';
+import { ROUTES } from '@shared/lib/constants/routes';
 
 import type { PostCardWithAuthorProps } from './interfaces';
 
@@ -27,14 +27,14 @@ export const PostCardWithAuthor = ({ post, author }: PostCardWithAuthorProps) =>
 			</div>
 			<div className={styles.content}>
 				<PostAuthorDateInfo author={author} post={post} type="purple" className={styles.additionalInfo} />
-				<H type="h3" className={styles.title}>
+				<Heading type="h3" className={styles.title}>
 					<Link href={`${ROUTES.POSTS}${id}`} className={styles.postLink}>
 						{translatedTitle}
 					</Link>
-				</H>
-				<P type="medium" className={styles.previewText}>
+				</Heading>
+				<Paragraph type="medium" className={styles.previewText}>
 					{translatedPreviewText}
-				</P>
+				</Paragraph>
 			</div>
 		</div>
 	);

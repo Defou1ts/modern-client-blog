@@ -9,18 +9,18 @@
 	grid-template-areas: '. about .' '. . .' '. ourteam .' '. . .' '. authorlist .' '. . .' '. join .';
 }
 
-.wrapper > article:nth-child(1) {
+.wrapper > section:nth-child(1) {
 	grid-area: about;
 }
 
-.wrapper > article:nth-child(2) {
+.wrapper > section:nth-child(2) {
 	grid-area: ourteam;
 }
 
-.wrapper > article:nth-child(3) {
+.wrapper > section:nth-child(3) {
 	grid-area: authorlist;
 }
 
-.wrapper > article:nth-child(4) {
+.wrapper > section:nth-child(4) {
 	grid-area: join;
 }

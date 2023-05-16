@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ContactForm ContactForm snapshot 1`] = `
-<article>
+<section>
   <form
     action="#"
     className="form"
@@ -15,10 +15,12 @@ exports[`ContactForm ContactForm snapshot 1`] = `
       <input
         className="input input"
         data-test-id="contact-form-input-name"
+        id="name"
         name="name"
         onBlur={[Function]}
         onChange={[Function]}
         placeholder="contact.form.name"
+        type="text"
         value=""
       />
     </div>
@@ -28,10 +30,12 @@ exports[`ContactForm ContactForm snapshot 1`] = `
       <input
         className="input input"
         data-test-id="contact-form-input-email"
+        id="email"
         name="email"
         onBlur={[Function]}
         onChange={[Function]}
         placeholder="contact.form.email"
+        type="email"
         value=""
       />
     </div>
@@ -41,6 +45,7 @@ exports[`ContactForm ContactForm snapshot 1`] = `
       <select
         className="input select"
         data-test-id="contact-form-select"
+        id="location"
         name="location"
         onBlur={[Function]}
         onChange={[Function]}
@@ -95,6 +100,7 @@ exports[`ContactForm ContactForm snapshot 1`] = `
       <textarea
         className="textarea textarea"
         data-test-id="contact-form-textarea"
+        id="message"
         name="message"
         onBlur={[Function]}
         onChange={[Function]}
@@ -110,5 +116,5 @@ exports[`ContactForm ContactForm snapshot 1`] = `
       contact.form.send-button
     </button>
   </form>
-</article>
+</section>
 `;

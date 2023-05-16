@@ -1,0 +1,56 @@
+@import '@app/theme/theme.scss';
+
+.wrapper {
+	position: relative;
+	display: grid;
+	grid-template-rows: minmax(480px, auto);
+	grid-template-columns: auto minmax(120px, 624px);
+	gap: 137px;
+	align-items: center;
+
+	@include lx {
+		gap: 32px;
+	}
+
+	@include lg {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 480px;
+		align-items: start;
+	}
+}
+
+.wrapper.reverse > div:first-child {
+	order: 2;
+
+	@include lg {
+		order: 1;
+	}
+}
+
+.wrapper.reverse > div:last-child {
+	order: 1;
+
+	@include lg {
+		order: 2;
+	}
+}
+
+.info {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 16px;
+
+	@include lg {
+		text-align: center;
+		padding: 0px 10px;
+	}
+}
+
+.imageWrapper {
+	position: relative;
+	height: 100%;
+
+	img {
+		object-fit: cover;
+	}
+}

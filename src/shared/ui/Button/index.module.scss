@@ -10,6 +10,13 @@
 	cursor: pointer;
 
 	transition: 0.2s ease;
+
+	@include lg {
+		padding: 12px 32px;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 22px;
+	}
 }
 
 .primary {

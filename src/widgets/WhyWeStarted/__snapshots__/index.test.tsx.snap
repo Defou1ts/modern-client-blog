@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`WhyWeStarted WhyWeStarted snapshot 1`] = `
-<article
+<section
   className="wrapper"
   data-test-id="wy-we-started"
 >
@@ -39,5 +39,5 @@ exports[`WhyWeStarted WhyWeStarted snapshot 1`] = `
       </button>
     </a>
   </div>
-</article>
+</section>
 `;

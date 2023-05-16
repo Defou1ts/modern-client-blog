@@ -5,10 +5,10 @@ import styles from './index.module.scss';
 
 import { getAuthorFullName } from '../../lib/utils/getAuthorFullName';
 
-import { H } from '@shared/ui/H';
-import { P } from '@shared/ui/P';
+import { Heading } from '@shared/ui/Heading';
+import { Paragraph } from '@shared/ui/Paragraph';
 import { SocialLink } from '@shared/ui/SocialLink';
-import { ROUTES } from '@shared/lib/contants/routes';
+import { ROUTES } from '@shared/lib/constants/routes';
 import { useLocale } from '@shared/lib/hooks/useLocale';
 
 import type { AuthCardProps } from './interfaces';
@@ -30,11 +30,11 @@ export const AuthorCard = ({ author }: AuthCardProps) => {
 			</div>
 			<div className={styles.info}>
 				<Link href={`${ROUTES.AUTHOR}${id}`}>
-					<H type="h3">{fullName}</H>
+					<Heading type="h3">{fullName}</Heading>
 				</Link>
-				<P type="small" className={styles.position}>
+				<Paragraph type="small" className={styles.position}>
 					{position} {company}
-				</P>
+				</Paragraph>
 			</div>
 			<div className={styles.socials}>
 				{socials.map(({ type, path }) => (

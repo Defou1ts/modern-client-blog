@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ContactInfo ContactInfo snapshot 1`] = `
-<article
+<section
   className="wrapper"
 >
   <h6
@@ -19,5 +19,5 @@ exports[`ContactInfo ContactInfo snapshot 1`] = `
   >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
   </p>
-</article>
+</section>
 `;
