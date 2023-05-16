@@ -1,4 +1,4 @@
-import type { Testimonal } from '@features/TestimonalsCarousel/lib/interfaces/testimonal';
+import type { Testimonal } from '@widgets/TestimonalsCarousel/lib/interfaces/testimonal';
 
 export interface TestimonalsCarouselCardProps {
 	testimonal: Testimonal;
