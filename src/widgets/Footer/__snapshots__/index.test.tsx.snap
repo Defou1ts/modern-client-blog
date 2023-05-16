@@ -8,11 +8,18 @@ exports[`Footer button header snapshot 1`] = `
   <div
     className="navbar"
   >
-    <h1
-      className="title"
+    <a
+      href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
     >
-      Modsen Client Blog
-    </h1>
+      <h1
+        className="logo"
+      >
+        Modsen Client Blog
+      </h1>
+    </a>
     <nav
       className="nav"
     >
@@ -83,10 +90,12 @@ exports[`Footer button header snapshot 1`] = `
         <input
           className="input input"
           data-test-id="subsribe-form-input"
+          id="email"
           name="email"
           onBlur={[Function]}
           onChange={[Function]}
           placeholder="subscribe.placeholder"
+          type="email"
           value=""
         />
       </div>
@@ -102,18 +111,16 @@ exports[`Footer button header snapshot 1`] = `
   <div
     className="social"
   >
-    <div>
-      <p
-        className="p medium adressItem"
-      >
-        Finstreet 118 2561 Fintown
-      </p>
-      <p
-        className="p medium adressItem"
-      >
-        Hello@finsweet.com 020 7993 2905
-      </p>
-    </div>
+    <p
+      className="p medium adressItem"
+    >
+      Finstreet 118 2561 Fintown
+    </p>
+    <p
+      className="p medium adressItem"
+    >
+      Hello@finsweet.com 020 7993 2905
+    </p>
     <div
       className="socialList"
     >

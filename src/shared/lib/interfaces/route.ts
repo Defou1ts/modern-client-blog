@@ -1,4 +1,4 @@
-import type { ROUTES } from '@shared/lib/contants/routes';
+import type { ROUTES } from '@shared/lib/constants/routes';
 
 export interface Route {
 	translationPath: string;

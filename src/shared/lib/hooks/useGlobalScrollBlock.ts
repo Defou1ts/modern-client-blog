@@ -1,25 +1,14 @@
 import { useEffect } from 'react';
 
 export const useGlobalScrollBlock = (flag: boolean) => {
-	const blockScroll = () => {
-		const html = document.querySelector('html');
-		if (html !== null) {
-			html.style.overflowY = 'hidden';
-		}
-	};
-
-	const unBlockScroll = () => {
-		const html = document.querySelector('html');
-		if (html !== null) {
-			html.style.overflowY = 'scroll';
-		}
-	};
-
 	useEffect(() => {
-		if (flag) {
-			blockScroll();
-		} else {
-			unBlockScroll();
+		const html = document.querySelector('html');
+		if (html !== null) {
+			if (flag) {
+				html.style.overflowY = 'hidden';
+			} else {
+				html.style.overflowY = 'scroll';
+			}
 		}
 	}, [flag]);
 };

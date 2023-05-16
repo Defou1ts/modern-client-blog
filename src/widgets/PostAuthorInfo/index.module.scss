@@ -39,8 +39,7 @@
 		object-fit: cover;
 	}
 }
-.info {
-}
+
 .authorLink {
 	@include link($red, 0.2s ease, $purple);
 }

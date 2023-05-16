@@ -7,8 +7,8 @@ export const CategoryPostList = () => {
 	const filteredByTagPosts = useSelector(selectFilteredByTagPosts);
 
 	return (
-		<article>
+		<section>
 			<PostList posts={filteredByTagPosts} maxPosts={5} />
-		</article>
+		</section>
 	);
 };

@@ -50,43 +50,43 @@
 	}
 }
 
-.wrapper > article {
+.wrapper > section {
 	position: relative;
 	animation-name: fade-in;
 	animation-duration: 1s;
 }
 
-.wrapper > article:nth-child(1) {
+.wrapper > section:nth-child(1) {
 	grid-area: overview;
 }
 
-.wrapper > article:nth-child(2) {
+.wrapper > section:nth-child(2) {
 	grid-area: postlist;
 }
 
-.wrapper > article:nth-child(3) {
+.wrapper > section:nth-child(3) {
 	grid-area: about;
 }
 
-.wrapper > article:nth-child(4) {
+.wrapper > section:nth-child(4) {
 	grid-area: categories;
 }
 
-.wrapper > article:nth-child(5) {
+.wrapper > section:nth-child(5) {
 	grid-area: whywestarted;
 }
 
-.wrapper > article:nth-child(6) {
+.wrapper > section:nth-child(6) {
 	grid-area: authorlist;
 }
 
-.wrapper > article:nth-child(7) {
+.wrapper > section:nth-child(7) {
 	grid-area: logolist;
 }
-.wrapper > article:nth-child(8) {
+.wrapper > section:nth-child(8) {
 	grid-area: testimonals;
 }
-.wrapper > article:nth-child(9) {
+.wrapper > section:nth-child(9) {
 	grid-area: join;
 }
 

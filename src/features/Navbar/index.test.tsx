@@ -7,7 +7,7 @@ import renderer from 'react-test-renderer';
 
 import { Navbar } from './index';
 
-import { ROUTES } from '@shared/lib/contants/routes';
+import { ROUTES } from '@shared/lib/constants/routes';
 
 import type { Route } from '@shared/lib/interfaces/route';
 import type { NextRouter } from 'next/router';

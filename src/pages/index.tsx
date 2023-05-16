@@ -1,9 +1,9 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Head from 'next/head';
 
 import type { GetStaticProps } from 'next';
 
-import { MainContainer } from '@app/wrappers/MainContainer';
-import { defaultLocale } from '@shared/lib/contants/defaultLocale';
+import { defaultLocale } from '@shared/lib/constants/defaultLocale';
 import { HomePageWrapper } from '@app/wrappers/HomePageWrapper';
 import { JoinOurTeam } from '@widgets/JoinOurTeam';
 import { AuthorList } from '@entities/Author/ui/AuthorList';
@@ -12,12 +12,12 @@ import { HomeCategoriesList } from '@widgets/HomeCategoriesList';
 import { allPostCategories } from '@entities/Post/lib/mock/allPostCategories';
 import { WhyWeStarted } from '@widgets/WhyWeStarted';
 import { LogoList } from '@widgets/LogoList';
-import { TestimonalsCarousel } from '@features/TestimonalsCarousel';
+import { TestimonalsCarousel } from '@widgets/TestimonalsCarousel';
 import { HomeAboutUs } from '@widgets/HomeAboutUs';
 import { HomeOverviewPost } from '@widgets/HomeOverviewPost';
 import { posts } from '@entities/Post/lib/mock/posts';
 import { HomePostList } from '@widgets/HomePostList';
-import { InfinityScroll } from '@features/InfinityScroll';
+import { InfinityScroll } from '@shared/ui/InfinityScroll';
 
 import type { Post, PostCategory } from '@entities/Post/interfaces';
 import type { AuthorWithLocales } from '@entities/Author/interfaces';
@@ -44,7 +44,11 @@ const HomePage = ({
 	postListAuthors,
 }: HomePageProps) => {
 	return (
-		<MainContainer title="Home | Modsen client blog" description="Modsen client blog">
+		<>
+			<Head>
+				<meta name="description" content="Modsen client blog" />
+				<title>Home | Modsen client blog</title>
+			</Head>
 			<InfinityScroll Wrapper={<HomePageWrapper />} customHeight={924}>
 				<HomeOverviewPost post={overviewPost} author={overviewPostAuthor} />
 				<HomePostList
@@ -62,7 +66,7 @@ const HomePage = ({
 				<TestimonalsCarousel />
 				<JoinOurTeam />
 			</InfinityScroll>
-		</MainContainer>
+		</>
 	);
 };
 

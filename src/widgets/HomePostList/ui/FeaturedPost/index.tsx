@@ -7,9 +7,9 @@ import styles from './index.module.scss';
 
 import { useLocale } from '@shared/lib/hooks/useLocale';
 import { PostAuthorDateInfo } from '@entities/Post/ui/PostAuthorDateInfo';
-import { H } from '@shared/ui/H';
-import { ROUTES } from '@shared/lib/contants/routes';
-import { P } from '@shared/ui/P';
+import { Heading } from '@shared/ui/Heading';
+import { ROUTES } from '@shared/lib/constants/routes';
+import { Paragraph } from '@shared/ui/Paragraph';
 import { Button } from '@shared/ui/Button';
 
 import type { FeaturedPostProps } from './interfaces';
@@ -28,12 +28,12 @@ export const FeaturedPost = ({ post, author }: FeaturedPostProps) => {
 				<Image src={previewImageURL} alt={translatedTitle} title={translatedTitle} width={670} height={350} />
 			</div>
 			<PostAuthorDateInfo post={post} author={author} type="purple" className={styles.by} />
-			<H type="h3" className={styles.title}>
+			<Heading type="h3" className={styles.title}>
 				{translatedTitle}
-			</H>
-			<P type="medium" className={styles.description}>
+			</Heading>
+			<Paragraph type="medium" className={styles.description}>
 				{translatedPreviewText}
-			</P>
+			</Paragraph>
 			<Link href={`${ROUTES.POSTS}${id}`} className={styles.button} data-test-id="home-post-list-featured-link">
 				<Button appearance="primary">{t('read-more')}</Button>
 			</Link>

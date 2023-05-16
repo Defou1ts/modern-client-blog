@@ -1,12 +1,12 @@
 import { useState } from 'react';
 
 export const useSubmitFormState = () => {
-	const [isSuccess, setIsSuccess] = useState<boolean>(false);
-	const [isError, setIsError] = useState<boolean>(false);
-	const [isLoading, setIsLodaing] = useState<boolean>(false);
+	const [isSuccess, setIsSuccess] = useState(false);
+	const [isError, setIsError] = useState(false);
+	const [isLoading, setIsLoading] = useState(false);
 
 	const setSuccesWithTimeout = (time: number) => {
-		setIsLodaing(false);
+		setIsLoading(false);
 		setIsSuccess(true);
 		setTimeout(() => {
 			setIsSuccess(false);
@@ -14,7 +14,7 @@ export const useSubmitFormState = () => {
 	};
 
 	const setErrorWithTimeout = (time: number) => {
-		setIsLodaing(false);
+		setIsLoading(false);
 		setIsError(false);
 		setTimeout(() => {
 			setIsError(false);
@@ -22,7 +22,7 @@ export const useSubmitFormState = () => {
 	};
 
 	const setLoading = () => {
-		setIsLodaing(true);
+		setIsLoading(true);
 	};
 
 	return { isSuccess, isLoading, isError, setSuccesWithTimeout, setErrorWithTimeout, setLoading };

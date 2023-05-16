@@ -9,7 +9,7 @@ import type { WindowWithGoogle } from './types';
 
 const GoogleMapContainer = () => {
 	return (
-		<article className={styles.wrapper}>
+		<section className={styles.wrapper}>
 			<Map
 				google={(window as WindowWithGoogle).google}
 				zoom={4}
@@ -20,7 +20,7 @@ const GoogleMapContainer = () => {
 					<Marker key={position.lat} position={position} />
 				))}
 			</Map>
-		</article>
+		</section>
 	);
 };
 

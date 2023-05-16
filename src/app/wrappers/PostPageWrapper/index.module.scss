@@ -37,22 +37,22 @@
 	}
 }
 
-.wrapper > article:nth-child(1) {
+.wrapper > section:nth-child(1) {
 	grid-area: header;
 }
 
-.wrapper > article:nth-child(2) {
+.wrapper > section:nth-child(2) {
 	grid-area: overviewimage;
 }
 
-.wrapper > article:nth-child(3) {
+.wrapper > section:nth-child(3) {
 	grid-area: content;
 }
 
-.wrapper > article:nth-child(4) {
+.wrapper > section:nth-child(4) {
 	grid-area: readnext;
 }
 
-.wrapper > article:nth-child(5) {
+.wrapper > section:nth-child(5) {
 	grid-area: joinourteam;
 }

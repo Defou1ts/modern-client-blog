@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SubscribeForm SubscribeForm snapshot 1`] = `
+<div
+  className="formWrapper"
+>
+  <h2
+    className="h h2 title"
+  >
+    subscribe.title
+  </h2>
+  <form
+    action="#"
+    className="form"
+    onReset={[Function]}
+    onSubmit={[Function]}
+  >
+    <div
+      className="wrapper"
+    >
+      <input
+        className="input input"
+        data-test-id="subsribe-form-input"
+        id="email"
+        name="email"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="subscribe.placeholder"
+        type="email"
+        value=""
+      />
+    </div>
+    <button
+      className="button primary"
+      data-test-id="subcribe-form-submit"
+      type="submit"
+    >
+      subscribe.button
+    </button>
+  </form>
+</div>
+`;
