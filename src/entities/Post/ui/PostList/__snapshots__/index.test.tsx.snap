@@ -33,11 +33,11 @@ exports[`PostList PostList snapshot 1`] = `
       <div
         className="info"
       >
-        <p
+        <span
           className="category"
         >
           startup
-        </p>
+        </span>
         <a
           href="/posts/1"
           onClick={[Function]}
@@ -85,11 +85,11 @@ exports[`PostList PostList snapshot 1`] = `
       <div
         className="info"
       >
-        <p
+        <span
           className="category"
         >
           startup
-        </p>
+        </span>
         <a
           href="/posts/2"
           onClick={[Function]}
@@ -137,11 +137,11 @@ exports[`PostList PostList snapshot 1`] = `
       <div
         className="info"
       >
-        <p
+        <span
           className="category"
         >
           business
-        </p>
+        </span>
         <a
           href="/posts/3"
           onClick={[Function]}
@@ -189,11 +189,11 @@ exports[`PostList PostList snapshot 1`] = `
       <div
         className="info"
       >
-        <p
+        <span
           className="category"
         >
           startup
-        </p>
+        </span>
         <a
           href="/posts/4"
           onClick={[Function]}
@@ -241,11 +241,11 @@ exports[`PostList PostList snapshot 1`] = `
       <div
         className="info"
       >
-        <p
+        <span
           className="category"
         >
           technology
-        </p>
+        </span>
         <a
           href="/posts/5"
           onClick={[Function]}

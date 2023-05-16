@@ -36,13 +36,13 @@ exports[`AboutOverview AboutOverview snapshot 1`] = `
       className="header"
     >
       <div
-        className="statistics"
+        className="statisticsWrapper"
       >
         <div>
           <h1
             className="h display"
           >
-            12+
+            12
           </h1>
           <p
             className="p medium"
@@ -54,7 +54,7 @@ exports[`AboutOverview AboutOverview snapshot 1`] = `
           <h1
             className="h display"
           >
-            18K+
+            18K
           </h1>
           <p
             className="p medium"
@@ -66,7 +66,7 @@ exports[`AboutOverview AboutOverview snapshot 1`] = `
           <h1
             className="h display"
           >
-            30K+
+            30K
           </h1>
           <p
             className="p medium"
@@ -109,7 +109,9 @@ exports[`AboutOverview AboutOverview snapshot 1`] = `
       <p
         className="p medium text"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+					et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At
+					risus viverra adipiscing at in tellus.
       </p>
     </div>
     <div
@@ -128,7 +130,9 @@ exports[`AboutOverview AboutOverview snapshot 1`] = `
       <p
         className="p medium text"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+					et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At
+					risus viverra adipiscing at in tellus.
       </p>
     </div>
   </div>

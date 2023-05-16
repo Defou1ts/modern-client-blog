@@ -40,11 +40,11 @@ exports[`Privacy Privacy snapshot 1`] = `
     <div
       className="contentBlock"
     >
-      <h2
-        className="h h2 subtitle"
+      <h1
+        className="h h1 subtitle"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-      </h2>
+      </h1>
       <p
         className="p medium text"
       >

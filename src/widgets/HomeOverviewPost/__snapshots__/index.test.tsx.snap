@@ -2,9 +2,28 @@
 
 exports[`HomeOverviewPost HomeOverviewPost snapshot 1`] = `
 <section
-  className="backgroundImageWrapper"
+  className="wrapper"
   data-test-id="home-overview-post"
 >
+  <img
+    alt="Step-by-step guide to choosing great font pairs"
+    className="backgroundImage"
+    data-nimg="1"
+    decoding="async"
+    height={40}
+    loading="lazy"
+    onError={[Function]}
+    onLoad={[Function]}
+    src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+    srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+    style={
+      {
+        "color": "transparent",
+      }
+    }
+    title="Step-by-step guide to choosing great font pairs"
+    width={40}
+  />
   <div
     className="backgroundEffectWrapper"
   >
