@@ -5,10 +5,10 @@ import { useTranslation } from 'next-i18next';
 
 import styles from './index.module.scss';
 
+import { PostAuthorDateInfo } from '../PostAuthorDateInfo';
+
 import { Heading } from '@shared/ui/Heading';
 import { Paragraph } from '@shared/ui/Paragraph';
-import { getAuthorFullName } from '@entities/Author/lib/utils/getAuthorFullName';
-import { getFormattedDateByLocale } from '@shared/lib/utils/getFormattedDateByLocale';
 import { Button } from '@shared/ui/Button';
 import { ROUTES } from '@shared/lib/constants/routes';
 import { useLocale } from '@shared/lib/hooks/useLocale';
@@ -20,10 +20,7 @@ export const FeaturedPost = ({ post, author }: FeaturedPostProps) => {
 
 	const { t } = useTranslation();
 
-	const { id: authorId, content } = author;
-	const { name, surname } = content[locale];
-
-	const { previewImageURL, title, previewText, createdAt, id: postId } = post;
+	const { previewImageURL, title, previewText, id: postId } = post;
 
 	const localeTitle = title[locale];
 	const localePreviewText = previewText[locale];
@@ -36,14 +33,7 @@ export const FeaturedPost = ({ post, author }: FeaturedPostProps) => {
 					<Heading type="h2" className={styles.title}>
 						{localeTitle}
 					</Heading>
-					<Paragraph type="label" className={styles.additionalInfo}>
-						{t('post.from')}{' '}
-						<Link href={`${ROUTES.AUTHOR}${authorId}`} className={styles.authorLink}>
-							{getAuthorFullName(name, surname)}
-						</Link>
-						{'      '}|{'      '}
-						{getFormattedDateByLocale(locale, new Date(createdAt))}
-					</Paragraph>
+					<PostAuthorDateInfo author={author} post={post} type="purple" />
 					<Paragraph type="medium" className={styles.previewText}>
 						{localePreviewText}
 					</Paragraph>
