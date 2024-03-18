@@ -2,6 +2,8 @@
 
 🎉 Interactive multilingual blog with posts and their authors.
 
+Test
+
 ## .env.local
 
 - **_NEXT_PUBLIC_APP_HOST_** - Your host of application
