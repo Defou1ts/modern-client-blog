@@ -2,7 +2,7 @@
 
 🎉 Interactive multilingual blog with posts and their authors.
 
-Test
+Tes
 
 ## .env.local
 
