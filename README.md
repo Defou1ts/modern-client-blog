@@ -1,4 +1,4 @@
-# Modsen Client Blog
+# Modern Client Blog
 
 🎉 Interactive multilingual blog with posts and their authors.
 
